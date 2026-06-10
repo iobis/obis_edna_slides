@@ -166,12 +166,7 @@ Saara Suominen
 </ul>
 <p><em>Free to use. Free to contribute.</em></p>
 </div><div class="column" style="width:40%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
 <p><img data-src="https://manual.obis.org/images/logo_simple.png"></p>
-<figcaption>OBIS logo</figcaption>
-</figure>
-</div>
 <p>🌐 <a href="https://obis.org">obis.org</a><br>
 📖 <a href="https://manual.obis.org">manual.obis.org</a></p>
 </div></div>
@@ -304,24 +299,17 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
 <section id="the-data-standard" class="slide level2 center">
 <h2>The data standard</h2>
 <h3 id="darwin-core-dna-derived-data-extension">Darwin Core + DNA Derived Data Extension</h3>
-
-<img data-src="assets/dwca.png" class="r-stretch"><pre><code>Darwin Core Archive (.zip)
-├── meta.xml          ← links all tables
-├── eml.xml           ← metadata (who, what, where, when, how)
-├── occurrence.csv    ← the occurrence records
-└── dna_derived.csv   ← the DNA extension</code></pre>
-<ul>
-<li><p><strong>meta.xml</strong> ← links all tables</p></li>
-<li><p><strong>eml.xml</strong> ← metadata (who, what, where, when, how)</p></li>
-<li><p><strong>occurrence.csv</strong> ← the occurrence records</p></li>
-<li><p><strong>dna_derived.csv</strong> ← the DNA extension</p></li>
-<li><p><strong>Darwin Core</strong>: shared vocabulary for biodiversity data<br>
-</p></li>
-<li><p><strong>DNA Extension</strong>: adds MIxS terms for sequences, primers, methods<br>
-</p></li>
-<li><p>Developed jointly by GBIF, OBIS, and the genomics community</p></li>
-</ul>
-<aside class="notes">
+<div class="columns">
+<div class="column" style="width:55%;">
+<p><img data-src="assets/dwca.png"></p>
+<p>::: {.column width=“45%” - <strong>meta.xml</strong> ← links all tables - <strong>eml.xml</strong> ← metadata (who, what, where, when, how) - <strong>occurrence.csv</strong> ← the occurrence records - <strong>dna_derived.csv</strong> ← the DNA extension</p>
+</div><ul>
+<li><strong>Darwin Core</strong>: shared vocabulary for biodiversity data<br>
+</li>
+<li><strong>DNA Extension</strong>: adds MIxS terms for sequences, primers, methods<br>
+</li>
+<li>Developed jointly by GBIF, OBIS, and the genomics community</li>
+</ul><aside class="notes">
 <p>MIxS = Minimum Information about any (x) Sequence. The extension incorporates these community standards so the same fields used in INSDC/GenBank submissions can be reused here.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -333,13 +321,10 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
           width: 1px!important;
           overflow: hidden!important;
           display:block!important;
-      }</style></aside>
-</section>
-<section id="the-dna-publishing-guide" class="slide level2 center">
+      }</style></aside><section id="the-dna-publishing-guide" class="slide level2 center">
 <h2>The DNA publishing guide</h2>
 <p><img data-src="assets/dna_publishing_guide.png" class="quarto-figure quarto-figure-center" style="width:90.0%"> Published guide: <em><a href="https://doi.org/10.35035/DOC-VF1A-NR22">Publishing DNA-derived data through biodiversity data platforms</a></em></p>
-</section>
-<section id="five-data-categories" class="slide level2 center">
+</section><section id="five-data-categories" class="slide level2 center">
 <h2>Five data categories</h2>
 <p>Which one fits your data?</p>
 <table class="caption-top">
@@ -397,8 +382,8 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-</section>
-<section id="from-raw-outputs-long-format" class="slide level2 center">
+<hr>
+</section><section id="from-raw-outputs-long-format" class="slide level2 center">
 <h2>From raw outputs → long format</h2>
 <p><strong>Your typical metabarcoding outputs:</strong></p>
 <table class="caption-top">
@@ -448,8 +433,8 @@ asv002  | SMP_A01   | 12    | Unassigned    | 60.1  | 5.3</code></pre>
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-</section>
-<section id="table-structure-options" class="slide level2 center">
+<hr>
+</section><section id="table-structure-options" class="slide level2 center">
 <h2>Table structure options</h2>
 <h3 id="option-a-occurrence-core-simpler">Option A — Occurrence Core (simpler)</h3>
 <pre><code>occurrence.csv  ←→  dna_derived.csv
@@ -472,8 +457,8 @@ asv002  | SMP_A01   | 12    | Unassigned    | 60.1  | 5.3</code></pre>
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-</section>
-<section id="key-fields-to-include" class="slide level2 center">
+<hr>
+</section><section id="key-fields-to-include" class="slide level2 center">
 <h2>Key fields to include</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
@@ -527,8 +512,8 @@ asv002  | SMP_A01   | 12    | Unassigned    | 60.1  | 5.3</code></pre>
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-</section>
-<section id="publishing-workflow" class="slide level2 center">
+<hr>
+</section><section id="publishing-workflow" class="slide level2 center">
 <h2>Publishing workflow</h2>
 <div class="cell" data-reveal="true" data-layout-align="default">
 <div class="cell-output-display">
@@ -574,8 +559,8 @@ asv002  | SMP_A01   | 12    | Unassigned    | 60.1  | 5.3</code></pre>
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-</section>
-<section id="the-metabarcoding-data-toolkit-mdt" class="slide level2 center">
+<hr>
+</section><section id="the-metabarcoding-data-toolkit-mdt" class="slide level2 center">
 <h2>The Metabarcoding Data Toolkit (MDT)</h2>
 <p><strong>A newer tool to simplify the workflow</strong></p>
 <ul>
@@ -616,8 +601,8 @@ asv002  | SMP_A01   | 12    | Unassigned    | 60.1  | 5.3</code></pre>
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-</section>
-<section id="quality-control" class="slide level2 center">
+<hr>
+</section><section id="quality-control" class="slide level2 center">
 <h2>Quality control</h2>
 <p><strong>Before publishing — check for:</strong></p>
 <ul>
@@ -667,8 +652,8 @@ asv002  | SMP_A01   | 12    | Unassigned    | 60.1  | 5.3</code></pre>
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-</section>
-<section id="resources-and-community" class="slide level2 center">
+<hr>
+</section><section id="resources-and-community" class="slide level2 center">
 <h2>Resources and community</h2>
 <table class="caption-top">
 <thead>
@@ -717,8 +702,8 @@ asv002  | SMP_A01   | 12    | Unassigned    | 60.1  | 5.3</code></pre>
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-</section>
-<section id="summary" class="slide level2 center">
+<hr>
+</section><section id="summary" class="slide level2 center">
 <h2>Summary</h2>
 <div class="columns">
 <div class="column" style="width:60%;">
@@ -756,6 +741,8 @@ Publishing it in OBIS makes it<br>
       }</style></aside>
 
 
+</section>
+</div>
 </section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
