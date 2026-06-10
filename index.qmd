@@ -44,7 +44,7 @@ execute:
 ::: {.notes}
 OBIS is endorsed by UNESCO's IOC. Data published there can flow to GBIF as well, giving you double visibility with a single submission. Emphasize that OBIS is not just a repository but actively feeds into global biodiversity assessments, climate analyses, and conservation planning.
 :::
----
+
 
 ## A Mature Global Community
 
@@ -77,12 +77,36 @@ and **6,000+ scientists**.
 <script>
 setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
 </script>
----
+
+::: {.notes}
+OBIS sits within UNESCO's IOC (IODE, est. 1961), working alongside ODIS for interoperability and OTGA for training.  Strong partnerships include GBIF, TDWG, EMODnet, GOOS, and DataONE.
+
+Current stats: 136M species observations, 12M records from ABNJ, 28M DNA sequences (Jan 2026). 
+
+This data supports multiple agreements: Paris Agreement, 30x30, GBF (Targets 3, 6, 8, 20, 21), SDG14, and now BBNJ.
+
+Recognition: CBD COP16 recognized OBIS, GOOS, and ODIS as ocean components of the Global Biodiversity Observing System. 
+
+OBIS is listed in KMGBF Targets 20 and 21. 
+
+OBIS data supports: IPBES Global Assessment, UN World Ocean Assessments, UNESCO IOC Global HAB reports, State of the Ocean reports, TWAP Open Ocean component (UNEP), and CBD EBSA.
+:::
+
 
 ## Why publish eDNA data?
 
-:::: {.columns}
+<style>
+.reveal table {
+  font-size: 18px !important;
+  width: 100%;
+}
+.reveal table th,
+.reveal table td {
+  padding: 15px !important;
+}
+</style>
 
+:::: {.columns}
 ::: {.column width="55%"}
 **eDNA captures what other methods miss**
 
@@ -118,11 +142,13 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
 Mention the OBIS sequence search prototype at sequence.obis.org — users can search for similar sequences across all OBIS datasets. This is only possible because sequences are published in standardized form.
 :::
 
----
+
 
 ## The data standard
 
 ### Darwin Core + DNA Derived Data Extension
+
+![](assets/dwca.png)
 
 ```
 Darwin Core Archive (.zip)
