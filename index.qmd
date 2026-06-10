@@ -167,7 +167,8 @@ Darwin Core Archive (.zip)
 MIxS = Minimum Information about any (x) Sequence. The extension incorporates these community standards so the same fields used in INSDC/GenBank submissions can be reused here.
 :::
 
----
+## The DNA publishing guide
+![](assets/dna_publishing_guide.png){fig-align="center" width="90%"}
 
 ## Five data categories
 
