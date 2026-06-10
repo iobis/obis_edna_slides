@@ -149,12 +149,13 @@ Mention the OBIS sequence search prototype at sequence.obis.org — users can se
 :::: {.columns}
 ::: {.column width="55%"}
 ![](assets/dwca.png)
-
-::: {.column width="45%"
+::: 
+::: {.column width="45%"}
 - **meta.xml** ← links all tables
 - **eml.xml**  ← metadata (who, what, where, when, how)
 - **occurrence.csv**    ← the occurrence records
 - **dna_derived.csv**   ← the DNA extension
+::: 
 :::: 
 - **Darwin Core**: shared vocabulary for biodiversity data  
 - **DNA Extension**: adds MIxS terms for sequences, primers, methods  
