@@ -1,14 +1,14 @@
 ---
 title: "Publishing eDNA Data in OBIS"
 subtitle: "From sequences to a global open biodiversity record"
-author: "Your Name"
+author: "Saara Suominen"
 date: today
 format:
   revealjs:
     theme: default
     slide-number: true
     chalkboard: false
-    logo: "https://manual.obis.org/images/logo_simple.png"
+    logo: assets/IOC+OBIS_color.svg
     footer: "manual.obis.org/dna_data.html"
     highlight-style: github
     code-block-bg: true
