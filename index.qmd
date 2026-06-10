@@ -33,7 +33,7 @@ execute:
 :::
 
 ::: {.column width="40%"}
-![OBIS logo](https://manual.obis.org/images/logo_simple.png)
+![](https://manual.obis.org/images/logo_simple.png)
 
 🌐 [obis.org](https://obis.org)  
 📖 [manual.obis.org](https://manual.obis.org)
@@ -146,20 +146,16 @@ Mention the OBIS sequence search prototype at sequence.obis.org — users can se
 
 ### Darwin Core + DNA Derived Data Extension
 
+:::: {.columns}
+::: {.column width="55%"}
 ![](assets/dwca.png)
 
-```
-Darwin Core Archive (.zip)
-├── meta.xml          ← links all tables
-├── eml.xml           ← metadata (who, what, where, when, how)
-├── occurrence.csv    ← the occurrence records
-└── dna_derived.csv   ← the DNA extension
-```
+::: {.column width="45%"
 - **meta.xml** ← links all tables
 - **eml.xml**  ← metadata (who, what, where, when, how)
 - **occurrence.csv**    ← the occurrence records
 - **dna_derived.csv**   ← the DNA extension
-
+:::: 
 - **Darwin Core**: shared vocabulary for biodiversity data  
 - **DNA Extension**: adds MIxS terms for sequences, primers, methods  
 - Developed jointly by GBIF, OBIS, and the genomics community  
