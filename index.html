@@ -302,14 +302,22 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
 <div class="columns">
 <div class="column" style="width:55%;">
 <p><img data-src="assets/dwca.png"></p>
-<p>::: {.column width=“45%” - <strong>meta.xml</strong> ← links all tables - <strong>eml.xml</strong> ← metadata (who, what, where, when, how) - <strong>occurrence.csv</strong> ← the occurrence records - <strong>dna_derived.csv</strong> ← the DNA extension</p>
-</div><ul>
+</div><div class="column" style="width:45%;">
+<ul>
+<li><strong>meta.xml</strong> ← links all tables</li>
+<li><strong>eml.xml</strong> ← metadata (who, what, where, when, how)</li>
+<li><strong>occurrence.csv</strong> ← the occurrence records</li>
+<li><strong>dna_derived.csv</strong> ← the DNA extension</li>
+</ul>
+</div></div>
+<ul>
 <li><strong>Darwin Core</strong>: shared vocabulary for biodiversity data<br>
 </li>
 <li><strong>DNA Extension</strong>: adds MIxS terms for sequences, primers, methods<br>
 </li>
 <li>Developed jointly by GBIF, OBIS, and the genomics community</li>
-</ul><aside class="notes">
+</ul>
+<aside class="notes">
 <p>MIxS = Minimum Information about any (x) Sequence. The extension incorporates these community standards so the same fields used in INSDC/GenBank submissions can be reused here.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -321,10 +329,13 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
           width: 1px!important;
           overflow: hidden!important;
           display:block!important;
-      }</style></aside><section id="the-dna-publishing-guide" class="slide level2 center">
+      }</style></aside>
+</section>
+<section id="the-dna-publishing-guide" class="slide level2 center">
 <h2>The DNA publishing guide</h2>
 <p><img data-src="assets/dna_publishing_guide.png" class="quarto-figure quarto-figure-center" style="width:90.0%"> Published guide: <em><a href="https://doi.org/10.35035/DOC-VF1A-NR22">Publishing DNA-derived data through biodiversity data platforms</a></em></p>
-</section><section id="five-data-categories" class="slide level2 center">
+</section>
+<section id="five-data-categories" class="slide level2 center">
 <h2>Five data categories</h2>
 <p>Which one fits your data?</p>
 <table class="caption-top">
@@ -382,8 +393,8 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<hr>
-</section><section id="from-raw-outputs-long-format" class="slide level2 center">
+</section>
+<section id="from-raw-outputs-long-format" class="slide level2 center">
 <h2>From raw outputs → long format</h2>
 <p><strong>Your typical metabarcoding outputs:</strong></p>
 <table class="caption-top">
@@ -433,8 +444,8 @@ asv002  | SMP_A01   | 12    | Unassigned    | 60.1  | 5.3</code></pre>
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<hr>
-</section><section id="table-structure-options" class="slide level2 center">
+</section>
+<section id="table-structure-options" class="slide level2 center">
 <h2>Table structure options</h2>
 <h3 id="option-a-occurrence-core-simpler">Option A — Occurrence Core (simpler)</h3>
 <pre><code>occurrence.csv  ←→  dna_derived.csv
@@ -457,8 +468,8 @@ asv002  | SMP_A01   | 12    | Unassigned    | 60.1  | 5.3</code></pre>
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<hr>
-</section><section id="key-fields-to-include" class="slide level2 center">
+</section>
+<section id="key-fields-to-include" class="slide level2 center">
 <h2>Key fields to include</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
@@ -512,8 +523,8 @@ asv002  | SMP_A01   | 12    | Unassigned    | 60.1  | 5.3</code></pre>
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<hr>
-</section><section id="publishing-workflow" class="slide level2 center">
+</section>
+<section id="publishing-workflow" class="slide level2 center">
 <h2>Publishing workflow</h2>
 <div class="cell" data-reveal="true" data-layout-align="default">
 <div class="cell-output-display">
@@ -559,8 +570,8 @@ asv002  | SMP_A01   | 12    | Unassigned    | 60.1  | 5.3</code></pre>
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<hr>
-</section><section id="the-metabarcoding-data-toolkit-mdt" class="slide level2 center">
+</section>
+<section id="the-metabarcoding-data-toolkit-mdt" class="slide level2 center">
 <h2>The Metabarcoding Data Toolkit (MDT)</h2>
 <p><strong>A newer tool to simplify the workflow</strong></p>
 <ul>
@@ -601,8 +612,8 @@ asv002  | SMP_A01   | 12    | Unassigned    | 60.1  | 5.3</code></pre>
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<hr>
-</section><section id="quality-control" class="slide level2 center">
+</section>
+<section id="quality-control" class="slide level2 center">
 <h2>Quality control</h2>
 <p><strong>Before publishing — check for:</strong></p>
 <ul>
@@ -652,8 +663,8 @@ asv002  | SMP_A01   | 12    | Unassigned    | 60.1  | 5.3</code></pre>
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<hr>
-</section><section id="resources-and-community" class="slide level2 center">
+</section>
+<section id="resources-and-community" class="slide level2 center">
 <h2>Resources and community</h2>
 <table class="caption-top">
 <thead>
@@ -702,8 +713,8 @@ asv002  | SMP_A01   | 12    | Unassigned    | 60.1  | 5.3</code></pre>
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<hr>
-</section><section id="summary" class="slide level2 center">
+</section>
+<section id="summary" class="slide level2 center">
 <h2>Summary</h2>
 <div class="columns">
 <div class="column" style="width:60%;">
@@ -741,8 +752,6 @@ Publishing it in OBIS makes it<br>
       }</style></aside>
 
 
-</section>
-</div>
 </section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
