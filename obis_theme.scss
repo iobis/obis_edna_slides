@@ -1,0 +1,199 @@
+/*-- scss:defaults --*/
+
+// Import fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Noto+Sans:wght@400;600&display=swap');
+
+// Colors
+$body-bg: #FFFFFF;
+$body-color: #156082;
+$link-color: #156082;
+$presentation-heading-color: #156082;
+
+// Fonts
+$presentation-font-size-root: 14px;
+$presentation-heading-font: 'Poppins', sans-serif;
+$presentation-font: 'Noto Sans', sans-serif;
+
+/*-- scss:rules --*/
+
+// ===== BACKGROUND SHAPES =====
+.reveal .slides::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/assets/background-shapes.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  pointer-events: none;
+  z-index: -1;
+}
+
+
+// Title slide (h1)
+.reveal h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 100px;
+  font-weight: 600;
+  color: #156082;
+  text-transform: none;
+}
+
+// Section title slides (with background-color) - ensure h1 styling applies
+.reveal .slide-background[data-background-color="#156082"] ~ .slide-content h1,
+.reveal section[data-background-color="#156082"] h1 {
+  font-size: 80px !important;
+  font-weight: 600 !important;
+  color: #FFFFFF !important;
+}
+
+// Section headings (h2)
+.reveal h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  color: #156082;
+  text-transform: none;
+}
+
+// Subsection headings (h3)
+.reveal h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  color: #156082;
+}
+
+// Body text
+.reveal p, .reveal li {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 30px;
+  color: #156082;
+}
+
+.reveal p.small-italic,
+.reveal .small-italic p,
+.reveal .small-italic {
+  font-size: 24px;
+  font-style: italic;
+  color: #156082;
+}
+
+// Strong text
+.reveal strong {
+  font-weight: 600;
+  color: #156082;
+}
+
+// Links
+.reveal a {
+  color: #156082;
+  text-decoration: underline;
+}
+
+.reveal a:hover {
+  color: #0d4057;
+}
+
+// Custom footer with logo
+.reveal .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+}
+
+.reveal .footer::before {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: radial-gradient(circle, rgba(21, 96, 130, 0.2) 0%, rgba(255, 255, 255, 0) 70%);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.reveal .footer img {
+  height: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+// Section title slides (with background-color)
+.reveal .slide-background[style*="background-color"] ~ .slide-content h1,
+.reveal .slide-background[style*="background-color"] ~ .slide-content h2 {
+  color: #FFFFFF;
+}
+
+// Tables
+.reveal table {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 12px;
+}
+
+.reveal table th {
+  font-weight: 600;
+  background-color: rgba(21, 96, 130, 0.1);
+}
+
+// Callouts
+.reveal .callout {
+  border-left: 4px solid #156082;
+}
+
+.reveal .callout-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+// Code blocks
+.reveal code {
+  font-family: 'Courier New', monospace;
+  color: #156082;
+}
+
+// Blockquotes
+.reveal blockquote {
+  border-left: 4px solid #156082;
+  font-style: italic;
+  color: #156082;
+}
+
+// bullet indentation
+.reveal ul, .reveal ol {
+  margin-left: 4em;
+}
+
+// display stats from API
+.stats-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
+  margin-top: 50px;
+}
+.stat-box {
+  text-align: center;
+  min-width: 150px;
+}
+.stat-icon {
+  font-size: 48px;
+  color: #156082;
+  margin-bottom: 20px;
+}
+.stat-number {
+  font-size: 36px;
+  font-weight: 600;
+  color: #156082;
+  display: block;
+  margin-bottom: 10px;
+}
+.stat-label {
+  font-size: 14px;
+  color: #156082;
+}
