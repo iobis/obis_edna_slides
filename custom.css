@@ -16,6 +16,13 @@
   color: #156082 !important;
 }
 
+/* size of logo on slides */
+.reveal .slide-logo {
+  max-height: 120px;   
+  height: 120px;
+  width: auto;
+}
+
 .pillars-container {
   display: flex;
   justify-content: space-around;
