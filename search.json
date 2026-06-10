@@ -4,14 +4,21 @@
     "href": "index.html#what-is-obis",
     "title": "Publishing eDNA Data in OBIS",
     "section": "What is OBIS?",
-    "text": "What is OBIS?\n\n\nOcean Biodiversity Information System\n\nGlobal open-access data system for marine life\n\nUNESCO Intergovernmental Oceanographic Commission\n\n\n120 M occurrence records from &gt;4,500 datasets\n\nData flows to GBIF — publish once, reach both\n\nFree to use. Free to contribute.\n\n\n\n\nOBIS logo\n\n\n🌐 obis.org\n📖 manual.obis.org\n\n\nOBIS is endorsed by UNESCO’s IOC. Data published there flows automatically to GBIF as well, giving you double visibility with a single submission. Emphasize that OBIS is not just a repository but actively feeds into global biodiversity assessments, climate analyses, and conservation planning."
+    "text": "What is OBIS?\n\n\nOcean Biodiversity Information System\n\nGlobal open-access data system for marine life\n\nUNESCO Intergovernmental Oceanographic Commission\n\n\n199 M occurrence records from &gt;7,000 datasets\n\nData flows to GBIF — easy to publish once, reach both\n\nFree to use. Free to contribute.\n\n\n\n\nOBIS logo\n\n\n🌐 obis.org\n📖 manual.obis.org\n\n\nOBIS is endorsed by UNESCO’s IOC. Data published there can flow to GBIF as well, giving you double visibility with a single submission. Emphasize that OBIS is not just a repository but actively feeds into global biodiversity assessments, climate analyses, and conservation planning."
+  },
+  {
+    "objectID": "index.html#a-mature-global-community",
+    "href": "index.html#a-mature-global-community",
+    "title": "Publishing eDNA Data in OBIS",
+    "section": "A Mature Global Community",
+    "text": "A Mature Global Community\n\n\n\n\n\n\n\nOBIS is the world’s largest open-access repositoryfor marine biodiversity data.\n \n\n36 nodes  across 99 countries  representing 1,000+ institutions  and 6,000+ scientists."
   },
   {
     "objectID": "index.html#why-publish-edna-data",
     "href": "index.html#why-publish-edna-data",
     "title": "Publishing eDNA Data in OBIS",
     "section": "Why publish eDNA data?",
-    "text": "Why publish eDNA data?\n\n\neDNA captures what other methods miss\n\nCryptic and rare marine taxa\n\nNon-invasive, scalable sampling\n\nCommunity-level biodiversity signals\n\nThe gap is real\n\nCurrently fewer than 30 eDNA datasets in OBIS with standardized DNA extension\n\nEnormous opportunity to contribute\n\nYour sequences become findable via OBIS sequence search tools\n\n\n\n\nBenefit\nWhy it matters\n\n\n\n\nOpen DOI\nCitable in publications\n\n\nLong-term archive\nFAIR data\n\n\nGlobal reach\nOBIS + GBIF\n\n\nSequence search\nReuse & reanalysis\n\n\n\n\n\nMention the OBIS sequence search prototype at sequence.obis.org — users can search for similar sequences across all OBIS datasets. This is only possible because sequences are published in standardized form."
+    "text": "Why publish eDNA data?\n\n\neDNA captures what other methods miss\n\nCryptic and rare marine taxa\n\nNon-invasive, scalable sampling\n\nCommunity-level biodiversity signals\n\nShared eDNA data is powerful data\n\nData contributes to global analyses\nData has long-term value\n\nThe gap is real\n\nCurrently fewer than 150 eDNA datasets in OBIS with standardized DNA extension\n\nEnormous opportunity to contribute\n\nYour sequences become findable via OBIS sequence search tools\n\n\n\n\nBenefit\nWhy it matters\n\n\n\n\nOpen DOI\nCitable in publications\n\n\nLong-term archive\nFAIR data\n\n\nGlobal reach\nOBIS + GBIF\n\n\nSequence search\nReuse & reanalysis\n\n\n\n\n\nMention the OBIS sequence search prototype at sequence.obis.org — users can search for similar sequences across all OBIS datasets. This is only possible because sequences are published in standardized form."
   },
   {
     "objectID": "index.html#the-data-standard",
