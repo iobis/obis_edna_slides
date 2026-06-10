@@ -118,13 +118,11 @@ OBIS data supports: IPBES Global Assessment, UN World Ocean Assessments, UNESCO 
 
 - Data contributes to global analyses
 - Data has long-term value 
+- **Your sequences become findable** via OBIS sequence search tools
 
-**The gap is real**
+**The gap is real but rectifiable**
 
 - Currently **fewer than 150** eDNA datasets in OBIS with standardized DNA extension  
-- Enormous opportunity to contribute  
-
-**Your sequences become findable** via OBIS sequence search tools
 :::
 
 ::: {.column width="45%" style="display:flex; align-items:center;"}
