@@ -1,0 +1,86 @@
+[
+  {
+    "objectID": "index.html#what-is-obis",
+    "href": "index.html#what-is-obis",
+    "title": "Publishing eDNA Data in OBIS",
+    "section": "What is OBIS?",
+    "text": "What is OBIS?\n\n\nOcean Biodiversity Information System\n\nGlobal open-access data system for marine life\n\nUNESCO Intergovernmental Oceanographic Commission\n\n\n120 M occurrence records from &gt;4,500 datasets\n\nData flows to GBIF — publish once, reach both\n\nFree to use. Free to contribute.\n\n\n\n\nOBIS logo\n\n\n🌐 obis.org\n📖 manual.obis.org\n\n\nOBIS is endorsed by UNESCO’s IOC. Data published there flows automatically to GBIF as well, giving you double visibility with a single submission. Emphasize that OBIS is not just a repository but actively feeds into global biodiversity assessments, climate analyses, and conservation planning."
+  },
+  {
+    "objectID": "index.html#why-publish-edna-data",
+    "href": "index.html#why-publish-edna-data",
+    "title": "Publishing eDNA Data in OBIS",
+    "section": "Why publish eDNA data?",
+    "text": "Why publish eDNA data?\n\n\neDNA captures what other methods miss\n\nCryptic and rare marine taxa\n\nNon-invasive, scalable sampling\n\nCommunity-level biodiversity signals\n\nThe gap is real\n\nCurrently fewer than 30 eDNA datasets in OBIS with standardized DNA extension\n\nEnormous opportunity to contribute\n\nYour sequences become findable via OBIS sequence search tools\n\n\n\n\nBenefit\nWhy it matters\n\n\n\n\nOpen DOI\nCitable in publications\n\n\nLong-term archive\nFAIR data\n\n\nGlobal reach\nOBIS + GBIF\n\n\nSequence search\nReuse & reanalysis\n\n\n\n\n\nMention the OBIS sequence search prototype at sequence.obis.org — users can search for similar sequences across all OBIS datasets. This is only possible because sequences are published in standardized form."
+  },
+  {
+    "objectID": "index.html#the-data-standard",
+    "href": "index.html#the-data-standard",
+    "title": "Publishing eDNA Data in OBIS",
+    "section": "The data standard",
+    "text": "The data standard\nDarwin Core + DNA Derived Data Extension\nDarwin Core Archive (.zip)\n├── meta.xml          ← links all tables\n├── eml.xml           ← metadata (who, what, where, when, how)\n├── occurrence.csv    ← the occurrence records\n└── dna_derived.csv   ← the DNA extension (new!)\n\nDarwin Core: shared vocabulary for biodiversity data\n\nDNA Extension: adds MIxS terms for sequences, primers, methods\n\nDeveloped jointly by GBIF, OBIS, and the genomics community\n\nPublished guide: Publishing DNA-derived data through biodiversity data platforms\n\n\nMIxS = Minimum Information about any (x) Sequence. The extension incorporates these community standards so the same fields used in INSDC/GenBank submissions can be reused here."
+  },
+  {
+    "objectID": "index.html#five-data-categories",
+    "href": "index.html#five-data-categories",
+    "title": "Publishing eDNA Data in OBIS",
+    "section": "Five data categories",
+    "text": "Five data categories\nWhich one fits your data?\n\n\n\n\n\n\n\n\n#\nCategory\nExample\n\n\n\n\n1\nDNA-derived occurrences\nMetabarcoding (ASVs/OTUs assigned to taxa)\n\n\n2\nEnriched occurrences\nVoucher specimen + barcoded\n\n\n3\nTargeted species detection\nqPCR / ddPCR assays\n\n\n4\nName references\nSequence in GenBank only\n\n\n5\nMetadata only\nDataset without sequences\n\n\n\n🔎 Use the GBIF decision tree to confirm your category\n\nCategories 1 and 3 are by far the most common for eDNA researchers. Category 1 covers metabarcoding; Category 3 covers targeted detection methods like qPCR/ddPCR where no sequences are produced."
+  },
+  {
+    "objectID": "index.html#from-raw-outputs-long-format",
+    "href": "index.html#from-raw-outputs-long-format",
+    "title": "Publishing eDNA Data in OBIS",
+    "section": "From raw outputs → long format",
+    "text": "From raw outputs → long format\nYour typical metabarcoding outputs:\n\n\n\nFile\nContent\n\n\n\n\nOTU/ASV table\nSequences × Samples (read counts)\n\n\nTaxonomy table\nSequence → taxon assignment\n\n\nSample metadata\nLocation, date, method\n\n\nFASTA file\nActual DNA sequences\n\n\n\nThe transformation:\n\nOne row = one unique sequence in one sample = one occurrence record\n\nseq_id  | sample_id | reads | taxon         | lat   | lon\nasv001  | SMP_A01   | 342   | Calanus spp.  | 60.1  | 5.3\nasv001  | SMP_A02   | 87    | Calanus spp.  | 60.2  | 5.4\nasv002  | SMP_A01   | 12    | Unassigned    | 60.1  | 5.3\n\nThe most common stumbling block is this “wide to long” transformation. The OBIS manual has a clear diagram. The Metabarcoding Data Toolkit (MDT) can automate this for common pipeline outputs."
+  },
+  {
+    "objectID": "index.html#table-structure-options",
+    "href": "index.html#table-structure-options",
+    "title": "Publishing eDNA Data in OBIS",
+    "section": "Table structure options",
+    "text": "Table structure options\nOption A — Occurrence Core (simpler)\noccurrence.csv  ←→  dna_derived.csv\n(linked via occurrenceID)\nOption B — Event Core (recommended for eDNA)\nevent.csv\n  └── occurrence.csv    (linked via eventID)\n       └── dna_derived.csv  (linked via occurrenceID)\nWhy Event Core? Sample-level metadata (location, date, method) is recorded once per sampling event rather than repeated in every row.\n\nFor a survey with 500 samples × 2000 ASVs = 1M rows, repeating location and date for every row is wasteful and error-prone. The Event Core avoids this. A new GBIF/OBIS data model is under development that will be even more flexible but is not yet implemented (as of 2025)."
+  },
+  {
+    "objectID": "index.html#key-fields-to-include",
+    "href": "index.html#key-fields-to-include",
+    "title": "Publishing eDNA Data in OBIS",
+    "section": "Key fields to include",
+    "text": "Key fields to include\n\n\nOccurrence (required)\n\noccurrenceID — unique, stable ID\n\nscientificName + taxonID (WoRMS AphiaID)\n\nbasisOfRecord = “MaterialSample”\n\neventDate, decimalLatitude, decimalLongitude\n\norganismQuantity (read count)\n\norganismQuantityType = “DNA sequence reads”\n\n\n\nDNA Extension (key fields)\n\nDNA_sequence — ASV/OTU sequence\n\ntarget_gene — e.g. “COI”, “18S rRNA”\n\npcr_primer_name_forward/reverse\n\nseq_meth — e.g. “Illumina MiSeq”\n\notu_class_appr — e.g. “DADA2 v1.18”\n\notu_db — reference database\n\nsop — link to your protocol\n\n\n\n\n📌 Archive raw sequences in GenBank / ENA and link the accession number!\n\n\nWoRMS = World Register of Marine Species. Every marine occurrence should have a WoRMS AphiaID as the taxonID. For freshwater / terrestrial taxa use the appropriate backbone (CoL, etc.). Unidentified sequences should still be included — they can be assigned taxon later."
+  },
+  {
+    "objectID": "index.html#publishing-workflow",
+    "href": "index.html#publishing-workflow",
+    "title": "Publishing eDNA Data in OBIS",
+    "section": "Publishing workflow",
+    "text": "Publishing workflow\n\n\n\n\n\nflowchart LR\n  A[Format data\\nDwC + DNA ext.] --&gt; B[Join OBIS node\\nobis.org/nodes]\n  B --&gt; C[Get IPT account]\n  C --&gt; D[Upload data\\n+ EML metadata]\n  D --&gt; E[Validate\\nfix errors]\n  E --&gt; F[Publish!\\nGet DOI]\n  F --&gt; G[OBIS + GBIF\\nindexed]\n\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\nThe Integrated Publishing Toolkit (IPT) is hosted by OBIS nodes — you do not need to run your own server.\n\n\n\n\nOBIS has nodes covering most world regions. Find yours at obis.org/nodes. The IPT has a built-in metadata editor for EML so you do not need to write XML by hand. Emphasize that once published, the dataset gets a DOI and can be cited in papers."
+  },
+  {
+    "objectID": "index.html#the-metabarcoding-data-toolkit-mdt",
+    "href": "index.html#the-metabarcoding-data-toolkit-mdt",
+    "title": "Publishing eDNA Data in OBIS",
+    "section": "The Metabarcoding Data Toolkit (MDT)",
+    "text": "The Metabarcoding Data Toolkit (MDT)\nA newer tool to simplify the workflow\n\nDeveloped by GBIF specifically for metabarcoding data\n\nAccepts common pipeline outputs (QIIME2, DADA2, etc.)\n\nHandles the wide-to-long transformation\n\nGenerates Darwin Core Archive + DNA Extension automatically\n\nIntegrates with IPT publishing\n\n🔗 Available at: gbif.org/tools/mdt\n\n\n\n\n\n\nNote\n\n\nStill under active development — check the GBIF documentation for the latest capabilities.\n\n\n\n\nThe MDT is a significant time-saver for complex datasets. It can be used alongside the IPT rather than replacing it — it handles the data formatting step and then hands off to the IPT for publishing."
+  },
+  {
+    "objectID": "index.html#quality-control",
+    "href": "index.html#quality-control",
+    "title": "Publishing eDNA Data in OBIS",
+    "section": "Quality control",
+    "text": "Quality control\nBefore publishing — check for:\n\n✅ Taxonomy matched to WoRMS (AphiaID required for marine taxa)\n\n✅ Coordinates in decimal degrees, in the ocean\n\n✅ Dates in ISO 8601 format (YYYY-MM-DD)\n\n✅ Unique, stable occurrenceID and eventID\n\n✅ Table linkages consistent (eventID, occurrenceID)\n\nTools:\n\n\n\nTool\nWhat it checks\n\n\n\n\nobistools (R package)\nTaxonomy, geography, required fields\n\n\nGBIF data validator\nDarwin Core Archive structure\n\n\nWoRMS taxon match\nScientific names → AphiaIDs\n\n\n\n\nobistools is an R package from OBIS. The GBIF validator is a web-based tool. WoRMS has a batch taxon match tool at marinespecies.org/aphia.php. For unidentified sequences, assign a high-level taxon if possible (e.g., kingdom Animalia) rather than leaving the field empty."
+  },
+  {
+    "objectID": "index.html#resources-and-community",
+    "href": "index.html#resources-and-community",
+    "title": "Publishing eDNA Data in OBIS",
+    "section": "Resources and community",
+    "text": "Resources and community\n\n\n\nResource\nLink\n\n\n\n\nOBIS Manual (DNA chapter)\nmanual.obis.org/dna_data.html\n\n\nGBIF DNA publishing guide\ndoi.org/10.35035/DOC-VF1A-NR22\n\n\nOBON 2024 DNA training\ngithub.com/iobis/obon-2024-dna-training\n\n\nIOOS Bio Mobilization Workshop\nioos.github.io/bio_mobilization_workshop\n\n\nGBIF-NA DNA Publishing Workshop\nsunray1.github.io/2025-05-09-GBIF-NA-DNAPublishing\n\n\nOBIS helpdesk\nhelpdesk@obis.org\n\n\n\n\nThe community is genuinely welcoming to beginners. The OBIS helpdesk responds quickly. The workshops listed here offer hands-on help with your own data — participants bring actual datasets and work through formatting with instructors."
+  },
+  {
+    "objectID": "index.html#summary",
+    "href": "index.html#summary",
+    "title": "Publishing eDNA Data in OBIS",
+    "section": "Summary",
+    "text": "Summary\n\n\nThree steps to publish your eDNA data:\n\nFormat — Darwin Core + DNA Derived Data Extension\nLong format: one row = one sequence per sample\nDocument — Complete EML metadata\nPrimers, methods, bioinformatics pipeline, license\nPublish — Through your OBIS node IPT\nGet a DOI. Be cited. Join the global record.\n\n\nStart here → manual.obis.org/dna_data.html\n\nWhy it matters\n\neDNA captures biodiversity no other method can.\nPublishing it in OBIS makes it\nreusable, citable, and permanent.\n\n\n\nClose with energy. Remind the audience that the gap between eDNA data currently in OBIS and what could be there is enormous — their data can meaningfully fill it. If time allows, invite them to share what kind of eDNA data they have and talk about the right category/structure for their case."
+  }
+]
