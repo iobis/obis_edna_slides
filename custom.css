@@ -8,7 +8,7 @@
 /* adjust date size */
 #title-slide .date,
 #title-slide p.date {
-  font-size: 0.6em;
+  font-size: 0.8em;
 }
 
 /* color of page numbers */
@@ -18,8 +18,8 @@
 
 /* size of logo on slides */
 .reveal .slide-logo {
-  max-height: 120px;   
-  height: 120px;
+  max-height: 200px;   
+  height: 200px;
   width: auto;
 }
 
@@ -46,11 +46,4 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.vcenter {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
 }
