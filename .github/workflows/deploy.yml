@@ -1,0 +1,26 @@
+name: Deploy Quarto Reveal.js Slides
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Quarto (latest)
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Render Quarto website
+        run: quarto render
+        
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GH_PAT }}
+          publish_dir: ./_site
