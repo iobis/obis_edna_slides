@@ -25,14 +25,14 @@
     "href": "index.html#the-data-standard",
     "title": "Publishing eDNA Data in OBIS",
     "section": "The data standard",
-    "text": "The data standard\nDarwin Core + DNA Derived Data Extension\n\nDarwin Core Archive (.zip)\n├── meta.xml          ← links all tables\n├── eml.xml           ← metadata (who, what, where, when, how)\n├── occurrence.csv    ← the occurrence records\n└── dna_derived.csv   ← the DNA extension (new!)\n\nDarwin Core: shared vocabulary for biodiversity data\n\nDNA Extension: adds MIxS terms for sequences, primers, methods\n\nDeveloped jointly by GBIF, OBIS, and the genomics community\n\nPublished guide: Publishing DNA-derived data through biodiversity data platforms\n\n\nMIxS = Minimum Information about any (x) Sequence. The extension incorporates these community standards so the same fields used in INSDC/GenBank submissions can be reused here."
+    "text": "The data standard\nDarwin Core + DNA Derived Data Extension\n\nDarwin Core Archive (.zip)\n├── meta.xml          ← links all tables\n├── eml.xml           ← metadata (who, what, where, when, how)\n├── occurrence.csv    ← the occurrence records\n└── dna_derived.csv   ← the DNA extension\n\nmeta.xml ← links all tables\neml.xml ← metadata (who, what, where, when, how)\noccurrence.csv ← the occurrence records\ndna_derived.csv ← the DNA extension\nDarwin Core: shared vocabulary for biodiversity data\n\nDNA Extension: adds MIxS terms for sequences, primers, methods\n\nDeveloped jointly by GBIF, OBIS, and the genomics community\n\n\nMIxS = Minimum Information about any (x) Sequence. The extension incorporates these community standards so the same fields used in INSDC/GenBank submissions can be reused here."
   },
   {
     "objectID": "index.html#the-dna-publishing-guide",
     "href": "index.html#the-dna-publishing-guide",
     "title": "Publishing eDNA Data in OBIS",
     "section": "The DNA publishing guide",
-    "text": "The DNA publishing guide"
+    "text": "The DNA publishing guide\n Published guide: Publishing DNA-derived data through biodiversity data platforms"
   },
   {
     "objectID": "index.html#five-data-categories",
