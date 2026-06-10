@@ -127,7 +127,7 @@ OBIS data supports: IPBES Global Assessment, UN World Ocean Assessments, UNESCO 
 **Your sequences become findable** via OBIS sequence search tools
 :::
 
-::: {.column width="45% vcenter"}
+::: {.column width="45%" style="display:flex; align-items:center;"}
 | Benefit | Why it matters |
 |---|---|
 | Open DOI | Citable in publications |
