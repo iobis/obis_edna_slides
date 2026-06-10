@@ -26,8 +26,8 @@ execute:
 
 - Global open-access data system for marine life  
 - UNESCO Intergovernmental Oceanographic Commission  
-- >120 M occurrence records from >4,500 datasets  
-- Data flows to GBIF — publish once, reach both  
+- >199 M occurrence records from >7,000 datasets  
+- Data flows to GBIF — easy to publish once, reach both  
 
 *Free to use. Free to contribute.*
 :::
@@ -42,9 +42,41 @@ execute:
 ::::
 
 ::: {.notes}
-OBIS is endorsed by UNESCO's IOC. Data published there flows automatically to GBIF as well, giving you double visibility with a single submission. Emphasize that OBIS is not just a repository but actively feeds into global biodiversity assessments, climate analyses, and conservation planning.
+OBIS is endorsed by UNESCO's IOC. Data published there can flow to GBIF as well, giving you double visibility with a single submission. Emphasize that OBIS is not just a repository but actively feeds into global biodiversity assessments, climate analyses, and conservation planning.
 :::
+---
 
+## A Mature Global Community
+
+<link href="https://unpkg.com/maplibre-gl@3.1.0/dist/maplibre-gl.css" rel="stylesheet">
+<script src="https://unpkg.com/maplibre-gl@3.1.0/dist/maplibre-gl.js"></script>
+<script src="obis_nodes_map.js"></script>
+
+<div id="nodesmap" style="position: absolute; top: 100px; left: 0; width: 100%; height: 80%; opacity: 0.25; z-index: 1;"></div>
+
+<div style="position: relative; z-index: 10;">
+
+OBIS is the world's largest **open-access repository**<br>for marine biodiversity data.
+
+<br>
+<br>
+
+<div style="text-align: right;">
+**36 nodes** 
+<br>
+across **99 countries**
+<br>
+representing **1,000+ institutions**
+<br>
+and **6,000+ scientists**.
+</div>
+
+
+</div>
+
+<script>
+setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
+</script>
 ---
 
 ## Why publish eDNA data?
@@ -58,9 +90,14 @@ OBIS is endorsed by UNESCO's IOC. Data published there flows automatically to GB
 - Non-invasive, scalable sampling  
 - Community-level biodiversity signals  
 
+**Shared eDNA data is powerful data**
+
+- Data contributes to global analyses
+- Data has long-term value 
+
 **The gap is real**
 
-- Currently **fewer than 30** eDNA datasets in OBIS with standardized DNA extension  
+- Currently **fewer than 150** eDNA datasets in OBIS with standardized DNA extension  
 - Enormous opportunity to contribute  
 
 **Your sequences become findable** via OBIS sequence search tools
