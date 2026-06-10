@@ -153,13 +153,16 @@ Darwin Core Archive (.zip)
 ├── meta.xml          ← links all tables
 ├── eml.xml           ← metadata (who, what, where, when, how)
 ├── occurrence.csv    ← the occurrence records
-└── dna_derived.csv   ← the DNA extension (new!)
+└── dna_derived.csv   ← the DNA extension
 ```
+- **meta.xml** ← links all tables
+- **eml.xml**  ← metadata (who, what, where, when, how)
+- **occurrence.csv**    ← the occurrence records
+- **dna_derived.csv**   ← the DNA extension
 
 - **Darwin Core**: shared vocabulary for biodiversity data  
 - **DNA Extension**: adds MIxS terms for sequences, primers, methods  
 - Developed jointly by GBIF, OBIS, and the genomics community  
-- Published guide: *[Publishing DNA-derived data through biodiversity data platforms](https://doi.org/10.35035/DOC-VF1A-NR22)*
 
 ::: {.notes}
 MIxS = Minimum Information about any (x) Sequence. The extension incorporates these community standards so the same fields used in INSDC/GenBank submissions can be reused here.
@@ -167,6 +170,7 @@ MIxS = Minimum Information about any (x) Sequence. The extension incorporates th
 
 ## The DNA publishing guide
 ![](assets/dna_publishing_guide.png){fig-align="center" width="90%"}
+Published guide: *[Publishing DNA-derived data through biodiversity data platforms](https://doi.org/10.35035/DOC-VF1A-NR22)*
 
 ## Five data categories
 
