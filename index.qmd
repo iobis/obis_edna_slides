@@ -106,7 +106,7 @@ OBIS data supports: IPBES Global Assessment, UN World Ocean Assessments, UNESCO 
 }
 </style>
 
-:::: {.columns}
+:::: {.columns style='display: flex !important; height: 90%;'}
 ::: {.column width="55%"}
 **eDNA captures what other methods miss**
 
@@ -120,12 +120,9 @@ OBIS data supports: IPBES Global Assessment, UN World Ocean Assessments, UNESCO 
 - Data has long-term value 
 - **Your sequences become findable** via OBIS sequence search tools
 
-**The gap is real but rectifiable**
-
-- Currently **fewer than 150** eDNA datasets in OBIS with standardized DNA extension  
 :::
 
-::: {.column width="45%" style="display:flex; align-items:center;"}
+::: {.column width="45%" style='display: flex; justify-content: center; align-items: center;'}
 | Benefit | Why it matters |
 |---|---|
 | Open DOI | Citable in publications |
@@ -167,6 +164,8 @@ MIxS = Minimum Information about any (x) Sequence. The extension incorporates th
 
 ## The DNA publishing guide
 ![](assets/dna_publishing_guide.png){fig-align="center" width="90%"}
+
+
 Published guide: *[Publishing DNA-derived data through biodiversity data platforms](https://doi.org/10.35035/DOC-VF1A-NR22)*
 
 ## Five data categories
@@ -196,7 +195,7 @@ Categories 1 and 3 are by far the most common for eDNA researchers. Category 1 c
 | File | Content |
 |---|---|
 | OTU/ASV table | Sequences × Samples (read counts) |
-| Taxonomy table | Sequence → taxon assignment |
+| Taxonomy table | Sequence [ID] → taxon assignment |
 | Sample metadata | Location, date, method |
 | FASTA file | Actual DNA sequences |
 
@@ -204,35 +203,91 @@ Categories 1 and 3 are by far the most common for eDNA researchers. Category 1 c
 
 > One row = one unique sequence **in** one sample = one occurrence record
 
-```
-seq_id  | sample_id | reads | taxon         | lat   | lon
-asv001  | SMP_A01   | 342   | Calanus spp.  | 60.1  | 5.3
-asv001  | SMP_A02   | 87    | Calanus spp.  | 60.2  | 5.4
-asv002  | SMP_A01   | 12    | Unassigned    | 60.1  | 5.3
-```
 
 ::: {.notes}
 The most common stumbling block is this "wide to long" transformation. The OBIS manual has a clear diagram. The Metabarcoding Data Toolkit (MDT) can automate this for common pipeline outputs.
 :::
 
----
+## Example transformation
+
+:::: {.columns}
+
+![](assets/DNA_4tables-to-one.jpg){fig-align="center" width="90%"}
+
+::::
+
+## Key fields to include: Occurrence core
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**Occurrence core table (mandatory fields)**
+
+- `occurrenceID` — unique, stable ID  
+- `scientificName` - WoRMS
+- `basisOfRecord` = "MaterialSample"  
+- `eventDate`, `decimalLatitude`, `decimalLongitude`  
+- `occurrenceStatus` = "present"
+::: 
+::: {.column width="50%"}
+**Occurrence core table (strongly recommended fields)**
+
+- `scientificNameID` (WoRMS AphiaID)  
+- `organismQuantity` (read count of sequence)  
+- `associatedSequences` (link to e.g. GenBank or ENA accession) 
+- `organismQuantityType` = "DNA sequence reads" 
+ - `sampleSizeValue` (total read count in sample)  
+- `sampleSizeUnit` = "DNA sequence reads" 
+- `samplingProtocol` - (link to your SOP)
+
+:::
+::::
+
+
+## Key fields to include: DNA Extension
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**DNA Extension (example key fields)**
+
+- `DNA_sequence` — ASV/OTU sequence
+- `target_gene` — e.g. "COI", "18S rRNA"
+- `pcr_primer_name_forward` — and reverse
+- `seq_meth` — e.g. "Illumina MiSeq"
+- `otu_class_appr` — e.g. "DADA2 v1.18"
+- `otu_db` — reference database
+- `sop` — link to your protocol
+
+:::
+
+::: {.column width="50%"}
+
+![](assets/eDNA_quickguide.png)
+
+:::
+
+::::
+
+::: {.notes}
+WoRMS = World Register of Marine Species. Every marine occurrence should have a WoRMS AphiaID as the taxonID. For freshwater / terrestrial taxa use the appropriate backbone (CoL, etc.). Unidentified sequences should still be included — they can be assigned taxon later.
+:::
 
 ## Table structure options
 
-### Option A — Occurrence Core (simpler)
+### Option A — Occurrence Core
 
-```
-occurrence.csv  ←→  dna_derived.csv
+occurrence.csv ←→ dna_derived.csv  
 (linked via occurrenceID)
-```
+
 
 ### Option B — Event Core (recommended for eDNA)
 
-```
-event.csv
-  └── occurrence.csv    (linked via eventID)
-       └── dna_derived.csv  (linked via occurrenceID)
-```
+
+event.csv  
+  └── occurrence.csv    (linked via eventID)  
+       └── dna_derived.csv  (linked via occurrenceID)  
+
 
 **Why Event Core?** Sample-level metadata (location, date, method) is recorded **once** per sampling event rather than repeated in every row.
 
@@ -240,44 +295,23 @@ event.csv
 For a survey with 500 samples × 2000 ASVs = 1M rows, repeating location and date for every row is wasteful and error-prone. The Event Core avoids this. A new GBIF/OBIS data model is under development that will be even more flexible but is not yet implemented (as of 2025).
 :::
 
----
-
-## Key fields to include
+## Example usage of event core structure
 
 :::: {.columns}
 
-::: {.column width="50%"}
-**Occurrence (required)**
+::: {.column width="30%"}
 
-- `occurrenceID` — unique, stable ID  
-- `scientificName` + `taxonID` (WoRMS AphiaID)  
-- `basisOfRecord` = "MaterialSample"  
-- `eventDate`, `decimalLatitude`, `decimalLongitude`  
-- `organismQuantity` (read count)  
-- `organismQuantityType` = "DNA sequence reads"  
+- **Why Event Core?** Sample-level metadata (location, date, method) is recorded **once** per sampling event rather than repeated in every row.
+
 :::
 
-::: {.column width="50%"}
-**DNA Extension (key fields)**
+::: {.column width="70%"}
 
-- `DNA_sequence` — ASV/OTU sequence  
-- `target_gene` — e.g. "COI", "18S rRNA"  
-- `pcr_primer_name_forward/reverse`  
-- `seq_meth` — e.g. "Illumina MiSeq"  
-- `otu_class_appr` — e.g. "DADA2 v1.18"  
-- `otu_db` — reference database  
-- `sop` — link to your protocol  
-:::
+![](assets/dna_data_event_core_structure.png){fig-align="center" width="50%"}
+
+::: 
 
 ::::
-
-> 📌 Archive raw sequences in **GenBank / ENA** and link the accession number!
-
-::: {.notes}
-WoRMS = World Register of Marine Species. Every marine occurrence should have a WoRMS AphiaID as the taxonID. For freshwater / terrestrial taxa use the appropriate backbone (CoL, etc.). Unidentified sequences should still be included — they can be assigned taxon later.
-:::
-
----
 
 ## Publishing workflow
 
@@ -293,6 +327,8 @@ flowchart LR
 
 ::: {.callout-tip}
 The **Integrated Publishing Toolkit (IPT)** is hosted by OBIS nodes — you do not need to run your own server.
+
+OBIS has nodes covering most world regions. Find yours at obis.org/nodes.
 :::
 
 ::: {.notes}
@@ -314,7 +350,7 @@ OBIS has nodes covering most world regions. Find yours at obis.org/nodes. The IP
 🔗 Available at: [gbif.org/tools/mdt](https://www.gbif.org/tools/mdt)
 
 ::: {.callout-note}
-Still under active development — check the GBIF documentation for the latest capabilities.
+Still under active development — check the GBIF documentation for the latest capabilities. Currently not possible to use the event core structure
 :::
 
 ::: {.notes}
