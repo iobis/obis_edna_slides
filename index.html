@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.9.38">
 
   <meta name="author" content="Saara Suominen">
-  <meta name="dcterms.date" content="2026-06-10">
+  <meta name="dcterms.date" content="2026-06-15">
   <title>Publishing eDNA data in OBIS – Publishing eDNA Data in OBIS</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -147,7 +147,7 @@ Saara Suominen
 </div>
 </div>
 
-  <p class="date">2026-06-10</p>
+  <p class="date">2026-06-15</p>
 </section>
 <section id="what-is-obis" class="slide level2 center">
 <h2>What is OBIS?</h2>
@@ -233,7 +233,7 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
   padding: 15px !important;
 }
 </style>
-<div class="columns">
+<div class="columns" style="display: flex !important; height: 90%;">
 <div class="column" style="width:55%;">
 <p><strong>eDNA captures what other methods miss</strong></p>
 <ul>
@@ -249,12 +249,7 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
 <li>Data has long-term value</li>
 <li><strong>Your sequences become findable</strong> via OBIS sequence search tools</li>
 </ul>
-<p><strong>The gap is real but rectifiable</strong></p>
-<ul>
-<li>Currently <strong>fewer than 150</strong> eDNA datasets in OBIS with standardized DNA extension<br>
-</li>
-</ul>
-</div><div class="column" style="display:flex; align-items:center;">
+</div><div class="column" style="display: flex; justify-content: center; align-items: center;">
 <table class="caption-top">
 <thead>
 <tr class="header">
@@ -333,7 +328,8 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
 </section>
 <section id="the-dna-publishing-guide" class="slide level2 center">
 <h2>The DNA publishing guide</h2>
-<p><img data-src="assets/dna_publishing_guide.png" class="quarto-figure quarto-figure-center" style="width:90.0%"> Published guide: <em><a href="https://doi.org/10.35035/DOC-VF1A-NR22">Publishing DNA-derived data through biodiversity data platforms</a></em></p>
+
+<img data-src="assets/dna_publishing_guide.png" class="quarto-figure quarto-figure-center r-stretch" style="width:90.0%"><p>Published guide: <em><a href="https://doi.org/10.35035/DOC-VF1A-NR22">Publishing DNA-derived data through biodiversity data platforms</a></em></p>
 </section>
 <section id="five-data-categories" class="slide level2 center">
 <h2>Five data categories</h2>
@@ -411,7 +407,7 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
 </tr>
 <tr class="even">
 <td>Taxonomy table</td>
-<td>Sequence → taxon assignment</td>
+<td>Sequence [ID] → taxon assignment</td>
 </tr>
 <tr class="odd">
 <td>Sample metadata</td>
@@ -427,10 +423,6 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
 <blockquote>
 <p>One row = one unique sequence <strong>in</strong> one sample = one occurrence record</p>
 </blockquote>
-<pre><code>seq_id  | sample_id | reads | taxon         | lat   | lon
-asv001  | SMP_A01   | 342   | Calanus spp.  | 60.1  | 5.3
-asv001  | SMP_A02   | 87    | Calanus spp.  | 60.2  | 5.4
-asv002  | SMP_A01   | 12    | Unassigned    | 60.1  | 5.3</code></pre>
 <aside class="notes">
 <p>The most common stumbling block is this “wide to long” transformation. The OBIS manual has a clear diagram. The Metabarcoding Data Toolkit (MDT) can automate this for common pipeline outputs.</p>
 <style type="text/css">
@@ -445,15 +437,87 @@ asv002  | SMP_A01   | 12    | Unassigned    | 60.1  | 5.3</code></pre>
           display:block!important;
       }</style></aside>
 </section>
+<section id="example-transformation" class="slide level2 center">
+<h2>Example transformation</h2>
+<div class="columns">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="assets/DNA_4tables-to-one.jpg" class="quarto-figure quarto-figure-center" style="width:90.0%"></p>
+</figure>
+</div>
+</div>
+</section>
+<section id="key-fields-to-include-occurrence-core" class="slide level2 center">
+<h2>Key fields to include: Occurrence core</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Occurrence core table (mandatory fields)</strong></p>
+<ul>
+<li><code>occurrenceID</code> — unique, stable ID<br>
+</li>
+<li><code>scientificName</code> - WoRMS</li>
+<li><code>basisOfRecord</code> = “MaterialSample”<br>
+</li>
+<li><code>eventDate</code>, <code>decimalLatitude</code>, <code>decimalLongitude</code><br>
+</li>
+<li><code>occurrenceStatus</code> = “present”</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><strong>Occurrence core table (strongly recommended fields)</strong></p>
+<ul>
+<li><code>scientificNameID</code> (WoRMS AphiaID)<br>
+</li>
+<li><code>organismQuantity</code> (read count of sequence)<br>
+</li>
+<li><code>associatedSequences</code> (link to e.g.&nbsp;GenBank or ENA accession)</li>
+<li><code>organismQuantityType</code> = “DNA sequence reads”</li>
+<li><code>sampleSizeValue</code> (total read count in sample)<br>
+</li>
+<li><code>sampleSizeUnit</code> = “DNA sequence reads”</li>
+<li><code>samplingProtocol</code> - (link to your SOP)</li>
+</ul>
+</div></div>
+</section>
+<section id="key-fields-to-include-dna-extension" class="slide level2 center">
+<h2>Key fields to include: DNA Extension</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>DNA Extension (example key fields)</strong></p>
+<ul>
+<li><code>DNA_sequence</code> — ASV/OTU sequence</li>
+<li><code>target_gene</code> — e.g.&nbsp;“COI”, “18S rRNA”</li>
+<li><code>pcr_primer_name_forward</code> — and reverse</li>
+<li><code>seq_meth</code> — e.g.&nbsp;“Illumina MiSeq”</li>
+<li><code>otu_class_appr</code> — e.g.&nbsp;“DADA2 v1.18”</li>
+<li><code>otu_db</code> — reference database</li>
+<li><code>sop</code> — link to your protocol</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="assets/eDNA_quickguide.png"></p>
+</div></div>
+<aside class="notes">
+<p>WoRMS = World Register of Marine Species. Every marine occurrence should have a WoRMS AphiaID as the taxonID. For freshwater / terrestrial taxa use the appropriate backbone (CoL, etc.). Unidentified sequences should still be included — they can be assigned taxon later.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
 <section id="table-structure-options" class="slide level2 center">
 <h2>Table structure options</h2>
-<h3 id="option-a-occurrence-core-simpler">Option A — Occurrence Core (simpler)</h3>
-<pre><code>occurrence.csv  ←→  dna_derived.csv
-(linked via occurrenceID)</code></pre>
+<h3 id="option-a-occurrence-core">Option A — Occurrence Core</h3>
+<p>occurrence.csv ←→ dna_derived.csv<br>
+(linked via occurrenceID)</p>
 <h3 id="option-b-event-core-recommended-for-edna">Option B — Event Core (recommended for eDNA)</h3>
-<pre><code>event.csv
-  └── occurrence.csv    (linked via eventID)
-       └── dna_derived.csv  (linked via occurrenceID)</code></pre>
+<p>event.csv<br>
+└── occurrence.csv (linked via eventID)<br>
+└── dna_derived.csv (linked via occurrenceID)</p>
 <p><strong>Why Event Core?</strong> Sample-level metadata (location, date, method) is recorded <strong>once</strong> per sampling event rather than repeated in every row.</p>
 <aside class="notes">
 <p>For a survey with 500 samples × 2000 ASVs = 1M rows, repeating location and date for every row is wasteful and error-prone. The Event Core avoids this. A new GBIF/OBIS data model is under development that will be even more flexible but is not yet implemented (as of 2025).</p>
@@ -469,60 +533,20 @@ asv002  | SMP_A01   | 12    | Unassigned    | 60.1  | 5.3</code></pre>
           display:block!important;
       }</style></aside>
 </section>
-<section id="key-fields-to-include" class="slide level2 center">
-<h2>Key fields to include</h2>
+<section id="example-usage-of-event-core-structure" class="slide level2 center">
+<h2>Example usage of event core structure</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Occurrence (required)</strong></p>
+<div class="column" style="width:30%;">
 <ul>
-<li><code>occurrenceID</code> — unique, stable ID<br>
-</li>
-<li><code>scientificName</code> + <code>taxonID</code> (WoRMS AphiaID)<br>
-</li>
-<li><code>basisOfRecord</code> = “MaterialSample”<br>
-</li>
-<li><code>eventDate</code>, <code>decimalLatitude</code>, <code>decimalLongitude</code><br>
-</li>
-<li><code>organismQuantity</code> (read count)<br>
-</li>
-<li><code>organismQuantityType</code> = “DNA sequence reads”<br>
-</li>
+<li><strong>Why Event Core?</strong> Sample-level metadata (location, date, method) is recorded <strong>once</strong> per sampling event rather than repeated in every row.</li>
 </ul>
-</div><div class="column" style="width:50%;">
-<p><strong>DNA Extension (key fields)</strong></p>
-<ul>
-<li><code>DNA_sequence</code> — ASV/OTU sequence<br>
-</li>
-<li><code>target_gene</code> — e.g.&nbsp;“COI”, “18S rRNA”<br>
-</li>
-<li><code>pcr_primer_name_forward/reverse</code><br>
-</li>
-<li><code>seq_meth</code> — e.g.&nbsp;“Illumina MiSeq”<br>
-</li>
-<li><code>otu_class_appr</code> — e.g.&nbsp;“DADA2 v1.18”<br>
-</li>
-<li><code>otu_db</code> — reference database<br>
-</li>
-<li><code>sop</code> — link to your protocol<br>
-</li>
-</ul>
+</div><div class="column" style="width:70%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="assets/dna_data_event_core_structure.png" class="quarto-figure quarto-figure-center" style="width:50.0%"></p>
+</figure>
+</div>
 </div></div>
-<blockquote>
-<p>📌 Archive raw sequences in <strong>GenBank / ENA</strong> and link the accession number!</p>
-</blockquote>
-<aside class="notes">
-<p>WoRMS = World Register of Marine Species. Every marine occurrence should have a WoRMS AphiaID as the taxonID. For freshwater / terrestrial taxa use the appropriate backbone (CoL, etc.). Unidentified sequences should still be included — they can be assigned taxon later.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
 </section>
 <section id="publishing-workflow" class="slide level2 center">
 <h2>Publishing workflow</h2>
@@ -554,6 +578,7 @@ asv002  | SMP_A01   | 12    | Unassigned    | 60.1  | 5.3</code></pre>
 </div>
 <div class="callout-content">
 <p>The <strong>Integrated Publishing Toolkit (IPT)</strong> is hosted by OBIS nodes — you do not need to run your own server.</p>
+<p>OBIS has nodes covering most world regions. Find yours at obis.org/nodes.</p>
 </div>
 </div>
 </div>
@@ -595,7 +620,7 @@ asv002  | SMP_A01   | 12    | Unassigned    | 60.1  | 5.3</code></pre>
 <p><strong>Note</strong></p>
 </div>
 <div class="callout-content">
-<p>Still under active development — check the GBIF documentation for the latest capabilities.</p>
+<p>Still under active development — check the GBIF documentation for the latest capabilities. Currently not possible to use the event core structure</p>
 </div>
 </div>
 </div>
