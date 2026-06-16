@@ -6,11 +6,11 @@
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-de63f62b328812d8e578a4d74e282472.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.9.38">
 
   <meta name="author" content="Saara Suominen">
-  <meta name="dcterms.date" content="2026-06-15">
+  <meta name="dcterms.date" content="2026-06-16">
   <title>Publishing eDNA data in OBIS – Publishing eDNA Data in OBIS</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -38,6 +38,8 @@
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
     .reveal div.sourceCode {
@@ -126,9 +128,6 @@
       margin-right: 0; 
     }
   </style>
-  <script src="site_libs/quarto-diagram/mermaid.min.js"></script>
-  <script src="site_libs/quarto-diagram/mermaid-init.js"></script>
-  <link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="quarto-light">
@@ -147,7 +146,7 @@ Saara Suominen
 </div>
 </div>
 
-  <p class="date">2026-06-15</p>
+  <p class="date">2026-06-16</p>
 </section>
 <section id="what-is-obis" class="slide level2 center">
 <h2>What is OBIS?</h2>
@@ -453,28 +452,27 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
 <div class="column" style="width:50%;">
 <p><strong>Occurrence core table (mandatory fields)</strong></p>
 <ul>
-<li><code>occurrenceID</code> — unique, stable ID<br>
-</li>
-<li><code>scientificName</code> - WoRMS</li>
-<li><code>basisOfRecord</code> = “MaterialSample”<br>
+<li><code>occurrenceID</code> — <span class="small-note">unique, stable ID</span></li>
+<li><code>scientificName</code> — <span class="small-note">WoRMS</span></li>
+<li><code>basisOfRecord</code> = <span class="small-note">“MaterialSample”</span><br>
 </li>
 <li><code>eventDate</code>, <code>decimalLatitude</code>, <code>decimalLongitude</code><br>
 </li>
-<li><code>occurrenceStatus</code> = “present”</li>
+<li><code>occurrenceStatus</code> = <span class="small-note">“present”</span></li>
 </ul>
 </div><div class="column" style="width:50%;">
 <p><strong>Occurrence core table (strongly recommended fields)</strong></p>
 <ul>
-<li><code>scientificNameID</code> (WoRMS AphiaID)<br>
+<li><code>scientificNameID</code> <span class="small-note">(WoRMS AphiaID)</span><br>
 </li>
-<li><code>organismQuantity</code> (read count of sequence)<br>
+<li><code>organismQuantity</code> <span class="small-note">(read count of sequence)</span><br>
 </li>
-<li><code>associatedSequences</code> (link to e.g.&nbsp;GenBank or ENA accession)</li>
-<li><code>organismQuantityType</code> = “DNA sequence reads”</li>
-<li><code>sampleSizeValue</code> (total read count in sample)<br>
+<li><code>associatedSequences</code> <span class="small-note">(link to e.g.&nbsp;GenBank or ENA accession)</span></li>
+<li><code>organismQuantityType</code> = <span class="small-note">“DNA sequence reads”</span></li>
+<li><code>sampleSizeValue</code> <span class="small-note">(total read count in sample)</span><br>
 </li>
-<li><code>sampleSizeUnit</code> = “DNA sequence reads”</li>
-<li><code>samplingProtocol</code> - (link to your SOP)</li>
+<li><code>sampleSizeUnit</code> = <span class="small-note">“DNA sequence reads”</span></li>
+<li><code>samplingProtocol</code> - <span class="small-note">(link to your SOP)</span></li>
 </ul>
 </div></div>
 </section>
@@ -484,13 +482,13 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
 <div class="column" style="width:50%;">
 <p><strong>DNA Extension (example key fields)</strong></p>
 <ul>
-<li><code>DNA_sequence</code> — ASV/OTU sequence</li>
-<li><code>target_gene</code> — e.g.&nbsp;“COI”, “18S rRNA”</li>
-<li><code>pcr_primer_name_forward</code> — and reverse</li>
-<li><code>seq_meth</code> — e.g.&nbsp;“Illumina MiSeq”</li>
-<li><code>otu_class_appr</code> — e.g.&nbsp;“DADA2 v1.18”</li>
-<li><code>otu_db</code> — reference database</li>
-<li><code>sop</code> — link to your protocol</li>
+<li><code>DNA_sequence</code> — <span class="small-note">ASV/OTU sequence</span></li>
+<li><code>target_gene</code> — <span class="small-note">e.g.&nbsp;“COI”, “18S rRNA”</span></li>
+<li><code>pcr_primer_name_forward</code> — <span class="small-note">and reverse</span></li>
+<li><code>seq_meth</code> — <span class="small-note">e.g.&nbsp;“Illumina MiSeq”</span></li>
+<li><code>otu_class_appr</code> — <span class="small-note">e.g.&nbsp;“DADA2 v1.18”</span></li>
+<li><code>otu_db</code> — <span class="small-note">reference database</span></li>
+<li><code>sop</code> — <span class="small-note">link to your protocol</span></li>
 </ul>
 </div><div class="column" style="width:50%;">
 <p><img data-src="assets/eDNA_quickguide.png"></p>
@@ -550,23 +548,8 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
 </section>
 <section id="publishing-workflow" class="slide level2 center">
 <h2>Publishing workflow</h2>
-<div class="cell" data-reveal="true" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class=""><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart LR
-  A[Format data\nDwC + DNA ext.] --&gt; B[Join OBIS node\nobis.org/nodes]
-  B --&gt; C[Get IPT account]
-  C --&gt; D[Upload data\n+ EML metadata]
-  D --&gt; E[Validate\nfix errors]
-  E --&gt; F[Publish!\nGet DOI]
-  F --&gt; G[OBIS + GBIF\nindexed]
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
+<div style="text-align:center;">
+<p><img data-src="assets/publishing_steps.png" style="height:90vh; width:auto;"></p>
 </div>
 <div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
@@ -780,9 +763,8 @@ Publishing it in OBIS makes it<br>
 </section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
-<p><img src="assets/IOC+OBIS_color.svg" class="slide-logo"></p>
 <div class="footer footer-default">
-<p>manual.obis.org/dna_data.html</p>
+<p><span style="font-size: 10px;">© 2026 <a href="https://obis.org/" target="_blank"><img src="assets/IOC+OBIS_color.svg" style="height:60px; vertical-align:middle;"></a> License: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></span></p>
 </div>
 </div></div>
 
@@ -793,6 +775,7 @@ Publishing it in OBIS makes it<br>
   <script src="site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
   <script src="site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
   <script src="site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
   <script src="site_libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
@@ -814,7 +797,8 @@ Publishing it in OBIS makes it<br>
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
 'jumpToSlide': true,
-'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"8\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'chalkboard': {"buttons":true},
 'smaller': false,
  
         // Display controls in the bottom right corner
@@ -985,7 +969,7 @@ Publishing it in OBIS makes it<br>
         },
 
         // reveal.js plugins
-        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
 
           RevealMath,
           RevealNotes,

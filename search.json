@@ -60,7 +60,7 @@
     "href": "index.html#key-fields-to-include-occurrence-core",
     "title": "Publishing eDNA Data in OBIS",
     "section": "Key fields to include: Occurrence core",
-    "text": "Key fields to include: Occurrence core\n\n\nOccurrence core table (mandatory fields)\n\noccurrenceID — unique, stable ID\n\nscientificName - WoRMS\nbasisOfRecord = “MaterialSample”\n\neventDate, decimalLatitude, decimalLongitude\n\noccurrenceStatus = “present”\n\n\nOccurrence core table (strongly recommended fields)\n\nscientificNameID (WoRMS AphiaID)\n\norganismQuantity (read count of sequence)\n\nassociatedSequences (link to e.g. GenBank or ENA accession)\norganismQuantityType = “DNA sequence reads”\nsampleSizeValue (total read count in sample)\n\nsampleSizeUnit = “DNA sequence reads”\nsamplingProtocol - (link to your SOP)"
+    "text": "Key fields to include: Occurrence core\n\n\nOccurrence core table (mandatory fields)\n\noccurrenceID — unique, stable ID\nscientificName — WoRMS\nbasisOfRecord = “MaterialSample”\n\neventDate, decimalLatitude, decimalLongitude\n\noccurrenceStatus = “present”\n\n\nOccurrence core table (strongly recommended fields)\n\nscientificNameID (WoRMS AphiaID)\n\norganismQuantity (read count of sequence)\n\nassociatedSequences (link to e.g. GenBank or ENA accession)\norganismQuantityType = “DNA sequence reads”\nsampleSizeValue (total read count in sample)\n\nsampleSizeUnit = “DNA sequence reads”\nsamplingProtocol - (link to your SOP)"
   },
   {
     "objectID": "index.html#key-fields-to-include-dna-extension",
@@ -88,7 +88,7 @@
     "href": "index.html#publishing-workflow",
     "title": "Publishing eDNA Data in OBIS",
     "section": "Publishing workflow",
-    "text": "Publishing workflow\n\n\n\n\n\nflowchart LR\n  A[Format data\\nDwC + DNA ext.] --&gt; B[Join OBIS node\\nobis.org/nodes]\n  B --&gt; C[Get IPT account]\n  C --&gt; D[Upload data\\n+ EML metadata]\n  D --&gt; E[Validate\\nfix errors]\n  E --&gt; F[Publish!\\nGet DOI]\n  F --&gt; G[OBIS + GBIF\\nindexed]\n\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\nThe Integrated Publishing Toolkit (IPT) is hosted by OBIS nodes — you do not need to run your own server.\nOBIS has nodes covering most world regions. Find yours at obis.org/nodes.\n\n\n\n\nOBIS has nodes covering most world regions. Find yours at obis.org/nodes. The IPT has a built-in metadata editor for EML so you do not need to write XML by hand. Emphasize that once published, the dataset gets a DOI and can be cited in papers."
+    "text": "Publishing workflow\n\n\n\n\n\n\n\n\n\nTip\n\n\nThe Integrated Publishing Toolkit (IPT) is hosted by OBIS nodes — you do not need to run your own server.\nOBIS has nodes covering most world regions. Find yours at obis.org/nodes.\n\n\n\n\nOBIS has nodes covering most world regions. Find yours at obis.org/nodes. The IPT has a built-in metadata editor for EML so you do not need to write XML by hand. Emphasize that once published, the dataset gets a DOI and can be cited in papers."
   },
   {
     "objectID": "index.html#the-metabarcoding-data-toolkit-mdt",
