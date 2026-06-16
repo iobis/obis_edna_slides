@@ -1,0 +1,17 @@
+<svg version="1.1" viewBox="0 0 960 540" fill="none" stroke="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Large semi-transparent circle - adjusted to be fully visible -->
+  <circle cx="280" cy="270" r="200" fill="#156082" fill-opacity="0.0591"/>
+  
+  <!-- Outlined circles - adjusted to be fully within boundaries -->
+  <!-- Bottom left medium circle -->
+  <circle cx="180" cy="380" r="40" stroke="#156082" stroke-width="1.5" fill="none"/>
+  
+  <!-- Top left small circle -->
+  <circle cx="90" cy="80" r="25" stroke="#156082" stroke-width="1.5" fill="none"/>
+  
+  <!-- Bottom left small circle -->
+  <circle cx="70" cy="470" r="25" stroke="#156082" stroke-width="1.5" fill="none"/>
+  
+  <!-- Top right medium circle -->
+  <circle cx="870" cy="80" r="40" stroke="#156082" stroke-width="1.5" fill="none"/>
+</svg>

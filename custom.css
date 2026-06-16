@@ -16,13 +16,6 @@
   color: #156082 !important;
 }
 
-/* size of logo on slides */
-.reveal .slide-logo {
-  max-height: 200px;   
-  height: 200px;
-  width: auto;
-}
-
 .pillars-container {
   display: flex;
   justify-content: space-around;
@@ -46,4 +39,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.small-note {
+  font-size: 0.85em;
 }
