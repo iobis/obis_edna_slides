@@ -304,7 +304,7 @@ For a survey with 500 samples × 2000 ASVs = 1M rows, repeating location and dat
 ## Publishing workflow
 
 <div style="text-align:center;">
-![](assets/publishing_steps.png){style="height:60vh; width:auto;"}
+![](assets/publishing_steps.png){style="height:40vh; width:auto;"}
 </div>
 
 ::: {.callout-tip}
