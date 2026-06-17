@@ -1,0 +1,13 @@
+## Publishing workflow
+
+**Integrated Publishing Toolkits (IPT)** are hosted by OBIS nodes — you do not need to run your own server.
+OBIS has nodes covering most world regions. Find yours at obis.org/nodes.
+
+
+<div style="text-align:center;">
+![](assets/publishing_steps.png)
+</div>
+
+::: {.notes}
+OBIS has nodes covering most world regions. Find yours at obis.org/nodes. The IPT has a built-in metadata editor for EML so you do not need to write XML by hand. Emphasize that once published, the dataset gets a DOI and can be cited in papers.
+:::

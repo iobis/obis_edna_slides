@@ -1,0 +1,43 @@
+## Why publish eDNA data?
+
+<style>
+.reveal table {
+  font-size: 18px !important;
+  width: 100%;
+}
+.reveal table th,
+.reveal table td {
+  padding: 15px !important;
+}
+</style>
+
+:::: {.columns style='display: flex !important; height: 90%;'}
+::: {.column width="55%"}
+**eDNA captures what other methods miss**
+
+- Cryptic and rare marine taxa  
+- Non-invasive, scalable sampling  
+- Community-level biodiversity signals  
+
+**Shared eDNA data is powerful data**
+
+- Data contributes to global analyses
+- Data has long-term value 
+- **Your sequences become findable** via OBIS sequence search tools
+
+:::
+
+::: {.column width="45%" style='display: flex; justify-content: center; align-items: center;'}
+| Benefit | Why it matters |
+|---|---|
+| Open DOI | Citable in publications |
+| Long-term archive | FAIR data |
+| Global reach | OBIS + GBIF |
+| Sequence search | Reuse & reanalysis |
+:::
+
+::::
+
+::: {.notes}
+Mention the OBIS sequence search prototype at sequence.obis.org — users can search for similar sequences across all OBIS datasets. This is only possible because sequences are published in standardized form.
+:::

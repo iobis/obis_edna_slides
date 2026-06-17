@@ -1,0 +1,45 @@
+## A Mature Global Community
+
+<link href="https://unpkg.com/maplibre-gl@3.1.0/dist/maplibre-gl.css" rel="stylesheet">
+<script src="https://unpkg.com/maplibre-gl@3.1.0/dist/maplibre-gl.js"></script>
+<script src="obis_nodes_map.js"></script>
+
+<div id="nodesmap" style="position: absolute; top: 100px; left: 0; width: 100%; height: 80%; opacity: 0.25; z-index: 1;"></div>
+
+<div style="position: relative; z-index: 10;">
+
+OBIS is the world's largest **open-access repository**<br>for marine biodiversity data.
+
+<br>
+<br>
+
+<div style="text-align: right;">
+**36 nodes** 
+<br>
+across **99 countries**
+<br>
+representing **1,000+ institutions**
+<br>
+and **6,000+ scientists**.
+</div>
+
+
+</div>
+
+<script>
+setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
+</script>
+
+::: {.notes}
+OBIS sits within UNESCO's IOC (IODE, est. 1961), working alongside ODIS for interoperability and OTGA for training.  Strong partnerships include GBIF, TDWG, EMODnet, GOOS, and DataONE.
+
+Current stats: 136M species observations, 12M records from ABNJ, 28M DNA sequences (Jan 2026). 
+
+This data supports multiple agreements: Paris Agreement, 30x30, GBF (Targets 3, 6, 8, 20, 21), SDG14, and now BBNJ.
+
+Recognition: CBD COP16 recognized OBIS, GOOS, and ODIS as ocean components of the Global Biodiversity Observing System. 
+
+OBIS is listed in KMGBF Targets 20 and 21. 
+
+OBIS data supports: IPBES Global Assessment, UN World Ocean Assessments, UNESCO IOC Global HAB reports, State of the Ocean reports, TWAP Open Ocean component (UNEP), and CBD EBSA.
+:::

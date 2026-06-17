@@ -1,0 +1,22 @@
+## Table structure options
+
+### Option A — Occurrence Core
+
+occurrence.csv ←→ dna_derived.csv  
+(linked via occurrenceID)
+
+<br>
+
+### Option B — Event Core (recommended for eDNA)
+
+
+event.csv  
+  └── occurrence.csv    (linked via eventID)  
+       └── dna_derived.csv  (linked via occurrenceID)  
+
+
+**Why Event Core?** Sample-level metadata (location, date, method) is recorded **once** per sampling event rather than repeated in every row.
+
+::: {.notes}
+For a survey with 500 samples × 2000 ASVs = 1M rows, repeating location and date for every row is wasteful and error-prone. The Event Core avoids this. A new GBIF/OBIS data model is under development that will be even more flexible but is not yet implemented (as of 2025).
+:::

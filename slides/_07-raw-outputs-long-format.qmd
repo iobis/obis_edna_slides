@@ -1,0 +1,21 @@
+---
+
+## From raw outputs → long format
+
+**Your typical metabarcoding outputs:**
+
+| File | Content |
+|---|---|
+| OTU/ASV table | Sequences × Samples (read counts) |
+| Taxonomy table | Sequence [ID] → taxon assignment |
+| Sample metadata | Location, date, method |
+| FASTA file | Actual DNA sequences |
+
+**The transformation:**
+
+> One row = one unique sequence **in** one sample = one occurrence record
+
+
+::: {.notes}
+The most common stumbling block is this "wide to long" transformation. The OBIS manual has a clear diagram. The Metabarcoding Data Toolkit (MDT) can automate this for common pipeline outputs.
+:::

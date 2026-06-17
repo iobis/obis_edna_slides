@@ -1,0 +1,16 @@
+---
+
+## Resources and community
+
+| Resource | Link |
+|---|---|
+| OBIS Manual (DNA chapter) | [manual.obis.org/dna_data.html](https://manual.obis.org/dna_data.html) |
+| GBIF DNA publishing guide | [doi.org/10.35035/DOC-VF1A-NR22](https://doi.org/10.35035/DOC-VF1A-NR22) |
+| OBON 2024 DNA training | [github.com/iobis/obon-2024-dna-training](https://github.com/iobis/obon-2024-dna-training) |
+| IOOS Bio Mobilization Workshop | [ioos.github.io/bio_mobilization_workshop](https://ioos.github.io/bio_mobilization_workshop) |
+| GBIF-NA DNA Publishing Workshop | [sunray1.github.io/2025-05-09-GBIF-NA-DNAPublishing](https://sunray1.github.io/2025-05-09-GBIF-NA-DNAPublishing) |
+| OBIS helpdesk | helpdesk@obis.org |
+
+::: {.notes}
+The community is genuinely welcoming to beginners. The OBIS helpdesk responds quickly. The workshops listed here offer hands-on help with your own data — participants bring actual datasets and work through formatting with instructors.
+:::
