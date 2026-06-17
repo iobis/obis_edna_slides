@@ -95,7 +95,7 @@
     "href": "index.html#the-metabarcoding-data-toolkit-mdt",
     "title": "Publishing eDNA Data in OBIS",
     "section": "The Metabarcoding Data Toolkit (MDT)",
-    "text": "The Metabarcoding Data Toolkit (MDT)\nA newer tool to simplify the workflow\n\nDeveloped by GBIF specifically for metabarcoding data\n\nAccepts common pipeline outputs (QIIME2, DADA2, etc.)\n\nHandles the wide-to-long transformation\n\nGenerates Darwin Core Archive + DNA Extension automatically\n\nIntegrates with IPT publishing\n\n🔗 Available at: gbif.org/tools/mdt\n\n\n\n\n\n\nNote\n\n\nStill under active development — check the GBIF documentation for the latest capabilities. Currently not possible to use the event core structure\n\n\n\n\nThe MDT is a significant time-saver for complex datasets. It can be used alongside the IPT rather than replacing it — it handles the data formatting step and then hands off to the IPT for publishing."
+    "text": "The Metabarcoding Data Toolkit (MDT)\nA newer tool to simplify the workflow\n\nDeveloped by GBIF specifically for metabarcoding data\n\nAccepts common pipeline outputs (QIIME2, DADA2, etc.)\n\nHandles the wide-to-long transformation\n\nGenerates Darwin Core Archive + DNA Extension automatically\n\nIntegrates with IPT publishing\n\n🔗 Available at: mdt.gbif.org\n\n\n\n\n\n\nNote\n\n\nStill under active development — check the GBIF documentation for the latest capabilities. Currently not possible to use the event core structure\n\n\n\n\nThe MDT is a significant time-saver for complex datasets. It can be used alongside the IPT rather than replacing it — it handles the data formatting step and then hands off to the IPT for publishing."
   },
   {
     "objectID": "index.html#quality-control",
