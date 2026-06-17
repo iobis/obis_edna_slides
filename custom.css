@@ -44,3 +44,36 @@
 .small-note {
   font-size: 0.85em;
 }
+
+/* bordered box */
+.bordered-box,
+.bordered-box p,
+.bordered-box li {
+  font-size: 1.05em !important;
+  border-radius: 6px;
+  padding: 0.75em 1em;
+  background-color: #f8f9fa;
+}
+
+
+/* Reserve room for the footer on every slide */
+.reveal .slides section {
+  padding-bottom: 90px !important;
+  box-sizing: border-box;
+}
+
+/* Stop images from exceeding the reserved area */
+.reveal .slides section img {
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* Cap any image on a slide using a pixel ceiling, not %.
+   Pixel max-heights resolve regardless of parent height,
+   so this survives raw HTML wrappers and column nesting. */
+.reveal .slides section img {
+  max-height: 480px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}

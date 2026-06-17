@@ -4,7 +4,7 @@
     "href": "index.html#what-is-obis",
     "title": "Publishing eDNA Data in OBIS",
     "section": "What is OBIS?",
-    "text": "What is OBIS?\n\n\nOcean Biodiversity Information System\n\nGlobal open-access data system for marine life\n\nUNESCO Intergovernmental Oceanographic Commission\n\n\n199 M occurrence records from &gt;7,000 datasets\n\nData flows to GBIF — easy to publish once, reach both\n\nFree to use. Free to contribute.\n\n\n🌐 obis.org\n📖 manual.obis.org\n\n\nOBIS is endorsed by UNESCO’s IOC. Data published there can flow to GBIF as well, giving you double visibility with a single submission. Emphasize that OBIS is not just a repository but actively feeds into global biodiversity assessments, climate analyses, and conservation planning."
+    "text": "What is OBIS?\n\n\nOcean Biodiversity Information System\n\nGlobal open-access data system for marine life\n\nUNESCO Intergovernmental Oceanographic Commission\n\n&gt; 199 M occurrence records from &gt;7,000 datasets\n\nData flows to GBIF — easy to publish once, reach both\n\nFree to use. Free to contribute.\n\n\n🌐 obis.org\n📖 manual.obis.org\n\n\nOBIS is endorsed by UNESCO’s IOC. Data published there can flow to GBIF as well, giving you double visibility with a single submission. Emphasize that OBIS is not just a repository but actively feeds into global biodiversity assessments, climate analyses, and conservation planning."
   },
   {
     "objectID": "index.html#a-mature-global-community",
@@ -25,14 +25,14 @@
     "href": "index.html#the-data-standard",
     "title": "Publishing eDNA Data in OBIS",
     "section": "The data standard",
-    "text": "The data standard\nDarwin Core + DNA Derived Data Extension\n\n\n\n\n\nmeta.xml ← links all tables\neml.xml ← metadata (who, what, where, when, how)\noccurrence.csv ← the occurrence records\ndna_derived.csv ← the DNA extension\n\n\n\nDarwin Core: shared vocabulary for biodiversity data\n\nDNA Extension: adds MIxS terms for sequences, primers, methods\n\nDeveloped jointly by GBIF, OBIS, and the genomics community\n\n\nMIxS = Minimum Information about any (x) Sequence. The extension incorporates these community standards so the same fields used in INSDC/GenBank submissions can be reused here."
+    "text": "The data standard\nDarwin Core + DNA Derived Data Extension\n\nDarwin Core: shared vocabulary for biodiversity data\n\nDNA Extension: adds MIxS terms for sequences, primers, methods\n\nDeveloped jointly by GBIF, OBIS, and the genomics community\n\n\n\n\n\n\nmeta.xml ← links all tables\neml.xml ← metadata (who, what, where, when, how)\noccurrence.csv ← the occurrence records\ndna_derived.csv ← the DNA extension\n\n\n\nMIxS = Minimum Information about any (x) Sequence. The extension incorporates these community standards so the same fields used in INSDC/GenBank submissions can be reused here."
   },
   {
     "objectID": "index.html#the-dna-publishing-guide",
     "href": "index.html#the-dna-publishing-guide",
     "title": "Publishing eDNA Data in OBIS",
     "section": "The DNA publishing guide",
-    "text": "The DNA publishing guide\n\nPublished guide: Publishing DNA-derived data through biodiversity data platforms"
+    "text": "The DNA publishing guide\nPublishing DNA-derived data through biodiversity data platforms"
   },
   {
     "objectID": "index.html#five-data-categories",
@@ -74,7 +74,7 @@
     "href": "index.html#table-structure-options",
     "title": "Publishing eDNA Data in OBIS",
     "section": "Table structure options",
-    "text": "Table structure options\nOption A — Occurrence Core\noccurrence.csv ←→ dna_derived.csv\n(linked via occurrenceID)\nOption B — Event Core (recommended for eDNA)\nevent.csv\n└── occurrence.csv (linked via eventID)\n└── dna_derived.csv (linked via occurrenceID)\nWhy Event Core? Sample-level metadata (location, date, method) is recorded once per sampling event rather than repeated in every row.\n\nFor a survey with 500 samples × 2000 ASVs = 1M rows, repeating location and date for every row is wasteful and error-prone. The Event Core avoids this. A new GBIF/OBIS data model is under development that will be even more flexible but is not yet implemented (as of 2025)."
+    "text": "Table structure options\nOption A — Occurrence Core\noccurrence.csv ←→ dna_derived.csv\n(linked via occurrenceID)\n\nOption B — Event Core (recommended for eDNA)\nevent.csv\n└── occurrence.csv (linked via eventID)\n└── dna_derived.csv (linked via occurrenceID)\nWhy Event Core? Sample-level metadata (location, date, method) is recorded once per sampling event rather than repeated in every row.\n\nFor a survey with 500 samples × 2000 ASVs = 1M rows, repeating location and date for every row is wasteful and error-prone. The Event Core avoids this. A new GBIF/OBIS data model is under development that will be even more flexible but is not yet implemented (as of 2025)."
   },
   {
     "objectID": "index.html#example-usage-of-event-core-structure",
@@ -88,7 +88,7 @@
     "href": "index.html#publishing-workflow",
     "title": "Publishing eDNA Data in OBIS",
     "section": "Publishing workflow",
-    "text": "Publishing workflow\n\n\n\n\n\n\n\n\n\nTip\n\n\nThe Integrated Publishing Toolkit (IPT) is hosted by OBIS nodes — you do not need to run your own server.\nOBIS has nodes covering most world regions. Find yours at obis.org/nodes.\n\n\n\n\nOBIS has nodes covering most world regions. Find yours at obis.org/nodes. The IPT has a built-in metadata editor for EML so you do not need to write XML by hand. Emphasize that once published, the dataset gets a DOI and can be cited in papers."
+    "text": "Publishing workflow\nIntegrated Publishing Toolkits (IPT) are hosted by OBIS nodes — you do not need to run your own server. OBIS has nodes covering most world regions. Find yours at obis.org/nodes.\n\n\n\n\nOBIS has nodes covering most world regions. Find yours at obis.org/nodes. The IPT has a built-in metadata editor for EML so you do not need to write XML by hand. Emphasize that once published, the dataset gets a DOI and can be cited in papers."
   },
   {
     "objectID": "index.html#the-metabarcoding-data-toolkit-mdt",

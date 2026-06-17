@@ -6,11 +6,14 @@
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.9.38">
 
   <meta name="author" content="Saara Suominen">
-  <meta name="dcterms.date" content="2026-06-16">
+  <meta name="dcterms.date" content="2026-06-17">
   <title>Publishing eDNA data in OBIS – Publishing eDNA Data in OBIS</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -33,7 +36,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-8ddfbee4e14ca3d705296ed8a487ecc1.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-2c571535081efe4aded98407bafecb82.css">
   <link rel="stylesheet" href="custom.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -146,7 +149,7 @@ Saara Suominen
 </div>
 </div>
 
-  <p class="date">2026-06-16</p>
+  <p class="date">2026-06-17</p>
 </section>
 <section id="what-is-obis" class="slide level2 center">
 <h2>What is OBIS?</h2>
@@ -158,14 +161,13 @@ Saara Suominen
 </li>
 <li>UNESCO Intergovernmental Oceanographic Commission<br>
 </li>
-<li><blockquote>
-<p>199 M occurrence records from &gt;7,000 datasets</p>
-</blockquote></li>
+<li>&gt; 199 M occurrence records from &gt;7,000 datasets<br>
+</li>
 <li>Data flows to GBIF — easy to publish once, reach both</li>
 </ul>
 <p><em>Free to use. Free to contribute.</em></p>
 </div><div class="column" style="width:40%;">
-<p><img data-src="https://manual.obis.org/images/logo_simple.png"></p>
+<p><a href="https://manual.obis.org/images/logo_simple.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img data-src="https://manual.obis.org/images/logo_simple.png"></a></p>
 <p>🌐 <a href="https://obis.org">obis.org</a><br>
 📖 <a href="https://manual.obis.org">manual.obis.org</a></p>
 </div></div>
@@ -293,17 +295,6 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
 <section id="the-data-standard" class="slide level2 center">
 <h2>The data standard</h2>
 <h3 id="darwin-core-dna-derived-data-extension">Darwin Core + DNA Derived Data Extension</h3>
-<div class="columns">
-<div class="column" style="width:55%;">
-<p><img data-src="assets/dwca.png"></p>
-</div><div class="column" style="width:45%;">
-<ul>
-<li><strong>meta.xml</strong> ← links all tables</li>
-<li><strong>eml.xml</strong> ← metadata (who, what, where, when, how)</li>
-<li><strong>occurrence.csv</strong> ← the occurrence records</li>
-<li><strong>dna_derived.csv</strong> ← the DNA extension</li>
-</ul>
-</div></div>
 <ul>
 <li><strong>Darwin Core</strong>: shared vocabulary for biodiversity data<br>
 </li>
@@ -311,6 +302,17 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
 </li>
 <li>Developed jointly by GBIF, OBIS, and the genomics community</li>
 </ul>
+<div class="columns" style="display: flex; height: 90%;">
+<div class="column" style="width:55%;">
+<p><a href="assets/dwca.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img data-src="assets/dwca.png"></a></p>
+</div><div class="column" style="display: flex; align-items: center;">
+<div class="bordered-box">
+<p><strong>meta.xml</strong> ← links all tables<br>
+<strong>eml.xml</strong> ← metadata (who, what, where, when, how)<br>
+<strong>occurrence.csv</strong> ← the occurrence records<br>
+<strong>dna_derived.csv</strong> ← the DNA extension</p>
+</div>
+</div></div>
 <aside class="notes">
 <p>MIxS = Minimum Information about any (x) Sequence. The extension incorporates these community standards so the same fields used in INSDC/GenBank submissions can be reused here.</p>
 <style type="text/css">
@@ -327,8 +329,21 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
 </section>
 <section id="the-dna-publishing-guide" class="slide level2 center">
 <h2>The DNA publishing guide</h2>
-
-<img data-src="assets/dna_publishing_guide.png" class="quarto-figure quarto-figure-center r-stretch" style="width:90.0%"><p>Published guide: <em><a href="https://doi.org/10.35035/DOC-VF1A-NR22">Publishing DNA-derived data through biodiversity data platforms</a></em></p>
+<p><em><a href="https://doi.org/10.35035/DOC-VF1A-NR22">Publishing DNA-derived data through biodiversity data platforms</a></em></p>
+<div class="columns">
+<div class="column" style="width:75%;">
+<div class="quarto-figure quarto-figure-right">
+<figure>
+<p><a href="assets/dna_publishing_guide.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img data-src="assets/dna_publishing_guide.png" class="quarto-figure quarto-figure-right" style="width:60.0%"></a></p>
+</figure>
+</div>
+</div><div class="column" style="width:25%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://api.qrserver.com/v1/create-qr-code/?size=200x200&amp;data=https://doi.org/10.35035/DOC-VF1A-NR22.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img data-src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&amp;data=https://doi.org/10.35035/DOC-VF1A-NR22.png" class="quarto-figure quarto-figure-center" width="180"></a></p>
+</figure>
+</div>
+</div></div>
 </section>
 <section id="five-data-categories" class="slide level2 center">
 <h2>Five data categories</h2>
@@ -441,7 +456,7 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
 <div class="columns">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="assets/DNA_4tables-to-one.jpg" class="quarto-figure quarto-figure-center" style="width:90.0%"></p>
+<p><a href="assets/DNA_4tables-to-one.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img data-src="assets/DNA_4tables-to-one.jpg" class="quarto-figure quarto-figure-center" style="width:90.0%"></a></p>
 </figure>
 </div>
 </div>
@@ -491,7 +506,7 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
 <li><code>sop</code> — <span class="small-note">link to your protocol</span></li>
 </ul>
 </div><div class="column" style="width:50%;">
-<p><img data-src="assets/eDNA_quickguide.png"></p>
+<p><a href="assets/eDNA_quickguide.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img data-src="assets/eDNA_quickguide.png"></a></p>
 </div></div>
 <aside class="notes">
 <p>WoRMS = World Register of Marine Species. Every marine occurrence should have a WoRMS AphiaID as the taxonID. For freshwater / terrestrial taxa use the appropriate backbone (CoL, etc.). Unidentified sequences should still be included — they can be assigned taxon later.</p>
@@ -512,6 +527,7 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
 <h3 id="option-a-occurrence-core">Option A — Occurrence Core</h3>
 <p>occurrence.csv ←→ dna_derived.csv<br>
 (linked via occurrenceID)</p>
+<p><br></p>
 <h3 id="option-b-event-core-recommended-for-edna">Option B — Event Core (recommended for eDNA)</h3>
 <p>event.csv<br>
 └── occurrence.csv (linked via eventID)<br>
@@ -541,29 +557,16 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
 </div><div class="column" style="width:70%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="assets/dna_data_event_core_structure.png" class="quarto-figure quarto-figure-center" style="width:50.0%"></p>
+<p><a href="assets/dna_data_event_core_structure.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img data-src="assets/dna_data_event_core_structure.png" class="quarto-figure quarto-figure-center" style="width:50.0%"></a></p>
 </figure>
 </div>
 </div></div>
 </section>
 <section id="publishing-workflow" class="slide level2 center">
 <h2>Publishing workflow</h2>
+<p><strong>Integrated Publishing Toolkits (IPT)</strong> are hosted by OBIS nodes — you do not need to run your own server. OBIS has nodes covering most world regions. Find yours at obis.org/nodes.</p>
 <div style="text-align:center;">
-<p><img data-src="assets/publishing_steps.png"></p>
-</div>
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Tip</strong></p>
-</div>
-<div class="callout-content">
-<p>The <strong>Integrated Publishing Toolkit (IPT)</strong> is hosted by OBIS nodes — you do not need to run your own server.</p>
-<p>OBIS has nodes covering most world regions. Find yours at obis.org/nodes.</p>
-</div>
-</div>
+<p><a href="assets/publishing_steps.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img data-src="assets/publishing_steps.png"></a></p>
 </div>
 <aside class="notes">
 <p>OBIS has nodes covering most world regions. Find yours at obis.org/nodes. The IPT has a built-in metadata editor for EML so you do not need to write XML by hand. Emphasize that once published, the dataset gets a DOI and can be cited in papers.</p>
@@ -1146,6 +1149,38 @@ Publishing it in OBIS makes it<br>
         }
       });
       </script>
+    <script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+    (function() {
+      let previousOnload = window.onload;
+      window.onload = () => {
+        if (previousOnload) {
+          previousOnload();
+        }
+        lightboxQuarto.on('slide_before_load', (data) => {
+          const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+          const href = trigger.getAttribute('href');
+          if (href !== null) {
+            const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+            if (imgEl !== null) {
+              const srcAttr = imgEl.getAttribute("src");
+              if (srcAttr && srcAttr.startsWith("data:")) {
+                slideConfig.href = srcAttr;
+              }
+            }
+          } 
+        });
+      
+        lightboxQuarto.on('slide_after_load', (data) => {
+          const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(slideNode);
+          }
+        });
+      
+      };
+      
+    })();
+              </script>
     
 
 </body></html>
