@@ -10,7 +10,7 @@
 - Generates Darwin Core Archive + DNA Extension automatically  
 - Integrates with IPT publishing  
 
-🔗 Available at: [gbif.org/tools/mdt](https://www.gbif.org/tools/mdt)
+🔗 Available at: [mdt.gbif.org](https://mdt.gbif.org/)
 
 ::: {.callout-note}
 Still under active development — check the GBIF documentation for the latest capabilities. Currently not possible to use the event core structure
