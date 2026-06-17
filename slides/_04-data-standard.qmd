@@ -1,0 +1,25 @@
+## The data standard
+
+### Darwin Core + DNA Derived Data Extension
+
+- **Darwin Core**: shared vocabulary for biodiversity data  
+- **DNA Extension**: adds MIxS terms for sequences, primers, methods  
+- Developed jointly by GBIF, OBIS, and the genomics community  
+
+:::: {.columns style="display: flex; height: 90%;"}
+::: {.column width="55%"}
+![](assets/dwca.png)
+::: 
+::: {.column width="45%" style="display: flex; align-items: center;"}
+::: {.bordered-box}
+**meta.xml** ← links all tables  
+**eml.xml** ← metadata (who, what, where, when, how)  
+**occurrence.csv** ← the occurrence records  
+**dna_derived.csv** ← the DNA extension  
+:::
+:::
+:::: 
+
+::: {.notes}
+MIxS = Minimum Information about any (x) Sequence. The extension incorporates these community standards so the same fields used in INSDC/GenBank submissions can be reused here.
+:::

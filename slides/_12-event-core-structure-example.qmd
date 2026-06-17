@@ -1,0 +1,17 @@
+## Example usage of event core structure
+
+:::: {.columns}
+
+::: {.column width="30%"}
+
+- **Why Event Core?** Sample-level metadata (location, date, method) is recorded **once** per sampling event rather than repeated in every row.
+
+:::
+
+::: {.column width="70%"}
+
+![](assets/dna_data_event_core_structure.png){.lightbox fig-align="center" width="50%"}
+
+::: 
+
+::::

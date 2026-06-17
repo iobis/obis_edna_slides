@@ -1,0 +1,21 @@
+---
+
+## The Metabarcoding Data Toolkit (MDT)
+
+**A newer tool to simplify the workflow**
+
+- Developed by GBIF specifically for metabarcoding data  
+- Accepts common pipeline outputs (QIIME2, DADA2, etc.)  
+- Handles the wide-to-long transformation  
+- Generates Darwin Core Archive + DNA Extension automatically  
+- Integrates with IPT publishing  
+
+🔗 Available at: [gbif.org/tools/mdt](https://www.gbif.org/tools/mdt)
+
+::: {.callout-note}
+Still under active development — check the GBIF documentation for the latest capabilities. Currently not possible to use the event core structure
+:::
+
+::: {.notes}
+The MDT is a significant time-saver for complex datasets. It can be used alongside the IPT rather than replacing it — it handles the data formatting step and then hands off to the IPT for publishing.
+:::

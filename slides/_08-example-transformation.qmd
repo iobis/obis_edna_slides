@@ -1,0 +1,7 @@
+## Example transformation
+
+:::: {.columns}
+
+![](assets/DNA_4tables-to-one.jpg){fig-align="center" width="90%"}
+
+::::

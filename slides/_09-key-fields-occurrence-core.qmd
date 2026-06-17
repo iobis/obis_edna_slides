@@ -1,0 +1,26 @@
+## Key fields to include: Occurrence core
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**Occurrence core table (mandatory fields)**
+
+- `occurrenceID` — <span class="small-note">unique, stable ID</span>
+- `scientificName` — <span class="small-note">WoRMS</span>
+- `basisOfRecord` =  <span class="small-note">"MaterialSample"</span>  
+- `eventDate`, `decimalLatitude`, `decimalLongitude`  
+- `occurrenceStatus` = <span class="small-note">"present"</span>
+::: 
+::: {.column width="50%"}
+**Occurrence core table (strongly recommended fields)**
+
+- `scientificNameID` <span class="small-note">(WoRMS AphiaID)</span>  
+- `organismQuantity` <span class="small-note">(read count of sequence)</span>  
+- `associatedSequences` <span class="small-note">(link to e.g. GenBank or ENA accession)</span> 
+- `organismQuantityType` = <span class="small-note">"DNA sequence reads"</span> 
+ - `sampleSizeValue` <span class="small-note">(total read count in sample)</span>  
+- `sampleSizeUnit` = <span class="small-note">"DNA sequence reads"</span> 
+- `samplingProtocol` - <span class="small-note">(link to your SOP)</span>
+
+:::
+::::

@@ -1,0 +1,28 @@
+## Key fields to include: DNA Extension
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**DNA Extension (example key fields)**
+
+- `DNA_sequence` — <span class="small-note">ASV/OTU sequence</span>
+- `target_gene` — <span class="small-note">e.g. "COI", "18S rRNA"</span>
+- `pcr_primer_name_forward` — <span class="small-note">and reverse</span>
+- `seq_meth` — <span class="small-note">e.g. "Illumina MiSeq"</span>
+- `otu_class_appr` — <span class="small-note">e.g. "DADA2 v1.18"</span>
+- `otu_db` — <span class="small-note">reference database</span>
+- `sop` — <span class="small-note">link to your protocol</span>
+
+:::
+
+::: {.column width="50%"}
+
+![](assets/eDNA_quickguide.png)
+
+:::
+
+::::
+
+::: {.notes}
+WoRMS = World Register of Marine Species. Every marine occurrence should have a WoRMS AphiaID as the taxonID. For freshwater / terrestrial taxa use the appropriate backbone (CoL, etc.). Unidentified sequences should still be included — they can be assigned taxon later.
+:::

@@ -1,0 +1,38 @@
+---
+
+## Summary
+
+:::: {.columns}
+
+::: {.column width="60%"}
+**Three steps to publish your eDNA data:**
+
+1. **Format** — Darwin Core + DNA Derived Data Extension  
+   *Long format: one row = one sequence per sample*
+
+2. **Document** — Complete EML metadata  
+   *Primers, methods, bioinformatics pipeline, license*
+
+3. **Publish** — Through your OBIS node IPT  
+   *Get a DOI. Be cited. Join the global record.*
+
+---
+
+**Start here →** [manual.obis.org/dna_data.html](https://manual.obis.org/dna_data.html)
+:::
+
+::: {.column width="40%"}
+
+### Why it matters
+
+> eDNA captures biodiversity no other method can.  
+> Publishing it in OBIS makes it  
+> **reusable, citable, and permanent.**
+
+:::
+
+::::
+
+::: {.notes}
+Close with energy. Remind the audience that the gap between eDNA data currently in OBIS and what could be there is enormous — their data can meaningfully fill it. If time allows, invite them to share what kind of eDNA data they have and talk about the right category/structure for their case.
+:::

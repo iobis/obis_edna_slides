@@ -1,0 +1,17 @@
+## The DNA publishing guide
+
+*[Publishing DNA-derived data through biodiversity data platforms](https://doi.org/10.35035/DOC-VF1A-NR22)*
+
+
+:::: {.columns}
+
+::: {.column width="75%"}
+![](assets/dna_publishing_guide.png){fig-align="right" width="60%"}
+:::
+
+::: {.column width="25%"}
+![](https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://doi.org/10.35035/DOC-VF1A-NR22){fig-align="center" width="180px"}
+
+:::
+
+::::

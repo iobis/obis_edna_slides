@@ -1,0 +1,23 @@
+---
+
+## Quality control
+
+**Before publishing — check for:**
+
+- ✅ Taxonomy matched to **WoRMS** (AphiaID required for marine taxa)  
+- ✅ Coordinates in decimal degrees, in the ocean  
+- ✅ Dates in ISO 8601 format (YYYY-MM-DD)  
+- ✅ Unique, stable `occurrenceID` and `eventID`  
+- ✅ Table linkages consistent (`eventID`, `occurrenceID`)  
+
+**Tools:**
+
+| Tool | What it checks |
+|---|---|
+| `obistools` (R package) | Taxonomy, geography, required fields |
+| GBIF data validator | Darwin Core Archive structure |
+| WoRMS taxon match | Scientific names → AphiaIDs |
+
+::: {.notes}
+obistools is an R package from OBIS. The GBIF validator is a web-based tool. WoRMS has a batch taxon match tool at marinespecies.org/aphia.php. For unidentified sequences, assign a high-level taxon if possible (e.g., kingdom Animalia) rather than leaving the field empty.
+:::

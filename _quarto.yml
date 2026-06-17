@@ -3,6 +3,7 @@ project:
   output-dir: _site
   resources:
     - assets/
+    - obis_nodes_map.js
 
 license:
   type: "CC BY-NC"
@@ -20,6 +21,7 @@ format:
   revealjs:
     theme: [obis_theme.scss]
     css: [custom.css]
+    lightbox: true
     transition: none
     slide-number: true
     chalkboard: true
