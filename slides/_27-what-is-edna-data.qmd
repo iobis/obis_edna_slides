@@ -1,0 +1,22 @@
+## What is special about eDNA data?
+
+
+**Enormous potential…**
+
+- Expands access to biodiversity data at scale
+- Captures environmental, specimen, and bulk-sample DNA
+- **Raw sequences already widely shared in NCBI**
+
+---
+
+[**…but NCBI alone is not enough**]{style="color:#D94F8A;"}
+
+- Raw sequences cannot be searched by species in time and space
+- No link to spatial coordinates or sampling date
+- Cannot support distribution maps, trend analyses, or MPA assessments
+
+
+
+::: notes
+Raw sequences deposited in NCBI lack coordinates and dates — they cannot answer where or when a species was detected. OBIS, GBIF, and ALA now accept DNA-derived occurrences linked to space and time. DNA data requires special care: it is derived, depends on reference databases, and often produces many unknown sequences. The Darwin Core DNA extension preserves methodological context for future re-analysis.
+:::

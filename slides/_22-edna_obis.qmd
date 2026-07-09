@@ -1,0 +1,11 @@
+## eDNA data in OBIS
+
+![](assets/OBISnumbers202606.png){fig-align="center" width="80%"}
+
+- OBIS currently holds 128 datasets with eDNA-derived occurrences, including 44,5 million records
+- About 2 million distinct sequences
+- That is **2%** of all datasets, but **25%** of all occurrence records in OBIS 
+
+::: {.notes}
+OBIS is endorsed by UNESCO's IOC. Data published there can flow to GBIF as well, giving you double visibility with a single submission. Emphasize that OBIS is not just a repository but actively feeds into global biodiversity assessments, climate analyses, and conservation planning.
+:::

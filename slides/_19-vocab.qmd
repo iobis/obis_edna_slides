@@ -1,0 +1,36 @@
+## Controlled Vocabulary
+
+:::: {.columns}
+
+::: {.column width="40%"}
+Identifiers for each eMoF column
+
+* measurementUnitID
+* measurementValueID
+    * non-numeric values
+* measurementTypeID
+
+→ Facilitates data understanding
+
+→ Enables data aggregation
+
+→ Decreases **misuse potential**
+:::
+
+::: {.column width="60%"}
+
+**What should vocabulary terms capture?**
+![](/assets/vocab-components.png)
+
+::: {.bordered-box}
+*OBIS recommends using NERC vocabulary terms*
+:::
+::: 
+
+::::
+::: {.notes}
+Emof lets you attach vocabulary identifiers to each of the emof columns. This makes our measurement data are more easily comparable and interoperable, more easily aggregated for analysis, and can decrease misuse potential!
+
+When selecting a vocab it’s important to think about what information needs to be included in the definition for the users to understand your measurement so you should consider the property/attribute (e.g. length, concentration), what’s the object/entity of interest (a organism, a chemical), whether enviro context is important, and whether a user needs to know the methods used to properly understand the measurement
+OBIS recommends the NERC vocabular collection and the OBIS manual has much more detail on controlled vocabulary
+:::

@@ -1,0 +1,42 @@
+## WoRMS Taxon Matching
+
+::: {.columns}
+::: {.column width="45%"}
+Options for taxon matching:
+
+* [WoRMS Taxon Match Tool](https://www.marinespecies.org/aphia.php?p=match)
+* Programmatically:
+    * [obistools](https://iobis.github.io/obistools/#taxon-matching)::match_taxa
+    * [worrms](https://docs.ropensci.org/worrms/reference/wm_records_taxamatch.html)::wm_records_taxamatch
+    * [pyworms](https://github.com/iobis/pyworms)
+
+:::
+
+::: {.column width="55%"}
+
+![](/assets/worms-dropdown.png)
+
+::: 
+::::
+
+::: {.columns}
+::: {.column width="40%"}
+
+::: {.callout-tip}
+## No WoRMS match?
+Use highest-rank taxon with a match (e.g. family or order). Keep the sequence — it can be re-identified later as reference databases improve.
+:::
+
+::: 
+
+::: {.column width="60%"}
+
+::: {.callout-note icon=false}
+## [Still no match?]{style="color:#02C39A"}
+Unknown sequences recorded as: 
+`scientificName` = “Biota incertae sedis”
+`scientificNameID` = urn:lsid:marinespecies.org:taxname:12
+:::
+
+::: 
+::::

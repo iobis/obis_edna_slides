@@ -1,0 +1,63 @@
+## Dataset Structure: Three Linked Tables
+
+:::: {.columns}
+
+::: {.column width="33%"}
+::: {style="color:white; padding:14px; border-radius:8px; height:350px;"}
+**Event Core**
+
+- `eventID`
+- `eventDate`
+- `decimalLatitude`
+- `decimalLongitude`
+- `env_medium`
+- `samplingProtocol`
+
+*→ the where, when & how of collection*
+:::
+:::
+
+::: {.column width="33%"}
+::: {style="color:white; padding:14px; border-radius:8px; height:350px;"}
+**Occurrence Extension**
+
+- `occurrenceID`
+- `eventID`
+- `scientificName`
+- `taxonID` (WoRMS)
+- `basisOfRecord`
+- `occurrenceStatus`
+
+*→ what organism was detected*
+:::
+:::
+
+::: {.column width="33%"}
+::: {style="color:white; padding:14px; border-radius:8px; height:350px;"}
+**DNA Derived Data Ext.**
+
+- `occurrenceID`
+- `DNA_sequence`
+- `target_gene`
+- `pcr_primer_forward`
+- `pcr_primer_reverse`
+- `seq_meth`
+
+*→ the molecular context*
+:::
+:::
+
+::::
+<br>
+
+::: {style="text-align:center; color:#5A8FA8; font-style:italic; margin-top:10px;"}
+Tables linked by `eventID` and `occurrenceID`
+:::
+
+::: {style="text-align:center; color:#5A8FA8; margin-top:10px;"}
+Optional 4th table: **eMoF** for measurements and facts
+:::
+
+::: notes
+Your published dataset consists of up to three linked tables. The Event core captures sampling events — where, when, and how. The Occurrence extension records each taxon detection. The DNA Derived Data extension carries all molecular metadata. The tables are joined by eventID and occurrenceID. This avoids repeating sampling metadata for every sequence.
+:::
