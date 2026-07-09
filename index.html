@@ -13,7 +13,7 @@
   <meta name="generator" content="quarto-1.9.38">
 
   <meta name="author" content="Saara Suominen">
-  <meta name="dcterms.date" content="2026-06-22">
+  <meta name="dcterms.date" content="2026-07-09">
   <title>Publishing eDNA data in OBIS – Publishing eDNA Data in OBIS</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -149,7 +149,7 @@ Saara Suominen
 </div>
 </div>
 
-  <p class="date">2026-06-22</p>
+  <p class="date">2026-07-09</p>
 </section>
 <section id="what-is-obis" class="slide level2 center">
 <h2>What is OBIS?</h2>
@@ -280,6 +280,97 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
 </div></div>
 <aside class="notes">
 <p>Mention the OBIS sequence search prototype at sequence.obis.org — users can search for similar sequences across all OBIS datasets. This is only possible because sequences are published in standardized form.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="what-is-special-about-edna-data" class="slide level2 center">
+<h2>What is special about eDNA data?</h2>
+<p><strong>Enormous potential…</strong></p>
+<ul>
+<li>Expands access to biodiversity data at scale</li>
+<li>Captures environmental, specimen, and bulk-sample DNA</li>
+<li><strong>Raw sequences already widely shared in NCBI</strong></li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<p><span style="color:#D94F8A;"><strong>…but NCBI alone is not enough</strong></span></p>
+<ul>
+<li>Raw sequences cannot be searched by species in time and space</li>
+<li>No link to spatial coordinates or sampling date</li>
+<li>Cannot support distribution maps, trend analyses, or MPA assessments</li>
+</ul>
+<aside class="notes">
+<p>Raw sequences deposited in NCBI lack coordinates and dates — they cannot answer where or when a species was detected. OBIS, GBIF, and ALA now accept DNA-derived occurrences linked to space and time. DNA data requires special care: it is derived, depends on reference databases, and often produces many unknown sequences. The Darwin Core DNA extension preserves methodological context for future re-analysis.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="what-is-special-about-edna-data-1" class="slide level2 center">
+<h2>What is special about eDNA data?</h2>
+<div style="color:white; padding:15px; border-radius:8px;">
+<p><strong>Special considerations</strong></p>
+<p>⚗️ Derived information — not a direct observation; extensive lab and bioinformatic processing</p>
+<p>📚 Relies on reference databases — results depend on database completeness</p>
+<p>❓ Large fraction of unknown sequences — no match in any database</p>
+<p>📋 The DwC DNA Extension records how work was done, enabling future re-analysis</p>
+</div>
+<aside class="notes">
+<p>Raw sequences deposited in NCBI lack coordinates and dates — they cannot answer where or when a species was detected. OBIS, GBIF, and ALA now accept DNA-derived occurrences linked to space and time. DNA data requires special care: it is derived, depends on reference databases, and often produces many unknown sequences. The Darwin Core DNA extension preserves methodological context for future re-analysis.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="edna-data-standards" class="slide level2 center">
+<h2>eDNA data standards</h2>
+<div style="color:white; padding:15px; border-radius:8px;">
+<p><strong>Two major eDNA data standards exist</strong></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ol type="1">
+<li><strong>MiXS</strong> <br> (Minimum Information about any (x) Sequence) — for raw sequences in NCBI</li>
+</ol>
+</div><div class="column" style="width:50%;">
+<ol start="2" type="1">
+<li><strong>Darwin Core (DwC)</strong><br> Community vocabulary for biodiversity data — species, location, date, basis of record</li>
+</ol>
+</div></div>
+</div>
+<div style="text-align:center; color:#065A82; font-weight:bold; font-style:italic; margin-top:10px;">
+<p>OBIS + GBIF + ALA accept genetic data linked to spatial coordinates and time</p>
+</div>
+<p><br> 🔜<strong>Developing landscape</strong></p>
+<ul>
+<li>Rapidly changing field</li>
+<li>For OBIS future directions include the DWC-DP and FAIReDNA terms</li>
+</ul>
+<aside class="notes">
+<p>Raw sequences deposited in NCBI lack coordinates and dates — they cannot answer where or when a species was detected. OBIS, GBIF, and ALA now accept DNA-derived occurrences linked to space and time. DNA data requires special care: it is derived, depends on reference databases, and often produces many unknown sequences. The Darwin Core DNA extension preserves methodological context for future re-analysis.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -491,6 +582,51 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
 </ul>
 </div></div>
 </section>
+<section id="worms-taxon-matching" class="slide level2 center">
+<h2>WoRMS Taxon Matching</h2>
+<div class="columns">
+<div class="column" style="width:45%;">
+<p>Options for taxon matching:</p>
+<ul>
+<li><a href="https://www.marinespecies.org/aphia.php?p=match">WoRMS Taxon Match Tool</a></li>
+<li>Programmatically:
+<ul>
+<li><a href="https://iobis.github.io/obistools/#taxon-matching">obistools</a>::match_taxa</li>
+<li><a href="https://docs.ropensci.org/worrms/reference/wm_records_taxamatch.html">worrms</a>::wm_records_taxamatch</li>
+<li><a href="https://github.com/iobis/pyworms">pyworms</a></li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:55%;">
+<p><a href="./assets/worms-dropdown.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img data-src="./assets/worms-dropdown.png"></a></p>
+</div></div>
+<div class="columns">
+<div class="column" style="width:40%;">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>No WoRMS match?</strong></p>
+</div>
+<div class="callout-content">
+<p>Use highest-rank taxon with a match (e.g.&nbsp;family or order). Keep the sequence — it can be re-identified later as reference databases improve.</p>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:60%;">
+<div class="callout callout-note no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong><span style="color:#02C39A">Still no match?</span></strong></p>
+</div>
+<div class="callout-content">
+<p>Unknown sequences recorded as: <code>scientificName</code> = “Biota incertae sedis” <code>scientificNameID</code> = urn:lsid:marinespecies.org:taxname:12</p>
+</div>
+</div>
+</div>
+</div></div>
+</section>
 <section id="key-fields-to-include-dna-extension" class="slide level2 center">
 <h2>Key fields to include: DNA Extension</h2>
 <div class="columns">
@@ -506,7 +642,7 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
 <li><code>sop</code> — <span class="small-note">link to your protocol</span></li>
 </ul>
 </div><div class="column" style="width:50%;">
-<p><a href="assets/eDNA_quickguide.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img data-src="assets/eDNA_quickguide.png"></a></p>
+<p><a href="assets/eDNA_quickguide.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img data-src="assets/eDNA_quickguide.png"></a></p>
 </div></div>
 <aside class="notes">
 <p>WoRMS = World Register of Marine Species. Every marine occurrence should have a WoRMS AphiaID as the taxonID. For freshwater / terrestrial taxa use the appropriate backbone (CoL, etc.). Unidentified sequences should still be included — they can be assigned taxon later.</p>
@@ -547,6 +683,70 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
           display:block!important;
       }</style></aside>
 </section>
+<section id="dataset-structure-three-linked-tables" class="slide level2 center">
+<h2>Dataset Structure: Three Linked Tables</h2>
+<div class="columns">
+<div class="column" style="width:33%;">
+<div style="color:white; padding:14px; border-radius:8px; height:350px;">
+<p><strong>Event Core</strong></p>
+<ul>
+<li><code>eventID</code></li>
+<li><code>eventDate</code></li>
+<li><code>decimalLatitude</code></li>
+<li><code>decimalLongitude</code></li>
+<li><code>env_medium</code></li>
+<li><code>samplingProtocol</code></li>
+</ul>
+<p><em>→ the where, when &amp; how of collection</em></p>
+</div>
+</div><div class="column" style="width:33%;">
+<div style="color:white; padding:14px; border-radius:8px; height:350px;">
+<p><strong>Occurrence Extension</strong></p>
+<ul>
+<li><code>occurrenceID</code></li>
+<li><code>eventID</code></li>
+<li><code>scientificName</code></li>
+<li><code>taxonID</code> (WoRMS)</li>
+<li><code>basisOfRecord</code></li>
+<li><code>occurrenceStatus</code></li>
+</ul>
+<p><em>→ what organism was detected</em></p>
+</div>
+</div><div class="column" style="width:33%;">
+<div style="color:white; padding:14px; border-radius:8px; height:350px;">
+<p><strong>DNA Derived Data Ext.</strong></p>
+<ul>
+<li><code>occurrenceID</code></li>
+<li><code>DNA_sequence</code></li>
+<li><code>target_gene</code></li>
+<li><code>pcr_primer_forward</code></li>
+<li><code>pcr_primer_reverse</code></li>
+<li><code>seq_meth</code></li>
+</ul>
+<p><em>→ the molecular context</em></p>
+</div>
+</div></div>
+<p><br></p>
+<div style="text-align:center; color:#5A8FA8; font-style:italic; margin-top:10px;">
+<p>Tables linked by <code>eventID</code> and <code>occurrenceID</code></p>
+</div>
+<div style="text-align:center; color:#5A8FA8; margin-top:10px;">
+<p>Optional 4th table: <strong>eMoF</strong> for measurements and facts</p>
+</div>
+<aside class="notes">
+<p>Your published dataset consists of up to three linked tables. The Event core captures sampling events — where, when, and how. The Occurrence extension records each taxon detection. The DNA Derived Data extension carries all molecular metadata. The tables are joined by eventID and occurrenceID. This avoids repeating sampling metadata for every sequence.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
 <section id="example-usage-of-event-core-structure" class="slide level2 center">
 <h2>Example usage of event core structure</h2>
 <div class="columns">
@@ -557,19 +757,172 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
 </div><div class="column" style="width:70%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="assets/dna_data_event_core_structure.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img data-src="assets/dna_data_event_core_structure.png" class="quarto-figure quarto-figure-center" style="width:50.0%"></a></p>
+<p><a href="assets/dna_data_event_core_structure.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img data-src="assets/dna_data_event_core_structure.png" class="quarto-figure quarto-figure-center" style="width:50.0%"></a></p>
 </figure>
 </div>
 </div></div>
+</section>
+<section id="emof-extension" class="slide level2 center">
+<h2>eMoF extension</h2>
+<ul>
+<li>Table to record <strong>all types of measurements</strong> (abiotic, biotic, environmental, sampling…)</li>
+<li>Measurements recorded in long format
+<ul>
+<li><code>measurementType</code>, <code>measurementValue</code>, <code>measurementUnit</code></li>
+</ul></li>
+<li>Linking sampling info to <code>eventID</code>s <strong>decreases duplication</strong></li>
+<li>Use controlled vocabulary whenever possible!</li>
+</ul>
+<table class="caption-top" style="width:100%;">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>eventID</th>
+<th>occurrenceID</th>
+<th>measurementType</th>
+<th>measurementValue</th>
+<th>measurementUnit</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>YEARsite1samp1</td>
+<td></td>
+<td>temperature</td>
+<td>25</td>
+<td>C</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>measurementTypeID</th>
+<th>measurementUnitID</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>http://vocab.nerc.ac.uk/collection/P01/current/TEMPPR01/</td>
+<td>http://vocab.nerc.ac.uk/collection/P06/current/UPAA/</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<aside class="notes">
+<p>As some of us may already be familiar, eMoF is the extension table that holds ALL kinds of measurement or fact data including measurements on organisms, information about the sampling gear used, or environmental variables measured. A reminder that this data is organized in LONG format. All the measurements are organized in rows within the columns measurementType, measurementValue, and measurementUnit</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="controlled-vocabulary" class="slide level2 center">
+<h2>Controlled Vocabulary</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p>Identifiers for each eMoF column</p>
+<ul>
+<li>measurementUnitID</li>
+<li>measurementValueID
+<ul>
+<li>non-numeric values</li>
+</ul></li>
+<li>measurementTypeID</li>
+</ul>
+<p>→ Facilitates data understanding</p>
+<p>→ Enables data aggregation</p>
+<p>→ Decreases <strong>misuse potential</strong></p>
+</div><div class="column" style="width:60%;">
+<p><strong>What should vocabulary terms capture?</strong> <img data-src="./assets/vocab-components.png"></p>
+<div class="bordered-box">
+<p><em>OBIS recommends using NERC vocabulary terms</em></p>
+</div>
+</div></div>
+<aside class="notes">
+<p>Emof lets you attach vocabulary identifiers to each of the emof columns. This makes our measurement data are more easily comparable and interoperable, more easily aggregated for analysis, and can decrease misuse potential!</p>
+<p>When selecting a vocab it’s important to think about what information needs to be included in the definition for the users to understand your measurement so you should consider the property/attribute (e.g.&nbsp;length, concentration), what’s the object/entity of interest (a organism, a chemical), whether enviro context is important, and whether a user needs to know the methods used to properly understand the measurement OBIS recommends the NERC vocabular collection and the OBIS manual has much more detail on controlled vocabulary</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="publishing-workflow" class="slide level2 center">
 <h2>Publishing workflow</h2>
 <p><strong>Integrated Publishing Toolkits (IPT)</strong> are hosted by OBIS nodes — you do not need to run your own server. OBIS has nodes covering most world regions. Find yours at obis.org/nodes.</p>
 <div style="text-align:center;">
-<p><a href="assets/publishing_steps.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img data-src="assets/publishing_steps.png"></a></p>
+<p><a href="assets/publishing_steps.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img data-src="assets/publishing_steps.png"></a></p>
 </div>
 <aside class="notes">
 <p>OBIS has nodes covering most world regions. Find yours at obis.org/nodes. The IPT has a built-in metadata editor for EML so you do not need to write XML by hand. Emphasize that once published, the dataset gets a DOI and can be cited in papers.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="tools-to-help-you" class="slide level2 center">
+<h2>Tools to Help You</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div style="color:white; padding:14px; border-radius:8px; margin-bottom:10px;">
+<p><strong>GBIF Metabarcoding Data Toolkit</strong></p>
+<p>Automates DwC mapping from bioinformatic outputs</p>
+<p><span style="color:#02C39A;">gbif.org/tools/mdt</span></p>
+</div>
+<div style="color:white; padding:14px; border-radius:8px;">
+<p><strong>robis (R package)</strong></p>
+<p>Query OBIS; retrieve DNA records with <code>unnest_extension()</code></p>
+<p><span style="color:#02C39A;">github.com/iobis/robis</span></p>
+</div>
+</div><div class="column" style="width:50%;">
+<div style="color:white; padding:14px; border-radius:8px; margin-bottom:10px;">
+<p><strong>obistools (R package)</strong></p>
+<p>Validation, QC, WoRMS matching, archive structure checks</p>
+<p><span style="color:#02C39A;">github.com/iobis/obistools</span></p>
+</div>
+<div style="color:white; padding:14px; border-radius:8px;">
+<p><strong>OBIS Sequence Search</strong></p>
+<p>BLAST-search sequences already in OBIS (prototype)</p>
+<p><span style="color:#02C39A;">sequence.obis.org</span></p>
+</div>
+</div></div>
+<aside class="notes">
+<p>The GBIF Metabarcoding Data Toolkit takes your bioinformatic outputs and handles much of the Darwin Core mapping. The obistools R package checks coordinates, matches taxa to WoRMS, and verifies archive structure. The robis package lets you query OBIS and access DNA data with unnest_extension. The OBIS Sequence Search prototype lets you BLAST-search sequences already in OBIS.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -725,6 +1078,22 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
           display:block!important;
       }</style></aside>
 </section>
+<section id="obis-dna-data-management-platform" class="slide level2 center">
+<h2>OBIS DNA Data Management Platform</h2>
+<p>🔧 OBIS is developing a data management platform for DNA data including:</p>
+<div class="columns">
+<div class="column" style="width:70%;">
+<ul>
+<li>Bioinformatics</li>
+<li>QC</li>
+<li>Validation</li>
+<li>Publication to OBIS pipeline</li>
+</ul>
+<p>To be offered to OBIS nodes to support local eDNA projects!</p>
+</div><div class="column" style="width:30%;">
+<p><span style="font-size: 5em; cen">🚧</span></p>
+</div></div>
+</section>
 <section id="summary" class="slide level2 center">
 <h2>Summary</h2>
 <div class="columns">
@@ -745,7 +1114,7 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
 <blockquote>
 <p>eDNA captures biodiversity no other method can.<br>
 Publishing it in OBIS makes it<br>
-<strong>reusable, citable, and permanent.</strong></p>
+<strong>reusable, citable, and longlasting.</strong></p>
 </blockquote>
 </div></div>
 <aside class="notes">
