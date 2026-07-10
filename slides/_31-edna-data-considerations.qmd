@@ -1,0 +1,20 @@
+## What is special about eDNA data?
+
+
+::: {style="color:white; padding:15px; border-radius:8px;"}
+**Special considerations**
+
+⚗️ Derived information — not a direct observation; extensive lab and bioinformatic processing
+
+📚 Relies on reference databases — results depend on database completeness
+
+❓ Large fraction of unknown sequences — no match in any database
+
+📋 The DwC DNA Extension records how work was done, enabling future re-analysis
+:::
+
+
+
+::: notes
+Raw sequences deposited in NCBI lack coordinates and dates — they cannot answer where or when a species was detected. OBIS, GBIF, and ALA now accept DNA-derived occurrences linked to space and time. DNA data requires special care: it is derived, depends on reference databases, and often produces many unknown sequences. The Darwin Core DNA extension preserves methodological context for future re-analysis.
+:::

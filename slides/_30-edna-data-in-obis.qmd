@@ -1,0 +1,50 @@
+## eDNA is Already in OBIS — and Being Used
+
+:::: {.columns}
+
+::: {.column width="55%"}
+
+**Real eDNA datasets already published:**
+
+- eDNA surveys from Monterey Bay, California
+- 16S rRNA metabarcoding of pico-to-mesoplankton
+- Fish eDNA surveys across multiple ocean basins
+
+---
+
+**How to find eDNA data in OBIS:**
+
+```r
+library(robis)
+
+# Filter by DNA extension
+occurrence(
+  hasextensions = "DNADerivedData",
+  taxonid = 127160  # e.g. Actinopteri
+)
+```
+
+:::
+
+::: {.column width="45%"}
+
+::: {style="color:white; padding:12px; border-radius:8px; margin-bottom:8px;"}
+Species Distribution Modeling
+:::
+::: {style="color:white; padding:12px; border-radius:8px; margin-bottom:8px;"}
+Biodiversity Assessments
+:::
+::: {style="color:white; padding:12px; border-radius:8px; margin-bottom:8px;"}
+MPA Baseline Studies
+:::
+::: {style="color:white; padding:12px; border-radius:8px;"}
+Global Meta-analyses
+:::
+
+:::
+
+::::
+
+::: notes
+There are already thousands of eDNA-derived occurrence records in OBIS. You can explore them via the OBIS Mapper by filtering for the DNADerivedData extension, or via robis with hasextensions='DNADerivedData'. These datasets are being used for species distribution modeling, biodiversity assessments, and baseline studies for marine protected areas.
+:::

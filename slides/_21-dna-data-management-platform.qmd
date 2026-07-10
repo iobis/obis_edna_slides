@@ -1,0 +1,23 @@
+## OBIS DNA Data Management Platform
+
+🔧 OBIS is developing a data management platform for DNA data including:
+
+::: {.columns}
+::: {.column width="70%"}
+
+* Bioinformatics
+* QC
+* Validation
+* Publication to OBIS pipeline
+
+
+To be offered to OBIS nodes to support local eDNA projects!
+:::
+
+
+::: {.column width="30%"}
+
+<span style="font-size: 5em; cen">🚧</span>
+::: 
+
+::::

@@ -1,0 +1,45 @@
+## Tools to Help You
+
+:::: {.columns}
+
+::: {.column width="50%"}
+::: {style="color:white; padding:14px; border-radius:8px; margin-bottom:10px;"}
+**GBIF Metabarcoding Data Toolkit**
+
+Automates DwC mapping from bioinformatic outputs
+
+[gbif.org/tools/mdt]{style="color:#02C39A;"}
+:::
+
+::: {style="color:white; padding:14px; border-radius:8px;"}
+**robis (R package)**
+
+Query OBIS; retrieve DNA records with `unnest_extension()`
+
+[github.com/iobis/robis]{style="color:#02C39A;"}
+:::
+:::
+
+::: {.column width="50%"}
+::: {style="color:white; padding:14px; border-radius:8px; margin-bottom:10px;"}
+**obistools (R package)**
+
+Validation, QC, WoRMS matching, archive structure checks
+
+[github.com/iobis/obistools]{style="color:#02C39A;"}
+:::
+
+::: {style="color:white; padding:14px; border-radius:8px;"}
+**OBIS Sequence Search**
+
+BLAST-search sequences already in OBIS (prototype)
+
+[sequence.obis.org]{style="color:#02C39A;"}
+:::
+:::
+
+::::
+
+::: notes
+The GBIF Metabarcoding Data Toolkit takes your bioinformatic outputs and handles much of the Darwin Core mapping. The obistools R package checks coordinates, matches taxa to WoRMS, and verifies archive structure. The robis package lets you query OBIS and access DNA data with unnest_extension. The OBIS Sequence Search prototype lets you BLAST-search sequences already in OBIS.
+:::
