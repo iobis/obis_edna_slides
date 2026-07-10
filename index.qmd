@@ -9,6 +9,8 @@ date: today
 
 {{< include slides/_02-mature-global-community.qmd >}}
 
+{{< include slides/_22-edna_obis.qmd >}}
+
 {{< include slides/_03-why-publish-edna.qmd >}}
 
 {{< include slides/_27-what-is-edna-data.qmd >}}
@@ -50,7 +52,6 @@ date: today
 {{< include slides/_14-metabarcoding-data-toolkit.qmd >}}
 
 {{< include slides/_15-quality-control.qmd >}}
-
 
 {{< include slides/_16-resources-community.qmd >}}
 
