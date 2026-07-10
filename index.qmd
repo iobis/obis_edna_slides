@@ -1,7 +1,7 @@
 ---
 title: "Publishing eDNA Data in OBIS"
 subtitle: "From sequences to a global open biodiversity record"
-author: "Saara Suominen"
+author: "Saara Suominen, Stephen Formel, Elizabeth Lawrence, Emilie Boulanger"
 date: today
 ---
 
