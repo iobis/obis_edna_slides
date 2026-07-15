@@ -3,7 +3,7 @@ name: Deploy Quarto Reveal.js Slides
 on:
   push:
     branches:
-      - master
+      - main
   workflow_dispatch:
 
 permissions:

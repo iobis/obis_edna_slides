@@ -20,6 +20,10 @@ website:
 format:
   revealjs:
     theme: [obis_theme.scss]
+    title-slide-attributes:
+      data-background-image: /assets/background-shapes.svg
+      data-background-size: contain
+      data-background-opacity: "0.2"
     css: [custom.css]
     lightbox: true
     transition: none

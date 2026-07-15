@@ -17,20 +17,20 @@ $presentation-font: 'Noto Sans', sans-serif;
 /*-- scss:rules --*/
 
 // ===== BACKGROUND SHAPES =====
-.reveal .slides::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('/assets/background-shapes.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0.2;
-  pointer-events: none;
-  z-index: -1;
-}
+// .reveal .slides::before {
+//   content: '';
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background-image: url('/assets/background-shapes.svg');
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   opacity: 0.2;
+//   pointer-events: none;
+//   z-index: -1;
+// }
 
 
 // Title slide (h1)

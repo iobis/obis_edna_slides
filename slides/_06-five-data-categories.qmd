@@ -13,5 +13,5 @@ Which one fits your data?
 🔎 Use the [GBIF decision tree](https://docs.gbif.org/publishing-dna-derived-data/1.0/en/#data-packaging-and-mapping) to confirm your category
 
 ::: {.notes}
-Categories 1 and 3 are by far the most common for eDNA researchers. Category 1 covers metabarcoding; Category 3 covers targeted detection methods like qPCR/ddPCR where no sequences are produced.
+We won't go into details on this slide - just reiterating that Categories 1 and 3 are by far the most common for eDNA researchers. Category 1 covers metabarcoding; Category 3 covers targeted detection methods like qPCR/ddPCR where no sequences are produced. Be aware that there are other possible types but they are outside the scope of this workshop.
 :::

@@ -1,0 +1,46 @@
+## Key Metadata: Quantitative PCR (qPCR)
+
+[Targeted species detection — additional fields vs metabarcoding · Category 3]{style="color:#E8A020; font-style:italic;"}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+::: {style="color:white; padding:12px; border-radius:8px; margin-bottom:8px;"}
+⛵ **Field Sampling**
+
+- Date, Coordinates, Environmental measurements
+:::
+
+::: {style="color:white; padding:12px; border-radius:8px;"}
+🧪 **PCR Protocol**
+
+- PCR conditions
+
+:::
+:::
+
+::: {.column width="50%"}
+::: {style="color:white; padding:12px; border-radius:8px; margin-bottom:8px;"}
+🧬 **DNA Extraction**
+
+- Concentration, Extraction method, Extracted amount
+:::
+
+::: {style="color:white; padding:12px; border-radius:8px;"}
+🎯 **Target & Quantity**
+
+- Target gene region, primers
+- Copy number, concentaration, LOD, Cq, baseline
+
+:::
+:::
+
+::::
+
+::: {style="font-size:0.65em; color:#5A8FA8; text-align:center; margin-top:6px;"}
+*Category 3 — Targeted species detection · `basisOfRecord = MaterialSample`*
+:::
+
+::: notes
+qPCR = Category 3 — targeted species detection. Adds qPCR-specific fields: probeReporter, probeQuencher, estimatedNumberOfCopies, thresholdQuantificationCycle, and baselineValue. Key difference from metabarcoding: you are detecting one specific taxon, so scientificName and scientificNameID are required from the start. Use basisOfRecord = MaterialSample.
+:::

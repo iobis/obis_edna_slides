@@ -1,6 +1,4 @@
-## The data standard
-
-### Darwin Core + DNA Derived Data Extension
+## Darwin Core + DNA Derived Data Extension
 
 - **Darwin Core**: shared vocabulary for biodiversity data  
 - **DNA Extension**: adds MIxS terms for sequences, primers, methods  

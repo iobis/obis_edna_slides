@@ -5,6 +5,7 @@
 | Resource | Link |
 |---|---|
 | OBIS Manual (DNA chapter) | [manual.obis.org/dna_data.html](https://manual.obis.org/dna_data.html) |
+| OBIS DNA training slides (this presentation!) | [github.com/iobis/obis_edna_slides](https://github.com/iobis/obis_edna_slides) |
 | GBIF DNA publishing guide | [doi.org/10.35035/DOC-VF1A-NR22](https://doi.org/10.35035/DOC-VF1A-NR22) |
 | OBON 2024 DNA training | [github.com/iobis/obon-2024-dna-training](https://github.com/iobis/obon-2024-dna-training) |
 | IOOS Bio Mobilization Workshop | [ioos.github.io/bio_mobilization_workshop](https://ioos.github.io/bio_mobilization_workshop) |

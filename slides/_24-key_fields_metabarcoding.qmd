@@ -1,0 +1,40 @@
+## Key Metadata: eDNA Metabarcoding
+
+*From field collection to taxonomy — what to capture at each step*
+
+:::: {.columns}
+
+::: {.column width="50%"}
+::: {style="color:white; padding:12px; border-radius:8px; margin-bottom:8px;"}
+⛵ **Field Sampling**
+
+- Date, Coordinates, Environmental measurements
+:::
+
+::: {style="color:white; padding:12px; border-radius:8px;"}
+🧪 **Biomarker / PCR**
+
+- Primer sequence, primer reference, target gene, PCR conditions, length of product, concentration, 
+:::
+:::
+
+::: {.column width="50%"}
+::: {style="color:white; padding:12px; border-radius:8px; margin-bottom:8px;"}
+🧬 **DNA Extraction**
+
+- Concentration, Extraction method, Extracted amount
+:::
+
+::: {style="color:white; padding:12px; border-radius:8px;"}
+💻 **Sequences & Taxonomy**
+
+- Sequencing platform, Library layout, Public repositry ID (NCBI, ENA)
+- Taxonomy, annotation confidence and reference, Pipeline, Reference library
+:::
+:::
+
+::::
+
+::: notes
+At field sampling: map to eventID, decimalLatitude/Longitude, samplingProtocol, Env_broad_scale. At DNA extraction: Concentration and ratioOfAbsorbance fields. At PCR stage: target_gene, pcr_primer_forward/reverse, pcr_cond. At sequences/taxonomy: seq_meth, DNA_sequence, scientificName, taxonID, otu_db.
+:::

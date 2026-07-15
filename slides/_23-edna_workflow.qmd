@@ -1,0 +1,12 @@
+## The eDNA Metabarcoding Workflow
+
+![](assets/ednaworkflow.png){fig-align="center" width="80%"}
+
+
+::: {style="font-size:0.6em; color:#5A8FA8; text-align:center; margin-top:8px;"}
+*Figure adapted from NatureMetrics and Gill et al. 2016 · Emilie Boulanger*
+:::
+
+::: notes
+The metabarcoding workflow has six main stages. 1 — Sample collection. 2 — DNA extraction and PCR amplification with specific primers. 3 — High-throughput sequencing generating millions of reads simultaneously. 4 — Bioinformatic treatment: quality filtering and OTU/ASV clustering. 5 — Taxonomic assignment against reference databases. 6 — Ecological analyses producing a presence/absence or abundance matrix across samples.
+:::

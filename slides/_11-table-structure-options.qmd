@@ -1,18 +1,24 @@
 ## Table structure options
 
-### Option A — Occurrence Core
+**Option A — Occurrence Core**
 
-occurrence.csv ←→ dna_derived.csv  
-(linked via occurrenceID)
+```
+occurrence.csv 
+  └── dna_derived.csv  (linked via occurrenceID)
+  └── emof.csv         (linked via occurrenceID)
+```
 
-<br>
+<hr>
 
-### Option B — Event Core (recommended for eDNA)
+**Option B — Event Core (recommended for eDNA)**
 
 
-event.csv  
-  └── occurrence.csv    (linked via eventID)  
-       └── dna_derived.csv  (linked via occurrenceID)  
+```
+event.csv
+  └── occurrence.csv        (linked via eventID)
+       └── dna_derived.csv  (linked via occurrenceID)
+  └── emof.csv              (linked via eventID or occurrenceID)
+```
 
 
 **Why Event Core?** Sample-level metadata (location, date, method) is recorded **once** per sampling event rather than repeated in every row.
