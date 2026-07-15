@@ -12,8 +12,8 @@
 <link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.9.38">
 
-  <meta name="author" content="Saara Suominen, Stephen Formel, Elizabeth Lawrence, Emilie Boulanger">
-  <meta name="dcterms.date" content="2026-07-10">
+  <meta name="author" content="Saara Suominen">
+  <meta name="dcterms.date" content="2026-07-15">
   <title>Publishing eDNA data in OBIS – Publishing eDNA Data in OBIS</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -36,7 +36,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-2c571535081efe4aded98407bafecb82.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-c27465fd3e77affc975331b6717d4622.css">
   <link rel="stylesheet" href="custom.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -137,19 +137,19 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" class="quarto-title-block center">
+<section id="title-slide" data-background-image="./assets/background-shapes.svg" data-background-opacity="0.2" data-background-size="contain" class="quarto-title-block center">
   <h1 class="title">Publishing eDNA Data in OBIS</h1>
   <p class="subtitle">From sequences to a global open biodiversity record</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Saara Suominen, Stephen Formel, Elizabeth Lawrence, Emilie Boulanger 
+Saara Suominen 
 </div>
 </div>
 </div>
 
-  <p class="date">2026-07-10</p>
+  <p class="date">2026-07-15</p>
 </section>
 <section id="what-is-obis" class="slide level2 center">
 <h2>What is OBIS?</h2>
@@ -210,32 +210,6 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
 <p>Recognition: CBD COP16 recognized OBIS, GOOS, and ODIS as ocean components of the Global Biodiversity Observing System.</p>
 <p>OBIS is listed in KMGBF Targets 20 and 21.</p>
 <p>OBIS data supports: IPBES Global Assessment, UN World Ocean Assessments, UNESCO IOC Global HAB reports, State of the Ocean reports, TWAP Open Ocean component (UNEP), and CBD EBSA.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="edna-data-in-obis" class="slide level2 center">
-<h2>eDNA data in OBIS</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><a href="assets/OBISnumbers202606.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img data-src="assets/OBISnumbers202606.png" class="quarto-figure quarto-figure-center" style="width:80.0%"></a></p>
-</figure>
-</div>
-<ul>
-<li>OBIS currently holds 128 datasets with eDNA-derived occurrences, including 44,5 million records</li>
-<li>About 2 million distinct sequences</li>
-<li>That is <strong>2%</strong> of all datasets, but <strong>25%</strong> of all occurrence records in OBIS</li>
-</ul>
-<aside class="notes">
-<p>OBIS is endorsed by UNESCO’s IOC. Data published there can flow to GBIF as well, giving you double visibility with a single submission. Emphasize that OBIS is not just a repository but actively feeds into global biodiversity assessments, climate analyses, and conservation planning.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -409,9 +383,8 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
           display:block!important;
       }</style></aside>
 </section>
-<section id="the-data-standard" class="slide level2 center">
-<h2>The data standard</h2>
-<h3 id="darwin-core-dna-derived-data-extension">Darwin Core + DNA Derived Data Extension</h3>
+<section id="darwin-core-dna-derived-data-extension" class="slide level2 center">
+<h2>Darwin Core + DNA Derived Data Extension</h2>
 <ul>
 <li><strong>Darwin Core</strong>: shared vocabulary for biodiversity data<br>
 </li>
@@ -421,7 +394,7 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
 </ul>
 <div class="columns" style="display: flex; height: 90%;">
 <div class="column" style="width:55%;">
-<p><a href="assets/dwca.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img data-src="assets/dwca.png"></a></p>
+<p><a href="assets/dwca.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img data-src="assets/dwca.png"></a></p>
 </div><div class="column" style="display: flex; align-items: center;">
 <div class="bordered-box">
 <p><strong>meta.xml</strong> ← links all tables<br>
@@ -451,13 +424,13 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
 <div class="column" style="width:75%;">
 <div class="quarto-figure quarto-figure-right">
 <figure>
-<p><a href="assets/dna_publishing_guide.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img data-src="assets/dna_publishing_guide.png" class="quarto-figure quarto-figure-right" style="width:60.0%"></a></p>
+<p><a href="assets/dna_publishing_guide.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img data-src="assets/dna_publishing_guide.png" class="quarto-figure quarto-figure-right" style="width:60.0%"></a></p>
 </figure>
 </div>
 </div><div class="column" style="width:25%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="https://api.qrserver.com/v1/create-qr-code/?size=200x200&amp;data=https://doi.org/10.35035/DOC-VF1A-NR22.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img data-src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&amp;data=https://doi.org/10.35035/DOC-VF1A-NR22.png" class="quarto-figure quarto-figure-center" width="180"></a></p>
+<p><a href="https://api.qrserver.com/v1/create-qr-code/?size=200x200&amp;data=https://doi.org/10.35035/DOC-VF1A-NR22.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img data-src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&amp;data=https://doi.org/10.35035/DOC-VF1A-NR22.png" class="quarto-figure quarto-figure-center" width="180"></a></p>
 </figure>
 </div>
 </div></div>
@@ -508,7 +481,7 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
 </table>
 <p>🔎 Use the <a href="https://docs.gbif.org/publishing-dna-derived-data/1.0/en/#data-packaging-and-mapping">GBIF decision tree</a> to confirm your category</p>
 <aside class="notes">
-<p>Categories 1 and 3 are by far the most common for eDNA researchers. Category 1 covers metabarcoding; Category 3 covers targeted detection methods like qPCR/ddPCR where no sequences are produced.</p>
+<p>We won’t go into details on this slide - just reiterating that Categories 1 and 3 are by far the most common for eDNA researchers. Category 1 covers metabarcoding; Category 3 covers targeted detection methods like qPCR/ddPCR where no sequences are produced. Be aware that there are other possible types but they are outside the scope of this workshop.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -523,6 +496,7 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
 </section>
 <section id="from-raw-outputs-long-format" class="slide level2 center">
 <h2>From raw outputs → long format</h2>
+<p><strong>DNA data is more complex than a lat/lon + species name</strong></p>
 <p><strong>Your typical metabarcoding outputs:</strong></p>
 <table class="caption-top">
 <thead>
@@ -573,7 +547,7 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
 <div class="columns">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="assets/DNA_4tables-to-one.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img data-src="assets/DNA_4tables-to-one.jpg" class="quarto-figure quarto-figure-center" style="width:90.0%"></a></p>
+<p><a href="assets/DNA_4tables-to-one.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img data-src="assets/DNA_4tables-to-one.jpg" class="quarto-figure quarto-figure-center" style="width:90.0%"></a></p>
 </figure>
 </div>
 </div>
@@ -623,7 +597,7 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
 </ul></li>
 </ul>
 </div><div class="column" style="width:55%;">
-<p><a href="./assets/worms-dropdown.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img data-src="./assets/worms-dropdown.png"></a></p>
+<p><a href="./assets/worms-dropdown.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img data-src="./assets/worms-dropdown.png"></a></p>
 </div></div>
 <div class="columns">
 <div class="column" style="width:40%;">
@@ -668,7 +642,7 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
 <li><code>sop</code> — <span class="small-note">link to your protocol</span></li>
 </ul>
 </div><div class="column" style="width:50%;">
-<p><a href="assets/eDNA_quickguide.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img data-src="assets/eDNA_quickguide.png"></a></p>
+<p><img data-src="assets/eDNA_quickguide.png"> <span style="font-size:15px;">https://manual.obis.org/dna_data.html#quick-start-guide</span></p>
 </div></div>
 <aside class="notes">
 <p>WoRMS = World Register of Marine Species. Every marine occurrence should have a WoRMS AphiaID as the taxonID. For freshwater / terrestrial taxa use the appropriate backbone (CoL, etc.). Unidentified sequences should still be included — they can be assigned taxon later.</p>
@@ -686,14 +660,16 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
 </section>
 <section id="table-structure-options" class="slide level2 center">
 <h2>Table structure options</h2>
-<h3 id="option-a-occurrence-core">Option A — Occurrence Core</h3>
-<p>occurrence.csv ←→ dna_derived.csv<br>
-(linked via occurrenceID)</p>
-<p><br></p>
-<h3 id="option-b-event-core-recommended-for-edna">Option B — Event Core (recommended for eDNA)</h3>
-<p>event.csv<br>
-└── occurrence.csv (linked via eventID)<br>
-└── dna_derived.csv (linked via occurrenceID)</p>
+<p><strong>Option A — Occurrence Core</strong></p>
+<pre><code>occurrence.csv 
+  └── dna_derived.csv  (linked via occurrenceID)
+  └── emof.csv         (linked via occurrenceID)</code></pre>
+<hr>
+<p><strong>Option B — Event Core (recommended for eDNA)</strong></p>
+<pre><code>event.csv
+  └── occurrence.csv        (linked via eventID)
+       └── dna_derived.csv  (linked via occurrenceID)
+  └── emof.csv              (linked via eventID or occurrenceID)</code></pre>
 <p><strong>Why Event Core?</strong> Sample-level metadata (location, date, method) is recorded <strong>once</strong> per sampling event rather than repeated in every row.</p>
 <aside class="notes">
 <p>For a survey with 500 samples × 2000 ASVs = 1M rows, repeating location and date for every row is wasteful and error-prone. The Event Core avoids this. A new GBIF/OBIS data model is under development that will be even more flexible but is not yet implemented (as of 2025).</p>
@@ -774,7 +750,7 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
       }</style></aside>
 </section>
 <section id="example-usage-of-event-core-structure" class="slide level2 center">
-<h2>Example usage of event core structure</h2>
+<h2>Example usage of Event core structure</h2>
 <div class="columns">
 <div class="column" style="width:30%;">
 <ul>
@@ -783,7 +759,7 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
 </div><div class="column" style="width:70%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="assets/dna_data_event_core_structure.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img data-src="assets/dna_data_event_core_structure.png" class="quarto-figure quarto-figure-center" style="width:50.0%"></a></p>
+<p><a href="assets/dna_data_event_core_structure.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img data-src="assets/dna_data_event_core_structure.png" class="quarto-figure quarto-figure-center" style="width:50.0%"></a></p>
 </figure>
 </div>
 </div></div>
@@ -905,7 +881,7 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
 <h2>Publishing workflow</h2>
 <p><strong>Integrated Publishing Toolkits (IPT)</strong> are hosted by OBIS nodes — you do not need to run your own server. OBIS has nodes covering most world regions. Find yours at obis.org/nodes.</p>
 <div style="text-align:center;">
-<p><a href="assets/publishing_steps.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10"><img data-src="assets/publishing_steps.png"></a></p>
+<p><a href="assets/publishing_steps.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img data-src="assets/publishing_steps.png"></a></p>
 </div>
 <aside class="notes">
 <p>OBIS has nodes covering most world regions. Find yours at obis.org/nodes. The IPT has a built-in metadata editor for EML so you do not need to write XML by hand. Emphasize that once published, the dataset gets a DOI and can be cited in papers.</p>
@@ -1069,22 +1045,26 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
 <td><a href="https://manual.obis.org/dna_data.html">manual.obis.org/dna_data.html</a></td>
 </tr>
 <tr class="even">
+<td>OBIS DNA training slides (this presentation!)</td>
+<td><a href="https://github.com/iobis/obis_edna_slides">github.com/iobis/obis_edna_slides</a></td>
+</tr>
+<tr class="odd">
 <td>GBIF DNA publishing guide</td>
 <td><a href="https://doi.org/10.35035/DOC-VF1A-NR22">doi.org/10.35035/DOC-VF1A-NR22</a></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>OBON 2024 DNA training</td>
 <td><a href="https://github.com/iobis/obon-2024-dna-training">github.com/iobis/obon-2024-dna-training</a></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>IOOS Bio Mobilization Workshop</td>
 <td><a href="https://ioos.github.io/bio_mobilization_workshop">ioos.github.io/bio_mobilization_workshop</a></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>GBIF-NA DNA Publishing Workshop</td>
 <td><a href="https://sunray1.github.io/2025-05-09-GBIF-NA-DNAPublishing">sunray1.github.io/2025-05-09-GBIF-NA-DNAPublishing</a></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>OBIS helpdesk</td>
 <td>helpdesk@obis.org</td>
 </tr>
@@ -1140,7 +1120,7 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
 <blockquote>
 <p>eDNA captures biodiversity no other method can.<br>
 Publishing it in OBIS makes it<br>
-<strong>reusable, citable, and longlasting.</strong></p>
+<strong>reusable, citable, and permanent.</strong></p>
 </blockquote>
 </div></div>
 <aside class="notes">

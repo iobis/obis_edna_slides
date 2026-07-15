@@ -2,7 +2,7 @@
 
 #title-slide::after {
   white-space: pre;
-  content: "OBON workshop on eDNA data management and publishing";
+  content: "OBIS training on eDNA data management and publishing";
 }
 
 /* adjust date size */
@@ -55,6 +55,10 @@
   background-color: #f8f9fa;
 }
 
+/* make code block text a bit bigger */
+.reveal pre{
+  font-size: 1.5em;
+}
 
 /* Reserve room for the footer on every slide */
 .reveal .slides section {
@@ -86,9 +90,9 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('assets/background-shapes.svg');
+  /* background-image: url('assets/background-shapes.svg');
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   opacity: 0.2;
   pointer-events: none;
   z-index: -1;
