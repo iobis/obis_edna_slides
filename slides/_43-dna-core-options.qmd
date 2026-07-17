@@ -1,0 +1,15 @@
+## Core table for DNA data
+
+DNA data can be published with **either** core type:
+
+- **Occurrence core** + DNA extension
+- **Event core** + Occurrence extension + DNA extension
+
+::: {.callout-note icon=false}
+## This wasn't always true
+Previously guidance required **Occurrence core only** for DNA data. Event core support was added recently!
+:::
+
+::: {.notes}
+Both options link the DNA extension via occurrenceID. Event core additionally lets you record sample-level metadata (location, date, method) once per event instead of once per sequence — see the next slide for why that matters at scale. A caveat worth mentioning live: even with Event core, some duplication is unavoidable because of the star schema (DNA extension still needs occurrenceID, so each occurrence still carries a full sequence/sample link). A newer GBIF/OBIS data model in development aims to remove this constraint entirely, but it isn't implemented yet (as of late 2025).
+:::

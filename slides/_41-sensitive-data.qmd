@@ -1,0 +1,28 @@
+## A note on sensitive data
+
+:::: {.columns}
+::: {.column width="60%"}
+**Common cases:**
+
+- Endangered or commonly poached species locations
+- Species/locations with economic sensitivity
+
+**Options → you don't have to choose between "share *everything*" or "share *nothing*":**
+
+- **Generalize location** - provide a region or polygon (`footprintWKT`) instead of an exact point
+- **Delay publication** - prepare to publish but set an embargo for later
+- **Generalize taxonomic name** - provide a higher taxon name
+:::
+
+::: {.column width="40%"}
+![](assets/polygon-wkt.png)
+:::
+::::
+
+*Note: Generalizations should be documented alongside your data!*
+*See [OBIS Manual](https://manual.obis.org/contribute.html#how-to-handle-sensitive-data) & [GBIF Guide](https://docs.gbif.org/sensitive-species-best-practices/master/en/) for more details*
+
+::: {.notes}
+Sensitivity is not a reason to skip publishing. There's a spectrum of options short of full open release. GBIF also has a good best-practices doc on generalizing sensitive species data if anyone wants to go deeper (Chapman 2020, GBIF Secretariat).
+There are tools for generalizing locations (OBIS Map Tool, Marine Regions Gazetteer) in the OBIS manual + GBIF guide
+:::

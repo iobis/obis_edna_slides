@@ -1,0 +1,31 @@
+## eDNA Metabarcoding: Key Information
+
+*Category 1 — DNA-derived occurrences — `basisOfRecord = MaterialSample`*
+
+[From field collection to taxonomy — what to capture at each step]{style="color:#E8A020; font-style:italic;"}
+
+:::: {.columns}
+::: {.column width="50%"}
+Step 1:⛵ **Field Sampling**
+
+- Date
+- Coordinates
+- Environmental measurements (temperature, salinity, depth...)
+- Sampling method / gear
+- Sample volume
+:::
+
+::: {.column width="50%"}
+**Maps to:**
+
+- `eventDate`,
+- `decimalLatitude`, `decimalLongitude`,
+- eMoF table → `measuremntType`, `measuremntValue`, `measuremntUnit`
+- `samplingProtocol` / eMoF table
+- `samp_size` (DNA table)
+:::
+::::
+
+::: {.notes}
+This is where the Event core table gets populated. Environmental measurements that aren't DNA-specific (e.g. temperature, salinity) go in eMoF rather than the DNA extension — worth a quick reminder here since people sometimes want to cram everything into one table.
+:::

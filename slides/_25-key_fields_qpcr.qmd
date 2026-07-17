@@ -1,6 +1,6 @@
 ## Key Metadata: Quantitative PCR (qPCR)
 
-[Targeted species detection — additional fields vs metabarcoding · Category 3]{style="color:#E8A020; font-style:italic;"}
+[Targeted species detection — additional fields vs metabarcoding]{style="color:#E8A020; font-style:italic;"}
 
 :::: {.columns}
 

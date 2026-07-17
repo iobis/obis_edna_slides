@@ -1,0 +1,26 @@
+## What is Darwin Core?
+
+:::: {.columns}
+::: {.column width="60%"}
+- Stable, shared **vocabulary** for biodiversity data 
+    - Standardized field names, identifiers, & definitions
+- Maintained by **TDWG**, used by OBIS, GBIF, and the wider biodiversity community
+- Not a database itself - a set of agreed-upon **terms** (e.g. `scientificName`, `eventDate`, `decimalLatitude`)
+:::
+
+
+::: {.column width="40%"}
+![](assets/DarwinCore-TDWG-logo.png){fig-align="center" width="70%"}
+:::
+::::
+
+
+::: {.bordered-box}
+Think of it as everyone agreeing to call the same column the same thing - so your data and someone else's can sit in the same table! 
+
+<div style="text-align: center; font-size: 3em;">🤝</div>
+:::
+
+::: {.notes}
+For folks who've never touched DwC: it's just a controlled list of column names and what they mean, nothing more mystical than that. For the DwC veterans in the room, this is review — we're about to build on this with how those terms get organized into tables (next slide), which matters a lot once we get into DNA data this afternoon/tomorrow.
+:::

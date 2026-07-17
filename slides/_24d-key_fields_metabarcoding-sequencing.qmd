@@ -1,0 +1,29 @@
+## eDNA Metabarcoding: Key Information
+
+*Category 1 — DNA-derived occurrences — `basisOfRecord = MaterialSample`*
+
+[From field collection to taxonomy — what to capture at each step]{style="color:#E8A020; font-style:italic;"}
+
+::::: {.columns}
+::: {.column width="50%"}
+Step 4: 💻 **Sequences & Taxonomy**
+
+- Sequencing platform + library layout
+- Sequences + Public repository (NCBI, ENA)
+- Taxonomy assignment + annotation confidence
+- Reference database + pipeline used
+:::
+
+::: {.column width="50%"}
+**Maps to:** 
+
+- `seq_meth` + `lib_layout`,
+- `DNA_sequence` + `associatedSequences` (Occurence table)
+- `scientificName`, `taxonID` (Occurrence table) + `annot`
+- `otu_db` + `sop`
+:::
+::::
+
+::: {.notes}
+This is the last step before formatting — everything captured across the last 3 slides plus this one feeds into either the Occurrence table or the DNA extension. Reference database + pipeline (e.g. "DADA2 v1.18" + "SILVA 138") matter a lot for reproducibility since taxonomy assignments can shift as databases update — this is what otu_class_appr and otu_db are for.
+:::

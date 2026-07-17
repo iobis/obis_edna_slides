@@ -1,0 +1,23 @@
+## What makes data FAIR?
+
+:::: {.columns}
+::: {.column width="30%"}
+
+![](assets/FAIR-graphic.png)
+:::
+
+
+::: {.column width="70%" style=padding-top:"6%;"}
+
+* **[Descriptive metadata]{style="color:#0F9ED5;"}** with stable links (e.g. DOI)
+* Clear **[instructions]{style="color:#0F9ED5;"}** on how to access
+    * Not just “available upon request”
+* Easily **[combined]{style="color:#0F9ED5;"}** with other datasets & **[machine readable]{style="color:#0F9ED5;"}**
+* Metadata enables **[replication]{style="color:#0F9ED5;"}**
+    * Data is contextualized
+:::
+::::
+
+::: {.notes}
+FAIR = Findable, Accessible, Interoperable, Reusable (Wilkinson et al. 2016). This is the "why" before we get into the "how" (Darwin Core, EOVs, sensitive data). Keep this fast — most people have heard of FAIR before, this is just to ground the rest of the day in *why* we bother standardizing data at all. We'll come back to F/A/I/R specifically in terms of what OBIS gives you on the next slide.
+:::

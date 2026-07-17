@@ -1,0 +1,20 @@
+## Core & Extension tables
+
+
+:::: {.columns}
+::: {.column width="65%"}
+- Every Darwin Core Archive has **one core table**: either **Event** or **Occurrence**
+- Plus zero, one, or more **extension** tables (eMoF, DNA extension...)
+- Extensions link back to the core via an ID
+:::
+
+::: {.column width="35%"}
+![](assets/DataTables_dots.png){fig-align="center"}
+:::
+::::
+
+![](assets/coretable-identifiers.jpg){fig-align="center" width="60%"}
+
+::: {.notes}
+This is the exact structure we'll use for DNA-derived data later — so if this clicks now, the DNA session will feel familiar rather than brand new. This "star schema" (extensions only link to the core, not to each other) is a real constraint of the Darwin Core Archive format, which is why OBIS built eMoF as a workaround — but that's a detail for later, not needed here.
+:::

@@ -1,0 +1,31 @@
+## eDNA Metabarcoding: Key Information
+
+*Category 1 — DNA-derived occurrences — `basisOfRecord = MaterialSample`*
+
+[From field collection to taxonomy — what to capture at each step]{style="color:#E8A020; font-style:italic;"}
+
+:::: {.columns}
+::: {.column width="50%"}
+Step 2: 🧬 **DNA Extraction**
+
+- Volume of sample processed
+- Extraction method / kit
+- Concentration
+- Extracted amount
+- Purity ratio (A260/280)
+:::
+
+::: {.column width="50%"}
+**Maps to:** 
+
+- `samp_vol_we_dna_ext`
+- `nucl_acid_ext`, `nucl_acid_amp`
+- `concentration`, `concentrationUnit`
+- 
+- `ratioOfAbsorbance260_280`
+:::
+::::
+
+::: {.notes}
+Extraction method matters a lot for reproducibility and comparing datasets — different kits can bias which taxa get amplified downstream, so it's worth capturing even though it's easy to skip. Purity ratio (260/280) is a quick QC signal for contamination that's worth flagging even if participants don't record it religiously yet.
+:::

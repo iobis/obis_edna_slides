@@ -1,0 +1,19 @@
+## OBIS & FAIR Data
+
+::: {style="font-size: 20em;"}
+| | What OBIS gives you |
+|---|---|
+| **F**indable | Your dataset joins a global, searchable index - with a DOI |
+| **A**ccessible | Standard download/API access, no one-off email requests |
+| **I**nteroperable | Darwin Core structure - readable by people *and* machines |
+| **R**eusable | Documented metadata + a clear reuse license (e.g. CC-BY) |
+:::
+
+::: {.callout-tip}
+## A real example
+A [marine invasive species dataset](https://obis.org/dataset/98ea98e8-356b-4dd5-87c6-4eeb7e3cf588) from Venezuela, published July 2022, was included in **1,873 separate download requests** within 3 months — with zero extra effort from the data provider!
+:::
+
+::: {.notes}
+...it's the reason people don't have to keep emailing you for your spreadsheet.
+:::

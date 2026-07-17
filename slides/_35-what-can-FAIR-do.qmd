@@ -1,0 +1,22 @@
+## What can FAIR data do?
+
+:::: {.columns}
+::: {.column width="30%"}
+Invasive species decision tool & alert system
+[portal.pacman.obis.org](https://portal.pacman.obis.org/)
+:::
+
+
+::: {.column width="70%"}
+![](assets/PacMAN-portal-ss.png)
+:::
+::::
+
+![](assets/PacMAN-invasive-species.png)
+
+::: {.notes}
+Before I talk more about data standards, let’s look at some examples that demonstrate the power of FAIR data
+This first example is work that was done through the PacMAN project (Pacific islands Marine bioinvasions Alert Network), where our team developed a decision tool & alert system for detecting invasive species. The tool uses data from OBIS AND GBIF, including dna derived detections and other types of observations. When a pest species is detected, metadata about the detection is used to determine the detection confidence and confirm its status, if it’s a real detection. This allows informed decisions to be made on how to deal with the bioinvasion
+This last screenshot shows the tool and where you can see the confidence and status of detections
+
+:::

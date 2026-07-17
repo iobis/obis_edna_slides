@@ -1,0 +1,35 @@
+## Reminder: Flat vs. relational data tables
+
+:::: {.columns}
+::: {.column width="50%"}
+**Flat file**
+
+One giant table - everything repeated on every row
+
+|date | site | lat | lon | species | count|
+|--|--|--|--|--|--|
+|2024-01 | A | 11 | -74 | fish1 | 3|
+|2024-01 | A | 11 | -74 | fish2 | 1|
+|2024-01 | A | 11 | -74 | fish3 | 7|
+
+:::
+::: {.column width="50%"}
+**Relational**
+
+Separate, linked tables — shared info stored *once*
+
+```
+site.csv:      site, date, lat, lon
+species.csv:   site, species, count
+```
+
+🔗 Linked by a shared identifier 
+    (an **ID** column)
+:::
+::::
+
+
+
+::: {.notes}
+This is the concept underlying Darwin Core Archives: a "core" table (e.g. Event) and one or more "extension" tables (e.g. Occurrence, DNA extension) linked by eventID/occurrenceID. It reduces repetition and errors — fix the date once in the Event table instead of on every one of a thousand species rows. Keep this fast for people who already know relational databases; it's here mainly to set up tomorrow's DNA data session where we'll have Event → Occurrence → DNA extension as three linked tables.
+:::
