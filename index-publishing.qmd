@@ -1,0 +1,34 @@
+---
+title: "Publishing Data to OBIS"
+subtitle: "Dataset preparation and export"
+author: "Elizabeth Lawrence"
+date: 2026-07-24
+---
+
+{{< include slides/_13-publishing-workflow.qmd >}}
+
+{{< include slides/_44a-qc-recap-check.qmd >}}
+
+{{< include slides/_44b-what-files-needed.qmd >}}
+
+{{< include slides/_46-required-fields-checklist.qmd >}}     
+
+{{< include slides/_44c-preparing-files-for-export.qmd >}}
+
+{{< include slides/_44d-preparing-eml-yourself.qmd >}}               
+
+{{< include slides/_44e-automating-pipelines.qmd >}}  
+
+{{< include slides/_45-ipt-getting-started.qmd >}}                    
+
+{{< include slides/_45-ipt-uploading-mapping.qmd >}}       
+
+{{< include slides/_47-ipt-metadata-eml.qmd >}}
+
+{{< include slides/_48-data-licenses.qmd >}}
+
+{{< include slides/_49a-publish-doi-versioning.qmd >}}
+
+{{< include slides/_49b-register-gbif.qmd >}}
+
+{{< include slides/_50-live-demo-transition.qmd >}}     

@@ -1,0 +1,18 @@
+## A head start on metadata
+
+Drafting metadata beforehand saves time!
+
+Have ready before the IPT session:
+
+- Title, abstract, citation text
+- Contact + creator names & affiliations, ORCiDs
+- Sampling methodology text or links
+- Relevant project information (name, identifier)
+- Funding or other acknowledgement statements
+- Keywords, license choice (CC0 / CC-BY)
+
+*The IPT has a built-in metadata editor you can paste information into*
+
+::: {.notes}
+Keep this light — the goal is just "come to the IPT session with a doc of these answers ready to paste in," not teaching EML XML structure. We'll cover the metadata editor itself, and what's technically required vs. recommended, in the IPT walkthrough.
+:::

@@ -1,0 +1,15 @@
+## Looking ahead: automatic pipelines
+
+Manual export → IPT works well for most datasets — especially one-off or periodically-updated ones
+
+But...
+
+::: {.callout-note icon=false}
+## Good to know
+For institutions publishing **continuously or at scale**, you can set up a pipeline that pushes formatted data from an internal database → Darwin Core → the IPT via the API
+:::
+
+::: {.notes}
+This is a "know it exists" pointer, not a how-to — if it's relevant to your institution, your node manager is the right first contact.
+Flagging this honestly as something to explore later rather than teaching it live — good to mention institutions with recurring monitoring data (e.g. long-term time series) sometimes go this route, but it's a bigger lift (needs IPT API/database connection setup) than what we can responsibly cover in this workshop.
+:::

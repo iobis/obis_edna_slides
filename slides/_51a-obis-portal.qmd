@@ -1,0 +1,21 @@
+## The OBIS portal — obis.org
+
+:::: {.columns}
+
+::: {.column width="50%"}
+Your starting point for finding and understanding data:
+
+- Search & browse by taxon, region, or dataset
+- View dataset summary + citation info
+- Find data provider's contact details
+:::
+
+::: {.column width="50%"}
+![](assets/obis-home-search.png)
+:::
+::::
+
+
+::: {.notes}
+Worth contrasting with the Mapper (next slide): downloads from the homepage/dataset page come as separate table files, while Mapper/full-export downloads are flattened into one occurrence+event table, with eMoF/DNA extensions available only if you check the box for them. This distinction trips people up, so flag it explicitly.
+:::

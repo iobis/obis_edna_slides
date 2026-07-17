@@ -1,0 +1,21 @@
+## Filling in metadata
+
+OBIS/GBIF use **Ecological Metadata Language (EML)** — filled in through the IPT's metadata editor, no XML needed by hand!
+
+**Bare minimum required:**
+
+- Title
+- Description (abstract)
+- License
+- Contact
+- Citation
+
+**Also worth completing:** keywords, sampling methods, project information, geographic/temporal/taxonomic coverage
+
+::: {.bordered-box}
+Good metadata is what makes your dataset *discoverable and understandable* (**F**AI**R**) — think about what you'd want to know before reusing a dataset
+:::
+
+::: {.notes}
+Only 4 fields are technically required, but strongly encourage completing more — geographic/temporal/taxonomic coverage in particular makes a dataset much easier to find via OBIS's search/filter tools. This is filled in via Resource Overview → Metadata → Edit on the IPT, which we'll show live.
+:::

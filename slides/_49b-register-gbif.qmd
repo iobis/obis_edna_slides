@@ -1,0 +1,26 @@
+## Publish once, reach both networks
+
+Your dataset can also be registered with **GBIF** — no separate upload needed!
+
+::::{.columns}
+:::{.column width="70%"}
+- **Publication** section, set **Registration → Registered**
+- *Not required for OBIS* — OBIS already harvests your IPT independently
+- Skip if dataset is already published in GBIF by another publisher
+    - Ideally there is only *one* IPT resource per dataset
+- IPT itself must also be **registered with GBIF** (ask your node manager)
+:::
+
+:::{.column width="30%"}
+![](assets/gbif-logo-text.png)
+:::
+::::
+
+::: {.callout-tip}
+## Publish once, use many times
+OBIS and GBIF collaborate to ensure biodiversity data reaches both networks. Data providers only need to upload **once** to reach both!
+:::
+
+::: {.notes}
+Good moment to name the OBIS/GBIF relationship explicitly: OBIS focuses on marine data with WoRMS as its taxonomic backbone, GBIF is broader biodiversity with Catalog of Life — but they share the same underlying IPT infrastructure and Darwin Core standard. Worth flagging one real gap though: OBIS-specific extensions (eMoF, DNA-derived data) aren't currently included when a dataset is viewed/downloaded through GBIF — so eDNA-specific detail may not carry over even though the core occurrence data does.
+:::

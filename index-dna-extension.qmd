@@ -1,0 +1,49 @@
+---
+title: "Types of DNA-derived data"
+subtitle: "DNA Data and Darwin Core: The DNA Derived Data Extension"
+author: "Elizabeth Lawrence"
+date: 2026-07-22
+---
+
+{{< include slides/_06-five-data-categories.qmd >}}
+
+{{< include slides/_32-edna-data-landscape.qmd >}}
+
+{{< include slides/_04-data-standard.qmd >}}
+
+{{< include slides/_43-dna-core-options.qmd >}} 
+
+{{< include slides/_09a-key-fields-event-core.qmd >}}        
+
+{{< include slides/_09-key-fields-occurrence-core.qmd >}}    
+
+{{< include slides/_10-key-fields-dna-extension.qmd >}}
+
+{{< include slides/_07-raw-outputs-long-format.qmd >}}
+
+{{< include slides/_08-example-transformation.qmd >}}
+
+{{< include slides/_11-table-structure-options.qmd >}}
+
+{{< include slides/_28-table-structure-examples.qmd >}}          
+
+{{< include slides/_12-event-core-structure-example.qmd >}}
+
+{{< include slides/_18-emof.qmd >}}
+
+{{< include slides/_19-vocab.qmd >}}
+
+# Which information is entered where?
+<span style="font-size: 5em; cen">☕</span>
+
+## Identifying key information for Metabarcoding & qPCR pipelines
+
+{{< include slides/_24a-key_fields_metabarcoding-field.qmd >}}         
+
+{{< include slides/_24b-key_fields_metabarcoding-dna.qmd >}}
+
+{{< include slides/_24c-key_fields_metabarcoding-pcr.qmd >}}   
+
+{{< include slides/_24d-key_fields_metabarcoding-sequencing.qmd >}}
+
+{{< include slides/_25a-key_fields_qpcr-summary.qmd >}}        

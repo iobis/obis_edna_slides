@@ -1,0 +1,14 @@
+## Before exporting files
+
+✅ QC checks passed
+
+Quick self-check before moving on:
+
+- [ ] No duplicate `occurrenceID`/`eventID`
+- [ ] Coordinates & dates validated
+- [ ] Taxonomy matched against WoRMS
+- [ ] Required fields complete
+
+::: {.notes}
+This is a deliberately light recap — the room already did QC in an earlier session, this is just to make sure nobody's about to export a file that still has issues. Keep this fast; the point is the transition from "QC done" to "now let's package it," not re-teaching QC.
+:::

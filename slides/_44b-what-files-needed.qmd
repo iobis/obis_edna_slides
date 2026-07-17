@@ -1,0 +1,13 @@
+## What files are needed?
+
+Every dataset = **1 core table** + **0 or more extensions**
+
+For eDNA data → typically **minimum of 3 DwC files**:
+
+![](assets/table_structure_edna.png){fig-align="center" width="30%"}
+
+*Plus `emof.csv` for environmental/biotic measurements!*
+
+::: {.notes}
+This is a good moment to have people physically check their own folder against this list before moving forward — "do you have 3 files, correctly named, sitting in one place?" Occurrence-core-only datasets (no Event core) would be just 2 files (occurrence + dna_derived) — worth a quick check-in on which structure people chose back in the core-table slide.
+:::

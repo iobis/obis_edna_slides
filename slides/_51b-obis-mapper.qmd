@@ -1,0 +1,21 @@
+## OBIS Mapper — [mapper.obis.org]((https://mapper.obis.org/))
+
+:::: {.columns}
+::: {.column width="50%"}
+Visual, filter-driven exploration of OBIS data:
+
+- Filter by taxon, geography, time, and **extensions**
+- Combine multiple layers in one view
+- Download individual layers as CSV
+    - Better for smaller datasets <20,000,000 records
+- Incldue eMoF and/or DNA-derived data extensions 
+    - *(check the box — not on by default)*
+:::
+::: {.column width="50%"}
+![](assets/mapper-dna.png)
+:::
+::::
+
+::: {.notes}
+Great tool for a quick visual gut-check before doing anything programmatic — "does this region actually have eDNA data in it?" The Maptool naming collision is a real source of confusion, worth stating explicitly since Maptool came up earlier in the sensitive-data context.
+:::

@@ -1,0 +1,19 @@
+## Preparing your files
+
+- **Format:** delimited text (`.csv` or `.txt` preferred) → not `.xlsx`
+- **Encoding:** save as **UTF-8** 
+    - *matters especially for accented/special characters!*
+- **File names:** short, no spaces or special characters → matches your table role (`event.csv`, `occurrence.csv`...)
+- **Column names:** mapped to Darwin Core terms
+- **Large files?** zip them first — IPT can unzip archives!
+
+::: {.callout-tip}
+## Saving as UTF-8
+Excel: *Save As → "CSV UTF-8 (Comma delimited)"*
+
+Numbers (Mac): *File → Export To → CSV → Advanced Options → Unicode (UTF-8)*
+:::
+
+::: {.notes}
+The 100MB IPT upload limit is per file, not per archive — zipping helps but if a single table is genuinely huge, mention there are workarounds (database connection, chunked upload) documented in the IPT manual, not something to solve live here.
+:::

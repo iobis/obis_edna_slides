@@ -1,0 +1,27 @@
+## Before you publish: term checklist
+
+:::: {.columns}
+::: {.column width="50%"}
+**Required**
+
+- `eventID` (if using Event core)
+- `occurrenceID`
+- `eventDate`
+- `decimalLatitude`, `decimalLongitude`
+- `scientificName` (+ `scientificNameID`/AphiaID)
+- `occurrenceStatus`
+- `basisOfRecord`
+:::
+::: {.column width="50%"}
+**Strongly recommended**
+
+- `organismQuantity` + `organismQuantityType`
+- `samplingProtocol`
+- `coordinateUncertaintyInMeters`
+- `associatedSequences` (DNA data)
+:::
+::::
+
+::: {.notes}
+This deliberately echoes the key-fields slides from earlier — the goal is to give people one clean pre-flight checklist right before they touch the IPT. If a field's missing, the IPT mapping step will surface it as unmapped, but it's much less stressful to catch it beforehand.
+:::

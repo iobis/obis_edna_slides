@@ -1,0 +1,21 @@
+## Publishing & keeping it updated
+
+**Publish** → packages data + metadata into a Darwin Core Archive (.zip)
+
+::: {.callout-note icon=false}
+## ⚠️ Publishing ≠ public! 
+
+Visibility defaults to **Private**.
+Set **Visibility → Public** when ready
+:::
+
+**After publishing:**
+
+- A **DOI** can be assigned to your dataset for citation
+- Datasets are **versioned** — re-upload + republish to update
+    - Old versions stay accessible (`&v=n` in the URL)
+- Never delete + recreate a resource to "start over" — just publish a new version!
+
+::: {.notes}
+This is the step people get nervous about — reassure them the Private → Public toggle is a deliberate safety net, and test datasets should just get `_test` in the shortname and a heads-up to the node manager rather than being made public. Versioning means mistakes are very recoverable — nothing is destroyed by re-publishing.
+:::

@@ -11,7 +11,7 @@ license:
   link: "https://creativecommons.org/licenses/by-nc/4.0/"
 
 website:
-  title: "Publishing eDNA data in OBIS"
+  title: "OBIS Training Slides"
   navbar:
     left:
       - text: "Presentation"
@@ -40,7 +40,7 @@ format:
     history: true
     center: true
     footer: |
-      <span style="font-size: 10px;">© 2026 <a href="https://obis.org/" target="_blank"><img src="assets/IOC+OBIS_color.svg" style="height:60px; vertical-align:middle;"></a> License: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></span>
+      <span style="font-size: 10px;"><a href="index.html">🏠 Menu</a> · © 2026 <a href="https://obis.org/" target="_blank"><img src="assets/IOC+OBIS_color.svg" style="height:60px; vertical-align:middle;"></a> License: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></span>
     include-in-header:
       text: |
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">

@@ -1,0 +1,28 @@
+---
+title: "FAIR Data Principles & Biodiversity Standards"
+subtitle: "Why and how to publish FAIR data"
+author: "Elizabeth Lawrence"
+date: 2026-07-21
+---
+
+{{< include slides/_34-FAIR-data.qmd >}}
+
+{{< include slides/_35-what-can-FAIR-do.qmd >}}
+
+{{< include slides/_36-how-FAIR.qmd >}}
+
+{{< include slides/_01-what-is-obis.qmd >}}
+
+{{< include slides/_02-mature-global-community.qmd >}}     
+
+{{< include slides/_37-obis-fair.qmd >}}
+
+{{< include slides/_38-intro-darwin-core.qmd >}}
+
+{{< include slides/_39-relational-databases.qmd >}}
+
+{{< include slides/_40-core-and-extensions.qmd >}}
+
+{{< include slides/_41-sensitive-data.qmd >}}   
+
+{{< include slides/_42-eov.qmd >}}   

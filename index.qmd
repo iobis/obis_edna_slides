@@ -1,59 +1,20 @@
 ---
-title: "Publishing eDNA Data in OBIS"
-subtitle: "From sequences to a global open biodiversity record"
-author: "Saara Suominen"
-date: today
+title: "OBIS Training Slides"
+subtitle: "Pick a deck to open it as a full-screen presentation"
+format:
+  html:
+    theme: [obis_theme.scss]
+    css: [custom.css]
 ---
 
-{{< include slides/_01-what-is-obis.qmd >}}
+## General Training Decks
 
-{{< include slides/_02-mature-global-community.qmd >}}
+1. [FAIR Data & Biodiversity](index-fair-data.qmd) 
+2. [Darwin Core and DNA-Derived Data](index-dna-extension.qmd)
+3. [OBIS Quality Control](index-qc.qmd)
+4. [Publishing & IPT](index-publishing.qmd)   
+5. [Accessing OBIS (DNA) Data](index-access.qmd) 
 
-{{< include slides/_03-why-publish-edna.qmd >}}
+## Other decks
 
-{{< include slides/_27-what-is-edna-data.qmd >}}
-
-{{< include slides/_31-edna-data-considerations.qmd >}}
-
-{{< include slides/_32-edna-data-landscape.qmd >}}
-
-{{< include slides/_04-data-standard.qmd >}}
-
-{{< include slides/_05-dna-publishing-guide.qmd >}}
-
-{{< include slides/_06-five-data-categories.qmd >}}
-
-{{< include slides/_07-raw-outputs-long-format.qmd >}}
-
-{{< include slides/_08-example-transformation.qmd >}}
-
-{{< include slides/_09-key-fields-occurrence-core.qmd >}}
-
-{{< include slides/_20-worms.qmd >}}
-
-{{< include slides/_10-key-fields-dna-extension.qmd >}}
-
-{{< include slides/_11-table-structure-options.qmd >}}
-
-{{< include slides/_28-table-structure-examples.qmd >}}
-
-{{< include slides/_12-event-core-structure-example.qmd >}}
-
-{{< include slides/_18-emof.qmd >}}   
-
-{{< include slides/_19-vocab.qmd >}} 
-
-{{< include slides/_13-publishing-workflow.qmd >}}
-
-{{< include slides/_29-supporting-tools.qmd >}}
-
-{{< include slides/_14-metabarcoding-data-toolkit.qmd >}}
-
-{{< include slides/_15-quality-control.qmd >}}
-
-
-{{< include slides/_16-resources-community.qmd >}}
-
-{{< include slides/_21-dna-data-management-platform.qmd >}}
-
-{{< include slides/_17-summary.qmd >}}
+- [Publishing eDNA Data in OBIS (full deck)](index-edna-full.qmd)
