@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/tabby.min.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.38">
+
+  <meta name="author" content="Elizabeth Lawrence">
+  <meta name="dcterms.date" content="2026-07-24">
+  <title>OBIS Training Slides – Publishing Data to OBIS</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/reveal.css">
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-1601d7ff818b588401a92bce4b95de22.css">
+  <link rel="stylesheet" href="custom.css">
+  <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" data-background-image="./assets/background-shapes.svg" data-background-opacity="0.2" data-background-size="contain" class="quarto-title-block center">
+  <h1 class="title">Publishing Data to OBIS</h1>
+  <p class="subtitle">Dataset preparation and export</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Elizabeth Lawrence 
+</div>
+</div>
+</div>
+
+  <p class="date">2026-07-24</p>
+</section>
+<section id="publishing-workflow" class="slide level2 center">
+<h2>Publishing workflow</h2>
+<p><strong>Integrated Publishing Toolkits (IPT)</strong> are hosted by OBIS nodes — you do not need to run your own server. OBIS has nodes covering most world regions. Find yours at obis.org/nodes.</p>
+<div style="text-align:center;">
+<p><a href="assets/publishing_steps.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img data-src="assets/publishing_steps.png"></a></p>
+</div>
+<aside class="notes">
+<p>OBIS has nodes covering most world regions. Find yours at obis.org/nodes. The IPT has a built-in metadata editor for EML so you do not need to write XML by hand. Emphasize that once published, the dataset gets a DOI and can be cited in papers.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="before-exporting-files" class="slide level2 center">
+<h2>Before exporting files</h2>
+<p>✅ QC checks passed</p>
+<p>Quick self-check before moving on:</p>
+<ul class="task-list">
+<li><label><input type="checkbox">No duplicate <code>occurrenceID</code>/<code>eventID</code></label></li>
+<li><label><input type="checkbox">Coordinates &amp; dates validated</label></li>
+<li><label><input type="checkbox">Taxonomy matched against WoRMS</label></li>
+<li><label><input type="checkbox">Required fields complete</label></li>
+</ul>
+<aside class="notes">
+<p>This is a deliberately light recap — the room already did QC in an earlier session, this is just to make sure nobody’s about to export a file that still has issues. Keep this fast; the point is the transition from “QC done” to “now let’s package it,” not re-teaching QC.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="what-files-are-needed" class="slide level2 center">
+<h2>What files are needed?</h2>
+<p>Every dataset = <strong>1 core table</strong> + <strong>0 or more extensions</strong></p>
+<p>For eDNA data → typically <strong>minimum of 3 DwC files</strong>:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="assets/table_structure_edna.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img data-src="assets/table_structure_edna.png" class="quarto-figure quarto-figure-center" style="width:30.0%"></a></p>
+</figure>
+</div>
+<p><em>Plus <code>emof.csv</code> for environmental/biotic measurements!</em></p>
+<aside class="notes">
+<p>This is a good moment to have people physically check their own folder against this list before moving forward — “do you have 3 files, correctly named, sitting in one place?” Occurrence-core-only datasets (no Event core) would be just 2 files (occurrence + dna_derived) — worth a quick check-in on which structure people chose back in the core-table slide.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="before-you-publish-term-checklist" class="slide level2 center">
+<h2>Before you publish: term checklist</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Required</strong></p>
+<ul>
+<li><code>eventID</code> (if using Event core)</li>
+<li><code>occurrenceID</code></li>
+<li><code>eventDate</code></li>
+<li><code>decimalLatitude</code>, <code>decimalLongitude</code></li>
+<li><code>scientificName</code> (+ <code>scientificNameID</code>/AphiaID)</li>
+<li><code>occurrenceStatus</code></li>
+<li><code>basisOfRecord</code></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><strong>Strongly recommended</strong></p>
+<ul>
+<li><code>organismQuantity</code> + <code>organismQuantityType</code></li>
+<li><code>samplingProtocol</code></li>
+<li><code>coordinateUncertaintyInMeters</code></li>
+<li><code>associatedSequences</code> (DNA data)</li>
+</ul>
+</div></div>
+<aside class="notes">
+<p>This deliberately echoes the key-fields slides from earlier — the goal is to give people one clean pre-flight checklist right before they touch the IPT. If a field’s missing, the IPT mapping step will surface it as unmapped, but it’s much less stressful to catch it beforehand.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="preparing-your-files" class="slide level2 center">
+<h2>Preparing your files</h2>
+<ul>
+<li><strong>Format:</strong> delimited text (<code>.csv</code> or <code>.txt</code> preferred) → not <code>.xlsx</code></li>
+<li><strong>Encoding:</strong> save as <strong>UTF-8</strong>
+<ul>
+<li><em>matters especially for accented/special characters!</em></li>
+</ul></li>
+<li><strong>File names:</strong> short, no spaces or special characters → matches your table role (<code>event.csv</code>, <code>occurrence.csv</code>…)</li>
+<li><strong>Column names:</strong> mapped to Darwin Core terms</li>
+<li><strong>Large files?</strong> zip them first — IPT can unzip archives!</li>
+</ul>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Saving as UTF-8</strong></p>
+</div>
+<div class="callout-content">
+<p>Excel: <em>Save As → “CSV UTF-8 (Comma delimited)”</em></p>
+<p>Numbers (Mac): <em>File → Export To → CSV → Advanced Options → Unicode (UTF-8)</em></p>
+</div>
+</div>
+</div>
+<aside class="notes">
+<p>The 100MB IPT upload limit is per file, not per archive — zipping helps but if a single table is genuinely huge, mention there are workarounds (database connection, chunked upload) documented in the IPT manual, not something to solve live here.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="a-head-start-on-metadata" class="slide level2 center">
+<h2>A head start on metadata</h2>
+<p>Drafting metadata beforehand saves time!</p>
+<p>Have ready before the IPT session:</p>
+<ul>
+<li>Title, abstract, citation text</li>
+<li>Contact + creator names &amp; affiliations, ORCiDs</li>
+<li>Sampling methodology text or links</li>
+<li>Relevant project information (name, identifier)</li>
+<li>Funding or other acknowledgement statements</li>
+<li>Keywords, license choice (CC0 / CC-BY)</li>
+</ul>
+<p><em>The IPT has a built-in metadata editor you can paste information into</em></p>
+<aside class="notes">
+<p>Keep this light — the goal is just “come to the IPT session with a doc of these answers ready to paste in,” not teaching EML XML structure. We’ll cover the metadata editor itself, and what’s technically required vs.&nbsp;recommended, in the IPT walkthrough.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="looking-ahead-automatic-pipelines" class="slide level2 center">
+<h2>Looking ahead: automatic pipelines</h2>
+<p>Manual export → IPT works well for most datasets — especially one-off or periodically-updated ones</p>
+<p>But…</p>
+<div class="callout callout-note no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Good to know</strong></p>
+</div>
+<div class="callout-content">
+<p>For institutions publishing <strong>continuously or at scale</strong>, you can set up a pipeline that pushes formatted data from an internal database → Darwin Core → the IPT via the API</p>
+</div>
+</div>
+</div>
+<aside class="notes">
+<p>This is a “know it exists” pointer, not a how-to — if it’s relevant to your institution, your node manager is the right first contact. Flagging this honestly as something to explore later rather than teaching it live — good to mention institutions with recurring monitoring data (e.g.&nbsp;long-term time series) sometimes go this route, but it’s a bigger lift (needs IPT API/database connection setup) than what we can responsibly cover in this workshop.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="getting-started-on-the-ipt" class="slide level2 center">
+<h2>Getting started on the IPT</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><strong>1. Contact node mananager to create IPT account</strong></p>
+<p><strong>2. Log in to account</strong></p>
+<p><strong>3. Manage resources</strong> → <em>Create new</em> → (= your dataset)</p>
+<ul>
+<li>Give it a short, unique <strong>shortname</strong> (no spaces/special characters — this can’t be changed later!)</li>
+<li>Choose a type: Occurrence or Sampling-Event</li>
+</ul>
+</div><div class="column" style="width:60%;">
+<p><a href="./assets/ipt-login.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img data-src="./assets/ipt-login.png"></a></p>
+</div></div>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Testing?</strong></p>
+</div>
+<div class="callout-content">
+<p>Add <code>_test</code> to the end of your shortname, and let your node manager know before you delete it.</p>
+</div>
+</div>
+</div>
+<aside class="notes">
+<p>Shortnames become part of the resource’s URL and folder structure, hence the “can’t change it later” warning. Type selection here maps directly to what we covered this morning: Occurrence core vs.&nbsp;Event core. We’ll create a real (test) resource together in the live demo.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="uploading-mapping-your-data" class="slide level2 center">
+<h2>Uploading &amp; mapping your data</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p><strong>Upload:</strong> Overview → Source Data → Choose File</p>
+<p><strong>Map:</strong> for each source file, click <strong>+ Add</strong> and match columns to Darwin Core terms</p>
+<ul>
+<li>Double check IPT’s auto-matches</li>
+<li>Unmapped fields sit at bottom — check if they need to be included or leave them (they just won’t be published)</li>
+<li>Repeat for each table: Event, Occurrence, DNA extension, eMoF…</li>
+</ul>
+</div><div class="column" style="width:25%;">
+<p><a href="assets/ipt-source-data.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img data-src="assets/ipt-source-data.png"></a></p>
+<p><a href="assets/ipt-mapping.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img data-src="assets/ipt-mapping.png"></a></p>
+</div></div>
+<div class="callout callout-note no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Watch for “redundant terms”</strong></p>
+</div>
+<div class="callout-content">
+<p>If a field like <code>eventDate</code> appears in both Occurrence and Event, the IPT will flag it - pick one table for it!</p>
+</div>
+</div>
+</div>
+<aside class="notes">
+<p>This is the step where all the field-mapping work from this morning (the key-fields slides) actually gets applied. Good moment to remind people: if they did the “map your columns to DwC terms in a documentation sheet” prep work already, this step is mostly mechanical.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="filling-in-metadata" class="slide level2 center">
+<h2>Filling in metadata</h2>
+<p>OBIS/GBIF use <strong>Ecological Metadata Language (EML)</strong> — filled in through the IPT’s metadata editor, no XML needed by hand!</p>
+<p><strong>Bare minimum required:</strong></p>
+<ul>
+<li>Title</li>
+<li>Description (abstract)</li>
+<li>License</li>
+<li>Contact</li>
+<li>Citation</li>
+</ul>
+<p><strong>Also worth completing:</strong> keywords, sampling methods, project information, geographic/temporal/taxonomic coverage</p>
+<div class="bordered-box">
+<p>Good metadata is what makes your dataset <em>discoverable and understandable</em> (<strong>F</strong>AI<strong>R</strong>) — think about what you’d want to know before reusing a dataset</p>
+</div>
+<aside class="notes">
+<p>Only 4 fields are technically required, but strongly encourage completing more — geographic/temporal/taxonomic coverage in particular makes a dataset much easier to find via OBIS’s search/filter tools. This is filled in via Resource Overview → Metadata → Edit on the IPT, which we’ll show live.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="choosing-a-data-license" class="slide level2 center">
+<h2>Choosing a data license</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>License</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>CC0</strong> <em>(preferred)</em></td>
+<td>No restrictions, full public domain</td>
+</tr>
+<tr class="even">
+<td><strong>CC-BY</strong></td>
+<td>Free use, with attribution required</td>
+</tr>
+<tr class="odd">
+<td><strong>CC-BY-NC</strong></td>
+<td>Free non-commercial use, with attribution</td>
+</tr>
+</tbody>
+</table>
+<p><em>Check with your institution if there are copyright concerns before choosing.</em></p>
+<aside class="notes">
+<p>OBIS lists these in order of preference — CC0 is preferred because it maximizes reuse/interoperability, but CC-BY is very common and totally fine. This is a quick, low-drama slide; most participants will already know which one their institution requires.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="publishing-keeping-it-updated" class="slide level2 center">
+<h2>Publishing &amp; keeping it updated</h2>
+<p><strong>Publish</strong> → packages data + metadata into a Darwin Core Archive (.zip)</p>
+<div class="callout callout-note no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>⚠️ Publishing ≠ public!</strong></p>
+</div>
+<div class="callout-content">
+<p>Visibility defaults to <strong>Private</strong>. Set <strong>Visibility → Public</strong> when ready</p>
+</div>
+</div>
+</div>
+<p><strong>After publishing:</strong></p>
+<ul>
+<li>A <strong>DOI</strong> can be assigned to your dataset for citation</li>
+<li>Datasets are <strong>versioned</strong> — re-upload + republish to update
+<ul>
+<li>Old versions stay accessible (<code>&amp;v=n</code> in the URL)</li>
+</ul></li>
+<li>Never delete + recreate a resource to “start over” — just publish a new version!</li>
+</ul>
+<aside class="notes">
+<p>This is the step people get nervous about — reassure them the Private → Public toggle is a deliberate safety net, and test datasets should just get <code>_test</code> in the shortname and a heads-up to the node manager rather than being made public. Versioning means mistakes are very recoverable — nothing is destroyed by re-publishing.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="publish-once-reach-both-networks" class="slide level2 center">
+<h2>Publish once, reach both networks</h2>
+<p>Your dataset can also be registered with <strong>GBIF</strong> — no separate upload needed!</p>
+<div class="columns">
+<div class="column" style="width:70%;">
+<ul>
+<li><strong>Publication</strong> section, set <strong>Registration → Registered</strong></li>
+<li><em>Not required for OBIS</em> — OBIS already harvests your IPT independently</li>
+<li>Skip if dataset is already published in GBIF by another publisher
+<ul>
+<li>Ideally there is only <em>one</em> IPT resource per dataset</li>
+</ul></li>
+<li>IPT itself must also be <strong>registered with GBIF</strong> (ask your node manager)</li>
+</ul>
+</div><div class="column" style="width:30%;">
+<p><a href="assets/gbif-logo-text.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img data-src="assets/gbif-logo-text.png"></a></p>
+</div></div>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Publish once, use many times</strong></p>
+</div>
+<div class="callout-content">
+<p>OBIS and GBIF collaborate to ensure biodiversity data reaches both networks. Data providers only need to upload <strong>once</strong> to reach both!</p>
+</div>
+</div>
+</div>
+<aside class="notes">
+<p>Good moment to name the OBIS/GBIF relationship explicitly: OBIS focuses on marine data with WoRMS as its taxonomic backbone, GBIF is broader biodiversity with Catalog of Life — but they share the same underlying IPT infrastructure and Darwin Core standard. Worth flagging one real gap though: OBIS-specific extensions (eMoF, DNA-derived data) aren’t currently included when a dataset is viewed/downloaded through GBIF — so eDNA-specific detail may not carry over even though the core occurrence data does.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="lets-see-it-live" class="slide level2 center">
+<h2>Let’s see it live</h2>
+<p>We’ll now walk through a real IPT instance together:</p>
+<ol type="1">
+<li>Create a (test) resource</li>
+<li>Upload source data &amp; map to Darwin Core</li>
+<li>Fill in minimum metadata</li>
+<li>Publish → set visibility → done ✅</li>
+<li>Add to GBIF network!</li>
+</ol>
+<aside class="notes">
+<p>This slide is just a checkpoint to move into live demo</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+<p><span style="font-size: 10px;"><a href="index.html">🏠 Menu</a> · © 2026 <a href="https://obis.org/" target="_blank"><img src="assets/IOC+OBIS_color.svg" style="height:60px; vertical-align:middle;"></a> License: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></span></p>
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': false,
+'previewLinksAuto': true,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"8\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'chalkboard': {"buttons":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    <script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+    (function() {
+      let previousOnload = window.onload;
+      window.onload = () => {
+        if (previousOnload) {
+          previousOnload();
+        }
+        lightboxQuarto.on('slide_before_load', (data) => {
+          const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+          const href = trigger.getAttribute('href');
+          if (href !== null) {
+            const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+            if (imgEl !== null) {
+              const srcAttr = imgEl.getAttribute("src");
+              if (srcAttr && srcAttr.startsWith("data:")) {
+                slideConfig.href = srcAttr;
+              }
+            }
+          } 
+        });
+      
+        lightboxQuarto.on('slide_after_load', (data) => {
+          const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(slideNode);
+          }
+        });
+      
+      };
+      
+    })();
+              </script>
+    
+
+</body></html>
