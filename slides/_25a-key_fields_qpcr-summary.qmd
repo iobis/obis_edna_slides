@@ -11,9 +11,9 @@
 
 ⛵ **Field Sampling** → same as metabarcoding
 
-🧪 **PCR Protocol** → PCR conditions → `pcr_cond`
-
 🧬 **DNA Extraction** → same as metabarcoding
+
+🧪 **DNA Amplification** → PCR conditions → `pcr_cond`
 
 :::: {.columns}
 ::: {.column width="50%"}

@@ -8,21 +8,21 @@
 ::: {.column width="50%"}
 Step 1:⛵ **Field Sampling**
 
-- Date
-- Coordinates
+- Coordinates, location names
+- Date, time
 - Environmental measurements (temperature, salinity, depth...)
 - Sampling method / gear
-- Sample volume
+- Sample volume, filter size
 :::
 
 ::: {.column width="50%"}
 **Maps to:**
 
-- `eventDate`,
-- `decimalLatitude`, `decimalLongitude`,
+- `decimalLatitude`, `decimalLongitude`, `locality`
+- `eventDate`, `eventTime`
 - eMoF table → `measuremntType`, `measuremntValue`, `measuremntUnit`
 - `samplingProtocol` / eMoF table
-- `samp_size` (DNA table)
+- `samp_size` (DNA table), `size_frac`
 :::
 ::::
 

@@ -6,23 +6,21 @@
 
 :::: {.columns}
 ::: {.column width="50%"}
-Step 3: 🧪 **Biomarker / PCR**
+Step 3: 🧪 **DNA Amplification**
 
 - Target gene (e.g. COI, 18S rRNA)
 - Primer sequence + primer reference
 - PCR conditions
 - Length of amplified product
-- Concentration
 :::
 
 ::: {.column width="50%"}
 **Maps to (DNA table):** 
 
-- `target_gene`, 
+- `target_gene`
 - `pcr_primer_forward`, `pcr_primer_name_forward`, , `pcr_primer_reverse`, `pcr_primer_name_reverse` + `pcr_primer_reference`
 - `pcr_cond`
 - `ampliconSize`
-- `concentration`, `concentrationUnit`
 :::
 ::::
 
