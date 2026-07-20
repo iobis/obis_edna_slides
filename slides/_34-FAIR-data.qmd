@@ -19,5 +19,13 @@
 ::::
 
 ::: {.notes}
-FAIR = Findable, Accessible, Interoperable, Reusable (Wilkinson et al. 2016). This is the "why" before we get into the "how" (Darwin Core, EOVs, sensitive data). Keep this fast — most people have heard of FAIR before, this is just to ground the rest of the day in *why* we bother standardizing data at all. We'll come back to F/A/I/R specifically in terms of what OBIS gives you on the next slide.
+This is the "why" before we get into the "how" (Darwin Core, EOVs, sensitive data). 
+Starting with a quick overview on what actually makes data FAIR. To summarize each aspect –
+Findable means that there is descriptive metadata with stable links and identifiers e.g. DOI that enable finding our data
+Accessible means that there are clear instructions on how to access our data, going beyond ‘available upon request’ statements
+Interoperable means that our data can be easily combined with other datasets and that our data & metadata are machine readable. This often means adhering to data standards and using controlled vocabulary whenever possible
+Reusable means that the metadata is documented well enough to enable others to replicate what we’ve done and there is enough context so that users know what situations our data can be reused in (e.g looking back on data collected 20 yrs ago, code)
+
+
+
 :::

@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - invemar-training
   workflow_dispatch:
 
 permissions:
@@ -12,6 +13,7 @@ permissions:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/invemar-training' || github.event_name == 'workflow_dispatch'
 
     steps:
       - name: Check out repository

@@ -1,7 +1,7 @@
 ---
 title: "FAIR Data Principles & Biodiversity Standards"
 subtitle: "Why and how to publish FAIR data"
-author: "Elizabeth Lawrence"
+author: "Elizabeth Lawrence, Saara Suominen"
 date: 2026-07-21
 ---
 

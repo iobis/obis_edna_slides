@@ -1,7 +1,7 @@
 ---
 title: "Types of DNA-derived data"
 subtitle: "DNA Data and Darwin Core: The DNA Derived Data Extension"
-author: "Elizabeth Lawrence"
+author: "Elizabeth Lawrence, Emilie Boulanger, Saara Suominen"
 date: 2026-07-22
 ---
 
