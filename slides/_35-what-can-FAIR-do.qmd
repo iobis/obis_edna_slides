@@ -8,7 +8,7 @@ Invasive species decision tool & alert system
 
 
 ::: {.column width="70%"}
-![](assets/PacMAN-portal-ss.png)
+![](assets/pacMAN-portal-ss.png)
 :::
 ::::
 

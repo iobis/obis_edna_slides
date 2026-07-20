@@ -4,27 +4,15 @@
 
 [From field collection to taxonomy — what to capture at each step]{style="color:#E8A020; font-style:italic;"}
 
-:::: {.columns}
-::: {.column width="50%"}
 Step 1:⛵ **Field Sampling**
 
-- Coordinates, location names
-- Date, time
-- Environmental measurements (temperature, salinity, depth...)
-- Sampling method / gear
-- Sample volume, filter size
-:::
-
-::: {.column width="50%"}
-**Maps to:**
-
-- `decimalLatitude`, `decimalLongitude`, `locality`
-- `eventDate`, `eventTime`
-- eMoF table → `measuremntType`, `measuremntValue`, `measuremntUnit`
-- `samplingProtocol` / eMoF table
-- `samp_size` (DNA table), `size_frac`
-:::
-::::
+| Field Sampling | Maps to |
+|---|---|
+| Coordinates, location names | Event table: `decimalLatitude`, `decimalLongitude`, `locality` |
+| Date, time | Event table: `eventDate`, `eventTime` |
+| Environmental measurements (temperature, salinity, depth...) | eMoF table: `measurementType`, `measurementValue`, `measurementUnit` |
+| Sampling method / gear | Event table: `samplingProtocol` and/or eMoF table |
+| Sample volume, filter size | DNA table: `samp_size` , `size_frac` |
 
 ::: {.notes}
 This is where the Event core table gets populated. Environmental measurements that aren't DNA-specific (e.g. temperature, salinity) go in eMoF rather than the DNA extension — worth a quick reminder here since people sometimes want to cram everything into one table.

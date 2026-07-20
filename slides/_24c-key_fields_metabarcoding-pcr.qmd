@@ -4,25 +4,14 @@
 
 [From field collection to taxonomy — what to capture at each step]{style="color:#E8A020; font-style:italic;"}
 
-:::: {.columns}
-::: {.column width="50%"}
 Step 3: 🧪 **DNA Amplification**
 
-- Target gene (e.g. COI, 18S rRNA)
-- Primer sequence + primer reference
-- PCR conditions
-- Length of amplified product
-:::
-
-::: {.column width="50%"}
-**Maps to (DNA table):** 
-
-- `target_gene`
-- `pcr_primer_forward`, `pcr_primer_name_forward`, , `pcr_primer_reverse`, `pcr_primer_name_reverse` + `pcr_primer_reference`
-- `pcr_cond`
-- `ampliconSize`
-:::
-::::
+| DNA Amplification | Maps to (DNA table) |
+|---|---|
+| Target gene (e.g. COI, 18S rRNA) | DNA table: `target_gene` |
+| Primer sequence + primer reference | DNA table: `pcr_primer_forward`, `pcr_primer_name_forward`, `pcr_primer_reverse`, `pcr_primer_name_reverse` + `pcr_primer_reference` |
+| PCR conditions | DNA table: `pcr_cond` |
+| Length of amplified product | DNA table: `ampliconSize` |
 
 ::: {.notes}
 Primer choice determines which taxa can even be detected — always cite the primer reference, don't just paste the sequence, so users can trace back to the original validation. PCR conditions (annealing temp, cycle number) belong here too even though they feel like lab-notebook detail; they matter for anyone trying to reproduce or compare your results.

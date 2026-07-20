@@ -30,7 +30,7 @@
 🎯 **Target & Quantity**
 
 - Target gene region, primers
-- Copy number, concentaration, LOD, Cq, baseline
+- Copy number, LOD, Cq, baseline
 
 :::
 :::
