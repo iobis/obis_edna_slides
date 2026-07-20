@@ -683,26 +683,41 @@ Elizabeth Lawrence, Emilie Boulanger, Saara Suominen
 <h2>eDNA Metabarcoding: Key Information</h2>
 <p><em>Category 1 — DNA-derived occurrences — <code>basisOfRecord = MaterialSample</code></em></p>
 <p><span style="color:#E8A020; font-style:italic;">From field collection to taxonomy — what to capture at each step</span></p>
-<div class="columns">
-<div class="column" style="width:50%;">
 <p>Step 1:⛵ <strong>Field Sampling</strong></p>
-<ul>
-<li>Coordinates, location names</li>
-<li>Date, time</li>
-<li>Environmental measurements (temperature, salinity, depth…)</li>
-<li>Sampling method / gear</li>
-<li>Sample volume, filter size</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><strong>Maps to:</strong></p>
-<ul>
-<li><code>decimalLatitude</code>, <code>decimalLongitude</code>, <code>locality</code></li>
-<li><code>eventDate</code>, <code>eventTime</code></li>
-<li>eMoF table → <code>measuremntType</code>, <code>measuremntValue</code>, <code>measuremntUnit</code></li>
-<li><code>samplingProtocol</code> / eMoF table</li>
-<li><code>samp_size</code> (DNA table), <code>size_frac</code></li>
-</ul>
-</div></div>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Field Sampling</th>
+<th>Maps to</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Coordinates, location names</td>
+<td>Event table: <code>decimalLatitude</code>, <code>decimalLongitude</code>, <code>locality</code></td>
+</tr>
+<tr class="even">
+<td>Date, time</td>
+<td>Event table: <code>eventDate</code>, <code>eventTime</code></td>
+</tr>
+<tr class="odd">
+<td>Environmental measurements (temperature, salinity, depth…)</td>
+<td>eMoF table: <code>measurementType</code>, <code>measurementValue</code>, <code>measurementUnit</code></td>
+</tr>
+<tr class="even">
+<td>Sampling method / gear</td>
+<td>Event table: <code>samplingProtocol</code> and/or eMoF table</td>
+</tr>
+<tr class="odd">
+<td>Sample volume, filter size</td>
+<td>DNA table: <code>samp_size</code> , <code>size_frac</code></td>
+</tr>
+</tbody>
+</table>
 <aside class="notes">
 <p>This is where the Event core table gets populated. Environmental measurements that aren’t DNA-specific (e.g.&nbsp;temperature, salinity) go in eMoF rather than the DNA extension — worth a quick reminder here since people sometimes want to cram everything into one table.</p>
 <style type="text/css">
@@ -721,26 +736,37 @@ Elizabeth Lawrence, Emilie Boulanger, Saara Suominen
 <h2>eDNA Metabarcoding: Key Information</h2>
 <p><em>Category 1 — DNA-derived occurrences — <code>basisOfRecord = MaterialSample</code></em></p>
 <p><span style="color:#E8A020; font-style:italic;">From field collection to taxonomy — what to capture at each step</span></p>
-<div class="columns">
-<div class="column" style="width:50%;">
 <p>Step 2: 🧬 <strong>DNA Extraction</strong></p>
-<ul>
-<li>Volume of sample processed</li>
-<li>Extraction method / kit</li>
-<li>Concentration</li>
-<li>Extracted amount</li>
-<li>Purity ratio (A260/280)</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><strong>Maps to:</strong></p>
-<ul>
-<li><code>samp_vol_we_dna_ext</code></li>
-<li><code>nucl_acid_ext</code>, <code>nucl_acid_amp</code></li>
-<li><code>concentration</code>, <code>concentrationUnit</code></li>
-<li></li>
-<li><code>ratioOfAbsorbance260_280</code></li>
-</ul>
-</div></div>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>DNA Extraction</th>
+<th>Maps to</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Volume of sample processed</td>
+<td>DNA table: <code>samp_vol_we_dna_ext</code></td>
+</tr>
+<tr class="even">
+<td>Extraction method / kit</td>
+<td>DNA table: <code>nucl_acid_ext</code>, <code>nucl_acid_amp</code></td>
+</tr>
+<tr class="odd">
+<td>Concentration</td>
+<td>DNA table: <code>concentration</code>, <code>concentrationUnit</code></td>
+</tr>
+<tr class="even">
+<td>Purity ratio (A260/280)</td>
+<td>DNA table: <code>ratioOfAbsorbance260_280</code></td>
+</tr>
+</tbody>
+</table>
 <aside class="notes">
 <p>Extraction method matters a lot for reproducibility and comparing datasets — different kits can bias which taxa get amplified downstream, so it’s worth capturing even though it’s easy to skip. Purity ratio (260/280) is a quick QC signal for contamination that’s worth flagging even if participants don’t record it religiously yet.</p>
 <style type="text/css">
@@ -759,24 +785,37 @@ Elizabeth Lawrence, Emilie Boulanger, Saara Suominen
 <h2>eDNA Metabarcoding: Key Information</h2>
 <p><em>Category 1 — DNA-derived occurrences — <code>basisOfRecord = MaterialSample</code></em></p>
 <p><span style="color:#E8A020; font-style:italic;">From field collection to taxonomy — what to capture at each step</span></p>
-<div class="columns">
-<div class="column" style="width:50%;">
 <p>Step 3: 🧪 <strong>DNA Amplification</strong></p>
-<ul>
-<li>Target gene (e.g.&nbsp;COI, 18S rRNA)</li>
-<li>Primer sequence + primer reference</li>
-<li>PCR conditions</li>
-<li>Length of amplified product</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><strong>Maps to (DNA table):</strong></p>
-<ul>
-<li><code>target_gene</code></li>
-<li><code>pcr_primer_forward</code>, <code>pcr_primer_name_forward</code>, , <code>pcr_primer_reverse</code>, <code>pcr_primer_name_reverse</code> + <code>pcr_primer_reference</code></li>
-<li><code>pcr_cond</code></li>
-<li><code>ampliconSize</code></li>
-</ul>
-</div></div>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>DNA Amplification</th>
+<th>Maps to (DNA table)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Target gene (e.g.&nbsp;COI, 18S rRNA)</td>
+<td>DNA table: <code>target_gene</code></td>
+</tr>
+<tr class="even">
+<td>Primer sequence + primer reference</td>
+<td>DNA table: <code>pcr_primer_forward</code>, <code>pcr_primer_name_forward</code>, <code>pcr_primer_reverse</code>, <code>pcr_primer_name_reverse</code> + <code>pcr_primer_reference</code></td>
+</tr>
+<tr class="odd">
+<td>PCR conditions</td>
+<td>DNA table: <code>pcr_cond</code></td>
+</tr>
+<tr class="even">
+<td>Length of amplified product</td>
+<td>DNA table: <code>ampliconSize</code></td>
+</tr>
+</tbody>
+</table>
 <aside class="notes">
 <p>Primer choice determines which taxa can even be detected — always cite the primer reference, don’t just paste the sequence, so users can trace back to the original validation. PCR conditions (annealing temp, cycle number) belong here too even though they feel like lab-notebook detail; they matter for anyone trying to reproduce or compare your results.</p>
 <style type="text/css">
@@ -795,24 +834,78 @@ Elizabeth Lawrence, Emilie Boulanger, Saara Suominen
 <h2>eDNA Metabarcoding: Key Information</h2>
 <p><em>Category 1 — DNA-derived occurrences — <code>basisOfRecord = MaterialSample</code></em></p>
 <p><span style="color:#E8A020; font-style:italic;">From field collection to taxonomy — what to capture at each step</span></p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>Step 4: 💻 <strong>Sequences &amp; Taxonomy</strong></p>
-<ul>
-<li>Sequencing platform + library layout</li>
-<li>Sequences + Public repository (NCBI, ENA)</li>
-<li>Taxonomy assignment + annotation confidence</li>
-<li>Reference database + pipeline used</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><strong>Maps to:</strong></p>
-<ul>
-<li><code>seq_meth</code> + <code>lib_layout</code>,</li>
-<li><code>DNA_sequence</code> + <code>associatedSequences</code> (Occurence table)</li>
-<li><code>scientificName</code>, <code>taxonID</code> (Occurrence table) + <code>annot</code></li>
-<li><code>otu_db</code> + <code>sop</code></li>
-</ul>
-</div></div>
+<p>Step 4: 💻 <strong>Sequences</strong></p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Sequences</th>
+<th>Maps to</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sequencing platform + library layout</td>
+<td>DNA table: <code>seq_meth</code> + <code>lib_layout</code> (DNA table)</td>
+</tr>
+<tr class="even">
+<td>Sequences per sample</td>
+<td>DNA table: <code>DNA_sequence</code> (linked by <code>occurrenceID</code>)</td>
+</tr>
+<tr class="odd">
+<td>Public repository where sequences deposited (NCBI, ENA)</td>
+<td>Occurrence table: <code>associatedSequences</code></td>
+</tr>
+</tbody>
+</table>
+<aside class="notes">
+<p>This is the last step before formatting — everything captured across the last 3 slides plus this one feeds into either the Occurrence table or the DNA extension. Reference database + pipeline (e.g.&nbsp;“DADA2 v1.18” + “SILVA 138”) matter a lot for reproducibility since taxonomy assignments can shift as databases update — this is what otu_class_appr and otu_db are for.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="edna-metabarcoding-key-information-4" class="slide level2 center">
+<h2>eDNA Metabarcoding: Key Information</h2>
+<p><em>Category 1 — DNA-derived occurrences — <code>basisOfRecord = MaterialSample</code></em></p>
+<p><span style="color:#E8A020; font-style:italic;">From field collection to taxonomy — what to capture at each step</span></p>
+<p>Step 5: 🐠 <strong>Taxonomy</strong></p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Taxonomy</th>
+<th>Maps to</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Taxonomy assignment + annotation confidence</td>
+<td>Occurrence table: <code>scientificName</code>, <code>taxonID</code> <br> DNA table: <code>annot</code></td>
+</tr>
+<tr class="even">
+<td>Reference database + pipeline used</td>
+<td>Occurrence table: <code>identificationRemarks</code>, <code>identificationReferences</code> <br> DNA table: <code>otu_db</code> + <code>sop</code></td>
+</tr>
+<tr class="odd">
+<td>Number of sequence reads per taxon &amp; total</td>
+<td>Occurence table: <code>organismQuantity</code>, <code>organismQuantityType</code>, &amp; <code>sampleSizeValue</code>, <code>sampleSizeUnit</code></td>
+</tr>
+</tbody>
+</table>
 <aside class="notes">
 <p>This is the last step before formatting — everything captured across the last 3 slides plus this one feeds into either the Occurrence table or the DNA extension. Reference database + pipeline (e.g.&nbsp;“DADA2 v1.18” + “SILVA 138”) matter a lot for reproducibility since taxonomy assignments can shift as databases update — this is what otu_class_appr and otu_db are for.</p>
 <style type="text/css">
@@ -866,6 +959,35 @@ Elizabeth Lawrence, Emilie Boulanger, Saara Suominen
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
+</section>
+<section id="resources-for-dna-terms" class="slide level2 center">
+<h2>Resources for DNA terms</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Resource</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>DNA Extension term definitions</strong></td>
+<td><a href="https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2024-07-11.xml">rs.gbif.org/extension/gbif/1.0/dna_derived_data_2024-07-11.xml</a></td>
+</tr>
+<tr class="even">
+<td><strong>DwC Term Quick Reference Guide</strong></td>
+<td><a href="https://dwc.tdwg.org/terms/">dwc.tdwg.org/terms/</a></td>
+</tr>
+<tr class="odd">
+<td>OBIS Manual (DNA chapter)</td>
+<td><a href="https://manual.obis.org/dna_data.html">manual.obis.org/dna_data.html</a></td>
+</tr>
+<tr class="even">
+<td>GBIF DNA publishing guide</td>
+<td><a href="https://doi.org/10.35035/DOC-VF1A-NR22">doi.org/10.35035/DOC-VF1A-NR22</a></td>
+</tr>
+</tbody>
+</table>
 
 
 </section></section>
