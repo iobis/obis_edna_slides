@@ -930,22 +930,37 @@ Elizabeth Lawrence, Emilie Boulanger, Saara Suominen
 <p>⛵ <strong>Field Sampling</strong> → same as metabarcoding</p>
 <p>🧬 <strong>DNA Extraction</strong> → same as metabarcoding</p>
 <p>🧪 <strong>DNA Amplification</strong> → PCR conditions → <code>pcr_cond</code></p>
-<div class="columns">
-<div class="column" style="width:50%;">
 <p>🎯 <strong>Target &amp; Quantity</strong></p>
-<ul>
-<li>Target gene region, primers</li>
-<li>Copy number + concentration,</li>
-<li>LOD, Cq, baseline</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><strong>Maps to:</strong></p>
-<ul>
-<li><code>target_gene</code>, <code>target_subfragment</code>, <code>pcr_primers</code></li>
-<li><code>estimatedNumberOfCopies</code> + <code>concentration</code>, <code>concentrationUnit</code></li>
-<li><code>pcr_primer_lod</code>, <code>quantificationCycle</code>, <code>baselineValue</code></li>
-</ul>
-</div></div>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Target &amp; Quantity</th>
+<th>Maps to</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Target gene region</td>
+<td><code>target_gene</code>, <code>target_subfragment</code></td>
+</tr>
+<tr class="even">
+<td>Primers</td>
+<td><code>pcr_primers</code></td>
+</tr>
+<tr class="odd">
+<td>Copy number + concentration</td>
+<td><code>estimatedNumberOfCopies</code> + <code>concentration</code>, <code>concentrationUnit</code></td>
+</tr>
+<tr class="even">
+<td>LOD, Cq, baseline</td>
+<td><code>pcr_primer_lod</code>, <code>quantificationCycle</code>, <code>baselineValue</code></td>
+</tr>
+</tbody>
+</table>
 <aside class="notes">
 <p>qPCR = Category 3 — targeted species detection. Adds qPCR-specific fields: probeReporter, probeQuencher, estimatedNumberOfCopies, thresholdQuantificationCycle, and baselineValue. Key difference from metabarcoding: you are detecting one specific taxon, so scientificName and scientificNameID are required from the start. Use basisOfRecord = MaterialSample.</p>
 <style type="text/css">
