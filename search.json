@@ -599,7 +599,7 @@
     "href": "index-map-edna-to-dwc.html#unknown-sequences",
     "title": "Mapping molecular data to Darwin Core",
     "section": "Unknown sequences",
-    "text": "Unknown sequences\n\nMany sequences in any given study will remain uncharacterized\nPopulate the scientificName field with Biota incertae sedis\nOr the lowest taxonomic information if available\n\ne.g. only assigned to Class level, scientificName = Teleostei, scientificNameID = urn:lsid:marinespecies.org:taxname:293496\n\n\n\n\n\nFor Biota incertea sedis, scientificNameID should be populated with urn:lsid:marinespecies.org:taxname:12.\nRecommend that you populate verbatimIdentification with the name that was originally documented (e.g. phototrophic eukaryote).\n\n\n\n\n\n\n\n\nSpecial cases"
+    "text": "Unknown sequences\n\nMany sequences in any given study will remain uncharacterized\nPopulate the scientificName field with Biota incertae sedis\nOr the lowest taxonomic information if available\n\ne.g. only assigned to Class level, scientificName = Teleostei, scientificNameID = urn:lsid:marinespecies.org:taxname:293496\n\n\n\n\n\nFor Biota incertea sedis, scientificNameID should be populated with urn:lsid:marinespecies.org:taxname:12.\nRecommend that you populate verbatimIdentification with the name that was originally documented (e.g. phototrophic eukaryote).\n\n\n\n\n\n\n\n\n##Special cases"
   },
   {
     "objectID": "index-map-edna-to-dwc.html#sequences-without-a-worms-id-aphiaid",
