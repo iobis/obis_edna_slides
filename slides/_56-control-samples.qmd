@@ -1,5 +1,4 @@
-## Control samples
-[Special cases]{style="color:#E8A020; font-style:italic;"}
+# Control samples
 
 * Control samples are important for quality control of resulting data
 * **Currently, there is no feature for this implemented in the IPT**
