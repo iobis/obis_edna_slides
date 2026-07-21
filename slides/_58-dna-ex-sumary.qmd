@@ -1,0 +1,8 @@
+## DNA Derived Data Extension Summary
+
+Managing DNA data with Darwin Core uses:
+
+- Event core (sampling event info)
+- Occurrence extension (taxon observation and identification)
+- DNA derived data extension (DNA sequences, primers, methods)
+- eMoF extension (other measurement or fact information)

@@ -30,3 +30,5 @@ date: 2026-07-22
 {{< include slides/_18-emof.qmd >}}
 
 {{< include slides/_19-vocab.qmd >}}
+
+{{< include slides/_58-dna-ex-summary.qmd >}}
