@@ -5,7 +5,7 @@
 * Many sequences in any given study will remain uncharacterized
 * Populate the `scientificName` field with **Biota incertae sedis**
 * Or the lowest taxonomic information if available
-  *   e.g. only assigned to Class level, `scientificName` = **Teleostei**, `scientificNameID` = **urn:lsid:marinespecies.org:taxname:293496**
+  *   e.g. only assigned to Class level, `scientificName` = *Teleostei*, `scientificNameID` = *urn:lsid:marinespecies.org:taxname:293496*
 
 :::: {.columns}
 ::: {.column width="60%"}
