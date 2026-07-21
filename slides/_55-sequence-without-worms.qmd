@@ -1,3 +1,5 @@
+[Special cases]{style="color:#E8A020; font-style:italic;"}
+
 ## Sequences without a WoRMS ID (AphiaID)
 
 * WoRMS is an extensive database of linnean names of marine species, confirmed by experts in each taxonomic group
