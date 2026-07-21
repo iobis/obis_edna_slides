@@ -1,2 +1,16 @@
 ## Metadata with no DwC terms
 
+* A lot of information, especially detailed parameters e.g. of bioinformatic workflow, do not have controlled vocabulary fields **yet**
+* **The	FAIRe project, “making eDNA data FAIR”**, is in the process of developing new metadata fields to record all the relevant information of eDNA projects
+* The checklist is already available online: [https://fair-edna.github.io/download.html](https://fair-edna.github.io/download.html)
+*	 A lot of existing fields, a lot of new fields
+*	 Currently, the new fields are dropped from the IPT
+*	 But in the process of adding them to DwC and MIxS
+
+:::: {.columns}
+
+::: {.column width="75%"}
+![](assets/FAIRe_screenshot.png){fig-align="right" width="60%"}
+:::
+
+::::
