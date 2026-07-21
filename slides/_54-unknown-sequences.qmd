@@ -1,3 +1,5 @@
+[Special cases]{style="color:#E8A020; font-style:italic;"}
+
 ## Unknown sequences
 
 * Many sequences in any given study will remain uncharacterized
