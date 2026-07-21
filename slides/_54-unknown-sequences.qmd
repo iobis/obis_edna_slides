@@ -6,12 +6,12 @@
   *   e.g. only assigned to Class level, `scientificName` = **Teleostei**, `scientificNameID` = **urn:lsid:marinespecies.org:taxname:293496**
 
 :::: {.columns}
-::: {.column width="40%"}
+::: {.column width="60%"}
 * For Biota incertea sedis, `scientificNameID` should be populated with **urn:lsid:marinespecies.org:taxname:12**.
 * Recommend that you populate `verbatimIdentification` with the name that was originally documented (e.g. phototrophic eukaryote).
 :::
 
 ::: {.column width="40%"}
-![](assets/worms-teleost.png){fig-align="center" width="90%"}
+![](assets/worms-teleost.png){fig-align="center"}
 :::
 ::::
