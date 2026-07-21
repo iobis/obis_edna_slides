@@ -606,7 +606,7 @@
     "href": "index-map-edna-to-dwc.html#sequences-without-a-worms-id-aphiaid",
     "title": "Mapping molecular data to Darwin Core",
     "section": "Sequences without a WoRMS ID (AphiaID)",
-    "text": "Sequences without a WoRMS ID (AphiaID)\n\nWoRMS is an extensive database of linnean names of marine species, confirmed by experts in each taxonomic group\nWithin eDNA datasets there are usually many taxonomic assignments (protists, prokaryotes) that cannot be found in the WoRMS database currently (i.e. no AphiaID available)\nThe name might be available and mapped to GBIF, making sharing datasets between GBIF and OBIS complicated\nThe submitter of the data may in these cases record the known species name, in scientificName, the ID of the taxon in another database in taxonConceptID and leave scientificNameID empty"
+    "text": "Sequences without a WoRMS ID (AphiaID)\n\nWoRMS is an extensive database of linnean names of marine species, confirmed by experts in each taxonomic group\nWithin eDNA datasets there are usually many taxonomic assignments (protists, prokaryotes) that cannot be found in the WoRMS database currently (i.e. no AphiaID available)\nThe name might be available and mapped to GBIF, making sharing datasets between GBIF and OBIS complicated\nThe submitter of the data may in these cases record the known species name, in scientificName, the ID of the taxon in another database in taxonConceptID and leave scientificNameID empty\n\nSpecial cases"
   },
   {
     "objectID": "index-map-edna-to-dwc.html#control-samples",
