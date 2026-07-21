@@ -17,6 +17,8 @@ date: 2026-07-21
 
 {{< include slides/_37-obis-fair.qmd >}}
 
+{{< include slides/_38a_interject-question.qmd >}}
+
 {{< include slides/_38-intro-darwin-core.qmd >}}
 
 {{< include slides/_39-relational-databases.qmd >}}
