@@ -10,7 +10,6 @@
 - `eventDate`
 - `decimalLatitude`
 - `decimalLongitude`
-- `env_medium`
 - `samplingProtocol`
 
 *→ the 📍where, 🕒when & 🧪how of collection*

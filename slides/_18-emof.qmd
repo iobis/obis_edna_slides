@@ -1,4 +1,4 @@
-## eMoF extension
+## eMoF extension table
 
 * Table to record **all types of measurements** (abiotic, biotic, environmental, sampling...)
 * Measurements recorded in long format

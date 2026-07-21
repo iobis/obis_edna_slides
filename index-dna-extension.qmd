@@ -25,9 +25,7 @@ date: 2026-07-22
 
 {{< include slides/_11-table-structure-options.qmd >}}
 
-{{< include slides/_28-table-structure-examples.qmd >}}          
-
-{{< include slides/_12-event-core-structure-example.qmd >}}
+{{< include slides/_28-table-structure-examples.qmd >}}
 
 {{< include slides/_18-emof.qmd >}}
 

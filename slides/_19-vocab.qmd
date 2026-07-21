@@ -20,6 +20,7 @@ Identifiers for each eMoF column
 ::: {.column width="60%"}
 
 **What should vocabulary terms capture?**
+
 ![](/assets/vocab-components.png)
 
 ::: {.bordered-box}
