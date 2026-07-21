@@ -602,13 +602,6 @@
     "text": "Special cases"
   },
   {
-    "objectID": "index-map-edna-to-dwc.html#control-samples",
-    "href": "index-map-edna-to-dwc.html#control-samples",
-    "title": "Mapping molecular data to Darwin Core",
-    "section": "Control samples",
-    "text": "Control samples\nSpecial cases\n\nControl samples are important for quality control of resulting data\nCurrently, there is no feature for this implemented in the IPT\nIn the future, OBIS and GBIF are working on a solution to submit them as separate files within the same dataset\nThey will then not be mapped, to avoid that they end up in the GBIF or OBIS occurrence indexes, but will be available for anyone looking for that information"
-  },
-  {
     "objectID": "index-map-edna-to-dwc.html#metadata-with-no-dwc-terms",
     "href": "index-map-edna-to-dwc.html#metadata-with-no-dwc-terms",
     "title": "Mapping molecular data to Darwin Core",
