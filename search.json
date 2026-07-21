@@ -602,6 +602,27 @@
     "text": "Unknown sequences"
   },
   {
+    "objectID": "index-map-edna-to-dwc.html#sequences-without-a-worms-id-aphiaid",
+    "href": "index-map-edna-to-dwc.html#sequences-without-a-worms-id-aphiaid",
+    "title": "Mapping molecular data to Darwin Core",
+    "section": "Sequences without a WoRMS ID (AphiaID)",
+    "text": "Sequences without a WoRMS ID (AphiaID)"
+  },
+  {
+    "objectID": "index-map-edna-to-dwc.html#control-samples",
+    "href": "index-map-edna-to-dwc.html#control-samples",
+    "title": "Mapping molecular data to Darwin Core",
+    "section": "Control samples",
+    "text": "Control samples"
+  },
+  {
+    "objectID": "index-map-edna-to-dwc.html#metadata-with-no-dwc-terms",
+    "href": "index-map-edna-to-dwc.html#metadata-with-no-dwc-terms",
+    "title": "Mapping molecular data to Darwin Core",
+    "section": "Metadata with no DwC terms",
+    "text": "Metadata with no DwC terms"
+  },
+  {
     "objectID": "index-map-edna-to-dwc.html#resources-for-dna-terms",
     "href": "index-map-edna-to-dwc.html#resources-for-dna-terms",
     "title": "Mapping molecular data to Darwin Core",
