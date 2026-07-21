@@ -11,7 +11,7 @@ format:
 
 1. [What is Environmental DNA](https://github.com/iobis/obis_edna_slides/blob/invemar-training/slides/pdf_slides/1-introduction-edna.pdf)?
     - Introduction to eDNA methods and what we can do with it
-2. [What information is important at each step of an eDNA workflow?](https://github.com/iobis/obis_edna_slides/blob/invemar-training/slides/pdf_slides/)
+2. [What information is important at each step of an eDNA workflow?](https://github.com/iobis/obis_edna_slides/blob/invemar-training/slides/pdf_slides/2-information-at-each-step-edna-worflow.pdf)
     - Overview of the information that should be captured when managing DNA datasets
 3. [FAIR Data & Biodiversity Standards](index-fair-data.qmd)
     - Background information on what FAIR data is and a brief overview of Darwin Core and Essential Ocean Variables 
