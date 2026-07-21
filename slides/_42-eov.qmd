@@ -1,5 +1,7 @@
 ## Essential Ocean Variables (EOVs)
 
+[goosocean.org/eov](https://goosocean.org/eov/)
+
 :::: {.columns}
 ::: {.column width="70%"}
 - Defined by **GOOS** (Global Ocean Observing System, IOC-UNESCO) 
@@ -23,6 +25,8 @@
 ## Why this matters
 Well-structured data can directly feed EOV assessments used for global reporting and policy (e.g. UN Ocean Decade, conservation targets)
 :::
+
+
 
 ::: {.notes}
 GOOS Biology & Ecosystems (BioEco) Panel defines the biological/ecosystem EOVs. OBIS is a key data source these assessments draw on. You don't need to memorize the EOV list — the point is that standardized, well-formatted data (what the rest of today covers) is what makes this pipeline work at all. If useful, mention the EOV Metadata App (eovmetadata.obis.org) as a lightweight related tool, but it's a separate system from the IPT we'll cover this afternoon.
