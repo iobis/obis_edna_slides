@@ -322,6 +322,13 @@
     "text": "OBIS & FAIR Data\n\n\n\n\n\n\n\n\n\nWhat OBIS gives you\n\n\n\n\nFindable\nYour dataset joins a global, searchable index - with a DOI\n\n\nAccessible\nStandard download/API access, no one-off email requests\n\n\nInteroperable\nDarwin Core structure - readable by people and machines\n\n\nReusable\nDocumented metadata + a clear reuse license (e.g. CC-BY)\n\n\n\n\n\n\n\n\n\n\nA real example\n\n\nA marine invasive species dataset from Venezuela, published July 2022, was included in 1,873 separate download requests within 3 months — with zero extra effort from the data provider!\n\n\n\n\n…it’s the reason people don’t have to keep emailing you for your spreadsheet."
   },
   {
+    "objectID": "index-fair-data.html#do-you-use-a-standard-to-format-your-data",
+    "href": "index-fair-data.html#do-you-use-a-standard-to-format-your-data",
+    "title": "FAIR Data Principles & Biodiversity Standards",
+    "section": "Do you use a standard to format your data?",
+    "text": "Do you use a standard to format your data?\n¿Utiliza algún estándar para formatear los datos?"
+  },
+  {
     "objectID": "index-fair-data.html#what-is-darwin-core",
     "href": "index-fair-data.html#what-is-darwin-core",
     "title": "FAIR Data Principles & Biodiversity Standards",
