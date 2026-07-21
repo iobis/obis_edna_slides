@@ -18,7 +18,7 @@ format:
 4. [Darwin Core and DNA-Derived Data](index-dna-extension.qmd)
     - Details on how to fit the types of DNA data into Darwin Core, and how to map the important information (Slide Deck 2) to DwC terms
 5. [eDNA Data Management History](https://youtu.be/zsH8KIis_yA){target="_blank" rel="noopener noreferrer"} (YouTube recording)
-6. [Mapping Molecular data to Darwin Core](index-map-edna-to-dwc.html)
+6. [Mapping molecular data to Darwin Core](index-map-edna-to-dwc.html)
 7. Quality Control
     - eDNA Quality Control
     - [Taxonomy quality control tool demo](https://www.youtube.com/watch?v=e7HBAFf5NFg&feature=youtu.be){target="_blank" rel="noopener noreferrer"} (YouTube recording)
