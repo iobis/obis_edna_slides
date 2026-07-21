@@ -21,4 +21,10 @@ date: 2026-07-22
 
 {{< include slides/_54-unknown-sequences.qmd >}}
 
+{{< include slides/_55-sequence-without-worms.qmd >}}
+
+{{< include slides/_56-control-samples.qmd >}}
+
+{{< include slides/_57-metadata-no-vocab.qmd >}}
+
 {{< include slides/_52-dna-term-resources.qmd >}}  
