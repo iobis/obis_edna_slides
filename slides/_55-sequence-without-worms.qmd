@@ -1,4 +1,4 @@
-[Special cases]{style="color:#E8A020; font-style:italic;"}
+##[Special cases]{style="color:#E8A020; font-style:italic; font-size:small;"}
 
 ## Sequences without a WoRMS ID (AphiaID)
 
