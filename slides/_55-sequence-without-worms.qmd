@@ -1,8 +1,4 @@
-## {visibility="hidden"}
-
-<div style="color:#E8A020; font-style:italic; font-size:0.8em; margin-bottom:0.2em;">
-Special cases
-</div>
+## Special cases
 
 # Sequences without a WoRMS ID (AphiaID)
 
