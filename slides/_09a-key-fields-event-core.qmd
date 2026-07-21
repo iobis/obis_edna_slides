@@ -10,7 +10,7 @@
 - `decimalLatitude`, `decimalLongitude`  
 ::: 
 ::: {.column width="50%"}
-**Occurrence table (strongly recommended fields)**
+**Event table (strongly recommended fields)**
 
 - `minimumDepthInMeters`, `maximumDepthInMeters` 
 - `sampleSizeValue` <span class="small-note">(volume of sample)</span>  
