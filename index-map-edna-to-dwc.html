@@ -6,15 +6,12 @@
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
-<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet"><meta charset="utf-8">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.9.38">
 
   <meta name="author" content="Elizabeth Lawrence, Emilie Boulanger, Saara Suominen">
   <meta name="dcterms.date" content="2026-07-22">
-  <title>OBIS Training Slides – Types of DNA-derived data</title>
+  <title>OBIS Training Slides – Mapping molecular data to Darwin Core</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -138,8 +135,8 @@
     <div class="slides">
 
 <section id="title-slide" data-background-image="./assets/background-shapes.svg" data-background-opacity="0.2" data-background-size="contain" class="quarto-title-block center">
-  <h1 class="title">Types of DNA-derived data</h1>
-  <p class="subtitle">DNA Data and Darwin Core: The DNA Derived Data Extension</p>
+  <h1 class="title">Mapping molecular data to Darwin Core</h1>
+  <p class="subtitle">Which information is entered where?</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -151,53 +148,50 @@ Elizabeth Lawrence, Emilie Boulanger, Saara Suominen
 
   <p class="date">2026-07-22</p>
 </section>
-<section id="five-dna-data-categories" class="slide level2 center">
-<h2>Five DNA data categories</h2>
-<p>Which one fits your data?</p>
+<section id="identifying-key-information-for-metabarcoding-qpcr-pipelines" class="slide level2 center">
+<h2>Identifying key information for Metabarcoding &amp; qPCR pipelines</h2>
+</section>
+<section id="edna-metabarcoding-key-information" class="slide level2 center">
+<h2>eDNA Metabarcoding: Key Information</h2>
+<p><em>Category 1 — DNA-derived occurrences — <code>basisOfRecord = MaterialSample</code></em></p>
+<p><span style="color:#E8A020; font-style:italic;">From field collection to taxonomy — what to capture at each step</span></p>
+<p>Step 1:⛵ <strong>Field Sampling</strong></p>
 <table class="caption-top">
 <colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
+<col style="width: 50%">
+<col style="width: 50%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>#</th>
-<th>Category</th>
-<th>Example</th>
+<th>Field Sampling</th>
+<th>Maps to</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>1</strong></td>
-<td><strong>DNA-derived occurrences</strong></td>
-<td>Metabarcoding (ASVs/OTUs assigned to taxa)</td>
+<td>Coordinates, location names</td>
+<td>Event table: <code>decimalLatitude</code>, <code>decimalLongitude</code>, <code>locality</code></td>
 </tr>
 <tr class="even">
-<td>2</td>
-<td>Enriched occurrences</td>
-<td>Voucher specimen + barcoded</td>
+<td>Date, time</td>
+<td>Event table: <code>eventDate</code>, <code>eventTime</code></td>
 </tr>
 <tr class="odd">
-<td><strong>3</strong></td>
-<td><strong>Targeted species detection</strong></td>
-<td>qPCR / ddPCR assays</td>
+<td>Environmental measurements (temperature, salinity, depth…)</td>
+<td>eMoF table: <code>measurementType</code>, <code>measurementValue</code>, <code>measurementUnit</code></td>
 </tr>
 <tr class="even">
-<td>4</td>
-<td>Name references</td>
-<td>Sequence in GenBank only</td>
+<td>Sampling method / gear</td>
+<td>Event table: <code>samplingProtocol</code> and/or eMoF table</td>
 </tr>
 <tr class="odd">
-<td>5</td>
-<td>Metadata only</td>
-<td>Dataset without sequences</td>
+<td>Sample volume, filter size</td>
+<td>DNA table: <code>samp_size</code> , <code>size_frac</code></td>
 </tr>
 </tbody>
 </table>
-<p>🔎 Use the <a href="https://docs.gbif.org/publishing-dna-derived-data/en/#categorization-of-your-data">GBIF decision tree</a> to confirm your category</p>
 <aside class="notes">
-<p>We won’t go into details on this slide - just reiterating that Categories 1 and 3 are by far the most common for eDNA researchers. Category 1 covers metabarcoding; Category 3 covers targeted detection methods like qPCR/ddPCR where no sequences are produced. Be aware that there are other possible types but they are outside the scope of this workshop.</p>
+<p>This is where the Event core table gets populated. Environmental measurements that aren’t DNA-specific (e.g.&nbsp;temperature, salinity) go in eMoF rather than the DNA extension — worth a quick reminder here since people sometimes want to cram everything into one table.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -210,418 +204,43 @@ Elizabeth Lawrence, Emilie Boulanger, Saara Suominen
           display:block!important;
       }</style></aside>
 </section>
-<section id="edna-data-standards" class="slide level2 center">
-<h2>eDNA data standards</h2>
-<div style="color:white; padding:15px; border-radius:8px;">
-<p><strong>Two major eDNA data standards exist</strong></p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ol type="1">
-<li><strong>MiXS</strong> <br> (Minimum Information about any (x) Sequence) — for raw sequences in NCBI</li>
-</ol>
-</div><div class="column" style="width:50%;">
-<ol start="2" type="1">
-<li><strong>Darwin Core (DwC)</strong><br> Community vocabulary for biodiversity data — species, location, date, basis of record</li>
-</ol>
-</div></div>
-</div>
-<div style="text-align:center; color:#065A82; font-weight:bold; font-style:italic; margin-top:10px;">
-<p>OBIS + GBIF + ALA accept genetic data linked to spatial coordinates and time</p>
-</div>
-<p><br> 🔜<strong>Developing landscape</strong></p>
-<ul>
-<li>Rapidly changing field</li>
-<li>For OBIS future directions include the DWC-DP and FAIReDNA terms</li>
-</ul>
-<aside class="notes">
-<p>Raw sequences deposited in NCBI lack coordinates and dates — they cannot answer where or when a species was detected. OBIS, GBIF, and ALA now accept DNA-derived occurrences linked to space and time. DNA data requires special care: it is derived, depends on reference databases, and often produces many unknown sequences. The Darwin Core DNA extension preserves methodological context for future re-analysis.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="darwin-core-dna-derived-data-extension" class="slide level2 center">
-<h2>Darwin Core + DNA Derived Data Extension</h2>
-<ul>
-<li><strong>Darwin Core</strong>: shared vocabulary for biodiversity data<br>
-</li>
-<li><strong>DNA Extension</strong>: adds MIxS terms for sequences, primers, methods<br>
-</li>
-<li>Developed jointly by GBIF, OBIS, and the genomics community</li>
-</ul>
-<div class="columns" style="display: flex; height: 90%;">
-<div class="column" style="width:55%;">
-<p><a href="assets/dwca.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img data-src="assets/dwca.png"></a></p>
-</div><div class="column" style="display: flex; align-items: center;">
-<div class="bordered-box">
-<p><strong>meta.xml</strong> ← links all tables<br>
-<strong>eml.xml</strong> ← metadata (who, what, where, when, how)<br>
-<strong>occurrence.csv</strong> ← the occurrence records<br>
-<strong>dna_derived.csv</strong> ← the DNA extension</p>
-</div>
-</div></div>
-<aside class="notes">
-<p>MIxS = Minimum Information about any (x) Sequence. The extension incorporates these community standards so the same fields used in INSDC/GenBank submissions can be reused here.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="core-table-for-dna-data" class="slide level2 center">
-<h2>Core table for DNA data</h2>
-<p>DNA data can be published with <strong>either</strong> core type:</p>
-<ul>
-<li><strong>Occurrence core</strong> + DNA extension</li>
-<li><strong>Event core</strong> + Occurrence extension + DNA extension</li>
-</ul>
-<div class="callout callout-note no-icon callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<p><strong>This wasn’t always true</strong></p>
-</div>
-<div class="callout-content">
-<p>Previously guidance required <strong>Occurrence core only</strong> for DNA data. Event core support was added recently!</p>
-</div>
-</div>
-</div>
-<aside class="notes">
-<p>Both options link the DNA extension via occurrenceID. Event core additionally lets you record sample-level metadata (location, date, method) once per event instead of once per sequence — see the next slide for why that matters at scale. A caveat worth mentioning live: even with Event core, some duplication is unavoidable because of the star schema (DNA extension still needs occurrenceID, so each occurrence still carries a full sequence/sample link). A newer GBIF/OBIS data model in development aims to remove this constraint entirely, but it isn’t implemented yet (as of late 2025).</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="key-dwc-fields-to-include-event" class="slide level2 center">
-<h2>Key DwC fields to include: Event</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Event core (mandatory fields)</strong></p>
-<ul>
-<li><code>eventID</code> — <span class="small-note">unique, stable ID</span></li>
-<li><code>eventDate</code> — <span class="small-note">YYYY-MM-DD</span></li>
-<li><code>decimalLatitude</code>, <code>decimalLongitude</code><br>
-</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><strong>Occurrence table (strongly recommended fields)</strong></p>
-<ul>
-<li><code>minimumDepthInMeters</code>, <code>maximumDepthInMeters</code></li>
-<li><code>sampleSizeValue</code> <span class="small-note">(volume of sample)</span><br>
-</li>
-<li><code>sampleSizeUnit</code> <span class="small-note">(units of volume sampled)</span></li>
-<li><code>samplingProtocol</code> - <span class="small-note">(link to your field sampling SOP)</span></li>
-</ul>
-</div></div>
-</section>
-<section id="key-dwc-fields-to-include-occurrence" class="slide level2 center">
-<h2>Key DwC fields to include: Occurrence</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Occurrence (core) table (mandatory fields)</strong></p>
-<ul>
-<li><code>occurrenceID</code> — <span class="small-note">unique, stable ID</span></li>
-<li><code>scientificName</code> — <span class="small-note">WoRMS ID</span></li>
-<li><code>basisOfRecord</code> = <span class="small-note">“MaterialSample”</span><br>
-</li>
-<li><code>occurrenceStatus</code> = <span class="small-note">“present”</span></li>
-</ul>
-<p><em>If Occurrence <strong>core</strong>, also: <code>eventDate</code>, <code>decimalLatitude</code>, <code>decimalLongitude</code></em></p>
-</div><div class="column" style="width:50%;">
-<p><strong>Occurrence table (strongly recommended fields)</strong></p>
-<ul>
-<li><code>scientificNameID</code> <span class="small-note">(WoRMS AphiaID)</span><br>
-</li>
-<li><code>organismQuantity</code> <span class="small-note">(read count of sequence)</span><br>
-</li>
-<li><code>associatedSequences</code> <span class="small-note">(link to e.g.&nbsp;GenBank or ENA accession)</span></li>
-<li><code>organismQuantityType</code> = <span class="small-note">“DNA sequence reads”</span></li>
-<li><code>sampleSizeValue</code> <span class="small-note">(total read count in sample)</span><br>
-</li>
-<li><code>sampleSizeUnit</code> = <span class="small-note">“DNA sequence reads”</span></li>
-<li><code>samplingProtocol</code> - <span class="small-note">(link to your SOP)</span></li>
-</ul>
-</div></div>
-</section>
-<section id="key-fields-to-include-dna-extension" class="slide level2 center">
-<h2>Key fields to include: DNA Extension</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>DNA Extension (example key fields)</strong></p>
-<ul>
-<li><code>DNA_sequence</code> — <span class="small-note">ASV/OTU sequence</span></li>
-<li><code>target_gene</code> — <span class="small-note">e.g.&nbsp;“COI”, “18S rRNA”</span></li>
-<li><code>pcr_primer_name_forward</code> — <span class="small-note">and reverse</span></li>
-<li><code>seq_meth</code> — <span class="small-note">e.g.&nbsp;“Illumina MiSeq”</span></li>
-<li><code>otu_class_appr</code> — <span class="small-note">e.g.&nbsp;“DADA2 v1.18”</span></li>
-<li><code>otu_db</code> — <span class="small-note">reference database</span></li>
-<li><code>sop</code> — <span class="small-note">link to your protocol</span></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="assets/eDNA_quickguide.png"> <span style="font-size:15px;">https://manual.obis.org/dna_data.html#quick-start-guide</span></p>
-</div></div>
-<aside class="notes">
-<p>WoRMS = World Register of Marine Species. Every marine occurrence should have a WoRMS AphiaID as the taxonID. For freshwater / terrestrial taxa use the appropriate backbone (CoL, etc.). Unidentified sequences should still be included — they can be assigned taxon later.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="from-raw-outputs-long-format" class="slide level2 center">
-<h2>From raw outputs → long format</h2>
-<p><strong>DNA data is more complex than a lat/lon + species name</strong></p>
-<p><strong>Your typical metabarcoding outputs:</strong></p>
+<section id="edna-metabarcoding-key-information-1" class="slide level2 center">
+<h2>eDNA Metabarcoding: Key Information</h2>
+<p><em>Category 1 — DNA-derived occurrences — <code>basisOfRecord = MaterialSample</code></em></p>
+<p><span style="color:#E8A020; font-style:italic;">From field collection to taxonomy — what to capture at each step</span></p>
+<p>Step 2: 🧬 <strong>DNA Extraction</strong></p>
 <table class="caption-top">
-<thead>
-<tr class="header">
-<th>File</th>
-<th>Content</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>OTU/ASV table</td>
-<td>Sequences × Samples (read counts)</td>
-</tr>
-<tr class="even">
-<td>Taxonomy table</td>
-<td>Sequence [ID] → taxon assignment</td>
-</tr>
-<tr class="odd">
-<td>Sample metadata</td>
-<td>Location, date, method</td>
-</tr>
-<tr class="even">
-<td>FASTA file</td>
-<td>Actual DNA sequences</td>
-</tr>
-</tbody>
-</table>
-<p><strong>The transformation:</strong></p>
-<blockquote>
-<p>One row = one unique sequence <strong>in</strong> one sample = one occurrence record</p>
-</blockquote>
-<aside class="notes">
-<p>The most common stumbling block is this “wide to long” transformation. The OBIS manual has a clear diagram. The Metabarcoding Data Toolkit (MDT) can automate this for common pipeline outputs.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="example-transformation" class="slide level2 center">
-<h2>Example transformation</h2>
-<div class="columns">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><a href="assets/DNA_4tables-to-one.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img data-src="assets/DNA_4tables-to-one.jpg" class="quarto-figure quarto-figure-center" style="width:90.0%"></a></p>
-</figure>
-</div>
-</div>
-</section>
-<section id="table-structure-options" class="slide level2 center">
-<h2>Table structure options</h2>
-<p><strong>Option A — Occurrence Core</strong></p>
-<pre><code>occurrence.csv 
-  └── dna_derived.csv  (linked via occurrenceID)
-  └── emof.csv         (linked via occurrenceID)</code></pre>
-<hr>
-<p><strong>Option B — Event Core (recommended for eDNA)</strong></p>
-<pre><code>event.csv
-  └── occurrence.csv        (linked via eventID)
-       └── dna_derived.csv  (linked via occurrenceID)
-  └── emof.csv              (linked via eventID or occurrenceID)</code></pre>
-<p><strong>Why Event Core?</strong> Sample-level metadata (location, date, method) is recorded <strong>once</strong> per sampling event rather than repeated in every row.</p>
-<aside class="notes">
-<p>For a survey with 500 samples × 2000 ASVs = 1M rows, repeating location and date for every row is wasteful and error-prone. The Event Core avoids this. A new GBIF/OBIS data model is under development that will be even more flexible but is not yet implemented (as of 2025).</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="dataset-structure-three-linked-tables" class="slide level2 center">
-<h2>Dataset Structure: Three Linked Tables</h2>
-<div class="columns">
-<div class="column" style="width:33%;">
-<div style="color:white; padding:14px; border-radius:8px; height:350px;">
-<p><strong>Event Core</strong></p>
-<ul>
-<li><code>eventID</code></li>
-<li><code>eventDate</code></li>
-<li><code>decimalLatitude</code></li>
-<li><code>decimalLongitude</code></li>
-<li><code>env_medium</code></li>
-<li><code>samplingProtocol</code></li>
-</ul>
-<p><em>→ the 📍where, 🕒when &amp; 🧪how of collection</em></p>
-</div>
-</div><div class="column" style="width:33%;">
-<div style="color:white; padding:14px; border-radius:8px; height:350px;">
-<p><strong>Occurrence Extension</strong></p>
-<ul>
-<li><code>occurrenceID</code></li>
-<li><code>eventID</code></li>
-<li><code>scientificName</code></li>
-<li><code>taxonID</code> (WoRMS)</li>
-<li><code>basisOfRecord</code></li>
-<li><code>occurrenceStatus</code></li>
-</ul>
-<p><em>→ what organism was detected</em> 🐠🪸🪼</p>
-</div>
-</div><div class="column" style="width:33%;">
-<div style="color:white; padding:14px; border-radius:8px; height:350px;">
-<p><strong>DNA Derived Data Ext.</strong></p>
-<ul>
-<li><code>occurrenceID</code></li>
-<li><code>DNA_sequence</code></li>
-<li><code>target_gene</code></li>
-<li><code>pcr_primer_forward</code></li>
-<li><code>pcr_primer_reverse</code></li>
-<li><code>seq_meth</code></li>
-</ul>
-<p><em>→ 🧬the molecular context</em></p>
-</div>
-</div></div>
-<p><br></p>
-<div style="text-align:center; color:#5A8FA8; font-style:italic; margin-top:10px;">
-<p>Tables linked by <code>eventID</code> and <code>occurrenceID</code></p>
-</div>
-<div style="text-align:center; color:#5A8FA8; margin-top:10px;">
-<p>Optional 4th table: <strong>eMoF</strong> for measurements and facts</p>
-</div>
-<aside class="notes">
-<p>Your published dataset consists of up to three linked tables. The Event core captures sampling events — where, when, and how. The Occurrence extension records each taxon detection. The DNA Derived Data extension carries all molecular metadata. The tables are joined by eventID and occurrenceID. This avoids repeating sampling metadata for every sequence.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="example-usage-of-event-core-structure" class="slide level2 center">
-<h2>Example usage of Event core structure</h2>
-<div class="columns">
-<div class="column" style="width:30%;">
-<ul>
-<li><strong>Why Event Core?</strong> Sample-level metadata (location, date, method) is recorded <strong>once</strong> per sampling event rather than repeated in every row.</li>
-</ul>
-</div><div class="column" style="width:70%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><a href="assets/dna_data_event_core_structure.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img data-src="assets/dna_data_event_core_structure.png" class="quarto-figure quarto-figure-center" style="width:50.0%"></a></p>
-</figure>
-</div>
-</div></div>
-</section>
-<section id="emof-extension" class="slide level2 center">
-<h2>eMoF extension</h2>
-<ul>
-<li>Table to record <strong>all types of measurements</strong> (abiotic, biotic, environmental, sampling…)</li>
-<li>Measurements recorded in long format
-<ul>
-<li><code>measurementType</code>, <code>measurementValue</code>, <code>measurementUnit</code></li>
-</ul></li>
-<li>Linking sampling info to <code>eventID</code>s <strong>decreases duplication</strong></li>
-<li>Use controlled vocabulary whenever possible!</li>
-</ul>
-<table class="caption-top" style="width:100%;">
 <colgroup>
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
+<col style="width: 50%">
+<col style="width: 50%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>eventID</th>
-<th>occurrenceID</th>
-<th>measurementType</th>
-<th>measurementValue</th>
-<th>measurementUnit</th>
-<th></th>
+<th>DNA Extraction</th>
+<th>Maps to</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>YEARsite1samp1</td>
-<td></td>
-<td>temperature</td>
-<td>25</td>
-<td>C</td>
-<td></td>
+<td>Volume of sample processed</td>
+<td>DNA table: <code>samp_vol_we_dna_ext</code></td>
 </tr>
-</tbody>
-</table>
-<table class="caption-top">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>measurementTypeID</th>
-<th>measurementUnitID</th>
-<th></th>
+<tr class="even">
+<td>Extraction method / kit</td>
+<td>DNA table: <code>nucl_acid_ext</code>, <code>nucl_acid_amp</code></td>
 </tr>
-</thead>
-<tbody>
 <tr class="odd">
-<td>http://vocab.nerc.ac.uk/collection/P01/current/TEMPPR01/</td>
-<td>http://vocab.nerc.ac.uk/collection/P06/current/UPAA/</td>
-<td></td>
+<td>Concentration</td>
+<td>DNA table: <code>concentration</code>, <code>concentrationUnit</code></td>
+</tr>
+<tr class="even">
+<td>Purity ratio (A260/280)</td>
+<td>DNA table: <code>ratioOfAbsorbance260_280</code></td>
 </tr>
 </tbody>
 </table>
 <aside class="notes">
-<p>As some of us may already be familiar, eMoF is the extension table that holds ALL kinds of measurement or fact data including measurements on organisms, information about the sampling gear used, or environmental variables measured. A reminder that this data is organized in LONG format. All the measurements are organized in rows within the columns measurementType, measurementValue, and measurementUnit</p>
+<p>Extraction method matters a lot for reproducibility and comparing datasets — different kits can bias which taxa get amplified downstream, so it’s worth capturing even though it’s easy to skip. Purity ratio (260/280) is a quick QC signal for contamination that’s worth flagging even if participants don’t record it religiously yet.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -634,31 +253,43 @@ Elizabeth Lawrence, Emilie Boulanger, Saara Suominen
           display:block!important;
       }</style></aside>
 </section>
-<section id="controlled-vocabulary" class="slide level2 center">
-<h2>Controlled Vocabulary</h2>
-<div class="columns">
-<div class="column" style="width:40%;">
-<p>Identifiers for each eMoF column</p>
-<ul>
-<li>measurementUnitID</li>
-<li>measurementValueID
-<ul>
-<li>non-numeric values</li>
-</ul></li>
-<li>measurementTypeID</li>
-</ul>
-<p>→ Facilitates data understanding</p>
-<p>→ Enables data aggregation</p>
-<p>→ Decreases <strong>misuse potential</strong></p>
-</div><div class="column" style="width:60%;">
-<p><strong>What should vocabulary terms capture?</strong> <img data-src="./assets/vocab-components.png"></p>
-<div class="bordered-box">
-<p><em>OBIS recommends using NERC vocabulary terms</em></p>
-</div>
-</div></div>
+<section id="edna-metabarcoding-key-information-2" class="slide level2 center">
+<h2>eDNA Metabarcoding: Key Information</h2>
+<p><em>Category 1 — DNA-derived occurrences — <code>basisOfRecord = MaterialSample</code></em></p>
+<p><span style="color:#E8A020; font-style:italic;">From field collection to taxonomy — what to capture at each step</span></p>
+<p>Step 3: 🧪 <strong>DNA Amplification</strong></p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>DNA Amplification</th>
+<th>Maps to (DNA table)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Target gene (e.g.&nbsp;COI, 18S rRNA)</td>
+<td>DNA table: <code>target_gene</code></td>
+</tr>
+<tr class="even">
+<td>Primer sequence + primer reference</td>
+<td>DNA table: <code>pcr_primer_forward</code>, <code>pcr_primer_name_forward</code>, <code>pcr_primer_reverse</code>, <code>pcr_primer_name_reverse</code> + <code>pcr_primer_reference</code></td>
+</tr>
+<tr class="odd">
+<td>PCR conditions</td>
+<td>DNA table: <code>pcr_cond</code></td>
+</tr>
+<tr class="even">
+<td>Length of amplified product</td>
+<td>DNA table: <code>ampliconSize</code></td>
+</tr>
+</tbody>
+</table>
 <aside class="notes">
-<p>Emof lets you attach vocabulary identifiers to each of the emof columns. This makes our measurement data are more easily comparable and interoperable, more easily aggregated for analysis, and can decrease misuse potential!</p>
-<p>When selecting a vocab it’s important to think about what information needs to be included in the definition for the users to understand your measurement so you should consider the property/attribute (e.g.&nbsp;length, concentration), what’s the object/entity of interest (a organism, a chemical), whether enviro context is important, and whether a user needs to know the methods used to properly understand the measurement OBIS recommends the NERC vocabular collection and the OBIS manual has much more detail on controlled vocabulary</p>
+<p>Primer choice determines which taxa can even be detected — always cite the primer reference, don’t just paste the sequence, so users can trace back to the original validation. PCR conditions (annealing temp, cycle number) belong here too even though they feel like lab-notebook detail; they matter for anyone trying to reproduce or compare your results.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -670,6 +301,183 @@ Elizabeth Lawrence, Emilie Boulanger, Saara Suominen
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
+</section>
+<section id="edna-metabarcoding-key-information-3" class="slide level2 center">
+<h2>eDNA Metabarcoding: Key Information</h2>
+<p><em>Category 1 — DNA-derived occurrences — <code>basisOfRecord = MaterialSample</code></em></p>
+<p><span style="color:#E8A020; font-style:italic;">From field collection to taxonomy — what to capture at each step</span></p>
+<p>Step 4: 💻 <strong>Sequences</strong></p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Sequences</th>
+<th>Maps to</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sequencing platform + library layout</td>
+<td>DNA table: <code>seq_meth</code> + <code>lib_layout</code> (DNA table)</td>
+</tr>
+<tr class="even">
+<td>Sequences per sample</td>
+<td>DNA table: <code>DNA_sequence</code> (linked by <code>occurrenceID</code>)</td>
+</tr>
+<tr class="odd">
+<td>Public repository where sequences deposited (NCBI, ENA)</td>
+<td>Occurrence table: <code>associatedSequences</code></td>
+</tr>
+</tbody>
+</table>
+<aside class="notes">
+<p>This is the last step before formatting — everything captured across the last 3 slides plus this one feeds into either the Occurrence table or the DNA extension. Reference database + pipeline (e.g.&nbsp;“DADA2 v1.18” + “SILVA 138”) matter a lot for reproducibility since taxonomy assignments can shift as databases update — this is what otu_class_appr and otu_db are for.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="edna-metabarcoding-key-information-4" class="slide level2 center">
+<h2>eDNA Metabarcoding: Key Information</h2>
+<p><em>Category 1 — DNA-derived occurrences — <code>basisOfRecord = MaterialSample</code></em></p>
+<p><span style="color:#E8A020; font-style:italic;">From field collection to taxonomy — what to capture at each step</span></p>
+<p>Step 5: 🐠 <strong>Taxonomy</strong></p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Taxonomy</th>
+<th>Maps to</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Taxonomy assignment + annotation confidence</td>
+<td>Occurrence table: <code>scientificName</code>, <code>taxonID</code> <br> DNA table: <code>annot</code></td>
+</tr>
+<tr class="even">
+<td>Reference database + pipeline used</td>
+<td>Occurrence table: <code>identificationRemarks</code>, <code>identificationReferences</code> <br> DNA table: <code>otu_db</code> + <code>sop</code></td>
+</tr>
+<tr class="odd">
+<td>Number of sequence reads per taxon &amp; total</td>
+<td>Occurence table: <code>organismQuantity</code>, <code>organismQuantityType</code>, &amp; <code>sampleSizeValue</code>, <code>sampleSizeUnit</code></td>
+</tr>
+</tbody>
+</table>
+<aside class="notes">
+<p>This is the last step before formatting — everything captured across the last 3 slides plus this one feeds into either the Occurrence table or the DNA extension. Reference database + pipeline (e.g.&nbsp;“DADA2 v1.18” + “SILVA 138”) matter a lot for reproducibility since taxonomy assignments can shift as databases update — this is what otu_class_appr and otu_db are for.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="key-metadata-quantitative-pcr-qpcr" class="slide level2 center">
+<h2>Key Metadata: Quantitative PCR (qPCR)</h2>
+<p><em>Category 3 — Targeted species detection — <code>basisOfRecord = MaterialSample</code></em></p>
+<p><span style="color:#E8A020; font-style:italic;">Targeted species detection — additional fields vs metabarcoding</span></p>
+<div style="font-size:0.65em; color:#5A8FA8; text-align:center; margin-top:6px;">
+
+</div>
+<p>⛵ <strong>Field Sampling</strong> → same as metabarcoding</p>
+<p>🧬 <strong>DNA Extraction</strong> → same as metabarcoding</p>
+<p>🧪 <strong>DNA Amplification</strong> → PCR conditions → <code>pcr_cond</code></p>
+<p>🎯 <strong>Target &amp; Quantity</strong></p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Target &amp; Quantity</th>
+<th>Maps to</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Target gene region</td>
+<td><code>target_gene</code>, <code>target_subfragment</code></td>
+</tr>
+<tr class="even">
+<td>Primers</td>
+<td><code>pcr_primers</code></td>
+</tr>
+<tr class="odd">
+<td>Copy number + concentration</td>
+<td><code>estimatedNumberOfCopies</code> + <code>concentration</code>, <code>concentrationUnit</code></td>
+</tr>
+<tr class="even">
+<td>LOD, Cq, baseline</td>
+<td><code>pcr_primer_lod</code>, <code>quantificationCycle</code>, <code>baselineValue</code></td>
+</tr>
+</tbody>
+</table>
+<aside class="notes">
+<p>qPCR = Category 3 — targeted species detection. Adds qPCR-specific fields: probeReporter, probeQuencher, estimatedNumberOfCopies, thresholdQuantificationCycle, and baselineValue. Key difference from metabarcoding: you are detecting one specific taxon, so scientificName and scientificNameID are required from the start. Use basisOfRecord = MaterialSample.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="unknown-sequences" class="slide level2 center">
+<h2>Unknown sequences</h2>
+</section>
+<section id="resources-for-dna-terms" class="slide level2 center">
+<h2>Resources for DNA terms</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Resource</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>DNA Extension term definitions</strong></td>
+<td><a href="https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2024-07-11.xml">rs.gbif.org/extension/gbif/1.0/dna_derived_data_2024-07-11.xml</a></td>
+</tr>
+<tr class="even">
+<td><strong>DwC Term Quick Reference Guide</strong></td>
+<td><a href="https://dwc.tdwg.org/terms/">dwc.tdwg.org/terms/</a></td>
+</tr>
+<tr class="odd">
+<td>OBIS Manual (DNA chapter)</td>
+<td><a href="https://manual.obis.org/dna_data.html">manual.obis.org/dna_data.html</a></td>
+</tr>
+<tr class="even">
+<td>GBIF DNA publishing guide</td>
+<td><a href="https://doi.org/10.35035/DOC-VF1A-NR22">doi.org/10.35035/DOC-VF1A-NR22</a></td>
+</tr>
+</tbody>
+</table>
 
 
 </section>
@@ -1058,38 +866,6 @@ Elizabeth Lawrence, Emilie Boulanger, Saara Suominen
         }
       });
       </script>
-    <script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
-    (function() {
-      let previousOnload = window.onload;
-      window.onload = () => {
-        if (previousOnload) {
-          previousOnload();
-        }
-        lightboxQuarto.on('slide_before_load', (data) => {
-          const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-          const href = trigger.getAttribute('href');
-          if (href !== null) {
-            const imgEl = window.document.querySelector(`a[href="${href}"] img`);
-            if (imgEl !== null) {
-              const srcAttr = imgEl.getAttribute("src");
-              if (srcAttr && srcAttr.startsWith("data:")) {
-                slideConfig.href = srcAttr;
-              }
-            }
-          } 
-        });
-      
-        lightboxQuarto.on('slide_after_load', (data) => {
-          const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-          if (window.Quarto?.typesetMath) {
-            window.Quarto.typesetMath(slideNode);
-          }
-        });
-      
-      };
-      
-    })();
-              </script>
     
 
 </body></html>
