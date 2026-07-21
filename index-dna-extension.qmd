@@ -50,4 +50,6 @@ date: 2026-07-22
 
 {{< include slides/_25a-key_fields_qpcr-summary.qmd >}}        
 
+{{< include slides/_54-unknown-sequences.qmd >}}  
+
 {{< include slides/_52-dna-term-resources.qmd >}}  
