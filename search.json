@@ -256,7 +256,7 @@
     "href": "index-dna-extension.html#key-dwc-fields-to-include-event",
     "title": "Types of DNA-derived data",
     "section": "Key DwC fields to include: Event",
-    "text": "Key DwC fields to include: Event\n\n\nEvent core (mandatory fields)\n\neventID — unique, stable ID\neventDate — YYYY-MM-DD\ndecimalLatitude, decimalLongitude\n\n\n\nOccurrence table (strongly recommended fields)\n\nminimumDepthInMeters, maximumDepthInMeters\nsampleSizeValue (volume of sample)\n\nsampleSizeUnit (units of volume sampled)\nsamplingProtocol - (link to your field sampling SOP)"
+    "text": "Key DwC fields to include: Event\n\n\nEvent core (mandatory fields)\n\neventID — unique, stable ID\neventDate — YYYY-MM-DD\ndecimalLatitude, decimalLongitude\n\n\n\nEvent table (strongly recommended fields)\n\nminimumDepthInMeters, maximumDepthInMeters\nsampleSizeValue (volume of sample)\n\nsampleSizeUnit (units of volume sampled)\nsamplingProtocol - (link to your field sampling SOP)"
   },
   {
     "objectID": "index-dna-extension.html#key-dwc-fields-to-include-occurrence",
