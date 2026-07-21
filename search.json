@@ -595,11 +595,11 @@
     "text": "Key Metadata: Quantitative PCR (qPCR)\nCategory 3 — Targeted species detection — basisOfRecord = MaterialSample\nTargeted species detection — additional fields vs metabarcoding\n\n\n\n⛵ Field Sampling → same as metabarcoding\n🧬 DNA Extraction → same as metabarcoding\n🧪 DNA Amplification → PCR conditions → pcr_cond\n🎯 Target & Quantity\n\n\n\n\n\n\n\nTarget & Quantity\nMaps to\n\n\n\n\nTarget gene region\ntarget_gene, target_subfragment\n\n\nPrimers\npcr_primers\n\n\nCopy number + concentration\nestimatedNumberOfCopies + concentration, concentrationUnit\n\n\nLOD, Cq, baseline\npcr_primer_lod, quantificationCycle, baselineValue\n\n\n\n\nqPCR = Category 3 — targeted species detection. Adds qPCR-specific fields: probeReporter, probeQuencher, estimatedNumberOfCopies, thresholdQuantificationCycle, and baselineValue. Key difference from metabarcoding: you are detecting one specific taxon, so scientificName and scientificNameID are required from the start. Use basisOfRecord = MaterialSample."
   },
   {
-    "objectID": "index-map-edna-to-dwc.html#unknown-sequences",
-    "href": "index-map-edna-to-dwc.html#unknown-sequences",
+    "objectID": "index-map-edna-to-dwc.html#special-cases",
+    "href": "index-map-edna-to-dwc.html#special-cases",
     "title": "Mapping molecular data to Darwin Core",
-    "section": "Unknown sequences",
-    "text": "Unknown sequences\n\nMany sequences in any given study will remain uncharacterized\nPopulate the scientificName field with Biota incertae sedis\nOr the lowest taxonomic information if available\n\ne.g. only assigned to Class level, scientificName = Teleostei, scientificNameID = urn:lsid:marinespecies.org:taxname:293496\n\n\n\n\n\nFor Biota incertea sedis, scientificNameID should be populated with urn:lsid:marinespecies.org:taxname:12.\nRecommend that you populate verbatimIdentification with the name that was originally documented (e.g. phototrophic eukaryote)."
+    "section": "Special cases",
+    "text": "Special cases"
   },
   {
     "objectID": "index-map-edna-to-dwc.html#control-samples",
