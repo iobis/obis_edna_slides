@@ -1,4 +1,4 @@
-## Reminder: Flat vs. relational data tables
+## Flat vs. relational data tables
 
 :::: {.columns}
 ::: {.column width="50%"}
