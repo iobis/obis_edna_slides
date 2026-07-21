@@ -25,4 +25,6 @@ date: 2026-07-21
 
 {{< include slides/_41-sensitive-data.qmd >}}   
 
-{{< include slides/_42-eov.qmd >}}   
+{{< include slides/_42-eov.qmd >}}  
+
+{{< include slides/_53-why-fair.qmd >}}
