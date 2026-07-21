@@ -32,24 +32,3 @@ date: 2026-07-22
 {{< include slides/_18-emof.qmd >}}
 
 {{< include slides/_19-vocab.qmd >}}
-
-# Which information is entered where?
-<span style="font-size: 5em; cen">☕</span>
-
-## Identifying key information for Metabarcoding & qPCR pipelines
-
-{{< include slides/_24a-key_fields_metabarcoding-field.qmd >}}         
-
-{{< include slides/_24b-key_fields_metabarcoding-dna.qmd >}}
-
-{{< include slides/_24c-key_fields_metabarcoding-pcr.qmd >}}   
-
-{{< include slides/_24d-key_fields_metabarcoding-sequencing.qmd >}}
-
-{{< include slides/_24e-key_fields_metabarcoding-taxonomy.qmd >}}
-
-{{< include slides/_25a-key_fields_qpcr-summary.qmd >}}        
-
-{{< include slides/_54-unknown-sequences.qmd >}}  
-
-{{< include slides/_52-dna-term-resources.qmd >}}  

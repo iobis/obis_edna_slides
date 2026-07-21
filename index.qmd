@@ -17,11 +17,17 @@ format:
     - Background information on what FAIR data is and a brief overview of Darwin Core and Essential Ocean Variables
 4. [Darwin Core and DNA-Derived Data](index-dna-extension.qmd)
     - Details on how to fit the types of DNA data into Darwin Core, and how to map the important information (Slide Deck 2) to DwC terms
-5. [OBIS Quality Control](index-qc.qmd)
-    - Very short overview of quality control checks you should do with any OBIS dataset, DNA or otherwise
-6. [Publishing & IPT](index-publishing.qmd)
+5. [eDNA Data Management History](https://drive.google.com/file/d/1pe_M3dvybOFG9rqrXiG1YljeWWAdQ__8/view){target="_blank" rel="noopener noreferrer"} (Video recording)
+6. [Mapping Molecular data to Darwin Core](index-map-edna-to-dwc.html)
+7. Quality Control
+    - eDNA Quality Control
+    - [eDNA Quality Control tool](https://www.youtube.com/watch?v=e7HBAFf5NFg&feature=youtu.be){target="_blank" rel="noopener noreferrer"} (YouTube recording)
+    - [OBIS Quality Control](index-qc.qmd)
+        - Overview of quality control checks you should do with any OBIS dataset, DNA or otherwise
+8. [Ongoing data standardisation intitiatives (OBON)](https://www.youtube.com/playlist?list=PLS6jqgZoUzto) (YouTube recording)
+9. [Publishing & IPT](index-publishing.qmd)
     - How to publish data using the Integrated Publishing Toolkit (IPT) software
-7. [Accessing OBIS (DNA) Data](index-access.qmd)
+10. [Accessing OBIS (DNA) Data](index-access.qmd)
     - How to access data from OBIS, including DNA data
 
 ## Other decks
