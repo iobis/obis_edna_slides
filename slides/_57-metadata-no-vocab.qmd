@@ -1,3 +1,5 @@
+[Special cases]{style="color:#E8A020; font-style:italic;"}
+
 ## Metadata with no DwC terms
 
 * A lot of information, especially detailed parameters e.g. of bioinformatic workflow, do not have controlled vocabulary fields **yet**
