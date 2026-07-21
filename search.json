@@ -357,6 +357,13 @@
     "text": "Essential Ocean Variables (EOVs)\n\n\n\nDefined by GOOS (Global Ocean Observing System, IOC-UNESCO)\n\nMinimum set of variables needed to track ocean state and change\n\n36 EOVs → physical, biogeochemical, biological & ecosystem\nSpecification sheets to guide data collection\n\n\n\n\n \n\n\n\n\n\n\nWhy this matters\n\n\nWell-structured data can directly feed EOV assessments used for global reporting and policy (e.g. UN Ocean Decade, conservation targets)\n\n\n\n\nGOOS Biology & Ecosystems (BioEco) Panel defines the biological/ecosystem EOVs. OBIS is a key data source these assessments draw on. You don’t need to memorize the EOV list — the point is that standardized, well-formatted data (what the rest of today covers) is what makes this pipeline work at all. If useful, mention the EOV Metadata App (eovmetadata.obis.org) as a lightweight related tool, but it’s a separate system from the IPT we’ll cover this afternoon."
   },
   {
+    "objectID": "index-fair-data.html#why-standardize-data",
+    "href": "index-fair-data.html#why-standardize-data",
+    "title": "FAIR Data Principles & Biodiversity Standards",
+    "section": "Why standardize data?",
+    "text": "Why standardize data?\n\nEnables data to be found, combined, and reused across research groups, institutions, and countries\nAvoids duplicated effort — no need to re-collect or re-process data that already exists elsewhere\nSupports large-scale synthesis (e.g. global biodiversity assessments, ocean health indicators) that no single dataset could achieve alone\nKeeps data accessible and usable long after a project ends or funding runs out\nMakes data machine-readable, so pipelines and tools can integrate it automatically instead of manual reformatting\nProvides context via metadata so others can correctly interpret and trust the data\nMaximizes the return on investment of data collection, which is often costly (fieldwork, sequencing, expert time)\n\n\nTo summarzize… standardization isn’t just for its own sake — it’s what lets individual datasets add up to something bigger than the sum of their parts, and what protects the investment already made in collecting the data."
+  },
+  {
     "objectID": "index-access.html#getting-data-out-of-obis",
     "href": "index-access.html#getting-data-out-of-obis",
     "title": "Accessing OBIS data",
