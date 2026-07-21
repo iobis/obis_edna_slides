@@ -620,7 +620,7 @@
     "href": "index-map-edna-to-dwc.html#metadata-with-no-dwc-terms",
     "title": "Mapping molecular data to Darwin Core",
     "section": "Metadata with no DwC terms",
-    "text": "Metadata with no DwC terms"
+    "text": "Metadata with no DwC terms\n\nA lot of information, especially detailed parameters e.g. of bioinformatic workflow, do not have controlled vocabulary fields yet\nThe FAIRe project, “making eDNA data FAIR”, is in the process of developing new metadata fields to record all the relevant information of eDNA projects\nThe checklist is already available online: https://fair-edna.github.io/download.html\nA lot of existing fields, a lot of new fields\nCurrently, the new fields are dropped from the IPT\nBut in the process of adding them to DwC and MIxS"
   },
   {
     "objectID": "index-map-edna-to-dwc.html#resources-for-dna-terms",
