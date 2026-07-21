@@ -1,2 +1,6 @@
 ## Control samples
 
+* Control samples are important for quality control of resulting data
+* **Currently, there is no feature for this implemented in the IPT**
+* In the future, OBIS and GBIF are working on a solution to submit them as separate files within the same dataset
+* They will then not be mapped, to avoid that they end up in the GBIF or OBIS occurrence indexes, but will be available for anyone looking for that information
