@@ -81,7 +81,7 @@
     "href": "index-edna-full.html#key-dwc-fields-to-include-occurrence",
     "title": "Publishing eDNA Data in OBIS",
     "section": "Key DwC fields to include: Occurrence",
-    "text": "Key DwC fields to include: Occurrence\n\n\nOccurrence (core) table (mandatory fields)\n\noccurrenceID — unique, stable ID\nscientificName — WoRMS ID\nbasisOfRecord = “MaterialSample”\n\noccurrenceStatus = “present”\n\nIf Occurrence core, also: eventDate, decimalLatitude, decimalLongitude\n\nOccurrence table (strongly recommended fields)\n\nscientificNameID (WoRMS AphiaID)\n\norganismQuantity (read count of sequence)\n\nassociatedSequences (link to e.g. GenBank or ENA accession)\norganismQuantityType = “DNA sequence reads”\nsampleSizeValue (total read count in sample)\n\nsampleSizeUnit = “DNA sequence reads”\nsamplingProtocol - (link to your SOP)"
+    "text": "Key DwC fields to include: Occurrence\n\n\nOccurrence (core) table (mandatory fields)\n\noccurrenceID — unique, stable ID\nscientificName — taxon name to lowest possible taxon rank\nbasisOfRecord = “MaterialSample”\n\noccurrenceStatus = “present”\n\nIf Occurrence core, also: eventDate, decimalLatitude, decimalLongitude\n\nOccurrence table (strongly recommended fields)\n\nscientificNameID (WoRMS AphiaID)\n\norganismQuantity (read count of sequence)\n\nassociatedSequences (link to e.g. GenBank or ENA accession)\norganismQuantityType = “DNA sequence reads”\nsampleSizeValue (total read count in sample)\n\nsampleSizeUnit = “DNA sequence reads”\nsamplingProtocol - (link to your SOP)"
   },
   {
     "objectID": "index-edna-full.html#worms-taxon-matching",
@@ -263,7 +263,7 @@
     "href": "index-dna-extension.html#key-dwc-fields-to-include-occurrence",
     "title": "Types of DNA-derived data",
     "section": "Key DwC fields to include: Occurrence",
-    "text": "Key DwC fields to include: Occurrence\n\n\nOccurrence (core) table (mandatory fields)\n\noccurrenceID — unique, stable ID\nscientificName — WoRMS ID\nbasisOfRecord = “MaterialSample”\n\noccurrenceStatus = “present”\n\nIf Occurrence core, also: eventDate, decimalLatitude, decimalLongitude\n\nOccurrence table (strongly recommended fields)\n\nscientificNameID (WoRMS AphiaID)\n\norganismQuantity (read count of sequence)\n\nassociatedSequences (link to e.g. GenBank or ENA accession)\norganismQuantityType = “DNA sequence reads”\nsampleSizeValue (total read count in sample)\n\nsampleSizeUnit = “DNA sequence reads”\nsamplingProtocol - (link to your SOP)"
+    "text": "Key DwC fields to include: Occurrence\n\n\nOccurrence (core) table (mandatory fields)\n\noccurrenceID — unique, stable ID\nscientificName — taxon name to lowest possible taxon rank\nbasisOfRecord = “MaterialSample”\n\noccurrenceStatus = “present”\n\nIf Occurrence core, also: eventDate, decimalLatitude, decimalLongitude\n\nOccurrence table (strongly recommended fields)\n\nscientificNameID (WoRMS AphiaID)\n\norganismQuantity (read count of sequence)\n\nassociatedSequences (link to e.g. GenBank or ENA accession)\norganismQuantityType = “DNA sequence reads”\nsampleSizeValue (total read count in sample)\n\nsampleSizeUnit = “DNA sequence reads”\nsamplingProtocol - (link to your SOP)"
   },
   {
     "objectID": "index-dna-extension.html#key-fields-to-include-dna-extension",
