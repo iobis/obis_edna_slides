@@ -1,6 +1,5 @@
-[Special cases]{style="color:#E8A020; font-style:italic;"}
-
 ## Metadata with no DwC terms
+[Special cases]{style="color:#E8A020; font-style:italic;"}
 
 * A lot of information, especially detailed parameters e.g. of bioinformatic workflow, do not have controlled vocabulary fields **yet**
 * **The	FAIRe project, “making eDNA data FAIR”**, is in the process of developing new metadata fields to record all the relevant information of eDNA projects
