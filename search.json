@@ -602,18 +602,11 @@
     "text": "Unknown sequences\n\nMany sequences in any given study will remain uncharacterized\nPopulate the scientificName field with Biota incertae sedis\nOr the lowest taxonomic information if available\n\ne.g. only assigned to Class level, scientificName = Teleostei, scientificNameID = urn:lsid:marinespecies.org:taxname:293496\n\n\n\n\n\nFor Biota incertea sedis, scientificNameID should be populated with urn:lsid:marinespecies.org:taxname:12.\nRecommend that you populate verbatimIdentification with the name that was originally documented (e.g. phototrophic eukaryote)."
   },
   {
-    "objectID": "index-map-edna-to-dwc.html#special-cases",
-    "href": "index-map-edna-to-dwc.html#special-cases",
-    "title": "Mapping molecular data to Darwin Core",
-    "section": "Special cases",
-    "text": "Special cases"
-  },
-  {
     "objectID": "index-map-edna-to-dwc.html#sequences-without-a-worms-id-aphiaid",
     "href": "index-map-edna-to-dwc.html#sequences-without-a-worms-id-aphiaid",
     "title": "Mapping molecular data to Darwin Core",
     "section": "Sequences without a WoRMS ID (AphiaID)",
-    "text": "Sequences without a WoRMS ID (AphiaID)\n\nWoRMS is an extensive database of linnean names of marine species, confirmed by experts in each taxonomic group\nWithin eDNA datasets there are usually many taxonomic assignments (protists, prokaryotes) that cannot be found in the WoRMS database currently (i.e. no AphiaID available)\nThe name might be available and mapped to GBIF, making sharing datasets between GBIF and OBIS complicated\nThe submitter of the data may in these cases record the known species name, in scientificName, the ID of the taxon in another database in taxonConceptID and leave scientificNameID empty"
+    "text": "Sequences without a WoRMS ID (AphiaID)\nSpecial cases\n\nWoRMS is an extensive database of linnean names of marine species, confirmed by experts in each taxonomic group\nWithin eDNA datasets there are usually many taxonomic assignments (protists, prokaryotes) that cannot be found in the WoRMS database currently (i.e. no AphiaID available)\nThe name might be available and mapped to GBIF, making sharing datasets between GBIF and OBIS complicated\nThe submitter of the data may in these cases record the known species name, in scientificName, the ID of the taxon in another database in taxonConceptID and leave scientificNameID empty"
   },
   {
     "objectID": "index-map-edna-to-dwc.html#control-samples",
