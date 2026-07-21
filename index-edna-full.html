@@ -572,12 +572,12 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
 </li>
 <li><code>organismQuantity</code> <span class="small-note">(read count of sequence)</span><br>
 </li>
-<li><code>associatedSequences</code> <span class="small-note">(link to e.g.&nbsp;GenBank or ENA accession)</span></li>
 <li><code>organismQuantityType</code> = <span class="small-note">“DNA sequence reads”</span></li>
 <li><code>sampleSizeValue</code> <span class="small-note">(total read count in sample)</span><br>
 </li>
 <li><code>sampleSizeUnit</code> = <span class="small-note">“DNA sequence reads”</span></li>
 <li><code>samplingProtocol</code> - <span class="small-note">(link to your SOP)</span></li>
+<li><code>associatedSequences</code> <span class="small-note">(link to e.g.&nbsp;GenBank or ENA accession)</span></li>
 </ul>
 </div></div>
 </section>
@@ -641,7 +641,8 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
 <li><code>sop</code> — <span class="small-note">link to your protocol</span></li>
 </ul>
 </div><div class="column" style="width:50%;">
-<p><img data-src="assets/eDNA_quickguide.png"> <span style="font-size:15px;">https://manual.obis.org/dna_data.html#quick-start-guide</span></p>
+<p><a href="assets/eDNA_quickguide.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img data-src="assets/eDNA_quickguide.png"></a></p>
+<p><a href="https://manual.obis.org/dna_data.html#quick-start-guide" style="font-size:15px;">manual.obis.org/dna_data.html#quick-start-guide</a></p>
 </div></div>
 <aside class="notes">
 <p>WoRMS = World Register of Marine Species. Every marine occurrence should have a WoRMS AphiaID as the taxonID. For freshwater / terrestrial taxa use the appropriate backbone (CoL, etc.). Unidentified sequences should still be included — they can be assigned taxon later.</p>
@@ -695,7 +696,6 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
 <li><code>eventDate</code></li>
 <li><code>decimalLatitude</code></li>
 <li><code>decimalLongitude</code></li>
-<li><code>env_medium</code></li>
 <li><code>samplingProtocol</code></li>
 </ul>
 <p><em>→ the 📍where, 🕒when &amp; 🧪how of collection</em></p>
@@ -758,13 +758,13 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
 </div><div class="column" style="width:70%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="assets/dna_data_event_core_structure.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img data-src="assets/dna_data_event_core_structure.png" class="quarto-figure quarto-figure-center" style="width:50.0%"></a></p>
+<p><a href="assets/dna_data_event_core_structure.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img data-src="assets/dna_data_event_core_structure.png" class="quarto-figure quarto-figure-center" style="width:50.0%"></a></p>
 </figure>
 </div>
 </div></div>
 </section>
-<section id="emof-extension" class="slide level2 center">
-<h2>eMoF extension</h2>
+<section id="emof-extension-table" class="slide level2 center">
+<h2>eMoF extension table</h2>
 <ul>
 <li>Table to record <strong>all types of measurements</strong> (abiotic, biotic, environmental, sampling…)</li>
 <li>Measurements recorded in long format
@@ -856,7 +856,8 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
 <p>→ Enables data aggregation</p>
 <p>→ Decreases <strong>misuse potential</strong></p>
 </div><div class="column" style="width:60%;">
-<p><strong>What should vocabulary terms capture?</strong> <img data-src="./assets/vocab-components.png"></p>
+<p><strong>What should vocabulary terms capture?</strong></p>
+<p><a href="./assets/vocab-components.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img data-src="./assets/vocab-components.png"></a></p>
 <div class="bordered-box">
 <p><em>OBIS recommends using NERC vocabulary terms</em></p>
 </div>
@@ -880,7 +881,7 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
 <h2>Publishing workflow</h2>
 <p><strong>Integrated Publishing Toolkits (IPT)</strong> are hosted by OBIS nodes — you do not need to run your own server. OBIS has nodes covering most world regions. Find yours at obis.org/nodes.</p>
 <div style="text-align:center;">
-<p><a href="assets/publishing_steps.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img data-src="assets/publishing_steps.png"></a></p>
+<p><a href="assets/publishing_steps.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10"><img data-src="assets/publishing_steps.png"></a></p>
 </div>
 <aside class="notes">
 <p>OBIS has nodes covering most world regions. Find yours at obis.org/nodes. The IPT has a built-in metadata editor for EML so you do not need to write XML by hand. Emphasize that once published, the dataset gets a DOI and can be cited in papers.</p>

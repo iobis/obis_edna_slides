@@ -354,12 +354,12 @@ Elizabeth Lawrence, Emilie Boulanger, Saara Suominen
 </li>
 <li><code>organismQuantity</code> <span class="small-note">(read count of sequence)</span><br>
 </li>
-<li><code>associatedSequences</code> <span class="small-note">(link to e.g.&nbsp;GenBank or ENA accession)</span></li>
 <li><code>organismQuantityType</code> = <span class="small-note">“DNA sequence reads”</span></li>
 <li><code>sampleSizeValue</code> <span class="small-note">(total read count in sample)</span><br>
 </li>
 <li><code>sampleSizeUnit</code> = <span class="small-note">“DNA sequence reads”</span></li>
 <li><code>samplingProtocol</code> - <span class="small-note">(link to your SOP)</span></li>
+<li><code>associatedSequences</code> <span class="small-note">(link to e.g.&nbsp;GenBank or ENA accession)</span></li>
 </ul>
 </div></div>
 </section>
@@ -378,7 +378,8 @@ Elizabeth Lawrence, Emilie Boulanger, Saara Suominen
 <li><code>sop</code> — <span class="small-note">link to your protocol</span></li>
 </ul>
 </div><div class="column" style="width:50%;">
-<p><img data-src="assets/eDNA_quickguide.png"> <span style="font-size:15px;">https://manual.obis.org/dna_data.html#quick-start-guide</span></p>
+<p><a href="assets/eDNA_quickguide.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img data-src="assets/eDNA_quickguide.png"></a></p>
+<p><a href="https://manual.obis.org/dna_data.html#quick-start-guide" style="font-size:15px;">manual.obis.org/dna_data.html#quick-start-guide</a></p>
 </div></div>
 <aside class="notes">
 <p>WoRMS = World Register of Marine Species. Every marine occurrence should have a WoRMS AphiaID as the taxonID. For freshwater / terrestrial taxa use the appropriate backbone (CoL, etc.). Unidentified sequences should still be included — they can be assigned taxon later.</p>
@@ -447,7 +448,7 @@ Elizabeth Lawrence, Emilie Boulanger, Saara Suominen
 <div class="columns">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="assets/DNA_4tables-to-one.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img data-src="assets/DNA_4tables-to-one.jpg" class="quarto-figure quarto-figure-center" style="width:90.0%"></a></p>
+<p><a href="assets/DNA_4tables-to-one.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img data-src="assets/DNA_4tables-to-one.jpg" class="quarto-figure quarto-figure-center" style="width:90.0%"></a></p>
 </figure>
 </div>
 </div>
@@ -490,7 +491,6 @@ Elizabeth Lawrence, Emilie Boulanger, Saara Suominen
 <li><code>eventDate</code></li>
 <li><code>decimalLatitude</code></li>
 <li><code>decimalLongitude</code></li>
-<li><code>env_medium</code></li>
 <li><code>samplingProtocol</code></li>
 </ul>
 <p><em>→ the 📍where, 🕒when &amp; 🧪how of collection</em></p>
@@ -543,23 +543,8 @@ Elizabeth Lawrence, Emilie Boulanger, Saara Suominen
           display:block!important;
       }</style></aside>
 </section>
-<section id="example-usage-of-event-core-structure" class="slide level2 center">
-<h2>Example usage of Event core structure</h2>
-<div class="columns">
-<div class="column" style="width:30%;">
-<ul>
-<li><strong>Why Event Core?</strong> Sample-level metadata (location, date, method) is recorded <strong>once</strong> per sampling event rather than repeated in every row.</li>
-</ul>
-</div><div class="column" style="width:70%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><a href="assets/dna_data_event_core_structure.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img data-src="assets/dna_data_event_core_structure.png" class="quarto-figure quarto-figure-center" style="width:50.0%"></a></p>
-</figure>
-</div>
-</div></div>
-</section>
-<section id="emof-extension" class="slide level2 center">
-<h2>eMoF extension</h2>
+<section id="emof-extension-table" class="slide level2 center">
+<h2>eMoF extension table</h2>
 <ul>
 <li>Table to record <strong>all types of measurements</strong> (abiotic, biotic, environmental, sampling…)</li>
 <li>Measurements recorded in long format
@@ -651,7 +636,8 @@ Elizabeth Lawrence, Emilie Boulanger, Saara Suominen
 <p>→ Enables data aggregation</p>
 <p>→ Decreases <strong>misuse potential</strong></p>
 </div><div class="column" style="width:60%;">
-<p><strong>What should vocabulary terms capture?</strong> <img data-src="./assets/vocab-components.png"></p>
+<p><strong>What should vocabulary terms capture?</strong></p>
+<p><a href="./assets/vocab-components.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img data-src="./assets/vocab-components.png"></a></p>
 <div class="bordered-box">
 <p><em>OBIS recommends using NERC vocabulary terms</em></p>
 </div>
