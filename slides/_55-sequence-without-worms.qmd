@@ -1,6 +1,5 @@
-## [Special cases]{style="color:#E8A020; font-style:italic; font-size:small;"}
-
 ## Sequences without a WoRMS ID (AphiaID)
+[Special cases]{style="color:#E8A020; font-style:italic;"}
 
 * WoRMS is an extensive database of linnean names of marine species, confirmed by experts in each taxonomic group
 * Within eDNA datasets there are usually many taxonomic assignments (protists, prokaryotes) that cannot be found in the WoRMS database currently (i.e. no AphiaID available)
