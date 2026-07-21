@@ -1,4 +1,6 @@
-## Unknown sequences
+## Special cases
+
+# Unknown sequences
 
 * Many sequences in any given study will remain uncharacterized
 * Populate the `scientificName` field with **Biota incertae sedis**
