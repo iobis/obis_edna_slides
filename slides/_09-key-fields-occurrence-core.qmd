@@ -6,7 +6,7 @@
 **Occurrence (core) table (mandatory fields)**
 
 - `occurrenceID` — <span class="small-note">unique, stable ID</span>
-- `scientificName` — <span class="small-note">WoRMS ID</span>
+- `scientificName` — <span class="small-note">taxon name to lowest possible taxon rank</span>
 - `basisOfRecord` =  <span class="small-note">"MaterialSample"</span>  
 - `occurrenceStatus` = <span class="small-note">"present"</span>
 
