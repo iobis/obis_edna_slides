@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Game Answer Key – OBIS Training Slides</title>
+<title>OBIS DNA Training Slide Decks – OBIS Training Slides</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -101,7 +101,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">DwC Training</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./index-dna.html"> 
+    <a class="nav-link active" href="./index-dna.html" aria-current="page"> 
 <span class="menu-text">DNA Training</span></a>
   </li>  
 </ul>
@@ -121,8 +121,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Game Answer Key</h1>
-<p class="subtitle lead">Match Metadata to Darwin Core — Facilitator Reference</p>
+<h1 class="title">OBIS DNA Training Slide Decks</h1>
 </div>
 
 
@@ -139,322 +138,12 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Fragments are drawn from a real eDNA study at the Sanctuary of Fauna and Flora, Malpelo Island (Colombia). Grouped by workflow step, matching <a href="./index-DNA-game-instructions.html">Game Time</a>.</p>
-<p>Some fragments intentionally have <strong>no home</strong> in any DwC table — these are the distractors mentioned in the “Watch For” warning.</p>
-<section id="step-1-field-sampling" class="level2">
-<h2 class="anchored" data-anchor-id="step-1-field-sampling">Step 1 ⛵ Field Sampling</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Fragment</th>
-<th>Table</th>
-<th>Maps to</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>We sampled around the Sanctuary of Fauna and Flora in Malpelo, a remote oceanic island 490 km off the Colombia in the eastern tropical Pacific.</td>
-<td>Event</td>
-<td><code>locality</code>, <code>higherGeography</code></td>
-</tr>
-<tr class="even">
-<td>We sampled for 4 days (25-28 March 2018) at 1 site (El Arrecife).</td>
-<td>Event</td>
-<td><code>eventDate</code>, <code>locality</code></td>
-</tr>
-<tr class="odd">
-<td>Malpelo is surrounded by deep water and fishing activities are prohibited in the surrounding 8757 km2.</td>
-<td>Event</td>
-<td><code>eventRemarks</code></td>
-</tr>
-<tr class="even">
-<td>The reef ecosystem around the island is influenced by major oceanic currents and local upwelling, and the benthos is bare rock with low coral cover.</td>
-<td>Event</td>
-<td><code>habitat</code></td>
-</tr>
-<tr class="odd">
-<td>Malpelo Island is one of the most pristine and vulnerable reef ecosystems in the tropical eastern Pacific.</td>
-<td><em>(no match)</em></td>
-<td>—</td>
-</tr>
-<tr class="even">
-<td>We sampled eDNA in round surface transects. We did 5 identical transects at different times, corresponding to 10 samples (i.e., eDNA filters) because we collected 2 samples/transect.</td>
-<td>Event</td>
-<td><code>samplingProtocol</code></td>
-</tr>
-<tr class="odd">
-<td>Transects sampled from a boat,</td>
-<td>Event / eMoF</td>
-<td>Event: <code>samplingProtocol</code><br>eMoF: <code>samplingInstrument</code></td>
-</tr>
-<tr class="even">
-<td>we pumped 30 L of water/sample.</td>
-<td>DNA / Event</td>
-<td>DNA: <code>samp_size</code><br>Event: <code>sampleSize</code> &amp; <code>sampleSizeValue</code></td>
-</tr>
-<tr class="odd">
-<td>We used an Athena peristaltic pump (Proactive Environmental Products, Bradenton, Florida) (nominal flow 1.0 L/min) on each side of the boat</td>
-<td>Event / eMoF</td>
-<td>Event: <code>samplingProtocol</code><br>eMoF: <code>measurementType</code> + <code>measurementValue</code></td>
-</tr>
-<tr class="even">
-<td>to filter water through a VigiDNA 0.20 µm cross-flow filtration capsule (SPYGEN, le Bourget du Lac, France).</td>
-<td>DNA</td>
-<td><code>size_frac</code></td>
-</tr>
-<tr class="odd">
-<td>To avoid contamination, we used only disposable sterile tubing and gloves for each filtration capsule.</td>
-<td>Event</td>
-<td><code>samplingProtocol</code></td>
-</tr>
-<tr class="even">
-<td>Immediately after filtration, the filter units were filled with CL1 Conservation buffer (SPYGEN)</td>
-<td>Event</td>
-<td><code>samplingProtocol</code></td>
-</tr>
-<tr class="odd">
-<td>and stored at room temperature (20-25 °C) for 5.5 months until DNA extraction.</td>
-<td>Event</td>
-<td><code>samplingProtocol</code></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="step-2-dna-extraction" class="level2">
-<h2 class="anchored" data-anchor-id="step-2-dna-extraction">Step 2 🧬 DNA Extraction</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Fragment</th>
-<th>Table</th>
-<th>Maps to</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>The DNA extraction was performed in a dedicated laboratory for eDNA extraction equipped with positive air pressure, UV treatment, and frequent air renewal and decontamination procedures conducted before and after all manipulation.</td>
-<td><em>(no term)</em></td>
-<td>—</td>
-</tr>
-<tr class="even">
-<td>For DNA extraction, we followed the protocol in Fernández et al.&nbsp;(2021).</td>
-<td>DNA</td>
-<td><code>nucl_acid_ext</code></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="step-3-dna-amplification-pcr" class="level2">
-<h2 class="anchored" data-anchor-id="step-3-dna-amplification-pcr">Step 3 🧪 DNA Amplification (PCR)</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Fragment</th>
-<th>Table</th>
-<th>Maps to</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>For PCR amplification, we used 3 different primer pairs targeting distinct taxonomic groups: teleo, targeting teleost fishes and elasmobranchs (Valentini et al., 2016); Chon01, targeting elasmobranchs; and Vert01 (Taberlet et al., 2018), targeting vertebrates in general (primer sequences in Appendix S2).</td>
-<td>DNA</td>
-<td><code>pcr_primers</code>, <code>pcr_primer_reference</code></td>
-</tr>
-<tr class="even">
-<td>The PCR mixture was denatured at 95 °C for 10 min, followed by 50 cycles of 30 s at 95 °C, 30 s at 55 °C for teleo and Vert01 and 58 °C for Chon01 and 1 min at 72 °C, and a final elongation step at 72 °C for 7 min.</td>
-<td>DNA</td>
-<td><code>pcr_cond</code></td>
-</tr>
-<tr class="odd">
-<td>Twelve replicates of PCRs were run per sample (i.e., 24/transect because we had 2 field duplicates/transect).</td>
-<td>DNA</td>
-<td>link to full protocol in <code>nucl_acid_amp</code></td>
-</tr>
-<tr class="even">
-<td>After amplification, samples were titrated using capillary electrophoresis (QIAxcel [Qiagen GmbH, Hilden, Germany]) and purified using a MinElute PCR purification kit (Qiagen GmbH, Hilden, Germany).</td>
-<td>DNA</td>
-<td>link to full protocol in <code>nucl_acid_amp</code></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="step-4-sequencing" class="level2">
-<h2 class="anchored" data-anchor-id="step-4-sequencing">Step 4 💻 Sequencing</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Fragment</th>
-<th>Table</th>
-<th>Maps to</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>The purified PCR products were pooled in equal volumes to achieve a theoretical sequencing depth of 1,000,000 reads/sample/marker.</td>
-<td>DNA</td>
-<td><code>lib_size</code></td>
-</tr>
-<tr class="even">
-<td>Library preparation and sequencing were performed at Fasteris via a ligation protocol (Geneva).</td>
-<td><em>(no term)</em></td>
-<td>—</td>
-</tr>
-<tr class="odd">
-<td>Three libraries were prepared using the MetaFast protocol (Fasteris, Plan-les-Ouates, Switzerland).</td>
-<td><em>(no term)</em></td>
-<td>—</td>
-</tr>
-<tr class="even">
-<td>For all libraries, a paired-end sequencing (2 x 125 bp) was carried out</td>
-<td>DNA</td>
-<td><code>lib_layout</code></td>
-</tr>
-<tr class="odd">
-<td>..sequencing… was carried out with an Illumina HiSeq 2500 sequencer on 2 HiSeq Rapid Flow Cells (version 2) with the HiSeq Rapid SBS Kit (version 2) (Illumina, San Diego, CA, USA).</td>
-<td>DNA</td>
-<td><code>seq_meth</code></td>
-</tr>
-<tr class="even">
-<td>Three negative extraction controls and 1 negative PCR control (ultrapure water, 12 replicates) were amplified per primer pair and sequenced in parallel with the samples to monitor possible contaminants.</td>
-<td><em>(no term)</em></td>
-<td>—</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="step-5-taxonomy" class="level2">
-<h2 class="anchored" data-anchor-id="step-5-taxonomy">Step 5 🐠 Taxonomy</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Fragment</th>
-<th>Table</th>
-<th>Maps to</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Following sequencing, reads were processed using clustering and postclustering cleaning to remove potential errors and estimate the number of species based on molecular operational taxonomic units (MOTUs).</td>
-<td>DNA</td>
-<td><code>sop</code></td>
-</tr>
-<tr class="even">
-<td>Estimation of species diversity with MOTU richness was only performed using the teleo marker because other markers have not been tested extensively and their performance for estimating species richness remains unassessed.</td>
-<td><em>(no match)</em></td>
-<td>—</td>
-</tr>
-<tr class="odd">
-<td>For all markers, reads were assembled using Vsearch (Rognes et al., 2016) and then cut using Cutadapt (Martin, 2011).</td>
-<td>DNA</td>
-<td><code>sop</code></td>
-</tr>
-<tr class="even">
-<td>We used Swarm (Mahé et al., 2015) for clustering; the minimum distance of 1 mismatch between clusters followed Marques et al.&nbsp;(2020).</td>
-<td>DNA</td>
-<td><code>sop</code></td>
-</tr>
-<tr class="odd">
-<td>We discarded all observations with fewer than 10 reads, corresponding to untargeted taxa or present in only 1 PCR in the dataset, to avoid spurious MOTUs originating from a PCR error because it is unlikely for the same error to be generated several times in distinct PCRs.</td>
-<td>DNA</td>
-<td><code>sop</code></td>
-</tr>
-<tr class="even">
-<td>Chimeric sequences were discarded using UCHIME.</td>
-<td>DNA</td>
-<td><code>sop</code></td>
-</tr>
-<tr class="odd">
-<td>All sequences with a frequency of occurrence &lt;0.0006/plate position in the same sequencing batch and &lt;0.001/library were discarded to avoid index cross talk and tag jumps.</td>
-<td>DNA</td>
-<td><code>sop</code></td>
-</tr>
-<tr class="even">
-<td>For the teleo marker only, we applied the postclustering algorithm LULU to further refine diversity estimations based on MOTUs proxy.</td>
-<td>DNA</td>
-<td><code>sop</code></td>
-</tr>
-<tr class="odd">
-<td>For all markers, taxonomic assignments of MOTUs sequences were carried out with the ecotag program from the OBITOOLS toolkit;</td>
-<td>DNA / Occurrence</td>
-<td>DNA: <code>sop</code><br>Occurrence: <code>identificationRemarks</code></td>
-</tr>
-<tr class="even">
-<td>the European Nucleotide Archive was used as a reference database (release 141).</td>
-<td>DNA / Occurrence</td>
-<td>DNA: <code>otu_db</code><br>Occurrence: <code>identificationReferences</code></td>
-</tr>
-<tr class="odd">
-<td>Taxonomic assignments were corrected to avoid overconfidence in assignments: species assignments were validated only for a 100% sequence match, genus for a 90–99% match, and family for an 85–90% match.</td>
-<td>DNA / Occurrence</td>
-<td>DNA: <code>sop</code><br>Occurrence: <code>identificationRemarks</code></td>
-</tr>
-<tr class="even">
-<td>Fish names were verified using the rfishbase R package.</td>
-<td>Occurrence</td>
-<td><code>identificationRemarks</code></td>
-</tr>
-<tr class="odd">
-<td>All taxa assigned to deep water or mesophotic species or lineages were flagged and not analyzed due to a lack of trait values for the functional analysis.</td>
-<td>Occurrence</td>
-<td><code>identificationRemarks</code></td>
-</tr>
-<tr class="even">
-<td>The DNA sequence associated with asv1: <code>TCTATCAAGAAACGTGGCCCATGCAGGAGGGTCTGTAGACTTTGCAATTTTTTCTCTACACTTAGCAGGTGTTAGATCAATTTTAGGGGCTGTAAACTTTATTAGTACGTTAGGTAATCTACGGGTATTCGGAATACTTTTAGACCGTATCCCTTTATTTGCCTGGTCCG</code><br><code>TCTTGGTGACAGCTATTTTATTGTTATTGTCTTTACCTGTACTTGCCGGTGCCATTACGATATTATTAACTGACCGAAATTTAAATACTTCATTTTATGATGTTGGAGGGGGAGGAGACCCTATTCTCTACCAACACCTA</code></td>
-<td>DNA</td>
-<td><code>DNA_sequence</code></td>
-</tr>
-<tr class="odd">
-<td>asv1 was assigned to <em>Acanthurus tractus</em></td>
-<td>Occurrence</td>
-<td><code>scientificName</code></td>
-</tr>
-<tr class="even">
-<td>The DNA sequence associated with asv2: <code>TCTATCAAGAAACGTGGCCCATGCAGGAGGGTCTGTAGACTTTGCAATTTTTTCTCTACACTTAGCAGGTGTTAGATCAATTTTAGGGGCTGTAAACTTTATTAGTACGTTAGGTAATCTACGGGTATTCGGAATACTTTTAGACCGTATCCCTTTATTTGCCTGGTCCGT</code><br><code>CTTGGTGACAGCTATTTTATTGTTATTGTCTTTACCTGTACTTGCCGGTGCCATTACGATATTATTAACTGACCGAAATTTAAATACTTCATTTTATGATGTTGGAGGGGGAGGAGACCCTATTCTCTACCAACACCTA</code></td>
-<td>DNA</td>
-<td><code>DNA_sequence</code></td>
-</tr>
-<tr class="odd">
-<td>asv2 was assigned to <em>Platybelone argalus</em></td>
-<td>Occurrence</td>
-<td><code>scientificName</code></td>
-</tr>
-<tr class="even">
-<td>asv2 has 2447 DNA reads in sample 2</td>
-<td>Occurrence</td>
-<td><code>organismQuantity</code>, <code>organismQuantityType</code></td>
-</tr>
-<tr class="odd">
-<td>asv1 had 40587 DNA reads in sample 1</td>
-<td>Occurrence</td>
-<td><code>organismQuantity</code>, <code>organismQuantityType</code></td>
-</tr>
-</tbody>
-</table>
+<section id="slide-decks" class="level1">
+<h1>Slide decks</h1>
+<ul>
+<li><a href="https://iobis.github.io/obis_edna_slides_node_training/">July OBIS Node Training on DNA data</a></li>
+<li><a href="./index-invemar.html">July INVEMAR DNA data management</a></li>
+</ul>
 
 
 </section>
