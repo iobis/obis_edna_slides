@@ -1,5 +1,5 @@
 ---
-title: "Invemar DNA Management Training"
+title: "INVEMAR DNA Management Training"
 subtitle: "21-25 July, 2026"
 format:
   html:
