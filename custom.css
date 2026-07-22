@@ -82,6 +82,19 @@
   object-fit: contain;
 }
 
+/* Keep tables a consistent width and wrap long unbroken strings (e.g. DNA sequences)
+   instead of letting the browser stretch the column to fit them */
+table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+table td,
+table th {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
 /* add background shapes, which were failing in scss on GitHub because of path issues */
 .reveal .slides::before {
   content: '';
