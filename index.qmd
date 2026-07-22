@@ -1,13 +1,20 @@
 ---
-title: "OBIS Training Slides"
-subtitle: "Pick a deck to open it as a full-screen presentation"
+title: "Invemar DNA Management Training"
+subtitle: ""
 format:
   html:
     theme: [obis_theme.scss]
     css: [custom.css]
+    lightbox: true
 ---
 
-## Introduction to DNA Data Management Slide Decks
+![](assets/course_schedule.png){width="20%"}
+
+*Click to enlarge*
+
+## DNA Data Management Slide Decks
+
+Pick a deck to open it as a full-screen presentation
 
 1. [What is Environmental DNA](https://github.com/iobis/obis_edna_slides/blob/invemar-training/slides/pdf_slides/1-introduction-edna.pdf){target="_blank" rel="noopener noreferrer"}?
     - Introduction to eDNA methods and what we can do with it
@@ -35,6 +42,6 @@ format:
 - [Match methods to DwC](index-DNA-game-instructions.qmd)
 - [Format a DNA dataset with R](https://iobis.github.io/edna-training-beginner-track/episodes/04-structuring-datasets.html)
 
-## Other decks
+## Other slide decks
 
 - [Publishing eDNA Data in OBIS (full deck)](index-edna-full.qmd)
