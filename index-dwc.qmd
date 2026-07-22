@@ -1,0 +1,19 @@
+---
+title: "Darwin Core Training Slide Decks"
+subtitle: ""
+format:
+  html:
+    theme: [obis_theme.scss]
+    css: [custom.css]
+---
+
+- [FAIR Data & Biodiversity Standards](index-fair-data.qmd)
+    - Background information on what FAIR data is and a brief overview of Darwin Core and Essential Ocean Variables
+- [Darwin Core and DNA-Derived Data](index-dna-extension.qmd)
+    - Overview of DNA data types and how DNA data fits into Darwin Core
+- [OBIS Quality Control](index-qc.qmd)
+    - Overview of quality control checks you should do with any OBIS dataset, DNA or otherwise
+- [Publishing & IPT](index-publishing.qmd)
+    - How to publish data using the Integrated Publishing Toolkit (IPT) software
+- [Accessing OBIS (DNA) Data](index-access.qmd)
+    - How to access data from OBIS, including DNA data

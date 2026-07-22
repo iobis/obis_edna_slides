@@ -1,0 +1,13 @@
+---
+title: "OBIS DNA Training Slide Decks"
+subtitle: ""
+format:
+  html:
+    theme: [obis_theme.scss]
+    css: [custom.css]
+---
+
+# Slide decks
+
+- [July OBIS Node Training on DNA data](https://iobis.github.io/obis_edna_slides_node_training/)
+- [July INVEMAR DNA data management](index-invemar.qmd)

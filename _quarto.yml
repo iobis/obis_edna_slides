@@ -14,8 +14,12 @@ website:
   title: "OBIS Training Slides"
   navbar:
     left:
-      - text: "Presentation"
+      - text: "Home"
         href: index.qmd
+      - text: "DwC Training"
+        href: index-dwc.qmd
+      - text: "DNA Training"
+        href: index-dna.qmd
 
 format:
   revealjs:
