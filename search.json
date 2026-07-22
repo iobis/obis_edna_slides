@@ -184,30 +184,30 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "OBIS Training Slides",
+    "title": "Invemar DNA Management Training",
     "section": "",
-    "text": "What is Environmental DNA?\n\nIntroduction to eDNA methods and what we can do with it\n\nWhat information is important at each step of an eDNA workflow?\n\nOverview of the information that should be captured when managing DNA datasets\n\nFAIR Data & Biodiversity Standards\n\nBackground information on what FAIR data is and a brief overview of Darwin Core and Essential Ocean Variables\n\nDarwin Core and DNA-Derived Data\n\nOverview of DNA data types and how DNA data fits into Darwin Core\n\neDNA Data Management History (YouTube recording)\nMapping molecular data to Darwin Core\n\nHow to record the important data and metadata in Darwin Core and the DNA-derived extension\n\nQuality Control\n\neDNA Quality Control\n\nOverview of quality control steps in an eDNA workflow\n\nTaxonomy Quality Control (tool demo) (YouTube recording)\nOBIS Quality Control\n\nOverview of quality control checks you should do with any OBIS dataset, DNA or otherwise\n\n\nOngoing data standardisation intitiatives (OBON) (YouTube recording)\nReference databases, taxonomic assignment and validation\nPublishing & IPT\n\nHow to publish data using the Integrated Publishing Toolkit (IPT) software\n\nAccessing OBIS (DNA) Data\n\nHow to access data from OBIS, including DNA data"
+    "text": "Click to enlarge"
   },
   {
-    "objectID": "index.html#introduction-to-dna-data-management-slide-decks",
-    "href": "index.html#introduction-to-dna-data-management-slide-decks",
-    "title": "OBIS Training Slides",
-    "section": "",
-    "text": "What is Environmental DNA?\n\nIntroduction to eDNA methods and what we can do with it\n\nWhat information is important at each step of an eDNA workflow?\n\nOverview of the information that should be captured when managing DNA datasets\n\nFAIR Data & Biodiversity Standards\n\nBackground information on what FAIR data is and a brief overview of Darwin Core and Essential Ocean Variables\n\nDarwin Core and DNA-Derived Data\n\nOverview of DNA data types and how DNA data fits into Darwin Core\n\neDNA Data Management History (YouTube recording)\nMapping molecular data to Darwin Core\n\nHow to record the important data and metadata in Darwin Core and the DNA-derived extension\n\nQuality Control\n\neDNA Quality Control\n\nOverview of quality control steps in an eDNA workflow\n\nTaxonomy Quality Control (tool demo) (YouTube recording)\nOBIS Quality Control\n\nOverview of quality control checks you should do with any OBIS dataset, DNA or otherwise\n\n\nOngoing data standardisation intitiatives (OBON) (YouTube recording)\nReference databases, taxonomic assignment and validation\nPublishing & IPT\n\nHow to publish data using the Integrated Publishing Toolkit (IPT) software\n\nAccessing OBIS (DNA) Data\n\nHow to access data from OBIS, including DNA data"
+    "objectID": "index.html#dna-data-management-slide-decks",
+    "href": "index.html#dna-data-management-slide-decks",
+    "title": "Invemar DNA Management Training",
+    "section": "DNA Data Management Slide Decks",
+    "text": "DNA Data Management Slide Decks\nPick a deck to open it as a full-screen presentation\n\nWhat is Environmental DNA?\n\nIntroduction to eDNA methods and what we can do with it\n\nWhat information is important at each step of an eDNA workflow?\n\nOverview of the information that should be captured when managing DNA datasets\n\nFAIR Data & Biodiversity Standards\n\nBackground information on what FAIR data is and a brief overview of Darwin Core and Essential Ocean Variables\n\nDarwin Core and DNA-Derived Data\n\nOverview of DNA data types and how DNA data fits into Darwin Core\n\neDNA Data Management History (YouTube recording)\nMapping molecular data to Darwin Core\n\nHow to record the important data and metadata in Darwin Core and the DNA-derived extension\n\nQuality Control\n\neDNA Quality Control\n\nOverview of quality control steps in an eDNA workflow\n\nTaxonomy Quality Control (tool demo) (YouTube recording)\nOBIS Quality Control\n\nOverview of quality control checks you should do with any OBIS dataset, DNA or otherwise\n\n\nOngoing data standardisation intitiatives (OBON) (YouTube recording)\nReference databases, taxonomic assignment and validation\nPublishing & IPT\n\nHow to publish data using the Integrated Publishing Toolkit (IPT) software\n\nAccessing OBIS (DNA) Data\n\nHow to access data from OBIS, including DNA data"
   },
   {
-    "objectID": "index.html#game-instructions",
-    "href": "index.html#game-instructions",
-    "title": "OBIS Training Slides",
-    "section": "Game Instructions",
-    "text": "Game Instructions\n\nMatch methods to DwC"
+    "objectID": "index.html#interactive-sessions",
+    "href": "index.html#interactive-sessions",
+    "title": "Invemar DNA Management Training",
+    "section": "Interactive Sessions",
+    "text": "Interactive Sessions\n\nMatch methods to DwC\nFormat a DNA dataset with R"
   },
   {
-    "objectID": "index.html#other-decks",
-    "href": "index.html#other-decks",
-    "title": "OBIS Training Slides",
-    "section": "Other decks",
-    "text": "Other decks\n\nPublishing eDNA Data in OBIS (full deck)"
+    "objectID": "index.html#other-slide-decks",
+    "href": "index.html#other-slide-decks",
+    "title": "Invemar DNA Management Training",
+    "section": "Other slide decks",
+    "text": "Other slide decks\n\nPublishing eDNA Data in OBIS (full deck)"
   },
   {
     "objectID": "index-qc.html#quality-control",

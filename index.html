@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>OBIS Training Slides</title>
+<title>Invemar DNA Management Training – OBIS Training Slides</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -43,6 +43,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-e30de9fd83ddb527da0872e10baca667.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -113,8 +116,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">OBIS Training Slides</h1>
-<p class="subtitle lead">Pick a deck to open it as a full-screen presentation</p>
+<h1 class="title">Invemar DNA Management Training</h1>
 </div>
 
 
@@ -131,8 +133,11 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="introduction-to-dna-data-management-slide-decks" class="level2">
-<h2 class="anchored" data-anchor-id="introduction-to-dna-data-management-slide-decks">Introduction to DNA Data Management Slide Decks</h2>
+<p><a href="assets/course_schedule.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="assets/course_schedule.png" class="img-fluid" style="width:20.0%"></a></p>
+<p><em>Click to enlarge</em></p>
+<section id="dna-data-management-slide-decks" class="level2">
+<h2 class="anchored" data-anchor-id="dna-data-management-slide-decks">DNA Data Management Slide Decks</h2>
+<p>Pick a deck to open it as a full-screen presentation</p>
 <ol type="1">
 <li><a href="https://github.com/iobis/obis_edna_slides/blob/invemar-training/slides/pdf_slides/1-introduction-edna.pdf" target="_blank" rel="noopener noreferrer">What is Environmental DNA</a>?
 <ul>
@@ -179,14 +184,15 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 </ol>
 </section>
-<section id="game-instructions" class="level2">
-<h2 class="anchored" data-anchor-id="game-instructions">Game Instructions</h2>
+<section id="interactive-sessions" class="level2">
+<h2 class="anchored" data-anchor-id="interactive-sessions">Interactive Sessions</h2>
 <ul>
 <li><a href="./index-DNA-game-instructions.html">Match methods to DwC</a></li>
+<li><a href="https://iobis.github.io/edna-training-beginner-track/episodes/04-structuring-datasets.html">Format a DNA dataset with R</a></li>
 </ul>
 </section>
-<section id="other-decks" class="level2">
-<h2 class="anchored" data-anchor-id="other-decks">Other decks</h2>
+<section id="other-slide-decks" class="level2">
+<h2 class="anchored" data-anchor-id="other-slide-decks">Other slide decks</h2>
 <ul>
 <li><a href="./index-edna-full.html">Publishing eDNA Data in OBIS (full deck)</a></li>
 </ul>
@@ -596,6 +602,38 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
