@@ -8,6 +8,9 @@ format:
     lightbox: true
 ---
 
+![](assets/invemar-logo.png){width="6%"} ![](assets/IOC+OBIS_color.svg){width="20%"}
+
+## Course Schedule
 ![](assets/course_schedule.png){width="20%"}
 
 *Click to enlarge*
@@ -43,7 +46,8 @@ Pick a deck to open it as a full-screen presentation
 ## Interactive Sessions
 
 - [Match methods to DwC](index-DNA-game-instructions.qmd)
-- [Format a DNA dataset with R](https://iobis.github.io/edna-training-beginner-track/episodes/04-structuring-datasets.html)
+    - [Solution](index-game-solutions.qmd)
+- [Format a DNA dataset with R](https://iobis.github.io/edna-training-beginner-track/episodes/04-structuring-datasets.html){target="_blank" rel="noopener noreferrer"}
 
 ## Other slide decks
 
