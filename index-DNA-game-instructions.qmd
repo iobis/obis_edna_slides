@@ -1,0 +1,36 @@
+---
+title: "Game Time"
+subtitle: "Match Metadata to Darwin Core"
+author: "Emilie Boulanger, Elizabeth Lawrence"
+date: 2026-07-22
+---
+
+## Match Metadata to Darwin Core
+
+:::: {.columns}
+::: {.column width="50%"}
+📋 **Setup**
+
+- Groups of 4–5
+- Box of field + methodology fragments
+- 4 posters per DwC table: Event · Occurrence · DNA · eMoF
+    - Each table has a pile of DwC column headers. Not all are relevant! Find the one(s) that are
+:::
+
+::: {.column width="50%"}
+🎯 **Task**
+
+- Read a fragment out loud as a group
+- Decide: which **table**? which **column**?
+- Place it in the right spot!
+
+⚠️ **Watch For**
+
+- Some fragments may split across 2+ columns
+- Some fragments may not belong in any table
+:::
+::::
+
+::: {.notes}
+Facilitator notes: remind participants that DwC mapping is often a judgment call — several fragments (e.g., filter method, preservation buffer) are genuinely ambiguous between samplingProtocol and the DNA extension's sop field, and that's fine. The goal isn't a single "correct" answer for every card, it's practicing the reasoning process: read the raw text, identify what kind of information it is (event-level, occurrence-level, molecular method, or measurement), and find its home. After 20 minutes, walk the room and reveal the answer key live, pausing longest on posters where groups disagreed.
+:::

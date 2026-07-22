@@ -30,6 +30,10 @@ format:
 10. [Accessing OBIS (DNA) Data](index-access.qmd)
     - How to access data from OBIS, including DNA data
 
+## Game Instructions
+
+- [Match methods to DwC](index-DNA-game-instructions.qmd)
+
 ## Other decks
 
 - [Publishing eDNA Data in OBIS (full deck)](index-edna-full.qmd)

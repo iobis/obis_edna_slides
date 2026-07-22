@@ -8,7 +8,7 @@ Step 4: 💻 **Sequences**
 
 | Sequences | Maps to |
 |---|---|
-| Sequencing platform + library layout | DNA table: `seq_meth` + `lib_layout` (DNA table) |
+| Sequencing platform + library layout | DNA table: `seq_meth` + `lib_layout` |
 | Sequences per sample | DNA table: `DNA_sequence` (linked by `occurrenceID`) |
 | Public repository where sequences deposited (NCBI, ENA) | Occurrence table: `associatedSequences` |
 

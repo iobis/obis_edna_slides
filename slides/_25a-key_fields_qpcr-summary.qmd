@@ -9,13 +9,13 @@
 :::
 
 
-⛵ **Field Sampling** → same as metabarcoding
+⛵ Step 1: **Field Sampling** → same as metabarcoding
 
-🧬 **DNA Extraction** → same as metabarcoding
+🧬 Step 2: **DNA Extraction** → same as metabarcoding
 
-🧪 **DNA Amplification** → PCR conditions → `pcr_cond`
+🧪 Step 3: **DNA Amplification** → PCR conditions → `pcr_cond`
 
-🎯 **Target & Quantity**
+🎯 Step 4/5: **Target & Quantity**
 
 | Target & Quantity | Maps to |
 |---|---|
