@@ -9,5 +9,5 @@ format:
 
 # Slide decks
 
-- [July OBIS Node Training on DNA data](https://iobis.github.io/obis_edna_slides_node_training/)
-- [July INVEMAR DNA data management](index-invemar.qmd)
+- [2026 July OBIS Node Training on DNA data](https://iobis.github.io/obis_edna_slides_node_training/)
+- [2026 July INVEMAR DNA data management](index-invemar.qmd)
