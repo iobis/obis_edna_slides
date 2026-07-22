@@ -19,10 +19,11 @@ format:
     - Overview of DNA data types and how DNA data fits into Darwin Core
 5. [eDNA Data Management History](https://youtu.be/zsH8KIis_yA){target="_blank" rel="noopener noreferrer"} (YouTube recording)
 6. [Mapping molecular data to Darwin Core](index-map-edna-to-dwc.html) 
+    - How to record the important data and metadata in Darwin Core and the DNA-derived extension
 7. Quality Control
     - [eDNA Quality Control](https://github.com/iobis/obis_edna_slides/blob/invemar-training/slides/pdf_slides/3_edna_qc_molecular.pdf){target="_blank" rel="noopener noreferrer"}
         - Overview of quality control steps in an eDNA workflow
-    - [Taxonomy Quality Control tool demo](https://www.youtube.com/watch?v=e7HBAFf5NFg&feature=youtu.be){target="_blank" rel="noopener noreferrer"} (YouTube recording)
+    - [Taxonomy Quality Control (tool demo)](https://www.youtube.com/watch?v=e7HBAFf5NFg&feature=youtu.be){target="_blank" rel="noopener noreferrer"} (YouTube recording)
     - [OBIS Quality Control](index-qc.qmd)
         - Overview of quality control checks you should do with any OBIS dataset, DNA or otherwise
 8. [Ongoing data standardisation intitiatives (OBON)](https://www.youtube.com/playlist?list=PLS6jqgZoUzto) (YouTube recording)
