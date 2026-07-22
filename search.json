@@ -499,9 +499,23 @@
   {
     "objectID": "index-dna.html",
     "href": "index-dna.html",
-    "title": "OBIS DNA Training Slide Decks",
+    "title": "DNA Training Slide Decks",
     "section": "",
-    "text": "Slide decks\n\n2026 July OBIS Node Training on DNA data\n2026 July INVEMAR DNA data management\n\n\n\n\n\nReuseCC BY-NC 4.0"
+    "text": "2026 July INVEMAR DNA data management\n2026 July OBIS Node Training on DNA data"
+  },
+  {
+    "objectID": "index-dna.html#trainings-delivered",
+    "href": "index-dna.html#trainings-delivered",
+    "title": "DNA Training Slide Decks",
+    "section": "",
+    "text": "2026 July INVEMAR DNA data management\n2026 July OBIS Node Training on DNA data"
+  },
+  {
+    "objectID": "index-dna.html#slide-decks",
+    "href": "index-dna.html#slide-decks",
+    "title": "DNA Training Slide Decks",
+    "section": "Slide Decks",
+    "text": "Slide Decks\n\nWhat is Environmental DNA?\n\nIntroduction to eDNA methods and what we can do with it\n\nWhat information is important at each step of an eDNA workflow?\n\nOverview of the information that should be captured when managing DNA datasets\n\nDarwin Core and DNA-Derived Data\n\nOverview of DNA data types and how DNA data fits into Darwin Core\n\neDNA Data Management History (YouTube recording)\nMapping molecular data to Darwin Core\n\nHow to record the important data and metadata in Darwin Core and the DNA-derived extension\n\neDNA Quality Control\n\nOverview of quality control steps in an eDNA workflow\n\nOngoing data standardisation intitiatives (OBON) (YouTube recording)"
   },
   {
     "objectID": "index-qc.html#quality-control",
