@@ -21,8 +21,9 @@ date: 2026-07-22
 🎯 **Task**
 
 - Read a fragment out loud as a group
-- Decide: which **table**? which **column**?
-- Place it in the right spot!
+- Decide: which **table**? which **column** (i.e. term)?
+- Place it in the right spot
+- Fill in the information with the right vocab
 
 ⚠️ **Watch For**
 
