@@ -35,3 +35,27 @@ date: 2026-07-22
 ::: {.notes}
 Facilitator notes: remind participants that DwC mapping is often a judgment call — several fragments (e.g., filter method, preservation buffer) are genuinely ambiguous between samplingProtocol and the DNA extension's sop field, and that's fine. The goal isn't a single "correct" answer for every card, it's practicing the reasoning process: read the raw text, identify what kind of information it is (event-level, occurrence-level, molecular method, or measurement), and find its home. After 20 minutes, walk the room and reveal the answer key live, pausing longest on posters where groups disagreed.
 :::
+
+## eDNA data for national monitoring
+
+- A national monitoring programme wants all eDNA data publicly available within one year.
+- You represent one of these stakeholder categories: 
+    - Field ecologist
+    - Molecular laboratory scientist / Bioinformatician
+    - Data manager
+    - Repository curator
+    - Policymaker
+    - Biodiversity database representative
+    - End user
+
+- Each of you have a role
+    - Field ecologist
+    - Molecular laboratory scientist / Bioinformatician
+    - Data manager
+    - Repository curator
+    - Policymaker
+    - Biodiversity database representative
+    - End user
+
+
+
