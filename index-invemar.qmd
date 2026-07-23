@@ -38,7 +38,7 @@ Pick a deck to open it as a full-screen presentation
         - Overview of quality control checks you should do with any OBIS dataset, DNA or otherwise
 8. [Applications of eDNA for biodiversity monitoring](https://github.com/iobis/obis_edna_slides/blob/invemar-training/slides/pdf_slides/1b_applications_edna.pdf){target="_blank" rel="noopener noreferrer"}
 9. [Ongoing data standardisation intitiatives (OBON)](https://www.youtube.com/playlist?list=PLS6jqgZoUzto){target="_blank" rel="noopener noreferrer"} (YouTube recording)
-10. Reference databases, taxonomic assignment and validation
+10. [Reference databases, taxonomic assignment and validation](https://github.com/iobis/obis_edna_slides/blob/invemar-training/slides/pdf_slides/4_reference_databases.pdf){target="_blank" rel="noopener noreferrer"}
 11. [Publishing & IPT](index-publishing.qmd)
     - How to publish data using the Integrated Publishing Toolkit (IPT) software
 12. [Accessing OBIS (DNA) Data](index-access.qmd)
