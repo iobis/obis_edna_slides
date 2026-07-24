@@ -48,5 +48,6 @@ Pick a deck to open it as a full-screen presentation
 ## Interactive Sessions
 
 - [Match methods to DwC](index-DNA-game-instructions.qmd)
+    - [En español](index-DNA-game-instructions-es.qmd)
     - [Solution](index-game-solutions.qmd)
 - [Format a DNA dataset with R](https://iobis.github.io/edna-training-beginner-track/episodes/04-structuring-datasets.html){target="_blank" rel="noopener noreferrer"}

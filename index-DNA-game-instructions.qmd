@@ -59,12 +59,12 @@ Each of you will get a role, representing one of these stakeholder categories:
 ::: {.column width="50%"}
 👥 **What do you need?**
 
-Within your stakeholder role, you should discuss and explain
+Within your stakeholder role, you should discuss and explain:
 
-    - What you need
-    - What concerns you
-    - What data you can provide
-    - What standards you require
+    - **What you need?**
+    - **What concerns you?**
+    - **What data you can provide?**
+    - **What standards you require?**
 
 
 :::

@@ -1,0 +1,77 @@
+---
+title: "Hora de Jugar"
+subtitle: "Relacionar metadatos con Darwin Core"
+author: "Emilie Boulanger, Elizabeth Lawrence"
+date: 2026-07-22
+---
+
+## Relacionar metadatos con Darwin Core
+
+:::: {.columns}
+::: {.column width="50%"}
+📋 **Preparación**
+
+- Grupos de 4 a 5 personas
+- Caja con fragmentos de texto sobre muestreo de campo y metodología
+- 4 carteles, uno por cada tabla de DwC: Event · Occurrence · DNA · eMoF
+    - Cada tabla tiene una pila de encabezados de columnas de DwC. ¡No todos son relevantes! Encuentra el/los que sí lo son
+:::
+
+::: {.column width="50%"}
+🎯 **Tarea**
+
+- Lean un fragmento en voz alta como grupo
+- Decidan: ¿qué **tabla**? ¿qué **columna** (es decir, término)?
+- Colóquenlo en el lugar correcto
+- Completen la información con el vocabulario correcto
+
+⚠️ **Ten en cuenta**
+
+- Algunos fragmentos pueden dividirse entre 2 o más columnas
+- Algunos fragmentos pueden no pertenecer a ninguna tabla
+:::
+::::
+
+::: {.notes}
+Notas para el facilitador: recuérdales a los participantes que mapear a DwC suele ser una decisión de criterio — varios fragmentos (por ejemplo, el método de filtración o el buffer de conservación) son genuinamente ambiguos entre samplingProtocol y el campo sop de la extensión de ADN, y eso está bien. El objetivo no es tener una única respuesta "correcta" para cada tarjeta, sino practicar el proceso de razonamiento: leer el texto original, identificar qué tipo de información es (a nivel de evento, de ocurrencia, de método molecular o de medición) y encontrar su lugar. Después de 20 minutos, recorre la sala y revela la clave de respuestas en vivo, deteniéndote más tiempo en los carteles donde los grupos no estuvieron de acuerdo.
+:::
+
+## Datos de eDNA para monitoreo nacional
+
+Un programa nacional de monitoreo quiere que todos los datos de eDNA estén disponibles públicamente en el plazo de un año.
+
+:::: {.columns}
+::: {.column width="50%"}
+**¿Quién eres?**
+
+Cada uno de ustedes recibirá un rol, representando una de estas categorías de actores:
+
+    🌳 Ecólogo/a de campo
+    🧬 Científico/a de laboratorio molecular / Bioinformático/a
+    💻 Gestor/a de datos
+    🏛️ Curador/a de repositorio
+    📜 Responsable de políticas
+    🌐 Representante de base de datos de biodiversidad
+    🗺️ Usuario/a final
+
+:::
+
+::: {.column width="50%"}
+👥 **¿Qué necesitas?**
+
+Dentro de tu rol como actor, deberías discutir y explicar:
+
+    - **¿Qué necesitas?**
+    - **¿Qué te preocupa?**
+    - **¿Qué datos puedes proporcionar?**
+    - **¿Qué estándares requieres?**
+
+
+:::
+::::
+
+
+
+
+
+
