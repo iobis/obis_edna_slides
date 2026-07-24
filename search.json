@@ -249,7 +249,7 @@
     "href": "index-access.html#obis-mapper-mapper.obis.org",
     "title": "Accessing OBIS data",
     "section": "OBIS Mapper — mapper.obis.org",
-    "text": "OBIS Mapper — mapper.obis.org\nmapper.obis.org\n\n\nVisual, filter-driven exploration of OBIS data:\n\nFilter by taxon, geography, time, and extensions\nCombine multiple layers in one view\nDownload individual layers as CSV\n\nBetter for smaller datasets &lt;20,000,000 records\n\nIncldue eMoF and/or DNA-derived data extensions\n\n(check the box — not on by default)\n\n\n\n\n\n\nGreat tool for a quick visual gut-check before doing anything programmatic — “does this region actually have eDNA data in it?” The Maptool naming collision is a real source of confusion, worth stating explicitly since Maptool came up earlier in the sensitive-data context."
+    "text": "OBIS Mapper — mapper.obis.org\n\n\nVisual, filter-driven exploration of OBIS data:\n\nFilter by taxon, geography, time, and extensions\nCombine multiple layers in one view\nDownload individual layers as CSV\n\nBetter for smaller datasets &lt;20,000,000 records\n\nIncldue eMoF and/or DNA-derived data extensions\n\n(check the box — not on by default)\n\n\n\n\n\n\nGreat tool for a quick visual gut-check before doing anything programmatic — “does this region actually have eDNA data in it?” The Maptool naming collision is a real source of confusion, worth stating explicitly since Maptool came up earlier in the sensitive-data context."
   },
   {
     "objectID": "index-access.html#robis-programmatic-access-from-r",
