@@ -44,6 +44,7 @@ A national monitoring programme wants all eDNA data publicly available within on
 ::: {.column width="50%"}
 🤝 **Who are you?**
 You represent one of these stakeholder categories: 
+
     - Field ecologist
     - Molecular laboratory scientist / Bioinformatician
     - Data manager
@@ -51,11 +52,13 @@ You represent one of these stakeholder categories:
     - Policymaker
     - Biodiversity database representative
     - End user
+
 :::
 
 ::: {.column width="50%"}
 🌳 **What do you do?**
 Each of you have a role
+
     - Field ecologist
     - Molecular laboratory scientist / Bioinformatician
     - Data manager
