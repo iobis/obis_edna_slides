@@ -5,7 +5,7 @@ We'll now walk through a real IPT instance together:
 1. Create a (test) resource
 2. Upload source data & map to Darwin Core
 3. Fill in minimum metadata
-4. Publish → set visibility → done ✅
+4. How to publish → set visibility → done ✅
 5. Add to GBIF network!
 
 ::: {.notes}
