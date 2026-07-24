@@ -1,0 +1,21 @@
+## OBIS Mapper — [mapper.obis.org]((https://mapper.obis.org/))
+
+:::: {.columns}
+::: {.column width="50%"}
+Exploración visual de los datos de OBIS, basada en filtros:
+
+- Filtrar por taxón, geografía, tiempo y **extensiones**
+- Combinar varias capas en una sola vista
+- Descargar capas individuales como CSV
+    - Mejor para conjuntos de datos más pequeños (<20,000,000 registros)
+- Incluir las extensiones eMoF y/o de datos derivados de ADN
+    - *(marca la casilla — no está activada por defecto)*
+:::
+::: {.column width="50%"}
+![](assets/mapper-dna.png)
+:::
+::::
+
+::: {.notes}
+Excelente herramienta para hacer una verificación visual rápida antes de hacer cualquier cosa programática — "¿esta región realmente tiene datos de eDNA?" La coincidencia de nombres con "Maptool" es una fuente real de confusión, vale la pena mencionarla explícitamente ya que Maptool surgió antes en el contexto de datos sensibles.
+:::

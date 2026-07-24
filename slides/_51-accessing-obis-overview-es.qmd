@@ -1,0 +1,12 @@
+## Cómo obtener datos de OBIS
+
+Existen varias formas de acceder, según lo que necesites:
+
+- **obis.org** — explorar, buscar y citar conjuntos de datos
+- **OBIS Mapper** — exploración visual y descargas rápidas
+- **robis** — acceso programático desde R
+- **Parquet + robisdb** *(nuevo)* — acceso rápido y local al conjunto de datos completo
+
+::: {.notes}
+Esto refleja las opciones del Módulo 8, pero aquí nos enfocamos en las cuatro más relevantes para este grupo. También existen exportaciones completas en CSV y descargas directas desde el IPT, pero las cuatro opciones anteriores cubren la mayoría de los flujos de trabajo reales. Buen momento para preguntar al grupo qué están tratando de hacer (una especie vs. una región completa vs. un análisis masivo), ya que esto determina cuál opción es la más adecuada — las próximas diapositivas van, a grandes rasgos, de "descarga puntual pequeña" a "acceso masivo/programático."
+:::

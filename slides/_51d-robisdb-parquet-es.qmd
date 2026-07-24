@@ -1,0 +1,21 @@
+## **Nuevo:** acceso rápido mediante Parquet
+
+- OBIS publica el conjunto de datos global completo en formato **Parquet**
+- Paquete de R recién lanzado, **[robisdb](https://github.com/iobis/robisdb)**
+    - *(publicado este mes — en desarrollo activo)*
+
+```r
+pak::pak("iobis/robisdb")
+library(robisdb)
+
+con <- connect_opendata_local("~/data/obis-open-data")
+occ <- con |> occurrence_db(scientificname = "Minuca rapax")
+```
+
+- Refleja las funciones de `robis` en la medida de lo posible (`occurrence_db()`, `checklist_db()`...)
+- Funciona sobre **DuckDB** — consultas rápidas y locales sin cargar todo en memoria
+- Diseñado para escalar: análisis del conjunto de datos completo o repetidos que serían lentos vía la API
+
+::: {.notes}
+Esto es muy nuevo (de este mes), así que hay que tratarlo como "hacia dónde se dirigen las cosas" y no como un flujo de trabajo maduro y completamente documentado — revisa github.com/iobis/robisdb para lo más reciente, ya que los detalles pueden cambiar. Vale la pena mencionar que esto existe específicamente porque cargar todo el conjunto de datos de OBIS vía la API/robis no es viable en la mayoría de las laptops — Parquet + DuckDB es la respuesta de OBIS a ese problema de escala. Conjuntos de datos relacionados (speciesgrids, obistherm) también se pueden consultar de la misma manera.
+:::

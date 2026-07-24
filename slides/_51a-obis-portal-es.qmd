@@ -1,0 +1,21 @@
+## El portal de OBIS — obis.org
+
+:::: {.columns}
+
+::: {.column width="50%"}
+Tu punto de partida para encontrar y entender los datos:
+
+- Buscar y explorar por taxón, región o conjunto de datos
+- Ver el resumen del conjunto de datos y la información de citación
+- Encontrar los datos de contacto del proveedor de los datos
+:::
+
+::: {.column width="50%"}
+![](assets/obis-home-search.png)
+:::
+::::
+
+
+::: {.notes}
+Vale la pena contrastar esto con el Mapper (siguiente diapositiva): las descargas desde la página de inicio o del conjunto de datos vienen como archivos de tabla separados, mientras que las descargas del Mapper o de la exportación completa se combinan en una sola tabla de occurrence+event, con las extensiones eMoF/DNA disponibles solo si se marca la casilla correspondiente. Esta distinción suele confundir a los participantes, así que hay que señalarla explícitamente.
+:::

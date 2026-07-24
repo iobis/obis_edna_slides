@@ -42,6 +42,7 @@ Pick a deck to open it as a full-screen presentation
 11. [Publishing & IPT](index-publishing.qmd)
     - How to publish data using the Integrated Publishing Toolkit (IPT) software
 12. [Accessing OBIS (DNA) Data](index-access.qmd)
+    - [En español](index-access-es.qmd)
     - How to access data from OBIS, including DNA data
 
 ## Interactive Sessions
