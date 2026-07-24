@@ -1,4 +1,4 @@
-## OBIS Mapper — [mapper.obis.org]((https://mapper.obis.org/))
+## OBIS Mapper — [mapper.obis.org](https://mapper.obis.org/)
 
 :::: {.columns}
 ::: {.column width="50%"}
