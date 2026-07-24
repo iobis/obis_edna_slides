@@ -38,8 +38,24 @@ Facilitator notes: remind participants that DwC mapping is often a judgment call
 
 ## eDNA data for national monitoring
 
-- A national monitoring programme wants all eDNA data publicly available within one year.
-- You represent one of these stakeholder categories: 
+A national monitoring programme wants all eDNA data publicly available within one year.
+
+:::: {.columns}
+::: {.column width="50%"}
+🤝 **Who are you?**
+You represent one of these stakeholder categories: 
+    - Field ecologist
+    - Molecular laboratory scientist / Bioinformatician
+    - Data manager
+    - Repository curator
+    - Policymaker
+    - Biodiversity database representative
+    - End user
+:::
+
+::: {.column width="50%"}
+🌳 **What do you do?**
+Each of you have a role
     - Field ecologist
     - Molecular laboratory scientist / Bioinformatician
     - Data manager
@@ -48,14 +64,11 @@ Facilitator notes: remind participants that DwC mapping is often a judgment call
     - Biodiversity database representative
     - End user
 
-- Each of you have a role
-    - Field ecologist
-    - Molecular laboratory scientist / Bioinformatician
-    - Data manager
-    - Repository curator
-    - Policymaker
-    - Biodiversity database representative
-    - End user
+:::
+::::
+
+
+
 
 
 
