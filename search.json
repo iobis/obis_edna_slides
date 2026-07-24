@@ -571,7 +571,7 @@
     "href": "index-publishing.html#before-you-publish-term-checklist",
     "title": "Publishing Data to OBIS",
     "section": "Before you publish: term checklist",
-    "text": "Before you publish: term checklist\n\n\nRequired\n\neventID (if using Event core)\noccurrenceID\neventDate\ndecimalLatitude, decimalLongitude\nscientificName (+ scientificNameID/AphiaID)\noccurrenceStatus\nbasisOfRecord\n\n\nStrongly recommended\n\norganismQuantity + organismQuantityType\nsamplingProtocol\ncoordinateUncertaintyInMeters\nassociatedSequences (DNA data)\n\n\n\nThis deliberately echoes the key-fields slides from earlier — the goal is to give people one clean pre-flight checklist right before they touch the IPT. If a field’s missing, the IPT mapping step will surface it as unmapped, but it’s much less stressful to catch it beforehand."
+    "text": "Before you publish: term checklist\n\n\nRequired\n\neventID (if using Event core)\noccurrenceID\neventDate\ndecimalLatitude, decimalLongitude\nscientificName (+ scientificNameID/AphiaID)\noccurrenceStatus\nbasisOfRecord\n\n\nStrongly recommended\n\norganismQuantity + organismQuantityType\nsamplingProtocol\ncoordinateUncertaintyInMeters\nassociatedSequences (DNA data)\n\nOBIS term checklist\n\n\nThis deliberately echoes the key-fields slides from earlier — the goal is to give people one clean pre-flight checklist right before they touch the IPT. If a field’s missing, the IPT mapping step will surface it as unmapped, but it’s much less stressful to catch it beforehand."
   },
   {
     "objectID": "index-publishing.html#preparing-your-files",
