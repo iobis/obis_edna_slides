@@ -641,7 +641,7 @@
     "href": "index-publishing.html#lets-see-it-live",
     "title": "Publishing Data to OBIS",
     "section": "Let’s see it live",
-    "text": "Let’s see it live\nWe’ll now walk through a real IPT instance together:\n\nCreate a (test) resource\nUpload source data & map to Darwin Core\nFill in minimum metadata\nPublish → set visibility → done ✅\nAdd to GBIF network!\n\n\nThis slide is just a checkpoint to move into live demo"
+    "text": "Let’s see it live\nWe’ll now walk through a real IPT instance together:\n\nCreate a (test) resource\nUpload source data & map to Darwin Core\nFill in minimum metadata\nHow to publish → set visibility → done ✅\nAdd to GBIF network!\n\n\nThis slide is just a checkpoint to move into live demo"
   },
   {
     "objectID": "index-qc.html#quality-control",
