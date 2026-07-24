@@ -19,6 +19,8 @@
 - `samplingProtocol`
 - `coordinateUncertaintyInMeters`
 - `associatedSequences` (DNA data)
+
+[OBIS term checklist](https://manual.obis.org/checklist.html)
 :::
 ::::
 
