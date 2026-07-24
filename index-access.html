@@ -6,11 +6,11 @@
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.9.38">
+  <meta name="generator" content="quarto-1.10.18">
 
   <meta name="author" content="Elizabeth Lawrence">
   <meta name="dcterms.date" content="2026-07-24">
@@ -24,10 +24,13 @@
     /* Default styles provided by pandoc.
     ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
     */
-    code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
     ul.task-list li input[type="checkbox"] {
@@ -210,7 +213,7 @@
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Elizabeth Lawrence 
+Elizabeth Lawrence
 </div>
 </div>
 </div>
@@ -268,7 +271,7 @@ Elizabeth Lawrence
       }</style></aside>
 </section>
 <section id="obis-mapper-mapper.obis.org" class="slide level2 center">
-<h2>OBIS Mapper — <a href="(https://mapper.obis.org/)">mapper.obis.org</a></h2>
+<h2>OBIS Mapper — <a href="https://mapper.obis.org/">mapper.obis.org</a></h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <p>Visual, filter-driven exploration of OBIS data:</p>
@@ -303,11 +306,11 @@ Elizabeth Lawrence
 </section>
 <section id="robis-programmatic-access-from-r" class="slide level2 center">
 <h2>robis — programmatic access from R</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="fu">install.packages</span>(<span class="st">"robis"</span>)</span>
-<span id="cb1-2"><a></a><span class="fu">library</span>(robis)</span>
-<span id="cb1-3"><a></a></span>
-<span id="cb1-4"><a></a>records <span class="ot">&lt;-</span> <span class="fu">occurrence</span>(<span class="at">scientificname =</span> <span class="st">"Megaptera novaeangliae"</span>, <span class="at">fields=</span><span class="st">"associatedSequences"</span>)</span>
-<span id="cb1-5"><a></a>dna <span class="ot">&lt;-</span> <span class="fu">dataset</span>(<span class="at">scientificname =</span> <span class="st">"Megaptera novaeangliae"</span>, <span class="at">fields=</span><span class="st">"associatedSequences"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a aria-label="1"></a><span class="fu">install.packages</span>(<span class="st">"robis"</span>)</span>
+<span id="cb1-2"><a aria-label="2"></a><span class="fu">library</span>(robis)</span>
+<span id="cb1-3"><a aria-label="3"></a></span>
+<span id="cb1-4"><a aria-label="4"></a>records <span class="ot">&lt;-</span> <span class="fu">occurrence</span>(<span class="at">scientificname =</span> <span class="st">"Megaptera novaeangliae"</span>, <span class="at">fields=</span><span class="st">"associatedSequences"</span>)</span>
+<span id="cb1-5"><a aria-label="5"></a>dna <span class="ot">&lt;-</span> <span class="fu">dataset</span>(<span class="at">scientificname =</span> <span class="st">"Megaptera novaeangliae"</span>, <span class="at">fields=</span><span class="st">"associatedSequences"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ul>
 <li>Query by species, taxon group, geometry (WKT), depth, time, quality flags…</li>
 <li>Built-in <code>checklist()</code> for taxon lists in an area</li>
@@ -337,11 +340,11 @@ Elizabeth Lawrence
 <li><em>(released this month — actively evolving)</em></li>
 </ul></li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a>pak<span class="sc">::</span><span class="fu">pak</span>(<span class="st">"iobis/robisdb"</span>)</span>
-<span id="cb2-2"><a></a><span class="fu">library</span>(robisdb)</span>
-<span id="cb2-3"><a></a></span>
-<span id="cb2-4"><a></a>con <span class="ot">&lt;-</span> <span class="fu">connect_opendata_local</span>(<span class="st">"~/data/obis-open-data"</span>)</span>
-<span id="cb2-5"><a></a>occ <span class="ot">&lt;-</span> con <span class="sc">|&gt;</span> <span class="fu">occurrence_db</span>(<span class="at">scientificname =</span> <span class="st">"Minuca rapax"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a aria-label="1"></a>pak<span class="sc">::</span><span class="fu">pak</span>(<span class="st">"iobis/robisdb"</span>)</span>
+<span id="cb2-2"><a aria-label="2"></a><span class="fu">library</span>(robisdb)</span>
+<span id="cb2-3"><a aria-label="3"></a></span>
+<span id="cb2-4"><a aria-label="4"></a>con <span class="ot">&lt;-</span> <span class="fu">connect_opendata_local</span>(<span class="st">"~/data/obis-open-data"</span>)</span>
+<span id="cb2-5"><a aria-label="5"></a>occ <span class="ot">&lt;-</span> con <span class="sc">|&gt;</span> <span class="fu">occurrence_db</span>(<span class="at">scientificname =</span> <span class="st">"Minuca rapax"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ul>
 <li>Mirrors <code>robis</code> functions where possible (<code>occurrence_db()</code>, <code>checklist_db()</code>…)</li>
 <li>Runs on <strong>DuckDB</strong> — fast, local queries without loading everything into memory</li>

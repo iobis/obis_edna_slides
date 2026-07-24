@@ -6,15 +6,12 @@
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
-<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet"><meta charset="utf-8">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.10.18">
 
-  <meta name="author" content="Elizabeth Lawrence">
+  <meta name="author" content="Emilie Boulanger, Elizabeth Lawrence">
   <meta name="dcterms.date" content="2026-07-22">
-  <title>OBIS Training Slides – OBIS Quality Control</title>
+  <title>OBIS Training Slides – Hora de Jugar</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -141,58 +138,48 @@
     <div class="slides">
 
 <section id="title-slide" data-background-image="./assets/background-shapes.svg" data-background-opacity="0.2" data-background-size="contain" class="quarto-title-block center">
-  <h1 class="title">OBIS Quality Control</h1>
-  <p class="subtitle">A very brief look at QC checks before publishing</p>
+  <h1 class="title">Hora de Jugar</h1>
+  <p class="subtitle">Relacionar metadatos con Darwin Core</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Elizabeth Lawrence
+Emilie Boulanger, Elizabeth Lawrence
 </div>
 </div>
 </div>
 
   <p class="date">2026-07-22</p>
 </section>
-<section id="quality-control" class="slide level2 center">
-<h2>Quality control</h2>
-<p><strong>Before publishing — check for:</strong></p>
+<section id="relacionar-metadatos-con-darwin-core" class="slide level2 center">
+<h2>Relacionar metadatos con Darwin Core</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>📋 <strong>Preparación</strong></p>
 <ul>
-<li>✅ Taxonomy matched to <strong>WoRMS</strong> (AphiaID required for marine taxa)<br>
-</li>
-<li>✅ Coordinates in decimal degrees, in the ocean<br>
-</li>
-<li>✅ Dates in ISO 8601 format (YYYY-MM-DD)<br>
-</li>
-<li>✅ Unique, stable <code>occurrenceID</code> and <code>eventID</code><br>
-</li>
-<li>✅ Table linkages consistent (<code>eventID</code>, <code>occurrenceID</code>)</li>
+<li>Grupos de 4 a 5 personas</li>
+<li>Caja con fragmentos de texto sobre muestreo de campo y metodología</li>
+<li>4 carteles, uno por cada tabla de DwC: Event · Occurrence · DNA · eMoF
+<ul>
+<li>Cada tabla tiene una pila de encabezados de columnas de DwC. ¡No todos son relevantes! Encuentra el/los que sí lo son</li>
+</ul></li>
 </ul>
-<p><strong>Tools:</strong></p>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Tool</th>
-<th>What it checks</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>obistools</code> (R package)</td>
-<td>Taxonomy, geography, required fields</td>
-</tr>
-<tr class="even">
-<td>GBIF data validator</td>
-<td>Darwin Core Archive structure</td>
-</tr>
-<tr class="odd">
-<td>WoRMS taxon match</td>
-<td>Scientific names → AphiaIDs</td>
-</tr>
-</tbody>
-</table>
+</div><div class="column" style="width:50%;">
+<p>🎯 <strong>Tarea</strong></p>
+<ul>
+<li>Lean un fragmento en voz alta como grupo</li>
+<li>Decidan: ¿qué <strong>tabla</strong>? ¿qué <strong>columna</strong> (es decir, término)?</li>
+<li>Colóquenlo en el lugar correcto</li>
+<li>Completen la información con el vocabulario correcto</li>
+</ul>
+<p>⚠️ <strong>Ten en cuenta</strong></p>
+<ul>
+<li>Algunos fragmentos pueden dividirse entre 2 o más columnas</li>
+<li>Algunos fragmentos pueden no pertenecer a ninguna tabla</li>
+</ul>
+</div></div>
 <aside class="notes">
-<p>obistools is an R package from OBIS. The GBIF validator is a web-based tool. WoRMS has a batch taxon match tool at marinespecies.org/aphia.php. For unidentified sequences, assign a high-level taxon if possible (e.g., kingdom Animalia) rather than leaving the field empty.</p>
+<p>Notas para el facilitador: recuérdales a los participantes que mapear a DwC suele ser una decisión de criterio — varios fragmentos (por ejemplo, el método de filtración o el buffer de conservación) son genuinamente ambiguos entre samplingProtocol y el campo sop de la extensión de ADN, y eso está bien. El objetivo no es tener una única respuesta “correcta” para cada tarjeta, sino practicar el proceso de razonamiento: leer el texto original, identificar qué tipo de información es (a nivel de evento, de ocurrencia, de método molecular o de medición) y encontrar su lugar. Después de 20 minutos, recorre la sala y revela la clave de respuestas en vivo, deteniéndote más tiempo en los carteles donde los grupos no estuvieron de acuerdo.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -205,65 +192,27 @@ Elizabeth Lawrence
           display:block!important;
       }</style></aside>
 </section>
-<section id="worms-taxon-matching" class="slide level2 center">
-<h2>WoRMS Taxon Matching</h2>
+<section id="datos-de-edna-para-monitoreo-nacional" class="slide level2 center">
+<h2>Datos de eDNA para monitoreo nacional</h2>
+<p>Un programa nacional de monitoreo quiere que todos los datos de eDNA estén disponibles públicamente en el plazo de un año.</p>
 <div class="columns">
-<div class="column" style="width:45%;">
-<p>Options for taxon matching:</p>
-<ul>
-<li><a href="https://www.marinespecies.org/aphia.php?p=match">WoRMS Taxon Match Tool</a></li>
-<li>Programmatically:
-<ul>
-<li><a href="https://iobis.github.io/obistools/#taxon-matching">obistools</a>::match_taxa</li>
-<li><a href="https://docs.ropensci.org/worrms/reference/wm_records_taxamatch.html">worrms</a>::wm_records_taxamatch</li>
-<li><a href="https://github.com/iobis/pyworms">pyworms</a></li>
-</ul></li>
-</ul>
-</div><div class="column" style="width:55%;">
-<p><a href="./assets/worms-dropdown.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img data-src="./assets/worms-dropdown.png"></a></p>
-</div></div>
-<div class="columns">
-<div class="column" style="width:40%;">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>No WoRMS match?</strong></p>
-</div>
-<div class="callout-content">
-<p>Use highest-rank taxon with a match (e.g.&nbsp;family or order). Keep the sequence — it can be re-identified later as reference databases improve.</p>
-</div>
-</div>
-</div>
-</div><div class="column" style="width:60%;">
-<div class="callout callout-note no-icon callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<p><strong><span style="color:#02C39A">Still no match?</span></strong></p>
-</div>
-<div class="callout-content">
-<p>Unknown sequences recorded as: <code>scientificName</code> = “Biota incertae sedis” <code>scientificNameID</code> = urn:lsid:marinespecies.org:taxname:12</p>
-</div>
-</div>
-</div>
-</div></div>
-</section>
-<section id="obis-dna-data-management-platform" class="slide level2 center">
-<h2>OBIS DNA Data Management Platform</h2>
-<p>🔧 OBIS is developing a data management platform for DNA data including:</p>
-<div class="columns">
-<div class="column" style="width:70%;">
-<ul>
-<li>Bioinformatics</li>
-<li>QC</li>
-<li>Validation</li>
-<li>Publication to OBIS pipeline</li>
-</ul>
-<p>To be offered to OBIS nodes to support local eDNA projects!</p>
-</div><div class="column" style="width:30%;">
-<p><span style="font-size: 5em; cen">🚧</span></p>
+<div class="column" style="width:50%;">
+<p><strong>¿Quién eres?</strong></p>
+<p>Cada uno de ustedes recibirá un rol, representando una de estas categorías de actores:</p>
+<pre><code>🌳 Ecólogo/a de campo
+🧬 Científico/a de laboratorio molecular / Bioinformático/a
+💻 Gestor/a de datos
+🏛️ Curador/a de repositorio
+📜 Responsable de políticas
+🌐 Representante de base de datos de biodiversidad
+🗺️ Usuario/a final</code></pre>
+</div><div class="column" style="width:50%;">
+<p>👥 <strong>¿Qué necesitas?</strong></p>
+<p>Dentro de tu rol como actor, deberías discutir y explicar:</p>
+<pre><code>- **¿Qué necesitas?**
+- **¿Qué te preocupa?**
+- **¿Qué datos puedes proporcionar?**
+- **¿Qué estándares requieres?**</code></pre>
 </div></div>
 
 
@@ -653,38 +602,6 @@ Elizabeth Lawrence
         }
       });
       </script>
-    <script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
-    (function() {
-      let previousOnload = window.onload;
-      window.onload = () => {
-        if (previousOnload) {
-          previousOnload();
-        }
-        lightboxQuarto.on('slide_before_load', (data) => {
-          const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-          const href = trigger.getAttribute('href');
-          if (href !== null) {
-            const imgEl = window.document.querySelector(`a[href="${href}"] img`);
-            if (imgEl !== null) {
-              const srcAttr = imgEl.getAttribute("src");
-              if (srcAttr && srcAttr.startsWith("data:")) {
-                slideConfig.href = srcAttr;
-              }
-            }
-          } 
-        });
-      
-        lightboxQuarto.on('slide_after_load', (data) => {
-          const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-          if (window.Quarto?.typesetMath) {
-            window.Quarto.typesetMath(slideNode);
-          }
-        });
-      
-      };
-      
-    })();
-              </script>
     
 
 </body></html>
