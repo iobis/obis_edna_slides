@@ -1,4 +1,4 @@
-## El portal de OBIS — obis.org
+## El portal de OBIS — [obis.org](https://obis.org/){target="_blank" rel="noopener noreferrer"}
 
 :::: {.columns}
 

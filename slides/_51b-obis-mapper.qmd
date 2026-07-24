@@ -1,5 +1,4 @@
-## OBIS Mapper — [mapper.obis.org](https://mapper.obis.org/)
-[mapper.obis.org](https://mapper.obis.org/)
+## OBIS Mapper — [mapper.obis.org](https://mapper.obis.org/){target="_blank" rel="noopener noreferrer"}
 
 :::: {.columns}
 ::: {.column width="50%"}
