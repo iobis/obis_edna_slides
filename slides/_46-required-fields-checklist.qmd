@@ -20,7 +20,7 @@
 - `coordinateUncertaintyInMeters`
 - `associatedSequences` (DNA data)
 
-[OBIS term checklist](https://manual.obis.org/checklist.html)
+[OBIS term checklist](https://manual.obis.org/checklist.html){target="_blank" rel="noopener noreferrer"}
 :::
 ::::
 
