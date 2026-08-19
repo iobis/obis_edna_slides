@@ -7,11 +7,16 @@ format:
     css: [custom.css]
 ---
 
-## 2026
+## Slide Decks by Topic
+
+::: {.topic-boxes}
+**Darwin Core**[![](assets/DarwinCore-TDWG-logo.png){.topic-box-img}](index-dwc.qmd){.topic-box}
+
+**DNA data**[🧬](index-dna.qmd){.topic-box .topic-box-emoji}
+:::
+
+## 2026 Training Courses
 
 - [July INVEMAR DNA data management](index-invemar.qmd)
 - [July OBIS Node Training on DNA data](https://iobis.github.io/obis_edna_slides_node_training/)
 
-## Other slide decks
-
-- [Publishing eDNA Data in OBIS (full deck)](index-edna-full.qmd)

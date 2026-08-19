@@ -95,6 +95,42 @@ table th {
   word-break: break-word;
 }
 
+/* Little clickable topic boxes on the landing page (index.qmd) */
+.topic-boxes {
+  display: flex;
+  gap: 20px;
+  margin: 1.5em 0;
+}
+
+.topic-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  background-color: #f8f9fa;
+  text-decoration: none;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.topic-box:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+.topic-box-img {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+}
+
+.topic-box-emoji {
+  font-size: 4em;
+  line-height: 1;
+}
+
 /* add background shapes, which were failing in scss on GitHub because of path issues */
 .reveal .slides::before {
   content: '';
