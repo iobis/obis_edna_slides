@@ -25,7 +25,7 @@
 }
 
 .pillar-svg {
-  flex: 0 0 200px;  // Fixed width instead of flex: 1
+  flex: 0 0 200px;  /* Fixed width instead of flex: 1 */
   max-width: 200px;
   margin-top: -30px
 }
@@ -35,7 +35,7 @@
   color: #156082;
   font-weight: 600;
   margin-top: -30px;
-  min-height: 60px;  // Reserve space for 2-3 lines of text
+  min-height: 60px;  /* Reserve space for 2-3 lines of text */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -129,6 +129,83 @@ table th {
 .topic-box-emoji {
   font-size: 4em;
   line-height: 1;
+}
+
+/* ===== Top banner / navbar — matched to manual.obis.org ===== */
+.navbar {
+  background-color: #ffffff;
+  color: rgb(84, 85, 85);
+}
+
+.navbar-brand {
+  display: contents;
+}
+
+.navbar-brand-container.mx-auto {
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+#quarto-header .navbar-container.container-fluid {
+  max-width: 1320px !important;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#quarto-search {
+  margin-left: 1rem;
+  margin-right: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+#navbarCollapse .navbar-nav .nav-link {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+#navbarCollapse .navbar-nav .nav-link .menu-text {
+  font-family: Roboto, "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+
+#navbarCollapse .navbar-nav .nav-link.active .menu-text,
+#navbarCollapse .navbar-nav .nav-link:hover .menu-text {
+  color: #1e74ac;
+}
+
+/* keep the mobile hamburger visible on the white banner */
+.navbar-toggler {
+  border-color: rgba(0, 0, 0, 0.15);
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0,0,0,0.6)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* search icon on the white banner */
+#quarto-search .aa-DetachedSearchButtonIcon,
+#quarto-search svg {
+  color: #545556;
+}
+
+/* ===== Coloured page-title banner — matched to manual.obis.org tutorials ===== */
+.quarto-title-block .quarto-title-banner {
+  background: #2A7B9B;
+  background-image:
+    url("assets/blue-square-bg.svg"),
+    linear-gradient(90deg, #469cd6 0%, #0c29ad 100%);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 50% auto, cover;
+  background-position: right, center;
+}
+
+.quarto-title-banner .title,
+.quarto-title-banner .subtitle,
+.quarto-title-banner .quarto-title .title,
+#title-block-header.quarto-title-block.default .quarto-title-banner h1.title {
+  color: #ffffff;
 }
 
 /* add background shapes, which were failing in scss on GitHub because of path issues */

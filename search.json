@@ -172,21 +172,21 @@
     "href": "index.html",
     "title": "OBIS Training Slide Decks",
     "section": "",
-    "text": "Darwin Core\nDNA data🧬"
+    "text": "These slide decks are used in training delivered by OBIS. They’re Markdown, built with Quarto and reveal.js, and openly licensed (CC BY‑NC 4.0). Reuse them freely by forking the repo."
   },
   {
     "objectID": "index.html#slide-decks-by-topic",
     "href": "index.html#slide-decks-by-topic",
     "title": "OBIS Training Slide Decks",
-    "section": "",
-    "text": "Darwin Core\nDNA data🧬"
+    "section": "Slide Decks by Topic",
+    "text": "Slide Decks by Topic\n\nDarwin Core\nDNA data🧬"
   },
   {
-    "objectID": "index.html#training-courses",
-    "href": "index.html#training-courses",
+    "objectID": "index.html#trainings-delivered",
+    "href": "index.html#trainings-delivered",
     "title": "OBIS Training Slide Decks",
-    "section": "2026 Training Courses",
-    "text": "2026 Training Courses\n\nJuly INVEMAR DNA data management\nJuly OBIS Node Training on DNA data"
+    "section": "Trainings Delivered",
+    "text": "Trainings Delivered\nSlide decks and resources compiled for individual training courses or workshops.\n\n2026\n\nJuly INVEMAR DNA data management\nJuly OBIS Node Training on DNA data"
   },
   {
     "objectID": "index-publishing.html#publishing-workflow",
