@@ -1,11 +1,13 @@
 ---
 title: "OBIS Training Slide Decks"
-subtitle: "Slide decks used in training delivered by the OBIS community"
+subtitle: "Reusable slide decks for OBIS data training"
 format:
   html:
     theme: [obis_theme.scss]
     css: [custom.css]
 ---
+
+These slide decks are used in training delivered by OBIS. They're Markdown, built with [Quarto](https://quarto.org/) and reveal.js, and openly licensed ([CC BY‑NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)). Reuse them freely by [forking the repo](https://github.com/iobis/obis_edna_slides).
 
 ## Slide Decks by Topic
 
@@ -15,7 +17,11 @@ format:
 **DNA data**[🧬](index-dna.qmd){.topic-box .topic-box-emoji}
 :::
 
-## 2026 Training Courses
+## Trainings Delivered
+
+Slide decks and resources compiled for individual training courses or workshops.
+
+### 2026
 
 - [July INVEMAR DNA data management](index-invemar.qmd)
 - [July OBIS Node Training on DNA data](https://iobis.github.io/obis_edna_slides_node_training/)

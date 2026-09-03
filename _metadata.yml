@@ -1,0 +1,4 @@
+# Applies to the Quarto HTML landing pages (index*.qmd).
+# Reveal.js slide decks ignore title-block-banner, so this is a no-op for them.
+title-block-banner: "#445599"
+title-block-banner-color: white
