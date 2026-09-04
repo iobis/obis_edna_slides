@@ -17,8 +17,10 @@ website:
     foreground: "#545556"
     title: |
       <a class="navbar-brand" href="index.html"><img src="assets/ioc_logo_black_2.svg" style="height: 40px; margin-right: .7rem !important;" class="me-2"><img src="assets/logo_simple.png" style="height: 30px;"></a>
-    left:
-      - text: "Home"
+    right:
+      - text: "OBIS Manual"
+        href: https://manual.obis.org/
+      - text: "Slide Home"
         href: index.qmd
       - text: "DwC Training"
         href: index-dwc.qmd
