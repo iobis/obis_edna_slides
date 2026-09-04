@@ -1,115 +1,129 @@
 [
   {
-    "objectID": "index-DNA-game-instructions-es.html#relacionar-metadatos-con-darwin-core",
-    "href": "index-DNA-game-instructions-es.html#relacionar-metadatos-con-darwin-core",
-    "title": "Hora de Jugar",
-    "section": "Relacionar metadatos con Darwin Core",
-    "text": "Relacionar metadatos con Darwin Core\n\n\n📋 Preparación\n\nGrupos de 4 a 5 personas\nCaja con fragmentos de texto sobre muestreo de campo y metodología\n4 carteles, uno por cada tabla de DwC: Event · Occurrence · DNA · eMoF\n\nCada tabla tiene una pila de encabezados de columnas de DwC. ¡No todos son relevantes! Encuentra el/los que sí lo son\n\n\n\n🎯 Tarea\n\nLean un fragmento en voz alta como grupo\nDecidan: ¿qué tabla? ¿qué columna (es decir, término)?\nColóquenlo en el lugar correcto\nCompleten la información con el vocabulario correcto\n\n⚠️ Ten en cuenta\n\nAlgunos fragmentos pueden dividirse entre 2 o más columnas\nAlgunos fragmentos pueden no pertenecer a ninguna tabla\n\n\n\nNotas para el facilitador: recuérdales a los participantes que mapear a DwC suele ser una decisión de criterio — varios fragmentos (por ejemplo, el método de filtración o el buffer de conservación) son genuinamente ambiguos entre samplingProtocol y el campo sop de la extensión de ADN, y eso está bien. El objetivo no es tener una única respuesta “correcta” para cada tarjeta, sino practicar el proceso de razonamiento: leer el texto original, identificar qué tipo de información es (a nivel de evento, de ocurrencia, de método molecular o de medición) y encontrar su lugar. Después de 20 minutos, recorre la sala y revela la clave de respuestas en vivo, deteniéndote más tiempo en los carteles donde los grupos no estuvieron de acuerdo."
+    "objectID": "index-access-es.html#cómo-obtener-datos-de-obis",
+    "href": "index-access-es.html#cómo-obtener-datos-de-obis",
+    "title": "Acceso a los datos de OBIS",
+    "section": "Cómo obtener datos de OBIS",
+    "text": "Cómo obtener datos de OBIS\nExisten varias formas de acceder, según lo que necesites:\n\nobis.org — explorar, buscar y citar conjuntos de datos\nOBIS Mapper — exploración visual y descargas rápidas\nrobis — acceso programático desde R\nParquet + robisdb (nuevo) — acceso rápido y local al conjunto de datos completo\n\n\nEsto refleja las opciones del Módulo 8, pero aquí nos enfocamos en las cuatro más relevantes para este grupo. También existen exportaciones completas en CSV y descargas directas desde el IPT, pero las cuatro opciones anteriores cubren la mayoría de los flujos de trabajo reales. Buen momento para preguntar al grupo qué están tratando de hacer (una especie vs. una región completa vs. un análisis masivo), ya que esto determina cuál opción es la más adecuada — las próximas diapositivas van, a grandes rasgos, de “descarga puntual pequeña” a “acceso masivo/programático.”"
   },
   {
-    "objectID": "index-DNA-game-instructions-es.html#datos-de-edna-para-monitoreo-nacional",
-    "href": "index-DNA-game-instructions-es.html#datos-de-edna-para-monitoreo-nacional",
-    "title": "Hora de Jugar",
-    "section": "Datos de eDNA para monitoreo nacional",
-    "text": "Datos de eDNA para monitoreo nacional\nUn programa nacional de monitoreo quiere que todos los datos de eDNA estén disponibles públicamente en el plazo de un año.\n\n\n¿Quién eres?\nCada uno de ustedes recibirá un rol, representando una de estas categorías de actores:\n🌳 Ecólogo/a de campo\n🧬 Científico/a de laboratorio molecular / Bioinformático/a\n💻 Gestor/a de datos\n🏛️ Curador/a de repositorio\n📜 Responsable de políticas\n🌐 Representante de base de datos de biodiversidad\n🗺️ Usuario/a final\n\n👥 ¿Qué necesitas?\nDentro de tu rol como actor, deberías discutir y explicar:\n- **¿Qué necesitas?**\n- **¿Qué te preocupa?**\n- **¿Qué datos puedes proporcionar?**\n- **¿Qué estándares requieres?**\n\nEscribe tus respuestas en notas adhesivas. ¡incluye tu función!"
+    "objectID": "index-access-es.html#el-portal-de-obis-obis.org",
+    "href": "index-access-es.html#el-portal-de-obis-obis.org",
+    "title": "Acceso a los datos de OBIS",
+    "section": "El portal de OBIS — obis.org",
+    "text": "El portal de OBIS — obis.org\n\n\nTu punto de partida para encontrar y entender los datos:\n\nBuscar y explorar por taxón, región o conjunto de datos\nVer el resumen del conjunto de datos y la información de citación\nEncontrar los datos de contacto del proveedor de los datos\n\n\n\n\n\nVale la pena contrastar esto con el Mapper (siguiente diapositiva): las descargas desde la página de inicio o del conjunto de datos vienen como archivos de tabla separados, mientras que las descargas del Mapper o de la exportación completa se combinan en una sola tabla de occurrence+event, con las extensiones eMoF/DNA disponibles solo si se marca la casilla correspondiente. Esta distinción suele confundir a los participantes, así que hay que señalarla explícitamente."
   },
   {
-    "objectID": "index-dna-extension.html#five-dna-data-categories",
-    "href": "index-dna-extension.html#five-dna-data-categories",
-    "title": "Types of DNA-derived data",
-    "section": "Five DNA data categories",
-    "text": "Five DNA data categories\nWhich one fits your data?\n\n\n\n\n\n\n\n\n#\nCategory\nExample\n\n\n\n\n1\nDNA-derived occurrences\nMetabarcoding (ASVs/OTUs assigned to taxa)\n\n\n2\nEnriched occurrences\nVoucher specimen + barcoded\n\n\n3\nTargeted species detection\nqPCR / ddPCR assays\n\n\n4\nName references\nSequence in GenBank only\n\n\n5\nMetadata only\nDataset without sequences\n\n\n\n🔎 Use the GBIF decision tree to confirm your category\n\nWe won’t go into details on this slide - just reiterating that Categories 1 and 3 are by far the most common for eDNA researchers. Category 1 covers metabarcoding; Category 3 covers targeted detection methods like qPCR/ddPCR where no sequences are produced. Be aware that there are other possible types but they are outside the scope of this workshop."
+    "objectID": "index-access-es.html#obis-mapper-mapper.obis.org",
+    "href": "index-access-es.html#obis-mapper-mapper.obis.org",
+    "title": "Acceso a los datos de OBIS",
+    "section": "OBIS Mapper — mapper.obis.org",
+    "text": "OBIS Mapper — mapper.obis.org\n\n\nExploración visual de los datos de OBIS, basada en filtros:\n\nFiltrar por taxón, geografía, tiempo y extensiones\nCombinar varias capas en una sola vista\nDescargar capas individuales como CSV\n\nMejor para conjuntos de datos más pequeños (&lt;20,000,000 registros)\n\nIncluir las extensiones eMoF y/o de datos derivados de ADN\n\n(marca la casilla — no está activada por defecto)\n\n\n\n\n\n\nExcelente herramienta para hacer una verificación visual rápida antes de hacer cualquier cosa programática — “¿esta región realmente tiene datos de eDNA?” La coincidencia de nombres con “Maptool” es una fuente real de confusión, vale la pena mencionarla explícitamente ya que Maptool surgió antes en el contexto de datos sensibles."
   },
   {
-    "objectID": "index-dna-extension.html#edna-data-standards",
-    "href": "index-dna-extension.html#edna-data-standards",
-    "title": "Types of DNA-derived data",
-    "section": "eDNA data standards",
-    "text": "eDNA data standards\n\nTwo major eDNA data standards exist\n\n\n\nMiXS  (Minimum Information about any (x) Sequence) — for raw sequences in NCBI\n\n\n\nDarwin Core (DwC) Community vocabulary for biodiversity data — species, location, date, basis of record\n\n\n\n\nOBIS + GBIF + ALA accept genetic data linked to spatial coordinates and time\n\n 🔜Developing landscape\n\nRapidly changing field\nFor OBIS future directions include the DWC-DP and FAIReDNA terms\n\n\nRaw sequences deposited in NCBI lack coordinates and dates — they cannot answer where or when a species was detected. OBIS, GBIF, and ALA now accept DNA-derived occurrences linked to space and time. DNA data requires special care: it is derived, depends on reference databases, and often produces many unknown sequences. The Darwin Core DNA extension preserves methodological context for future re-analysis."
+    "objectID": "index-access-es.html#robis-acceso-programático-desde-r",
+    "href": "index-access-es.html#robis-acceso-programático-desde-r",
+    "title": "Acceso a los datos de OBIS",
+    "section": "robis — acceso programático desde R",
+    "text": "robis — acceso programático desde R\ninstall.packages(\"robis\")\nlibrary(robis)\n\nrecords &lt;- occurrence(scientificname = \"Megaptera novaeangliae\", fields=\"associatedSequences\")\ndna &lt;- dataset(scientificname = \"Megaptera novaeangliae\", fields=\"associatedSequences\")\n\nConsultar por especie, grupo taxonómico, geometría (WKT), profundidad, tiempo, indicadores de calidad…\nFunción incorporada checklist() para listas de taxones en un área\ndataset() — consulta de conjuntos de datos en lugar de registros biológicos\n\ngithub.com/iobis/robis\n\nEsta es la opción principal para la mayoría de las tareas del tipo “necesito los datos de esta especie/región en R” — internamente se comunica directamente con la API de OBIS, por lo que no requiere almacenamiento local. Es ideal para descargas pequeñas a medianas; para algo que se acerque a “todo el conjunto de datos de OBIS” o consultas pesadas repetidas, el enfoque de Parquet de la siguiente diapositiva es más adecuado."
   },
   {
-    "objectID": "index-dna-extension.html#darwin-core-dna-derived-data-extension",
-    "href": "index-dna-extension.html#darwin-core-dna-derived-data-extension",
-    "title": "Types of DNA-derived data",
-    "section": "Darwin Core + DNA Derived Data Extension",
-    "text": "Darwin Core + DNA Derived Data Extension\n\nDarwin Core: shared vocabulary for biodiversity data\n\nDNA Extension: adds MIxS terms for sequences, primers, methods\n\nDeveloped jointly by GBIF, OBIS, and the genomics community\n\n\n\n\n\n\nmeta.xml ← links all tables\neml.xml ← metadata (who, what, where, when, how)\noccurrence.csv ← the occurrence records\ndna_derived.csv ← the DNA extension\n\n\n\nMIxS = Minimum Information about any (x) Sequence. The extension incorporates these community standards so the same fields used in INSDC/GenBank submissions can be reused here."
+    "objectID": "index-access-es.html#nuevo-acceso-rápido-mediante-parquet",
+    "href": "index-access-es.html#nuevo-acceso-rápido-mediante-parquet",
+    "title": "Acceso a los datos de OBIS",
+    "section": "Nuevo: acceso rápido mediante Parquet",
+    "text": "Nuevo: acceso rápido mediante Parquet\n\nOBIS publica el conjunto de datos global completo en formato Parquet\nPaquete de R recién lanzado, robisdb\n\n(publicado este mes — en desarrollo activo)\n\n\npak::pak(\"iobis/robisdb\")\nlibrary(robisdb)\n\ncon &lt;- connect_opendata_local(\"~/data/obis-open-data\")\nocc &lt;- con |&gt; occurrence_db(scientificname = \"Minuca rapax\")\n\nRefleja las funciones de robis en la medida de lo posible (occurrence_db(), checklist_db()…)\nFunciona sobre DuckDB — consultas rápidas y locales sin cargar todo en memoria\nDiseñado para escalar: análisis del conjunto de datos completo o repetidos que serían lentos vía la API\n\n\nEsto es muy nuevo (de este mes), así que hay que tratarlo como “hacia dónde se dirigen las cosas” y no como un flujo de trabajo maduro y completamente documentado — revisa github.com/iobis/robisdb para lo más reciente, ya que los detalles pueden cambiar. Vale la pena mencionar que esto existe específicamente porque cargar todo el conjunto de datos de OBIS vía la API/robis no es viable en la mayoría de las laptops — Parquet + DuckDB es la respuesta de OBIS a ese problema de escala. Conjuntos de datos relacionados (speciesgrids, obistherm) también se pueden consultar de la misma manera."
   },
   {
-    "objectID": "index-dna-extension.html#core-table-for-dna-data",
-    "href": "index-dna-extension.html#core-table-for-dna-data",
-    "title": "Types of DNA-derived data",
-    "section": "Core table for DNA data",
-    "text": "Core table for DNA data\nDNA data can be published with either core type:\n\nOccurrence core + DNA extension\nEvent core + Occurrence extension + DNA extension\n\n\n\n\nThis wasn’t always true\n\n\nPreviously guidance required Occurrence core only for DNA data. Event core support was added recently!\n\n\n\n\nBoth options link the DNA extension via occurrenceID. Event core additionally lets you record sample-level metadata (location, date, method) once per event instead of once per sequence — see the next slide for why that matters at scale. A caveat worth mentioning live: even with Event core, some duplication is unavoidable because of the star schema (DNA extension still needs occurrenceID, so each occurrence still carries a full sequence/sample link). A newer GBIF/OBIS data model in development aims to remove this constraint entirely, but it isn’t implemented yet (as of late 2025)."
+    "objectID": "index-fair-data.html#what-makes-data-fair",
+    "href": "index-fair-data.html#what-makes-data-fair",
+    "title": "FAIR Data Principles & Biodiversity Standards",
+    "section": "What makes data FAIR?",
+    "text": "What makes data FAIR?\n\n\n\n\n\nDescriptive metadata with stable links (e.g. DOI)\nClear instructions on how to access\n\nNot just “available upon request”\n\nEasily combined with other datasets & machine readable\nMetadata enables replication\n\nData is contextualized\n\n\n\n\nThis is the “why” before we get into the “how” (Darwin Core, EOVs, sensitive data). Starting with a quick overview on what actually makes data FAIR. To summarize each aspect – Findable means that there is descriptive metadata with stable links and identifiers e.g. DOI that enable finding our data Accessible means that there are clear instructions on how to access our data, going beyond ‘available upon request’ statements Interoperable means that our data can be easily combined with other datasets and that our data & metadata are machine readable. This often means adhering to data standards and using controlled vocabulary whenever possible Reusable means that the metadata is documented well enough to enable others to replicate what we’ve done and there is enough context so that users know what situations our data can be reused in (e.g looking back on data collected 20 yrs ago, code)"
   },
   {
-    "objectID": "index-dna-extension.html#key-dwc-fields-to-include-event",
-    "href": "index-dna-extension.html#key-dwc-fields-to-include-event",
-    "title": "Types of DNA-derived data",
-    "section": "Key DwC fields to include: Event",
-    "text": "Key DwC fields to include: Event\n\n\nEvent core (mandatory fields)\n\neventID — unique, stable ID\neventDate — YYYY-MM-DD\ndecimalLatitude, decimalLongitude\n\n\n\nEvent table (strongly recommended fields)\n\nminimumDepthInMeters, maximumDepthInMeters\nsampleSizeValue (volume of sample)\n\nsampleSizeUnit (units of volume sampled)\nsamplingProtocol - (link to your field sampling SOP)"
+    "objectID": "index-fair-data.html#what-can-fair-data-do",
+    "href": "index-fair-data.html#what-can-fair-data-do",
+    "title": "FAIR Data Principles & Biodiversity Standards",
+    "section": "What can FAIR data do?",
+    "text": "What can FAIR data do?\n\n\nInvasive species decision tool & alert system portal.pacman.obis.org\n\n\n\n\n\nBefore I talk more about data standards, let’s look at some examples that demonstrate the power of FAIR data This first example is work that was done through the PacMAN project (Pacific islands Marine bioinvasions Alert Network), where our team developed a decision tool & alert system for detecting invasive species. The tool uses data from OBIS AND GBIF, including dna derived detections and other types of observations. When a pest species is detected, metadata about the detection is used to determine the detection confidence and confirm its status, if it’s a real detection. This allows informed decisions to be made on how to deal with the bioinvasion This last screenshot shows the tool and where you can see the confidence and status of detections"
   },
   {
-    "objectID": "index-dna-extension.html#key-dwc-fields-to-include-occurrence",
-    "href": "index-dna-extension.html#key-dwc-fields-to-include-occurrence",
-    "title": "Types of DNA-derived data",
-    "section": "Key DwC fields to include: Occurrence",
-    "text": "Key DwC fields to include: Occurrence\n\n\nOccurrence (core) table (mandatory fields)\n\noccurrenceID — unique, stable ID\nscientificName — taxon name to lowest possible taxon rank\nbasisOfRecord = “MaterialSample”\n\noccurrenceStatus = “present”\n\nIf Occurrence core, also: eventDate, decimalLatitude, decimalLongitude\n\nOccurrence table (strongly recommended fields)\n\nscientificNameID (WoRMS AphiaID)\n\norganismQuantity (read count of sequence)\n\norganismQuantityType = “DNA sequence reads”\nsampleSizeValue (total read count in sample)\n\nsampleSizeUnit = “DNA sequence reads”\nsamplingProtocol - (link to your SOP)\nassociatedSequences (link to e.g. GenBank or ENA accession)"
+    "objectID": "index-fair-data.html#how-to-manage-and-make-data-fair",
+    "href": "index-fair-data.html#how-to-manage-and-make-data-fair",
+    "title": "FAIR Data Principles & Biodiversity Standards",
+    "section": "How to manage and make data FAIR?",
+    "text": "How to manage and make data FAIR?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHow do we make data FAIR - OBIS + DwC standard!"
   },
   {
-    "objectID": "index-dna-extension.html#key-fields-to-include-dna-extension",
-    "href": "index-dna-extension.html#key-fields-to-include-dna-extension",
-    "title": "Types of DNA-derived data",
-    "section": "Key fields to include: DNA Extension",
-    "text": "Key fields to include: DNA Extension\n\n\nDNA Extension (example key fields)\n\nDNA_sequence — ASV/OTU sequence\ntarget_gene — e.g. “COI”, “18S rRNA”\npcr_primer_name_forward — and reverse\nseq_meth — e.g. “Illumina MiSeq”\notu_class_appr — e.g. “DADA2 v1.18”\notu_db — reference database\nsop — link to your protocol\n\n\n\nmanual.obis.org/dna_data.html#quick-start-guide\n\n\nWoRMS = World Register of Marine Species. Every marine occurrence should have a WoRMS AphiaID as the taxonID. For freshwater / terrestrial taxa use the appropriate backbone (CoL, etc.). Unidentified sequences should still be included — they can be assigned taxon later."
+    "objectID": "index-fair-data.html#what-is-obis",
+    "href": "index-fair-data.html#what-is-obis",
+    "title": "FAIR Data Principles & Biodiversity Standards",
+    "section": "What is OBIS?",
+    "text": "What is OBIS?\n\n\nOcean Biodiversity Information System\n\nGlobal open-access data system for marine life\n\nUNESCO Intergovernmental Oceanographic Commission\n\n&gt; 199 M occurrence records from &gt;7,000 datasets\n\nData flows to GBIF — easy to publish once, reach both\n\nFree to use. Free to contribute.\n\n\n🌐 obis.org\n📖 manual.obis.org\n\n\nOBIS is endorsed by UNESCO’s IOC. Data published there can flow to GBIF as well, giving you double visibility with a single submission. Emphasize that OBIS is not just a repository but actively feeds into global biodiversity assessments, climate analyses, and conservation planning."
   },
   {
-    "objectID": "index-dna-extension.html#from-raw-outputs-long-format",
-    "href": "index-dna-extension.html#from-raw-outputs-long-format",
-    "title": "Types of DNA-derived data",
-    "section": "From raw outputs → long format",
-    "text": "From raw outputs → long format\nDNA data is more complex than a lat/lon + species name\nYour typical metabarcoding outputs:\n\n\n\nFile\nContent\n\n\n\n\nOTU/ASV table\nSequences × Samples (read counts)\n\n\nTaxonomy table\nSequence [ID] → taxon assignment\n\n\nSample metadata\nLocation, date, method\n\n\nFASTA file\nActual DNA sequences\n\n\n\nThe transformation:\n\nOne row = one unique sequence in one sample = one occurrence record\n\n\nThe most common stumbling block is this “wide to long” transformation. The OBIS manual has a clear diagram. The Metabarcoding Data Toolkit (MDT) can automate this for common pipeline outputs."
+    "objectID": "index-fair-data.html#a-mature-global-community",
+    "href": "index-fair-data.html#a-mature-global-community",
+    "title": "FAIR Data Principles & Biodiversity Standards",
+    "section": "A Mature Global Community",
+    "text": "A Mature Global Community\n\n\n\n\n\n\n\nOBIS is the world’s largest open-access repositoryfor marine biodiversity data.\n \n\n36 nodes  across 99 countries  representing 1,000+ institutions  and 6,000+ scientists.\n\n\n\n\nOBIS sits within UNESCO’s IOC (IODE, est. 1961), working alongside ODIS for interoperability and OTGA for training. Strong partnerships include GBIF, TDWG, EMODnet, GOOS, and DataONE.\nCurrent stats: 136M species observations, 12M records from ABNJ, 28M DNA sequences (Jan 2026).\nThis data supports multiple agreements: Paris Agreement, 30x30, GBF (Targets 3, 6, 8, 20, 21), SDG14, and now BBNJ.\nRecognition: CBD COP16 recognized OBIS, GOOS, and ODIS as ocean components of the Global Biodiversity Observing System.\nOBIS is listed in KMGBF Targets 20 and 21.\nOBIS data supports: IPBES Global Assessment, UN World Ocean Assessments, UNESCO IOC Global HAB reports, State of the Ocean reports, TWAP Open Ocean component (UNEP), and CBD EBSA."
   },
   {
-    "objectID": "index-dna-extension.html#example-transformation",
-    "href": "index-dna-extension.html#example-transformation",
-    "title": "Types of DNA-derived data",
-    "section": "Example transformation",
-    "text": "Example transformation"
+    "objectID": "index-fair-data.html#obis-fair-data",
+    "href": "index-fair-data.html#obis-fair-data",
+    "title": "FAIR Data Principles & Biodiversity Standards",
+    "section": "OBIS & FAIR Data",
+    "text": "OBIS & FAIR Data\n\n\n\n\n\n\n\n\n\nWhat OBIS gives you\n\n\n\n\nFindable\nYour dataset joins a global, searchable index - with a DOI\n\n\nAccessible\nStandard download/API access, no one-off email requests\n\n\nInteroperable\nDarwin Core structure - readable by people and machines\n\n\nReusable\nDocumented metadata + a clear reuse license (e.g. CC-BY)\n\n\n\n\n\n\n\n\n\n\nA real example\n\n\nA marine invasive species dataset from Venezuela, published July 2022, was included in 1,873 separate download requests within 3 months — with zero extra effort from the data provider!\n\n\n\n\n…it’s the reason people don’t have to keep emailing you for your spreadsheet."
   },
   {
-    "objectID": "index-dna-extension.html#table-structure-options",
-    "href": "index-dna-extension.html#table-structure-options",
-    "title": "Types of DNA-derived data",
-    "section": "Table structure options",
-    "text": "Table structure options\nOption A — Occurrence Core\noccurrence.csv \n  └── dna_derived.csv  (linked via occurrenceID)\n  └── emof.csv         (linked via occurrenceID)\n\nOption B — Event Core (recommended for eDNA)\nevent.csv\n  └── occurrence.csv        (linked via eventID)\n       └── dna_derived.csv  (linked via occurrenceID)\n  └── emof.csv              (linked via eventID or occurrenceID)\nWhy Event Core? Sample-level metadata (location, date, method) is recorded once per sampling event rather than repeated in every row.\n\nFor a survey with 500 samples × 2000 ASVs = 1M rows, repeating location and date for every row is wasteful and error-prone. The Event Core avoids this. A new GBIF/OBIS data model is under development that will be even more flexible but is not yet implemented (as of 2025)."
+    "objectID": "index-fair-data.html#do-you-use-a-standard-to-format-your-data",
+    "href": "index-fair-data.html#do-you-use-a-standard-to-format-your-data",
+    "title": "FAIR Data Principles & Biodiversity Standards",
+    "section": "Do you use a standard to format your data?",
+    "text": "Do you use a standard to format your data?\n¿Utiliza algún estándar para formatear los datos?"
   },
   {
-    "objectID": "index-dna-extension.html#dataset-structure-three-linked-tables",
-    "href": "index-dna-extension.html#dataset-structure-three-linked-tables",
-    "title": "Types of DNA-derived data",
-    "section": "Dataset Structure: Three Linked Tables",
-    "text": "Dataset Structure: Three Linked Tables\n\n\n\nEvent Core\n\neventID\neventDate\ndecimalLatitude\ndecimalLongitude\nsamplingProtocol\n\n→ the 📍where, 🕒when & 🧪how of collection\n\n\n\nOccurrence Extension\n\noccurrenceID\neventID\nscientificName\ntaxonID (WoRMS)\nbasisOfRecord\noccurrenceStatus\n\n→ what organism was detected 🐠🪸🪼\n\n\n\nDNA Derived Data Ext.\n\noccurrenceID\nDNA_sequence\ntarget_gene\npcr_primer_forward\npcr_primer_reverse\nseq_meth\n\n→ 🧬the molecular context\n\n\n\n\nTables linked by eventID and occurrenceID\n\n\nOptional 4th table: eMoF for measurements and facts\n\n\nYour published dataset consists of up to three linked tables. The Event core captures sampling events — where, when, and how. The Occurrence extension records each taxon detection. The DNA Derived Data extension carries all molecular metadata. The tables are joined by eventID and occurrenceID. This avoids repeating sampling metadata for every sequence."
+    "objectID": "index-fair-data.html#what-is-darwin-core",
+    "href": "index-fair-data.html#what-is-darwin-core",
+    "title": "FAIR Data Principles & Biodiversity Standards",
+    "section": "What is Darwin Core?",
+    "text": "What is Darwin Core?\n\n\n\nStable, shared vocabulary for biodiversity data\n\nStandardized field names, identifiers, & definitions\n\nMaintained by TDWG, used by OBIS, GBIF, and the wider biodiversity community\nNot a database itself - a set of agreed-upon terms (e.g. scientificName, eventDate, decimalLatitude)\n\n\n\n\n\n\n\n\n\nThink of it as everyone agreeing to call the same column the same thing - so your data and someone else’s can sit in the same table!\n\n🤝\n\n\n\nFor folks who’ve never touched DwC: it’s just a controlled list of column names and what they mean, nothing more mystical than that. For the DwC veterans in the room, this is review — we’re about to build on this with how those terms get organized into tables (next slide), which matters a lot once we get into DNA data this afternoon/tomorrow."
   },
   {
-    "objectID": "index-dna-extension.html#emof-extension-table",
-    "href": "index-dna-extension.html#emof-extension-table",
-    "title": "Types of DNA-derived data",
-    "section": "eMoF extension table",
-    "text": "eMoF extension table\n\nTable to record all types of measurements (abiotic, biotic, environmental, sampling…)\nMeasurements recorded in long format\n\nmeasurementType, measurementValue, measurementUnit\n\nLinking sampling info to eventIDs decreases duplication\nUse controlled vocabulary whenever possible!\n\n\n\n\n\n\n\n\n\n\n\n\neventID\noccurrenceID\nmeasurementType\nmeasurementValue\nmeasurementUnit\n\n\n\n\n\nYEARsite1samp1\n\ntemperature\n25\nC\n\n\n\n\n\n\n\n\n\n\n\n\nmeasurementTypeID\nmeasurementUnitID\n\n\n\n\n\nhttp://vocab.nerc.ac.uk/collection/P01/current/TEMPPR01/\nhttp://vocab.nerc.ac.uk/collection/P06/current/UPAA/\n\n\n\n\n\nAs some of us may already be familiar, eMoF is the extension table that holds ALL kinds of measurement or fact data including measurements on organisms, information about the sampling gear used, or environmental variables measured. A reminder that this data is organized in LONG format. All the measurements are organized in rows within the columns measurementType, measurementValue, and measurementUnit"
+    "objectID": "index-fair-data.html#flat-vs.-relational-data-tables",
+    "href": "index-fair-data.html#flat-vs.-relational-data-tables",
+    "title": "FAIR Data Principles & Biodiversity Standards",
+    "section": "Flat vs. relational data tables",
+    "text": "Flat vs. relational data tables\n\n\nFlat file\nOne giant table - everything repeated on every row\n\n\n\ndate\nsite\nlat\nlon\nspecies\ncount\n\n\n\n\n2024-01\nA\n11\n-74\nfish1\n3\n\n\n2024-01\nA\n11\n-74\nfish2\n1\n\n\n2024-01\nA\n11\n-74\nfish3\n7\n\n\n\n\nRelational\nSeparate, linked tables — shared info stored once\nsite.csv:      site, date, lat, lon\nspecies.csv:   site, species, count\n🔗 Linked by a shared identifier (an ID column)\n\n\nThis is the concept underlying Darwin Core Archives: a “core” table (e.g. Event) and one or more “extension” tables (e.g. Occurrence, DNA extension) linked by eventID/occurrenceID. It reduces repetition and errors — fix the date once in the Event table instead of on every one of a thousand species rows. Keep this fast for people who already know relational databases; it’s here mainly to set up tomorrow’s DNA data session where we’ll have Event → Occurrence → DNA extension as three linked tables."
   },
   {
-    "objectID": "index-dna-extension.html#controlled-vocabulary",
-    "href": "index-dna-extension.html#controlled-vocabulary",
-    "title": "Types of DNA-derived data",
-    "section": "Controlled Vocabulary",
-    "text": "Controlled Vocabulary\n\n\nIdentifiers for each eMoF column\n\nmeasurementUnitID\nmeasurementValueID\n\nnon-numeric values\n\nmeasurementTypeID\n\n→ Facilitates data understanding\n→ Enables data aggregation\n→ Decreases misuse potential\n\nWhat should vocabulary terms capture?\n\n\nOBIS recommends using NERC vocabulary terms\n\n\n\nEmof lets you attach vocabulary identifiers to each of the emof columns. This makes our measurement data are more easily comparable and interoperable, more easily aggregated for analysis, and can decrease misuse potential!\nWhen selecting a vocab it’s important to think about what information needs to be included in the definition for the users to understand your measurement so you should consider the property/attribute (e.g. length, concentration), what’s the object/entity of interest (a organism, a chemical), whether enviro context is important, and whether a user needs to know the methods used to properly understand the measurement OBIS recommends the NERC vocabular collection and the OBIS manual has much more detail on controlled vocabulary"
+    "objectID": "index-fair-data.html#core-extension-tables",
+    "href": "index-fair-data.html#core-extension-tables",
+    "title": "FAIR Data Principles & Biodiversity Standards",
+    "section": "Core & Extension tables",
+    "text": "Core & Extension tables\n\n\n\nEvery Darwin Core Archive has one core table: either Event or Occurrence\nPlus zero, one, or more extension tables (eMoF, DNA extension…)\nExtensions link back to the core via an ID\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThis is the exact structure we’ll use for DNA-derived data later — so if this clicks now, the DNA session will feel familiar rather than brand new. This “star schema” (extensions only link to the core, not to each other) is a real constraint of the Darwin Core Archive format, which is why OBIS built eMoF as a workaround — but that’s a detail for later, not needed here."
   },
   {
-    "objectID": "index-dna-extension.html#dna-derived-data-extension-summary",
-    "href": "index-dna-extension.html#dna-derived-data-extension-summary",
-    "title": "Types of DNA-derived data",
-    "section": "DNA Derived Data Extension Summary",
-    "text": "DNA Derived Data Extension Summary\nManaging DNA data with Darwin Core uses:\n\nEvent core (sampling event info)\nOccurrence extension (taxon observation and identification)\nDNA derived data extension (DNA sequences, primers, methods)\neMoF extension (other measurement or fact information)"
+    "objectID": "index-fair-data.html#a-note-on-sensitive-data",
+    "href": "index-fair-data.html#a-note-on-sensitive-data",
+    "title": "FAIR Data Principles & Biodiversity Standards",
+    "section": "A note on sensitive data",
+    "text": "A note on sensitive data\n\n\nCommon cases:\n\nEndangered or commonly poached species locations\nSpecies/locations with economic sensitivity\n\nOptions → you don’t have to choose between “share everything” or “share nothing”:\n\nGeneralize location - provide a region or polygon (footprintWKT) instead of an exact point\nDelay publication - prepare to publish but set an embargo for later\nGeneralize taxonomic name - provide a higher taxon name\n\n\n\n\nNote: Generalizations should be documented alongside your data! See OBIS Manual & GBIF Guide for more details\n\nSensitivity is not a reason to skip publishing. There’s a spectrum of options short of full open release. GBIF also has a good best-practices doc on generalizing sensitive species data if anyone wants to go deeper (Chapman 2020, GBIF Secretariat). There are tools for generalizing locations (OBIS Map Tool, Marine Regions Gazetteer) in the OBIS manual + GBIF guide"
+  },
+  {
+    "objectID": "index-fair-data.html#essential-ocean-variables-eovs",
+    "href": "index-fair-data.html#essential-ocean-variables-eovs",
+    "title": "FAIR Data Principles & Biodiversity Standards",
+    "section": "Essential Ocean Variables (EOVs)",
+    "text": "Essential Ocean Variables (EOVs)\ngoosocean.org/eov\n\n\n\nDefined by GOOS (Global Ocean Observing System, IOC-UNESCO)\n\nMinimum set of variables needed to track ocean state and change\n\n36 EOVs → physical, biogeochemical, biological & ecosystem\nSpecification sheets to guide data collection\n\n\n\n\n \n\n\n\n\n\n\nWhy this matters\n\n\nWell-structured data can directly feed EOV assessments used for global reporting and policy (e.g. UN Ocean Decade, conservation targets)\n\n\n\n\nGOOS Biology & Ecosystems (BioEco) Panel defines the biological/ecosystem EOVs. OBIS is a key data source these assessments draw on. You don’t need to memorize the EOV list — the point is that standardized, well-formatted data (what the rest of today covers) is what makes this pipeline work at all. If useful, mention the EOV Metadata App (eovmetadata.obis.org) as a lightweight related tool, but it’s a separate system from the IPT we’ll cover this afternoon."
+  },
+  {
+    "objectID": "index-fair-data.html#why-standardize-data",
+    "href": "index-fair-data.html#why-standardize-data",
+    "title": "FAIR Data Principles & Biodiversity Standards",
+    "section": "Why standardize data?",
+    "text": "Why standardize data?\n\nEnables data to be found, combined, and reused across research groups, institutions, and countries\nAvoids duplicated effort — no need to re-collect or re-process data that already exists elsewhere\nSupports large-scale synthesis (e.g. global biodiversity assessments, ocean health indicators) that no single dataset could achieve alone\nKeeps data accessible and usable long after a project ends or funding runs out\nMakes data machine-readable, so pipelines and tools can integrate it automatically instead of manual reformatting\nProvides context via metadata so others can correctly interpret and trust the data\nMaximizes the return on investment of data collection, which is often costly (fieldwork, sequencing, expert time)\n\n\nTo summarzize… standardization isn’t just for its own sake — it’s what lets individual datasets add up to something bigger than the sum of their parts, and what protects the investment already made in collecting the data."
   },
   {
     "objectID": "index-dna.html",
@@ -147,46 +161,18 @@
     "text": "Self-paced courses\n\neDNA Beginner Data Management (under development, feedback welcome)"
   },
   {
-    "objectID": "index-qc.html#quality-control",
-    "href": "index-qc.html#quality-control",
-    "title": "OBIS Quality Control",
-    "section": "Quality control",
-    "text": "Quality control\nBefore publishing — check for:\n\n✅ Taxonomy matched to WoRMS (AphiaID required for marine taxa)\n\n✅ Coordinates in decimal degrees, in the ocean\n\n✅ Dates in ISO 8601 format (YYYY-MM-DD)\n\n✅ Unique, stable occurrenceID and eventID\n\n✅ Table linkages consistent (eventID, occurrenceID)\n\nTools:\n\n\n\nTool\nWhat it checks\n\n\n\n\nobistools (R package)\nTaxonomy, geography, required fields\n\n\nGBIF data validator\nDarwin Core Archive structure\n\n\nWoRMS taxon match\nScientific names → AphiaIDs\n\n\n\n\nobistools is an R package from OBIS. The GBIF validator is a web-based tool. WoRMS has a batch taxon match tool at marinespecies.org/aphia.php. For unidentified sequences, assign a high-level taxon if possible (e.g., kingdom Animalia) rather than leaving the field empty."
+    "objectID": "index-DNA-game-instructions-es.html#relacionar-metadatos-con-darwin-core",
+    "href": "index-DNA-game-instructions-es.html#relacionar-metadatos-con-darwin-core",
+    "title": "Hora de Jugar",
+    "section": "Relacionar metadatos con Darwin Core",
+    "text": "Relacionar metadatos con Darwin Core\n\n\n📋 Preparación\n\nGrupos de 4 a 5 personas\nCaja con fragmentos de texto sobre muestreo de campo y metodología\n4 carteles, uno por cada tabla de DwC: Event · Occurrence · DNA · eMoF\n\nCada tabla tiene una pila de encabezados de columnas de DwC. ¡No todos son relevantes! Encuentra el/los que sí lo son\n\n\n\n🎯 Tarea\n\nLean un fragmento en voz alta como grupo\nDecidan: ¿qué tabla? ¿qué columna (es decir, término)?\nColóquenlo en el lugar correcto\nCompleten la información con el vocabulario correcto\n\n⚠️ Ten en cuenta\n\nAlgunos fragmentos pueden dividirse entre 2 o más columnas\nAlgunos fragmentos pueden no pertenecer a ninguna tabla\n\n\n\nNotas para el facilitador: recuérdales a los participantes que mapear a DwC suele ser una decisión de criterio — varios fragmentos (por ejemplo, el método de filtración o el buffer de conservación) son genuinamente ambiguos entre samplingProtocol y el campo sop de la extensión de ADN, y eso está bien. El objetivo no es tener una única respuesta “correcta” para cada tarjeta, sino practicar el proceso de razonamiento: leer el texto original, identificar qué tipo de información es (a nivel de evento, de ocurrencia, de método molecular o de medición) y encontrar su lugar. Después de 20 minutos, recorre la sala y revela la clave de respuestas en vivo, deteniéndote más tiempo en los carteles donde los grupos no estuvieron de acuerdo."
   },
   {
-    "objectID": "index-qc.html#worms-taxon-matching",
-    "href": "index-qc.html#worms-taxon-matching",
-    "title": "OBIS Quality Control",
-    "section": "WoRMS Taxon Matching",
-    "text": "WoRMS Taxon Matching\n\n\nOptions for taxon matching:\n\nWoRMS Taxon Match Tool\nProgrammatically:\n\nobistools::match_taxa\nworrms::wm_records_taxamatch\npyworms\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo WoRMS match?\n\n\nUse highest-rank taxon with a match (e.g. family or order). Keep the sequence — it can be re-identified later as reference databases improve.\n\n\n\n\n\n\n\nStill no match?\n\n\nUnknown sequences recorded as: scientificName = “Biota incertae sedis” scientificNameID = urn:lsid:marinespecies.org:taxname:12"
-  },
-  {
-    "objectID": "index-qc.html#obis-dna-data-management-platform",
-    "href": "index-qc.html#obis-dna-data-management-platform",
-    "title": "OBIS Quality Control",
-    "section": "OBIS DNA Data Management Platform",
-    "text": "OBIS DNA Data Management Platform\n🔧 OBIS is developing a data management platform for DNA data including:\n\n\n\nBioinformatics\nQC\nValidation\nPublication to OBIS pipeline\n\nTo be offered to OBIS nodes to support local eDNA projects!\n\n🚧"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "OBIS Training Slide Decks",
-    "section": "",
-    "text": "These slide decks are used in training delivered by OBIS. They’re Markdown, built with Quarto and reveal.js, and openly licensed (CC BY‑NC 4.0). Reuse them freely by forking the repo."
-  },
-  {
-    "objectID": "index.html#slide-decks-by-topic",
-    "href": "index.html#slide-decks-by-topic",
-    "title": "OBIS Training Slide Decks",
-    "section": "Slide Decks by Topic",
-    "text": "Slide Decks by Topic\n\nDarwin Core\nDNA data🧬"
-  },
-  {
-    "objectID": "index.html#trainings-delivered",
-    "href": "index.html#trainings-delivered",
-    "title": "OBIS Training Slide Decks",
-    "section": "Trainings Delivered",
-    "text": "Trainings Delivered\nSlide decks and resources compiled for individual training courses or workshops.\n\n2026\n\nJuly INVEMAR DNA data management\nJuly OBIS Node Training on DNA data"
+    "objectID": "index-DNA-game-instructions-es.html#datos-de-edna-para-monitoreo-nacional",
+    "href": "index-DNA-game-instructions-es.html#datos-de-edna-para-monitoreo-nacional",
+    "title": "Hora de Jugar",
+    "section": "Datos de eDNA para monitoreo nacional",
+    "text": "Datos de eDNA para monitoreo nacional\nUn programa nacional de monitoreo quiere que todos los datos de eDNA estén disponibles públicamente en el plazo de un año.\n\n\n¿Quién eres?\nCada uno de ustedes recibirá un rol, representando una de estas categorías de actores:\n🌳 Ecólogo/a de campo\n🧬 Científico/a de laboratorio molecular / Bioinformático/a\n💻 Gestor/a de datos\n🏛️ Curador/a de repositorio\n📜 Responsable de políticas\n🌐 Representante de base de datos de biodiversidad\n🗺️ Usuario/a final\n\n👥 ¿Qué necesitas?\nDentro de tu rol como actor, deberías discutir y explicar:\n- **¿Qué necesitas?**\n- **¿Qué te preocupa?**\n- **¿Qué datos puedes proporcionar?**\n- **¿Qué estándares requieres?**\n\nEscribe tus respuestas en notas adhesivas. ¡incluye tu función!"
   },
   {
     "objectID": "index-publishing.html#publishing-workflow",
@@ -285,314 +271,6 @@
     "title": "Publishing Data to OBIS",
     "section": "Let’s see it live",
     "text": "Let’s see it live\nWe’ll now walk through a real IPT instance together:\n\nCreate a (test) resource\nUpload source data & map to Darwin Core\nFill in minimum metadata\nHow to publish → set visibility → done ✅\nAdd to GBIF network!\n\n\nThis slide is just a checkpoint to move into live demo"
-  },
-  {
-    "objectID": "index-access.html#getting-data-out-of-obis",
-    "href": "index-access.html#getting-data-out-of-obis",
-    "title": "Accessing OBIS data",
-    "section": "Getting data out of OBIS",
-    "text": "Getting data out of OBIS\nSeveral ways in, depending on what you need:\n\nobis.org — browse, search, and cite datasets\nOBIS Mapper — visual exploration + quick downloads\nrobis — programmatic access from R\nParquet + robisdb (new) — fast, local access to the full dataset\n\n\nThis mirrors the options from Module 8, but we’re focusing on the four most relevant for this group. Full CSV exports and direct IPT downloads exist too, but the four above cover most real workflows. Good moment to ask the room what they’re trying to do (one species vs. a whole region vs. bulk analysis) since that determines which of these fits best — the next few slides map roughly to “small ad hoc pull” → “bulk/programmatic.”"
-  },
-  {
-    "objectID": "index-access.html#the-obis-portal-obis.org",
-    "href": "index-access.html#the-obis-portal-obis.org",
-    "title": "Accessing OBIS data",
-    "section": "The OBIS portal — obis.org",
-    "text": "The OBIS portal — obis.org\n\n\nYour starting point for finding and understanding data:\n\nSearch & browse by taxon, region, or dataset\nView dataset summary + citation info\nFind data provider’s contact details\n\n\n\n\n\nWorth contrasting with the Mapper (next slide): downloads from the homepage/dataset page come as separate table files, while Mapper/full-export downloads are flattened into one occurrence+event table, with eMoF/DNA extensions available only if you check the box for them. This distinction trips people up, so flag it explicitly."
-  },
-  {
-    "objectID": "index-access.html#obis-mapper-mapper.obis.org",
-    "href": "index-access.html#obis-mapper-mapper.obis.org",
-    "title": "Accessing OBIS data",
-    "section": "OBIS Mapper — mapper.obis.org",
-    "text": "OBIS Mapper — mapper.obis.org\n\n\nVisual, filter-driven exploration of OBIS data:\n\nFilter by taxon, geography, time, and extensions\nCombine multiple layers in one view\nDownload individual layers as CSV\n\nBetter for smaller datasets &lt;20,000,000 records\n\nIncldue eMoF and/or DNA-derived data extensions\n\n(check the box — not on by default)\n\n\n\n\n\n\nGreat tool for a quick visual gut-check before doing anything programmatic — “does this region actually have eDNA data in it?” The Maptool naming collision is a real source of confusion, worth stating explicitly since Maptool came up earlier in the sensitive-data context."
-  },
-  {
-    "objectID": "index-access.html#robis-programmatic-access-from-r",
-    "href": "index-access.html#robis-programmatic-access-from-r",
-    "title": "Accessing OBIS data",
-    "section": "robis — programmatic access from R",
-    "text": "robis — programmatic access from R\ninstall.packages(\"robis\")\nlibrary(robis)\n\nrecords &lt;- occurrence(scientificname = \"Megaptera novaeangliae\", fields=\"associatedSequences\")\ndna &lt;- dataset(scientificname = \"Megaptera novaeangliae\", fields=\"associatedSequences\")\n\nQuery by species, taxon group, geometry (WKT), depth, time, quality flags…\nBuilt-in checklist() for taxon lists in an area\ndataset() — query for datasets instead of biological records\n\ngithub.com/iobis/robis\n\nThis is the go-to for most “I need this species/region’s data in R” tasks — talks directly to the OBIS API under the hood, so no local storage needed. Good for small-to-medium pulls; for anything approaching “the whole OBIS dataset” or repeated heavy queries, the next slide’s Parquet approach is a better fit."
-  },
-  {
-    "objectID": "index-access.html#new-fast-access-via-parquet",
-    "href": "index-access.html#new-fast-access-via-parquet",
-    "title": "Accessing OBIS data",
-    "section": "New: fast access via Parquet",
-    "text": "New: fast access via Parquet\n\nOBIS publishes the full global dataset as Parquet fields\nBrand-new R package, robisdb\n\n(released this month — actively evolving)\n\n\npak::pak(\"iobis/robisdb\")\nlibrary(robisdb)\n\ncon &lt;- connect_opendata_local(\"~/data/obis-open-data\")\nocc &lt;- con |&gt; occurrence_db(scientificname = \"Minuca rapax\")\n\nMirrors robis functions where possible (occurrence_db(), checklist_db()…)\nRuns on DuckDB — fast, local queries without loading everything into memory\nBuilt for scale: full-dataset or repeated analyses that would be slow via the API\n\n\nThis is very new (this month), so treat it as “here’s where things are heading” rather than a fully mature, documented workflow — check github.com/iobis/robisdb for the latest since details may shift. Good to mention this exists specifically because loading the entire OBIS dataset via the API/robis isn’t feasible on most laptops — Parquet + DuckDB is OBIS’s answer to that scale problem. Related datasets (speciesgrids, obistherm) are also queryable the same way."
-  },
-  {
-    "objectID": "index-DNA-game-instructions.html#match-metadata-to-darwin-core",
-    "href": "index-DNA-game-instructions.html#match-metadata-to-darwin-core",
-    "title": "Game Time",
-    "section": "Match Metadata to Darwin Core",
-    "text": "Match Metadata to Darwin Core\n\n\n📋 Setup\n\nGroups of 4–5\nBox of field + methodology fragments\n4 posters per DwC table: Event · Occurrence · DNA · eMoF\n\nEach table has a pile of DwC column headers. Not all are relevant! Find the one(s) that are\n\n\n\n🎯 Task\n\nRead a fragment out loud as a group\nDecide: which table? which column (i.e. term)?\nPlace it in the right spot\nFill in the information with the right vocab\n\n⚠️ Watch For\n\nSome fragments may split across 2+ columns\nSome fragments may not belong in any table\n\n\n\nFacilitator notes: remind participants that DwC mapping is often a judgment call — several fragments (e.g., filter method, preservation buffer) are genuinely ambiguous between samplingProtocol and the DNA extension’s sop field, and that’s fine. The goal isn’t a single “correct” answer for every card, it’s practicing the reasoning process: read the raw text, identify what kind of information it is (event-level, occurrence-level, molecular method, or measurement), and find its home. After 20 minutes, walk the room and reveal the answer key live, pausing longest on posters where groups disagreed."
-  },
-  {
-    "objectID": "index-DNA-game-instructions.html#edna-data-for-national-monitoring",
-    "href": "index-DNA-game-instructions.html#edna-data-for-national-monitoring",
-    "title": "Game Time",
-    "section": "eDNA data for national monitoring",
-    "text": "eDNA data for national monitoring\nA national monitoring programme wants all eDNA data publicly available within one year.\n\n\nWho are you?\nEach of you will get a role, representing one of these stakeholder categories:\n🌳 Field ecologist\n🧬 Molecular laboratory scientist / Bioinformatician\n💻 Data manager\n🏛️ Repository curator\n📜 Policymaker\n🌐 Biodiversity database representative\n🗺️ End user\n\n👥 What do you need?\nWithin your stakeholder role, you should discuss and explain:\n- **What you need?**\n- **What concerns you?**\n- **What data you can provide?**\n- **What standards you require?**\n\nWrite your responses on sticky notes. Include your role!"
-  },
-  {
-    "objectID": "index-map-edna-to-dwc.html#identifying-key-information-for-metabarcoding-qpcr-pipelines",
-    "href": "index-map-edna-to-dwc.html#identifying-key-information-for-metabarcoding-qpcr-pipelines",
-    "title": "Mapping molecular data to Darwin Core",
-    "section": "Identifying key information for Metabarcoding & qPCR pipelines",
-    "text": "Identifying key information for Metabarcoding & qPCR pipelines"
-  },
-  {
-    "objectID": "index-map-edna-to-dwc.html#edna-metabarcoding-key-information",
-    "href": "index-map-edna-to-dwc.html#edna-metabarcoding-key-information",
-    "title": "Mapping molecular data to Darwin Core",
-    "section": "eDNA Metabarcoding: Key Information",
-    "text": "eDNA Metabarcoding: Key Information\nCategory 1 — DNA-derived occurrences — basisOfRecord = MaterialSample\nFrom field collection to taxonomy — what to capture at each step\nStep 1:⛵ Field Sampling\n\n\n\n\n\n\n\nField Sampling\nMaps to\n\n\n\n\nCoordinates, location names\nEvent table: decimalLatitude, decimalLongitude, locality\n\n\nDate, time\nEvent table: eventDate, eventTime\n\n\nEnvironmental measurements (temperature, salinity, depth…)\neMoF table: measurementType, measurementValue, measurementUnit\n\n\nSampling method / gear\nEvent table: samplingProtocol and/or eMoF table\n\n\nSample volume, filter size\nDNA table: samp_size , size_frac\n\n\n\n\nThis is where the Event core table gets populated. Environmental measurements that aren’t DNA-specific (e.g. temperature, salinity) go in eMoF rather than the DNA extension — worth a quick reminder here since people sometimes want to cram everything into one table."
-  },
-  {
-    "objectID": "index-map-edna-to-dwc.html#edna-metabarcoding-key-information-1",
-    "href": "index-map-edna-to-dwc.html#edna-metabarcoding-key-information-1",
-    "title": "Mapping molecular data to Darwin Core",
-    "section": "eDNA Metabarcoding: Key Information",
-    "text": "eDNA Metabarcoding: Key Information\nCategory 1 — DNA-derived occurrences — basisOfRecord = MaterialSample\nFrom field collection to taxonomy — what to capture at each step\nStep 2: 🧬 DNA Extraction\n\n\n\n\n\n\n\nDNA Extraction\nMaps to\n\n\n\n\nVolume of sample processed\nDNA table: samp_vol_we_dna_ext\n\n\nExtraction method / kit\nDNA table: nucl_acid_ext, nucl_acid_amp\n\n\nConcentration\nDNA table: concentration, concentrationUnit\n\n\nPurity ratio (A260/280)\nDNA table: ratioOfAbsorbance260_280\n\n\n\n\nExtraction method matters a lot for reproducibility and comparing datasets — different kits can bias which taxa get amplified downstream, so it’s worth capturing even though it’s easy to skip. Purity ratio (260/280) is a quick QC signal for contamination that’s worth flagging even if participants don’t record it religiously yet."
-  },
-  {
-    "objectID": "index-map-edna-to-dwc.html#edna-metabarcoding-key-information-2",
-    "href": "index-map-edna-to-dwc.html#edna-metabarcoding-key-information-2",
-    "title": "Mapping molecular data to Darwin Core",
-    "section": "eDNA Metabarcoding: Key Information",
-    "text": "eDNA Metabarcoding: Key Information\nCategory 1 — DNA-derived occurrences — basisOfRecord = MaterialSample\nFrom field collection to taxonomy — what to capture at each step\nStep 3: 🧪 DNA Amplification\n\n\n\n\n\n\n\nDNA Amplification\nMaps to (DNA table)\n\n\n\n\nTarget gene (e.g. COI, 18S rRNA)\nDNA table: target_gene\n\n\nPrimer sequence + primer reference\nDNA table: pcr_primer_forward, pcr_primer_name_forward, pcr_primer_reverse, pcr_primer_name_reverse + pcr_primer_reference\n\n\nPCR conditions\nDNA table: pcr_cond\n\n\nLength of amplified product\nDNA table: ampliconSize\n\n\n\n\nPrimer choice determines which taxa can even be detected — always cite the primer reference, don’t just paste the sequence, so users can trace back to the original validation. PCR conditions (annealing temp, cycle number) belong here too even though they feel like lab-notebook detail; they matter for anyone trying to reproduce or compare your results."
-  },
-  {
-    "objectID": "index-map-edna-to-dwc.html#edna-metabarcoding-key-information-3",
-    "href": "index-map-edna-to-dwc.html#edna-metabarcoding-key-information-3",
-    "title": "Mapping molecular data to Darwin Core",
-    "section": "eDNA Metabarcoding: Key Information",
-    "text": "eDNA Metabarcoding: Key Information\nCategory 1 — DNA-derived occurrences — basisOfRecord = MaterialSample\nFrom field collection to taxonomy — what to capture at each step\nStep 4: 💻 Sequences\n\n\n\n\n\n\n\nSequences\nMaps to\n\n\n\n\nSequencing platform + library layout\nDNA table: seq_meth + lib_layout\n\n\nSequences per sample\nDNA table: DNA_sequence (linked by occurrenceID)\n\n\nPublic repository where sequences deposited (NCBI, ENA)\nOccurrence table: associatedSequences\n\n\n\n\nThis is the last step before formatting — everything captured across the last 3 slides plus this one feeds into either the Occurrence table or the DNA extension. Reference database + pipeline (e.g. “DADA2 v1.18” + “SILVA 138”) matter a lot for reproducibility since taxonomy assignments can shift as databases update — this is what otu_class_appr and otu_db are for."
-  },
-  {
-    "objectID": "index-map-edna-to-dwc.html#edna-metabarcoding-key-information-4",
-    "href": "index-map-edna-to-dwc.html#edna-metabarcoding-key-information-4",
-    "title": "Mapping molecular data to Darwin Core",
-    "section": "eDNA Metabarcoding: Key Information",
-    "text": "eDNA Metabarcoding: Key Information\nCategory 1 — DNA-derived occurrences — basisOfRecord = MaterialSample\nFrom field collection to taxonomy — what to capture at each step\nStep 5: 🐠 Taxonomy\n\n\n\n\n\n\n\nTaxonomy\nMaps to\n\n\n\n\nTaxonomy assignment + annotation confidence\nOccurrence table: scientificName, taxonID  DNA table: annot\n\n\nReference database + pipeline used\nOccurrence table: identificationRemarks, identificationReferences  DNA table: otu_db + sop\n\n\nNumber of sequence reads per taxon & total\nOccurence table: organismQuantity, organismQuantityType, & sampleSizeValue, sampleSizeUnit\n\n\n\n\nThis is the last step before formatting — everything captured across the last 3 slides plus this one feeds into either the Occurrence table or the DNA extension. Reference database + pipeline (e.g. “DADA2 v1.18” + “SILVA 138”) matter a lot for reproducibility since taxonomy assignments can shift as databases update — this is what otu_class_appr and otu_db are for."
-  },
-  {
-    "objectID": "index-map-edna-to-dwc.html#key-metadata-quantitative-pcr-qpcr",
-    "href": "index-map-edna-to-dwc.html#key-metadata-quantitative-pcr-qpcr",
-    "title": "Mapping molecular data to Darwin Core",
-    "section": "Key Metadata: Quantitative PCR (qPCR)",
-    "text": "Key Metadata: Quantitative PCR (qPCR)\nCategory 3 — Targeted species detection — basisOfRecord = MaterialSample\nTargeted species detection — additional fields vs metabarcoding\n\n\n\n⛵ Step 1: Field Sampling → same as metabarcoding\n🧬 Step 2: DNA Extraction → same as metabarcoding\n🧪 Step 3: DNA Amplification → PCR conditions → pcr_cond\n🎯 Step 4/5: Target & Quantity\n\n\n\n\n\n\n\nTarget & Quantity\nMaps to\n\n\n\n\nTarget gene region\ntarget_gene, target_subfragment\n\n\nPrimers\npcr_primers\n\n\nCopy number + concentration\nestimatedNumberOfCopies + concentration, concentrationUnit\n\n\nLOD, Cq, baseline\npcr_primer_lod, quantificationCycle, baselineValue\n\n\n\n\nqPCR = Category 3 — targeted species detection. Adds qPCR-specific fields: probeReporter, probeQuencher, estimatedNumberOfCopies, thresholdQuantificationCycle, and baselineValue. Key difference from metabarcoding: you are detecting one specific taxon, so scientificName and scientificNameID are required from the start. Use basisOfRecord = MaterialSample."
-  },
-  {
-    "objectID": "index-map-edna-to-dwc.html#special-cases",
-    "href": "index-map-edna-to-dwc.html#special-cases",
-    "title": "Mapping molecular data to Darwin Core",
-    "section": "Special cases",
-    "text": "Special cases"
-  },
-  {
-    "objectID": "index-map-edna-to-dwc.html#resources-for-dna-terms",
-    "href": "index-map-edna-to-dwc.html#resources-for-dna-terms",
-    "title": "Mapping molecular data to Darwin Core",
-    "section": "Resources for DNA terms",
-    "text": "Resources for DNA terms\n\n\n\nResource\nLink\n\n\n\n\nDNA Extension term definitions\nrs.gbif.org/extension/gbif/1.0/dna_derived_data_2024-07-11.xml\n\n\nDwC Term Quick Reference Guide\ndwc.tdwg.org/terms/\n\n\nOBIS Manual (DNA chapter)\nmanual.obis.org/dna_data.html\n\n\nGBIF DNA publishing guide\ndoi.org/10.35035/DOC-VF1A-NR22"
-  },
-  {
-    "objectID": "index-access-es.html#cómo-obtener-datos-de-obis",
-    "href": "index-access-es.html#cómo-obtener-datos-de-obis",
-    "title": "Acceso a los datos de OBIS",
-    "section": "Cómo obtener datos de OBIS",
-    "text": "Cómo obtener datos de OBIS\nExisten varias formas de acceder, según lo que necesites:\n\nobis.org — explorar, buscar y citar conjuntos de datos\nOBIS Mapper — exploración visual y descargas rápidas\nrobis — acceso programático desde R\nParquet + robisdb (nuevo) — acceso rápido y local al conjunto de datos completo\n\n\nEsto refleja las opciones del Módulo 8, pero aquí nos enfocamos en las cuatro más relevantes para este grupo. También existen exportaciones completas en CSV y descargas directas desde el IPT, pero las cuatro opciones anteriores cubren la mayoría de los flujos de trabajo reales. Buen momento para preguntar al grupo qué están tratando de hacer (una especie vs. una región completa vs. un análisis masivo), ya que esto determina cuál opción es la más adecuada — las próximas diapositivas van, a grandes rasgos, de “descarga puntual pequeña” a “acceso masivo/programático.”"
-  },
-  {
-    "objectID": "index-access-es.html#el-portal-de-obis-obis.org",
-    "href": "index-access-es.html#el-portal-de-obis-obis.org",
-    "title": "Acceso a los datos de OBIS",
-    "section": "El portal de OBIS — obis.org",
-    "text": "El portal de OBIS — obis.org\n\n\nTu punto de partida para encontrar y entender los datos:\n\nBuscar y explorar por taxón, región o conjunto de datos\nVer el resumen del conjunto de datos y la información de citación\nEncontrar los datos de contacto del proveedor de los datos\n\n\n\n\n\nVale la pena contrastar esto con el Mapper (siguiente diapositiva): las descargas desde la página de inicio o del conjunto de datos vienen como archivos de tabla separados, mientras que las descargas del Mapper o de la exportación completa se combinan en una sola tabla de occurrence+event, con las extensiones eMoF/DNA disponibles solo si se marca la casilla correspondiente. Esta distinción suele confundir a los participantes, así que hay que señalarla explícitamente."
-  },
-  {
-    "objectID": "index-access-es.html#obis-mapper-mapper.obis.org",
-    "href": "index-access-es.html#obis-mapper-mapper.obis.org",
-    "title": "Acceso a los datos de OBIS",
-    "section": "OBIS Mapper — mapper.obis.org",
-    "text": "OBIS Mapper — mapper.obis.org\n\n\nExploración visual de los datos de OBIS, basada en filtros:\n\nFiltrar por taxón, geografía, tiempo y extensiones\nCombinar varias capas en una sola vista\nDescargar capas individuales como CSV\n\nMejor para conjuntos de datos más pequeños (&lt;20,000,000 registros)\n\nIncluir las extensiones eMoF y/o de datos derivados de ADN\n\n(marca la casilla — no está activada por defecto)\n\n\n\n\n\n\nExcelente herramienta para hacer una verificación visual rápida antes de hacer cualquier cosa programática — “¿esta región realmente tiene datos de eDNA?” La coincidencia de nombres con “Maptool” es una fuente real de confusión, vale la pena mencionarla explícitamente ya que Maptool surgió antes en el contexto de datos sensibles."
-  },
-  {
-    "objectID": "index-access-es.html#robis-acceso-programático-desde-r",
-    "href": "index-access-es.html#robis-acceso-programático-desde-r",
-    "title": "Acceso a los datos de OBIS",
-    "section": "robis — acceso programático desde R",
-    "text": "robis — acceso programático desde R\ninstall.packages(\"robis\")\nlibrary(robis)\n\nrecords &lt;- occurrence(scientificname = \"Megaptera novaeangliae\", fields=\"associatedSequences\")\ndna &lt;- dataset(scientificname = \"Megaptera novaeangliae\", fields=\"associatedSequences\")\n\nConsultar por especie, grupo taxonómico, geometría (WKT), profundidad, tiempo, indicadores de calidad…\nFunción incorporada checklist() para listas de taxones en un área\ndataset() — consulta de conjuntos de datos en lugar de registros biológicos\n\ngithub.com/iobis/robis\n\nEsta es la opción principal para la mayoría de las tareas del tipo “necesito los datos de esta especie/región en R” — internamente se comunica directamente con la API de OBIS, por lo que no requiere almacenamiento local. Es ideal para descargas pequeñas a medianas; para algo que se acerque a “todo el conjunto de datos de OBIS” o consultas pesadas repetidas, el enfoque de Parquet de la siguiente diapositiva es más adecuado."
-  },
-  {
-    "objectID": "index-access-es.html#nuevo-acceso-rápido-mediante-parquet",
-    "href": "index-access-es.html#nuevo-acceso-rápido-mediante-parquet",
-    "title": "Acceso a los datos de OBIS",
-    "section": "Nuevo: acceso rápido mediante Parquet",
-    "text": "Nuevo: acceso rápido mediante Parquet\n\nOBIS publica el conjunto de datos global completo en formato Parquet\nPaquete de R recién lanzado, robisdb\n\n(publicado este mes — en desarrollo activo)\n\n\npak::pak(\"iobis/robisdb\")\nlibrary(robisdb)\n\ncon &lt;- connect_opendata_local(\"~/data/obis-open-data\")\nocc &lt;- con |&gt; occurrence_db(scientificname = \"Minuca rapax\")\n\nRefleja las funciones de robis en la medida de lo posible (occurrence_db(), checklist_db()…)\nFunciona sobre DuckDB — consultas rápidas y locales sin cargar todo en memoria\nDiseñado para escalar: análisis del conjunto de datos completo o repetidos que serían lentos vía la API\n\n\nEsto es muy nuevo (de este mes), así que hay que tratarlo como “hacia dónde se dirigen las cosas” y no como un flujo de trabajo maduro y completamente documentado — revisa github.com/iobis/robisdb para lo más reciente, ya que los detalles pueden cambiar. Vale la pena mencionar que esto existe específicamente porque cargar todo el conjunto de datos de OBIS vía la API/robis no es viable en la mayoría de las laptops — Parquet + DuckDB es la respuesta de OBIS a ese problema de escala. Conjuntos de datos relacionados (speciesgrids, obistherm) también se pueden consultar de la misma manera."
-  },
-  {
-    "objectID": "index-dwc.html",
-    "href": "index-dwc.html",
-    "title": "Darwin Core Training Slide Decks",
-    "section": "",
-    "text": "FAIR Data & Biodiversity Standards\n\nBackground information on what FAIR data is and a brief overview of Darwin Core and Essential Ocean Variables\n\nDarwin Core and DNA-Derived Data\n\nOverview of DNA data types and how DNA data fits into Darwin Core\n\nOBIS Quality Control\n\nOverview of quality control checks you should do with any OBIS dataset, DNA or otherwise\n\nPublishing & IPT\n\nHow to publish data using the Integrated Publishing Toolkit (IPT) software\n\nAccessing OBIS (DNA) Data\n\nHow to access data from OBIS, including DNA data\n\n\n\n\n\nReuseCC BY-NC 4.0"
-  },
-  {
-    "objectID": "index-fair-data.html#what-makes-data-fair",
-    "href": "index-fair-data.html#what-makes-data-fair",
-    "title": "FAIR Data Principles & Biodiversity Standards",
-    "section": "What makes data FAIR?",
-    "text": "What makes data FAIR?\n\n\n\n\n\nDescriptive metadata with stable links (e.g. DOI)\nClear instructions on how to access\n\nNot just “available upon request”\n\nEasily combined with other datasets & machine readable\nMetadata enables replication\n\nData is contextualized\n\n\n\n\nThis is the “why” before we get into the “how” (Darwin Core, EOVs, sensitive data). Starting with a quick overview on what actually makes data FAIR. To summarize each aspect – Findable means that there is descriptive metadata with stable links and identifiers e.g. DOI that enable finding our data Accessible means that there are clear instructions on how to access our data, going beyond ‘available upon request’ statements Interoperable means that our data can be easily combined with other datasets and that our data & metadata are machine readable. This often means adhering to data standards and using controlled vocabulary whenever possible Reusable means that the metadata is documented well enough to enable others to replicate what we’ve done and there is enough context so that users know what situations our data can be reused in (e.g looking back on data collected 20 yrs ago, code)"
-  },
-  {
-    "objectID": "index-fair-data.html#what-can-fair-data-do",
-    "href": "index-fair-data.html#what-can-fair-data-do",
-    "title": "FAIR Data Principles & Biodiversity Standards",
-    "section": "What can FAIR data do?",
-    "text": "What can FAIR data do?\n\n\nInvasive species decision tool & alert system portal.pacman.obis.org\n\n\n\n\n\nBefore I talk more about data standards, let’s look at some examples that demonstrate the power of FAIR data This first example is work that was done through the PacMAN project (Pacific islands Marine bioinvasions Alert Network), where our team developed a decision tool & alert system for detecting invasive species. The tool uses data from OBIS AND GBIF, including dna derived detections and other types of observations. When a pest species is detected, metadata about the detection is used to determine the detection confidence and confirm its status, if it’s a real detection. This allows informed decisions to be made on how to deal with the bioinvasion This last screenshot shows the tool and where you can see the confidence and status of detections"
-  },
-  {
-    "objectID": "index-fair-data.html#how-to-manage-and-make-data-fair",
-    "href": "index-fair-data.html#how-to-manage-and-make-data-fair",
-    "title": "FAIR Data Principles & Biodiversity Standards",
-    "section": "How to manage and make data FAIR?",
-    "text": "How to manage and make data FAIR?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHow do we make data FAIR - OBIS + DwC standard!"
-  },
-  {
-    "objectID": "index-fair-data.html#what-is-obis",
-    "href": "index-fair-data.html#what-is-obis",
-    "title": "FAIR Data Principles & Biodiversity Standards",
-    "section": "What is OBIS?",
-    "text": "What is OBIS?\n\n\nOcean Biodiversity Information System\n\nGlobal open-access data system for marine life\n\nUNESCO Intergovernmental Oceanographic Commission\n\n&gt; 199 M occurrence records from &gt;7,000 datasets\n\nData flows to GBIF — easy to publish once, reach both\n\nFree to use. Free to contribute.\n\n\n🌐 obis.org\n📖 manual.obis.org\n\n\nOBIS is endorsed by UNESCO’s IOC. Data published there can flow to GBIF as well, giving you double visibility with a single submission. Emphasize that OBIS is not just a repository but actively feeds into global biodiversity assessments, climate analyses, and conservation planning."
-  },
-  {
-    "objectID": "index-fair-data.html#a-mature-global-community",
-    "href": "index-fair-data.html#a-mature-global-community",
-    "title": "FAIR Data Principles & Biodiversity Standards",
-    "section": "A Mature Global Community",
-    "text": "A Mature Global Community\n\n\n\n\n\n\n\nOBIS is the world’s largest open-access repositoryfor marine biodiversity data.\n \n\n36 nodes  across 99 countries  representing 1,000+ institutions  and 6,000+ scientists.\n\n\n\n\nOBIS sits within UNESCO’s IOC (IODE, est. 1961), working alongside ODIS for interoperability and OTGA for training. Strong partnerships include GBIF, TDWG, EMODnet, GOOS, and DataONE.\nCurrent stats: 136M species observations, 12M records from ABNJ, 28M DNA sequences (Jan 2026).\nThis data supports multiple agreements: Paris Agreement, 30x30, GBF (Targets 3, 6, 8, 20, 21), SDG14, and now BBNJ.\nRecognition: CBD COP16 recognized OBIS, GOOS, and ODIS as ocean components of the Global Biodiversity Observing System.\nOBIS is listed in KMGBF Targets 20 and 21.\nOBIS data supports: IPBES Global Assessment, UN World Ocean Assessments, UNESCO IOC Global HAB reports, State of the Ocean reports, TWAP Open Ocean component (UNEP), and CBD EBSA."
-  },
-  {
-    "objectID": "index-fair-data.html#obis-fair-data",
-    "href": "index-fair-data.html#obis-fair-data",
-    "title": "FAIR Data Principles & Biodiversity Standards",
-    "section": "OBIS & FAIR Data",
-    "text": "OBIS & FAIR Data\n\n\n\n\n\n\n\n\n\nWhat OBIS gives you\n\n\n\n\nFindable\nYour dataset joins a global, searchable index - with a DOI\n\n\nAccessible\nStandard download/API access, no one-off email requests\n\n\nInteroperable\nDarwin Core structure - readable by people and machines\n\n\nReusable\nDocumented metadata + a clear reuse license (e.g. CC-BY)\n\n\n\n\n\n\n\n\n\n\nA real example\n\n\nA marine invasive species dataset from Venezuela, published July 2022, was included in 1,873 separate download requests within 3 months — with zero extra effort from the data provider!\n\n\n\n\n…it’s the reason people don’t have to keep emailing you for your spreadsheet."
-  },
-  {
-    "objectID": "index-fair-data.html#do-you-use-a-standard-to-format-your-data",
-    "href": "index-fair-data.html#do-you-use-a-standard-to-format-your-data",
-    "title": "FAIR Data Principles & Biodiversity Standards",
-    "section": "Do you use a standard to format your data?",
-    "text": "Do you use a standard to format your data?\n¿Utiliza algún estándar para formatear los datos?"
-  },
-  {
-    "objectID": "index-fair-data.html#what-is-darwin-core",
-    "href": "index-fair-data.html#what-is-darwin-core",
-    "title": "FAIR Data Principles & Biodiversity Standards",
-    "section": "What is Darwin Core?",
-    "text": "What is Darwin Core?\n\n\n\nStable, shared vocabulary for biodiversity data\n\nStandardized field names, identifiers, & definitions\n\nMaintained by TDWG, used by OBIS, GBIF, and the wider biodiversity community\nNot a database itself - a set of agreed-upon terms (e.g. scientificName, eventDate, decimalLatitude)\n\n\n\n\n\n\n\n\n\nThink of it as everyone agreeing to call the same column the same thing - so your data and someone else’s can sit in the same table!\n\n🤝\n\n\n\nFor folks who’ve never touched DwC: it’s just a controlled list of column names and what they mean, nothing more mystical than that. For the DwC veterans in the room, this is review — we’re about to build on this with how those terms get organized into tables (next slide), which matters a lot once we get into DNA data this afternoon/tomorrow."
-  },
-  {
-    "objectID": "index-fair-data.html#flat-vs.-relational-data-tables",
-    "href": "index-fair-data.html#flat-vs.-relational-data-tables",
-    "title": "FAIR Data Principles & Biodiversity Standards",
-    "section": "Flat vs. relational data tables",
-    "text": "Flat vs. relational data tables\n\n\nFlat file\nOne giant table - everything repeated on every row\n\n\n\ndate\nsite\nlat\nlon\nspecies\ncount\n\n\n\n\n2024-01\nA\n11\n-74\nfish1\n3\n\n\n2024-01\nA\n11\n-74\nfish2\n1\n\n\n2024-01\nA\n11\n-74\nfish3\n7\n\n\n\n\nRelational\nSeparate, linked tables — shared info stored once\nsite.csv:      site, date, lat, lon\nspecies.csv:   site, species, count\n🔗 Linked by a shared identifier (an ID column)\n\n\nThis is the concept underlying Darwin Core Archives: a “core” table (e.g. Event) and one or more “extension” tables (e.g. Occurrence, DNA extension) linked by eventID/occurrenceID. It reduces repetition and errors — fix the date once in the Event table instead of on every one of a thousand species rows. Keep this fast for people who already know relational databases; it’s here mainly to set up tomorrow’s DNA data session where we’ll have Event → Occurrence → DNA extension as three linked tables."
-  },
-  {
-    "objectID": "index-fair-data.html#core-extension-tables",
-    "href": "index-fair-data.html#core-extension-tables",
-    "title": "FAIR Data Principles & Biodiversity Standards",
-    "section": "Core & Extension tables",
-    "text": "Core & Extension tables\n\n\n\nEvery Darwin Core Archive has one core table: either Event or Occurrence\nPlus zero, one, or more extension tables (eMoF, DNA extension…)\nExtensions link back to the core via an ID\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThis is the exact structure we’ll use for DNA-derived data later — so if this clicks now, the DNA session will feel familiar rather than brand new. This “star schema” (extensions only link to the core, not to each other) is a real constraint of the Darwin Core Archive format, which is why OBIS built eMoF as a workaround — but that’s a detail for later, not needed here."
-  },
-  {
-    "objectID": "index-fair-data.html#a-note-on-sensitive-data",
-    "href": "index-fair-data.html#a-note-on-sensitive-data",
-    "title": "FAIR Data Principles & Biodiversity Standards",
-    "section": "A note on sensitive data",
-    "text": "A note on sensitive data\n\n\nCommon cases:\n\nEndangered or commonly poached species locations\nSpecies/locations with economic sensitivity\n\nOptions → you don’t have to choose between “share everything” or “share nothing”:\n\nGeneralize location - provide a region or polygon (footprintWKT) instead of an exact point\nDelay publication - prepare to publish but set an embargo for later\nGeneralize taxonomic name - provide a higher taxon name\n\n\n\n\nNote: Generalizations should be documented alongside your data! See OBIS Manual & GBIF Guide for more details\n\nSensitivity is not a reason to skip publishing. There’s a spectrum of options short of full open release. GBIF also has a good best-practices doc on generalizing sensitive species data if anyone wants to go deeper (Chapman 2020, GBIF Secretariat). There are tools for generalizing locations (OBIS Map Tool, Marine Regions Gazetteer) in the OBIS manual + GBIF guide"
-  },
-  {
-    "objectID": "index-fair-data.html#essential-ocean-variables-eovs",
-    "href": "index-fair-data.html#essential-ocean-variables-eovs",
-    "title": "FAIR Data Principles & Biodiversity Standards",
-    "section": "Essential Ocean Variables (EOVs)",
-    "text": "Essential Ocean Variables (EOVs)\ngoosocean.org/eov\n\n\n\nDefined by GOOS (Global Ocean Observing System, IOC-UNESCO)\n\nMinimum set of variables needed to track ocean state and change\n\n36 EOVs → physical, biogeochemical, biological & ecosystem\nSpecification sheets to guide data collection\n\n\n\n\n \n\n\n\n\n\n\nWhy this matters\n\n\nWell-structured data can directly feed EOV assessments used for global reporting and policy (e.g. UN Ocean Decade, conservation targets)\n\n\n\n\nGOOS Biology & Ecosystems (BioEco) Panel defines the biological/ecosystem EOVs. OBIS is a key data source these assessments draw on. You don’t need to memorize the EOV list — the point is that standardized, well-formatted data (what the rest of today covers) is what makes this pipeline work at all. If useful, mention the EOV Metadata App (eovmetadata.obis.org) as a lightweight related tool, but it’s a separate system from the IPT we’ll cover this afternoon."
-  },
-  {
-    "objectID": "index-fair-data.html#why-standardize-data",
-    "href": "index-fair-data.html#why-standardize-data",
-    "title": "FAIR Data Principles & Biodiversity Standards",
-    "section": "Why standardize data?",
-    "text": "Why standardize data?\n\nEnables data to be found, combined, and reused across research groups, institutions, and countries\nAvoids duplicated effort — no need to re-collect or re-process data that already exists elsewhere\nSupports large-scale synthesis (e.g. global biodiversity assessments, ocean health indicators) that no single dataset could achieve alone\nKeeps data accessible and usable long after a project ends or funding runs out\nMakes data machine-readable, so pipelines and tools can integrate it automatically instead of manual reformatting\nProvides context via metadata so others can correctly interpret and trust the data\nMaximizes the return on investment of data collection, which is often costly (fieldwork, sequencing, expert time)\n\n\nTo summarzize… standardization isn’t just for its own sake — it’s what lets individual datasets add up to something bigger than the sum of their parts, and what protects the investment already made in collecting the data."
-  },
-  {
-    "objectID": "index-invemar.html#course-schedule",
-    "href": "index-invemar.html#course-schedule",
-    "title": "INVEMAR DNA Management Training",
-    "section": "Course Schedule",
-    "text": "Course Schedule\n\nClick to enlarge"
-  },
-  {
-    "objectID": "index-invemar.html#dna-data-management-slide-decks",
-    "href": "index-invemar.html#dna-data-management-slide-decks",
-    "title": "INVEMAR DNA Management Training",
-    "section": "DNA Data Management Slide Decks",
-    "text": "DNA Data Management Slide Decks\nPick a deck to open it as a full-screen presentation\n\nWhat is Environmental DNA?\n\nIntroduction to eDNA methods and what we can do with it\n\nWhat information is important at each step of an eDNA workflow?\n\nOverview of the information that should be captured when managing DNA datasets\n\nFAIR Data & Biodiversity Standards\n\nBackground information on what FAIR data is and a brief overview of Darwin Core and Essential Ocean Variables\n\nDarwin Core and DNA-Derived Data\n\nOverview of DNA data types and how DNA data fits into Darwin Core\n\neDNA Data Management History (YouTube recording)\nMapping molecular data to Darwin Core\n\nHow to record the important data and metadata in Darwin Core and the DNA-derived extension\n\nQuality Control\n\neDNA Quality Control\n\nOverview of quality control steps in an eDNA workflow\n\nTaxonomy Quality Control (tool demo) (YouTube recording)\nOBIS Quality Control\n\nOverview of quality control checks you should do with any OBIS dataset, DNA or otherwise\n\n\nApplications of eDNA for biodiversity monitoring\nOngoing data standardisation intitiatives (OBON) (YouTube recording)\nReference databases, taxonomic assignment and validation\nPublishing & IPT\n\nHow to publish data using the Integrated Publishing Toolkit (IPT) software\n\nAccessing OBIS (DNA) Data\n\nEn español\nHow to access data from OBIS, including DNA data"
-  },
-  {
-    "objectID": "index-invemar.html#interactive-sessions",
-    "href": "index-invemar.html#interactive-sessions",
-    "title": "INVEMAR DNA Management Training",
-    "section": "Interactive Sessions",
-    "text": "Interactive Sessions\n\nMatch methods to DwC\n\nEn español\nSolution\n\nFormat a DNA dataset with R"
-  },
-  {
-    "objectID": "index-game-solutions.html",
-    "href": "index-game-solutions.html",
-    "title": "Game Answer Key",
-    "section": "",
-    "text": "Fragments are drawn from a real eDNA study at the Sanctuary of Fauna and Flora, Malpelo Island (Colombia). Grouped by workflow step, matching Game Time.\nSome fragments intentionally have no home in any DwC table — these are the distractors mentioned in the “Watch For” warning."
-  },
-  {
-    "objectID": "index-game-solutions.html#step-1-field-sampling",
-    "href": "index-game-solutions.html#step-1-field-sampling",
-    "title": "Game Answer Key",
-    "section": "Step 1 ⛵ Field Sampling",
-    "text": "Step 1 ⛵ Field Sampling\n\n\n\n\n\n\n\n\nFragment\nTable\nMaps to\n\n\n\n\nWe sampled around the Sanctuary of Fauna and Flora in Malpelo, a remote oceanic island 490 km off the Colombia in the eastern tropical Pacific.\nEvent\nlocality, higherGeography\n\n\nWe sampled for 4 days (25-28 March 2018) at 1 site (El Arrecife).\nEvent\neventDate, locality\n\n\nMalpelo is surrounded by deep water and fishing activities are prohibited in the surrounding 8757 km2.\nEvent\neventRemarks\n\n\nThe reef ecosystem around the island is influenced by major oceanic currents and local upwelling, and the benthos is bare rock with low coral cover.\nEvent\nhabitat\n\n\nMalpelo Island is one of the most pristine and vulnerable reef ecosystems in the tropical eastern Pacific.\n(no match)\n—\n\n\nWe sampled eDNA in round surface transects. We did 5 identical transects at different times, corresponding to 10 samples (i.e., eDNA filters) because we collected 2 samples/transect.\nEvent\nsamplingProtocol\n\n\nTransects sampled from a boat,\nEvent / eMoF\nEvent: samplingProtocoleMoF: samplingInstrument\n\n\nwe pumped 30 L of water/sample.\nDNA / Event\nDNA: samp_sizeEvent: sampleSize & sampleSizeValue\n\n\nWe used an Athena peristaltic pump (Proactive Environmental Products, Bradenton, Florida) (nominal flow 1.0 L/min) on each side of the boat\nEvent / eMoF\nEvent: samplingProtocoleMoF: measurementType + measurementValue\n\n\nto filter water through a VigiDNA 0.20 µm cross-flow filtration capsule (SPYGEN, le Bourget du Lac, France).\nDNA\nsize_frac\n\n\nTo avoid contamination, we used only disposable sterile tubing and gloves for each filtration capsule.\nEvent\nsamplingProtocol\n\n\nImmediately after filtration, the filter units were filled with CL1 Conservation buffer (SPYGEN)\nEvent\nsamplingProtocol\n\n\nand stored at room temperature (20-25 °C) for 5.5 months until DNA extraction.\nEvent\nsamplingProtocol"
-  },
-  {
-    "objectID": "index-game-solutions.html#step-2-dna-extraction",
-    "href": "index-game-solutions.html#step-2-dna-extraction",
-    "title": "Game Answer Key",
-    "section": "Step 2 🧬 DNA Extraction",
-    "text": "Step 2 🧬 DNA Extraction\n\n\n\n\n\n\n\n\nFragment\nTable\nMaps to\n\n\n\n\nThe DNA extraction was performed in a dedicated laboratory for eDNA extraction equipped with positive air pressure, UV treatment, and frequent air renewal and decontamination procedures conducted before and after all manipulation.\n(no term)\n—\n\n\nFor DNA extraction, we followed the protocol in Fernández et al. (2021).\nDNA\nnucl_acid_ext"
-  },
-  {
-    "objectID": "index-game-solutions.html#step-3-dna-amplification-pcr",
-    "href": "index-game-solutions.html#step-3-dna-amplification-pcr",
-    "title": "Game Answer Key",
-    "section": "Step 3 🧪 DNA Amplification (PCR)",
-    "text": "Step 3 🧪 DNA Amplification (PCR)\n\n\n\n\n\n\n\n\nFragment\nTable\nMaps to\n\n\n\n\nFor PCR amplification, we used 3 different primer pairs targeting distinct taxonomic groups: teleo, targeting teleost fishes and elasmobranchs (Valentini et al., 2016); Chon01, targeting elasmobranchs; and Vert01 (Taberlet et al., 2018), targeting vertebrates in general (primer sequences in Appendix S2).\nDNA\npcr_primers, pcr_primer_reference\n\n\nThe PCR mixture was denatured at 95 °C for 10 min, followed by 50 cycles of 30 s at 95 °C, 30 s at 55 °C for teleo and Vert01 and 58 °C for Chon01 and 1 min at 72 °C, and a final elongation step at 72 °C for 7 min.\nDNA\npcr_cond\n\n\nTwelve replicates of PCRs were run per sample (i.e., 24/transect because we had 2 field duplicates/transect).\nDNA\nlink to full protocol in nucl_acid_amp\n\n\nAfter amplification, samples were titrated using capillary electrophoresis (QIAxcel [Qiagen GmbH, Hilden, Germany]) and purified using a MinElute PCR purification kit (Qiagen GmbH, Hilden, Germany).\nDNA\nlink to full protocol in nucl_acid_amp"
-  },
-  {
-    "objectID": "index-game-solutions.html#step-4-sequencing",
-    "href": "index-game-solutions.html#step-4-sequencing",
-    "title": "Game Answer Key",
-    "section": "Step 4 💻 Sequencing",
-    "text": "Step 4 💻 Sequencing\n\n\n\n\n\n\n\n\nFragment\nTable\nMaps to\n\n\n\n\nThe purified PCR products were pooled in equal volumes to achieve a theoretical sequencing depth of 1,000,000 reads/sample/marker.\nDNA\nlib_size\n\n\nLibrary preparation and sequencing were performed at Fasteris via a ligation protocol (Geneva).\n(no term)\n—\n\n\nThree libraries were prepared using the MetaFast protocol (Fasteris, Plan-les-Ouates, Switzerland).\n(no term)\n—\n\n\nFor all libraries, a paired-end sequencing (2 x 125 bp) was carried out\nDNA\nlib_layout\n\n\n..sequencing… was carried out with an Illumina HiSeq 2500 sequencer on 2 HiSeq Rapid Flow Cells (version 2) with the HiSeq Rapid SBS Kit (version 2) (Illumina, San Diego, CA, USA).\nDNA\nseq_meth\n\n\nThree negative extraction controls and 1 negative PCR control (ultrapure water, 12 replicates) were amplified per primer pair and sequenced in parallel with the samples to monitor possible contaminants.\n(no term)\n—"
-  },
-  {
-    "objectID": "index-game-solutions.html#step-5-taxonomy",
-    "href": "index-game-solutions.html#step-5-taxonomy",
-    "title": "Game Answer Key",
-    "section": "Step 5 🐠 Taxonomy",
-    "text": "Step 5 🐠 Taxonomy\n\n\n\n\n\n\n\n\nFragment\nTable\nMaps to\n\n\n\n\nFollowing sequencing, reads were processed using clustering and postclustering cleaning to remove potential errors and estimate the number of species based on molecular operational taxonomic units (MOTUs).\nDNA\nsop\n\n\nEstimation of species diversity with MOTU richness was only performed using the teleo marker because other markers have not been tested extensively and their performance for estimating species richness remains unassessed.\n(no match)\n—\n\n\nFor all markers, reads were assembled using Vsearch (Rognes et al., 2016) and then cut using Cutadapt (Martin, 2011).\nDNA\nsop\n\n\nWe used Swarm (Mahé et al., 2015) for clustering; the minimum distance of 1 mismatch between clusters followed Marques et al. (2020).\nDNA\nsop\n\n\nWe discarded all observations with fewer than 10 reads, corresponding to untargeted taxa or present in only 1 PCR in the dataset, to avoid spurious MOTUs originating from a PCR error because it is unlikely for the same error to be generated several times in distinct PCRs.\nDNA\nsop\n\n\nChimeric sequences were discarded using UCHIME.\nDNA\nsop\n\n\nAll sequences with a frequency of occurrence &lt;0.0006/plate position in the same sequencing batch and &lt;0.001/library were discarded to avoid index cross talk and tag jumps.\nDNA\nsop\n\n\nFor the teleo marker only, we applied the postclustering algorithm LULU to further refine diversity estimations based on MOTUs proxy.\nDNA\nsop\n\n\nFor all markers, taxonomic assignments of MOTUs sequences were carried out with the ecotag program from the OBITOOLS toolkit;\nDNA / Occurrence\nDNA: sopOccurrence: identificationRemarks\n\n\nthe European Nucleotide Archive was used as a reference database (release 141).\nDNA / Occurrence\nDNA: otu_dbOccurrence: identificationReferences\n\n\nTaxonomic assignments were corrected to avoid overconfidence in assignments: species assignments were validated only for a 100% sequence match, genus for a 90–99% match, and family for an 85–90% match.\nDNA / Occurrence\nDNA: sopOccurrence: identificationRemarks\n\n\nFish names were verified using the rfishbase R package.\nOccurrence\nidentificationRemarks\n\n\nAll taxa assigned to deep water or mesophotic species or lineages were flagged and not analyzed due to a lack of trait values for the functional analysis.\nOccurrence\nidentificationRemarks\n\n\nThe DNA sequence associated with asv1: TCTATCAAGAAACGTGGCCCATGCAGGAGGGTCTGTAGACTTTGCAATTTTTTCTCTACACTTAGCAGGTGTTAGATCAATTTTAGGGGCTGTAAACTTTATTAGTACGTTAGGTAATCTACGGGTATTCGGAATACTTTTAGACCGTATCCCTTTATTTGCCTGGTCCGTCTTGGTGACAGCTATTTTATTGTTATTGTCTTTACCTGTACTTGCCGGTGCCATTACGATATTATTAACTGACCGAAATTTAAATACTTCATTTTATGATGTTGGAGGGGGAGGAGACCCTATTCTCTACCAACACCTA\nDNA\nDNA_sequence\n\n\nasv1 was assigned to Acanthurus tractus\nOccurrence\nscientificName\n\n\nThe DNA sequence associated with asv2: TCTATCAAGAAACGTGGCCCATGCAGGAGGGTCTGTAGACTTTGCAATTTTTTCTCTACACTTAGCAGGTGTTAGATCAATTTTAGGGGCTGTAAACTTTATTAGTACGTTAGGTAATCTACGGGTATTCGGAATACTTTTAGACCGTATCCCTTTATTTGCCTGGTCCGTCTTGGTGACAGCTATTTTATTGTTATTGTCTTTACCTGTACTTGCCGGTGCCATTACGATATTATTAACTGACCGAAATTTAAATACTTCATTTTATGATGTTGGAGGGGGAGGAGACCCTATTCTCTACCAACACCTA\nDNA\nDNA_sequence\n\n\nasv2 was assigned to Platybelone argalus\nOccurrence\nscientificName\n\n\nasv2 has 2447 DNA reads in sample 2\nOccurrence\norganismQuantity, organismQuantityType\n\n\nasv1 had 40587 DNA reads in sample 1\nOccurrence\norganismQuantity, organismQuantityType"
   },
   {
     "objectID": "index-edna-full.html#what-is-obis",
@@ -775,5 +453,327 @@
     "title": "Publishing eDNA Data in OBIS",
     "section": "Summary",
     "text": "Summary\n\n\nThree steps to publish your eDNA data:\n\nFormat — Darwin Core + DNA Derived Data Extension\nLong format: one row = one sequence per sample\nDocument — Complete EML metadata\nPrimers, methods, bioinformatics pipeline, license\nPublish — Through your OBIS node IPT\nGet a DOI. Be cited. Join the global record.\n\n\nStart here → manual.obis.org/dna_data.html\n\nWhy it matters\n\neDNA captures biodiversity no other method can.\nPublishing it in OBIS makes it\nreusable, citable, and permanent.\n\n\n\nClose with energy. Remind the audience that the gap between eDNA data currently in OBIS and what could be there is enormous — their data can meaningfully fill it. If time allows, invite them to share what kind of eDNA data they have and talk about the right category/structure for their case."
+  },
+  {
+    "objectID": "index-game-solutions.html",
+    "href": "index-game-solutions.html",
+    "title": "Game Answer Key",
+    "section": "",
+    "text": "Fragments are drawn from a real eDNA study at the Sanctuary of Fauna and Flora, Malpelo Island (Colombia). Grouped by workflow step, matching Game Time.\nSome fragments intentionally have no home in any DwC table — these are the distractors mentioned in the “Watch For” warning."
+  },
+  {
+    "objectID": "index-game-solutions.html#step-1-field-sampling",
+    "href": "index-game-solutions.html#step-1-field-sampling",
+    "title": "Game Answer Key",
+    "section": "Step 1 ⛵ Field Sampling",
+    "text": "Step 1 ⛵ Field Sampling\n\n\n\n\n\n\n\n\nFragment\nTable\nMaps to\n\n\n\n\nWe sampled around the Sanctuary of Fauna and Flora in Malpelo, a remote oceanic island 490 km off the Colombia in the eastern tropical Pacific.\nEvent\nlocality, higherGeography\n\n\nWe sampled for 4 days (25-28 March 2018) at 1 site (El Arrecife).\nEvent\neventDate, locality\n\n\nMalpelo is surrounded by deep water and fishing activities are prohibited in the surrounding 8757 km2.\nEvent\neventRemarks\n\n\nThe reef ecosystem around the island is influenced by major oceanic currents and local upwelling, and the benthos is bare rock with low coral cover.\nEvent\nhabitat\n\n\nMalpelo Island is one of the most pristine and vulnerable reef ecosystems in the tropical eastern Pacific.\n(no match)\n—\n\n\nWe sampled eDNA in round surface transects. We did 5 identical transects at different times, corresponding to 10 samples (i.e., eDNA filters) because we collected 2 samples/transect.\nEvent\nsamplingProtocol\n\n\nTransects sampled from a boat,\nEvent / eMoF\nEvent: samplingProtocoleMoF: samplingInstrument\n\n\nwe pumped 30 L of water/sample.\nDNA / Event\nDNA: samp_sizeEvent: sampleSize & sampleSizeValue\n\n\nWe used an Athena peristaltic pump (Proactive Environmental Products, Bradenton, Florida) (nominal flow 1.0 L/min) on each side of the boat\nEvent / eMoF\nEvent: samplingProtocoleMoF: measurementType + measurementValue\n\n\nto filter water through a VigiDNA 0.20 µm cross-flow filtration capsule (SPYGEN, le Bourget du Lac, France).\nDNA\nsize_frac\n\n\nTo avoid contamination, we used only disposable sterile tubing and gloves for each filtration capsule.\nEvent\nsamplingProtocol\n\n\nImmediately after filtration, the filter units were filled with CL1 Conservation buffer (SPYGEN)\nEvent\nsamplingProtocol\n\n\nand stored at room temperature (20-25 °C) for 5.5 months until DNA extraction.\nEvent\nsamplingProtocol"
+  },
+  {
+    "objectID": "index-game-solutions.html#step-2-dna-extraction",
+    "href": "index-game-solutions.html#step-2-dna-extraction",
+    "title": "Game Answer Key",
+    "section": "Step 2 🧬 DNA Extraction",
+    "text": "Step 2 🧬 DNA Extraction\n\n\n\n\n\n\n\n\nFragment\nTable\nMaps to\n\n\n\n\nThe DNA extraction was performed in a dedicated laboratory for eDNA extraction equipped with positive air pressure, UV treatment, and frequent air renewal and decontamination procedures conducted before and after all manipulation.\n(no term)\n—\n\n\nFor DNA extraction, we followed the protocol in Fernández et al. (2021).\nDNA\nnucl_acid_ext"
+  },
+  {
+    "objectID": "index-game-solutions.html#step-3-dna-amplification-pcr",
+    "href": "index-game-solutions.html#step-3-dna-amplification-pcr",
+    "title": "Game Answer Key",
+    "section": "Step 3 🧪 DNA Amplification (PCR)",
+    "text": "Step 3 🧪 DNA Amplification (PCR)\n\n\n\n\n\n\n\n\nFragment\nTable\nMaps to\n\n\n\n\nFor PCR amplification, we used 3 different primer pairs targeting distinct taxonomic groups: teleo, targeting teleost fishes and elasmobranchs (Valentini et al., 2016); Chon01, targeting elasmobranchs; and Vert01 (Taberlet et al., 2018), targeting vertebrates in general (primer sequences in Appendix S2).\nDNA\npcr_primers, pcr_primer_reference\n\n\nThe PCR mixture was denatured at 95 °C for 10 min, followed by 50 cycles of 30 s at 95 °C, 30 s at 55 °C for teleo and Vert01 and 58 °C for Chon01 and 1 min at 72 °C, and a final elongation step at 72 °C for 7 min.\nDNA\npcr_cond\n\n\nTwelve replicates of PCRs were run per sample (i.e., 24/transect because we had 2 field duplicates/transect).\nDNA\nlink to full protocol in nucl_acid_amp\n\n\nAfter amplification, samples were titrated using capillary electrophoresis (QIAxcel [Qiagen GmbH, Hilden, Germany]) and purified using a MinElute PCR purification kit (Qiagen GmbH, Hilden, Germany).\nDNA\nlink to full protocol in nucl_acid_amp"
+  },
+  {
+    "objectID": "index-game-solutions.html#step-4-sequencing",
+    "href": "index-game-solutions.html#step-4-sequencing",
+    "title": "Game Answer Key",
+    "section": "Step 4 💻 Sequencing",
+    "text": "Step 4 💻 Sequencing\n\n\n\n\n\n\n\n\nFragment\nTable\nMaps to\n\n\n\n\nThe purified PCR products were pooled in equal volumes to achieve a theoretical sequencing depth of 1,000,000 reads/sample/marker.\nDNA\nlib_size\n\n\nLibrary preparation and sequencing were performed at Fasteris via a ligation protocol (Geneva).\n(no term)\n—\n\n\nThree libraries were prepared using the MetaFast protocol (Fasteris, Plan-les-Ouates, Switzerland).\n(no term)\n—\n\n\nFor all libraries, a paired-end sequencing (2 x 125 bp) was carried out\nDNA\nlib_layout\n\n\n..sequencing… was carried out with an Illumina HiSeq 2500 sequencer on 2 HiSeq Rapid Flow Cells (version 2) with the HiSeq Rapid SBS Kit (version 2) (Illumina, San Diego, CA, USA).\nDNA\nseq_meth\n\n\nThree negative extraction controls and 1 negative PCR control (ultrapure water, 12 replicates) were amplified per primer pair and sequenced in parallel with the samples to monitor possible contaminants.\n(no term)\n—"
+  },
+  {
+    "objectID": "index-game-solutions.html#step-5-taxonomy",
+    "href": "index-game-solutions.html#step-5-taxonomy",
+    "title": "Game Answer Key",
+    "section": "Step 5 🐠 Taxonomy",
+    "text": "Step 5 🐠 Taxonomy\n\n\n\n\n\n\n\n\nFragment\nTable\nMaps to\n\n\n\n\nFollowing sequencing, reads were processed using clustering and postclustering cleaning to remove potential errors and estimate the number of species based on molecular operational taxonomic units (MOTUs).\nDNA\nsop\n\n\nEstimation of species diversity with MOTU richness was only performed using the teleo marker because other markers have not been tested extensively and their performance for estimating species richness remains unassessed.\n(no match)\n—\n\n\nFor all markers, reads were assembled using Vsearch (Rognes et al., 2016) and then cut using Cutadapt (Martin, 2011).\nDNA\nsop\n\n\nWe used Swarm (Mahé et al., 2015) for clustering; the minimum distance of 1 mismatch between clusters followed Marques et al. (2020).\nDNA\nsop\n\n\nWe discarded all observations with fewer than 10 reads, corresponding to untargeted taxa or present in only 1 PCR in the dataset, to avoid spurious MOTUs originating from a PCR error because it is unlikely for the same error to be generated several times in distinct PCRs.\nDNA\nsop\n\n\nChimeric sequences were discarded using UCHIME.\nDNA\nsop\n\n\nAll sequences with a frequency of occurrence &lt;0.0006/plate position in the same sequencing batch and &lt;0.001/library were discarded to avoid index cross talk and tag jumps.\nDNA\nsop\n\n\nFor the teleo marker only, we applied the postclustering algorithm LULU to further refine diversity estimations based on MOTUs proxy.\nDNA\nsop\n\n\nFor all markers, taxonomic assignments of MOTUs sequences were carried out with the ecotag program from the OBITOOLS toolkit;\nDNA / Occurrence\nDNA: sopOccurrence: identificationRemarks\n\n\nthe European Nucleotide Archive was used as a reference database (release 141).\nDNA / Occurrence\nDNA: otu_dbOccurrence: identificationReferences\n\n\nTaxonomic assignments were corrected to avoid overconfidence in assignments: species assignments were validated only for a 100% sequence match, genus for a 90–99% match, and family for an 85–90% match.\nDNA / Occurrence\nDNA: sopOccurrence: identificationRemarks\n\n\nFish names were verified using the rfishbase R package.\nOccurrence\nidentificationRemarks\n\n\nAll taxa assigned to deep water or mesophotic species or lineages were flagged and not analyzed due to a lack of trait values for the functional analysis.\nOccurrence\nidentificationRemarks\n\n\nThe DNA sequence associated with asv1: TCTATCAAGAAACGTGGCCCATGCAGGAGGGTCTGTAGACTTTGCAATTTTTTCTCTACACTTAGCAGGTGTTAGATCAATTTTAGGGGCTGTAAACTTTATTAGTACGTTAGGTAATCTACGGGTATTCGGAATACTTTTAGACCGTATCCCTTTATTTGCCTGGTCCGTCTTGGTGACAGCTATTTTATTGTTATTGTCTTTACCTGTACTTGCCGGTGCCATTACGATATTATTAACTGACCGAAATTTAAATACTTCATTTTATGATGTTGGAGGGGGAGGAGACCCTATTCTCTACCAACACCTA\nDNA\nDNA_sequence\n\n\nasv1 was assigned to Acanthurus tractus\nOccurrence\nscientificName\n\n\nThe DNA sequence associated with asv2: TCTATCAAGAAACGTGGCCCATGCAGGAGGGTCTGTAGACTTTGCAATTTTTTCTCTACACTTAGCAGGTGTTAGATCAATTTTAGGGGCTGTAAACTTTATTAGTACGTTAGGTAATCTACGGGTATTCGGAATACTTTTAGACCGTATCCCTTTATTTGCCTGGTCCGTCTTGGTGACAGCTATTTTATTGTTATTGTCTTTACCTGTACTTGCCGGTGCCATTACGATATTATTAACTGACCGAAATTTAAATACTTCATTTTATGATGTTGGAGGGGGAGGAGACCCTATTCTCTACCAACACCTA\nDNA\nDNA_sequence\n\n\nasv2 was assigned to Platybelone argalus\nOccurrence\nscientificName\n\n\nasv2 has 2447 DNA reads in sample 2\nOccurrence\norganismQuantity, organismQuantityType\n\n\nasv1 had 40587 DNA reads in sample 1\nOccurrence\norganismQuantity, organismQuantityType"
+  },
+  {
+    "objectID": "index-map-edna-to-dwc.html#identifying-key-information-for-metabarcoding-qpcr-pipelines",
+    "href": "index-map-edna-to-dwc.html#identifying-key-information-for-metabarcoding-qpcr-pipelines",
+    "title": "Mapping molecular data to Darwin Core",
+    "section": "Identifying key information for Metabarcoding & qPCR pipelines",
+    "text": "Identifying key information for Metabarcoding & qPCR pipelines"
+  },
+  {
+    "objectID": "index-map-edna-to-dwc.html#edna-metabarcoding-key-information",
+    "href": "index-map-edna-to-dwc.html#edna-metabarcoding-key-information",
+    "title": "Mapping molecular data to Darwin Core",
+    "section": "eDNA Metabarcoding: Key Information",
+    "text": "eDNA Metabarcoding: Key Information\nCategory 1 — DNA-derived occurrences — basisOfRecord = MaterialSample\nFrom field collection to taxonomy — what to capture at each step\nStep 1:⛵ Field Sampling\n\n\n\n\n\n\n\nField Sampling\nMaps to\n\n\n\n\nCoordinates, location names\nEvent table: decimalLatitude, decimalLongitude, locality\n\n\nDate, time\nEvent table: eventDate, eventTime\n\n\nEnvironmental measurements (temperature, salinity, depth…)\neMoF table: measurementType, measurementValue, measurementUnit\n\n\nSampling method / gear\nEvent table: samplingProtocol and/or eMoF table\n\n\nSample volume, filter size\nDNA table: samp_size , size_frac\n\n\n\n\nThis is where the Event core table gets populated. Environmental measurements that aren’t DNA-specific (e.g. temperature, salinity) go in eMoF rather than the DNA extension — worth a quick reminder here since people sometimes want to cram everything into one table."
+  },
+  {
+    "objectID": "index-map-edna-to-dwc.html#edna-metabarcoding-key-information-1",
+    "href": "index-map-edna-to-dwc.html#edna-metabarcoding-key-information-1",
+    "title": "Mapping molecular data to Darwin Core",
+    "section": "eDNA Metabarcoding: Key Information",
+    "text": "eDNA Metabarcoding: Key Information\nCategory 1 — DNA-derived occurrences — basisOfRecord = MaterialSample\nFrom field collection to taxonomy — what to capture at each step\nStep 2: 🧬 DNA Extraction\n\n\n\n\n\n\n\nDNA Extraction\nMaps to\n\n\n\n\nVolume of sample processed\nDNA table: samp_vol_we_dna_ext\n\n\nExtraction method / kit\nDNA table: nucl_acid_ext, nucl_acid_amp\n\n\nConcentration\nDNA table: concentration, concentrationUnit\n\n\nPurity ratio (A260/280)\nDNA table: ratioOfAbsorbance260_280\n\n\n\n\nExtraction method matters a lot for reproducibility and comparing datasets — different kits can bias which taxa get amplified downstream, so it’s worth capturing even though it’s easy to skip. Purity ratio (260/280) is a quick QC signal for contamination that’s worth flagging even if participants don’t record it religiously yet."
+  },
+  {
+    "objectID": "index-map-edna-to-dwc.html#edna-metabarcoding-key-information-2",
+    "href": "index-map-edna-to-dwc.html#edna-metabarcoding-key-information-2",
+    "title": "Mapping molecular data to Darwin Core",
+    "section": "eDNA Metabarcoding: Key Information",
+    "text": "eDNA Metabarcoding: Key Information\nCategory 1 — DNA-derived occurrences — basisOfRecord = MaterialSample\nFrom field collection to taxonomy — what to capture at each step\nStep 3: 🧪 DNA Amplification\n\n\n\n\n\n\n\nDNA Amplification\nMaps to (DNA table)\n\n\n\n\nTarget gene (e.g. COI, 18S rRNA)\nDNA table: target_gene\n\n\nPrimer sequence + primer reference\nDNA table: pcr_primer_forward, pcr_primer_name_forward, pcr_primer_reverse, pcr_primer_name_reverse + pcr_primer_reference\n\n\nPCR conditions\nDNA table: pcr_cond\n\n\nLength of amplified product\nDNA table: ampliconSize\n\n\n\n\nPrimer choice determines which taxa can even be detected — always cite the primer reference, don’t just paste the sequence, so users can trace back to the original validation. PCR conditions (annealing temp, cycle number) belong here too even though they feel like lab-notebook detail; they matter for anyone trying to reproduce or compare your results."
+  },
+  {
+    "objectID": "index-map-edna-to-dwc.html#edna-metabarcoding-key-information-3",
+    "href": "index-map-edna-to-dwc.html#edna-metabarcoding-key-information-3",
+    "title": "Mapping molecular data to Darwin Core",
+    "section": "eDNA Metabarcoding: Key Information",
+    "text": "eDNA Metabarcoding: Key Information\nCategory 1 — DNA-derived occurrences — basisOfRecord = MaterialSample\nFrom field collection to taxonomy — what to capture at each step\nStep 4: 💻 Sequences\n\n\n\n\n\n\n\nSequences\nMaps to\n\n\n\n\nSequencing platform + library layout\nDNA table: seq_meth + lib_layout\n\n\nSequences per sample\nDNA table: DNA_sequence (linked by occurrenceID)\n\n\nPublic repository where sequences deposited (NCBI, ENA)\nOccurrence table: associatedSequences\n\n\n\n\nThis is the last step before formatting — everything captured across the last 3 slides plus this one feeds into either the Occurrence table or the DNA extension. Reference database + pipeline (e.g. “DADA2 v1.18” + “SILVA 138”) matter a lot for reproducibility since taxonomy assignments can shift as databases update — this is what otu_class_appr and otu_db are for."
+  },
+  {
+    "objectID": "index-map-edna-to-dwc.html#edna-metabarcoding-key-information-4",
+    "href": "index-map-edna-to-dwc.html#edna-metabarcoding-key-information-4",
+    "title": "Mapping molecular data to Darwin Core",
+    "section": "eDNA Metabarcoding: Key Information",
+    "text": "eDNA Metabarcoding: Key Information\nCategory 1 — DNA-derived occurrences — basisOfRecord = MaterialSample\nFrom field collection to taxonomy — what to capture at each step\nStep 5: 🐠 Taxonomy\n\n\n\n\n\n\n\nTaxonomy\nMaps to\n\n\n\n\nTaxonomy assignment + annotation confidence\nOccurrence table: scientificName, taxonID  DNA table: annot\n\n\nReference database + pipeline used\nOccurrence table: identificationRemarks, identificationReferences  DNA table: otu_db + sop\n\n\nNumber of sequence reads per taxon & total\nOccurence table: organismQuantity, organismQuantityType, & sampleSizeValue, sampleSizeUnit\n\n\n\n\nThis is the last step before formatting — everything captured across the last 3 slides plus this one feeds into either the Occurrence table or the DNA extension. Reference database + pipeline (e.g. “DADA2 v1.18” + “SILVA 138”) matter a lot for reproducibility since taxonomy assignments can shift as databases update — this is what otu_class_appr and otu_db are for."
+  },
+  {
+    "objectID": "index-map-edna-to-dwc.html#key-metadata-quantitative-pcr-qpcr",
+    "href": "index-map-edna-to-dwc.html#key-metadata-quantitative-pcr-qpcr",
+    "title": "Mapping molecular data to Darwin Core",
+    "section": "Key Metadata: Quantitative PCR (qPCR)",
+    "text": "Key Metadata: Quantitative PCR (qPCR)\nCategory 3 — Targeted species detection — basisOfRecord = MaterialSample\nTargeted species detection — additional fields vs metabarcoding\n\n\n\n⛵ Step 1: Field Sampling → same as metabarcoding\n🧬 Step 2: DNA Extraction → same as metabarcoding\n🧪 Step 3: DNA Amplification → PCR conditions → pcr_cond\n🎯 Step 4/5: Target & Quantity\n\n\n\n\n\n\n\nTarget & Quantity\nMaps to\n\n\n\n\nTarget gene region\ntarget_gene, target_subfragment\n\n\nPrimers\npcr_primers\n\n\nCopy number + concentration\nestimatedNumberOfCopies + concentration, concentrationUnit\n\n\nLOD, Cq, baseline\npcr_primer_lod, quantificationCycle, baselineValue\n\n\n\n\nqPCR = Category 3 — targeted species detection. Adds qPCR-specific fields: probeReporter, probeQuencher, estimatedNumberOfCopies, thresholdQuantificationCycle, and baselineValue. Key difference from metabarcoding: you are detecting one specific taxon, so scientificName and scientificNameID are required from the start. Use basisOfRecord = MaterialSample."
+  },
+  {
+    "objectID": "index-map-edna-to-dwc.html#special-cases",
+    "href": "index-map-edna-to-dwc.html#special-cases",
+    "title": "Mapping molecular data to Darwin Core",
+    "section": "Special cases",
+    "text": "Special cases"
+  },
+  {
+    "objectID": "index-map-edna-to-dwc.html#resources-for-dna-terms",
+    "href": "index-map-edna-to-dwc.html#resources-for-dna-terms",
+    "title": "Mapping molecular data to Darwin Core",
+    "section": "Resources for DNA terms",
+    "text": "Resources for DNA terms\n\n\n\nResource\nLink\n\n\n\n\nDNA Extension term definitions\nrs.gbif.org/extension/gbif/1.0/dna_derived_data_2024-07-11.xml\n\n\nDwC Term Quick Reference Guide\ndwc.tdwg.org/terms/\n\n\nOBIS Manual (DNA chapter)\nmanual.obis.org/dna_data.html\n\n\nGBIF DNA publishing guide\ndoi.org/10.35035/DOC-VF1A-NR22"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "OBIS Training Slide Decks",
+    "section": "",
+    "text": "These slide decks are used in training delivered by OBIS. They’re Markdown, built with Quarto and reveal.js, and openly licensed (CC BY‑NC 4.0). Reuse them freely by forking the repo."
+  },
+  {
+    "objectID": "index.html#slide-decks-by-topic",
+    "href": "index.html#slide-decks-by-topic",
+    "title": "OBIS Training Slide Decks",
+    "section": "Slide Decks by Topic",
+    "text": "Slide Decks by Topic\n\nDarwin Core\nDNA data🧬"
+  },
+  {
+    "objectID": "index.html#trainings-delivered",
+    "href": "index.html#trainings-delivered",
+    "title": "OBIS Training Slide Decks",
+    "section": "Trainings Delivered",
+    "text": "Trainings Delivered\nSlide decks and resources compiled for individual training courses or workshops.\n\n2026\n\nJuly INVEMAR DNA data management\nJuly OBIS Node Training on DNA data"
+  },
+  {
+    "objectID": "index-DNA-game-instructions.html#match-metadata-to-darwin-core",
+    "href": "index-DNA-game-instructions.html#match-metadata-to-darwin-core",
+    "title": "Game Time",
+    "section": "Match Metadata to Darwin Core",
+    "text": "Match Metadata to Darwin Core\n\n\n📋 Setup\n\nGroups of 4–5\nBox of field + methodology fragments\n4 posters per DwC table: Event · Occurrence · DNA · eMoF\n\nEach table has a pile of DwC column headers. Not all are relevant! Find the one(s) that are\n\n\n\n🎯 Task\n\nRead a fragment out loud as a group\nDecide: which table? which column (i.e. term)?\nPlace it in the right spot\nFill in the information with the right vocab\n\n⚠️ Watch For\n\nSome fragments may split across 2+ columns\nSome fragments may not belong in any table\n\n\n\nFacilitator notes: remind participants that DwC mapping is often a judgment call — several fragments (e.g., filter method, preservation buffer) are genuinely ambiguous between samplingProtocol and the DNA extension’s sop field, and that’s fine. The goal isn’t a single “correct” answer for every card, it’s practicing the reasoning process: read the raw text, identify what kind of information it is (event-level, occurrence-level, molecular method, or measurement), and find its home. After 20 minutes, walk the room and reveal the answer key live, pausing longest on posters where groups disagreed."
+  },
+  {
+    "objectID": "index-DNA-game-instructions.html#edna-data-for-national-monitoring",
+    "href": "index-DNA-game-instructions.html#edna-data-for-national-monitoring",
+    "title": "Game Time",
+    "section": "eDNA data for national monitoring",
+    "text": "eDNA data for national monitoring\nA national monitoring programme wants all eDNA data publicly available within one year.\n\n\nWho are you?\nEach of you will get a role, representing one of these stakeholder categories:\n🌳 Field ecologist\n🧬 Molecular laboratory scientist / Bioinformatician\n💻 Data manager\n🏛️ Repository curator\n📜 Policymaker\n🌐 Biodiversity database representative\n🗺️ End user\n\n👥 What do you need?\nWithin your stakeholder role, you should discuss and explain:\n- **What you need?**\n- **What concerns you?**\n- **What data you can provide?**\n- **What standards you require?**\n\nWrite your responses on sticky notes. Include your role!"
+  },
+  {
+    "objectID": "index-dwc.html",
+    "href": "index-dwc.html",
+    "title": "Darwin Core Training Slide Decks",
+    "section": "",
+    "text": "FAIR Data & Biodiversity Standards\n\nBackground information on what FAIR data is and a brief overview of Darwin Core and Essential Ocean Variables\n\nDarwin Core and DNA-Derived Data\n\nOverview of DNA data types and how DNA data fits into Darwin Core\n\nOBIS Quality Control\n\nOverview of quality control checks you should do with any OBIS dataset, DNA or otherwise\n\nPublishing & IPT\n\nHow to publish data using the Integrated Publishing Toolkit (IPT) software\n\nAccessing OBIS (DNA) Data\n\nHow to access data from OBIS, including DNA data\n\n\n\n\n\nReuseCC BY-NC 4.0"
+  },
+  {
+    "objectID": "index-access.html#getting-data-out-of-obis",
+    "href": "index-access.html#getting-data-out-of-obis",
+    "title": "Accessing OBIS data",
+    "section": "Getting data out of OBIS",
+    "text": "Getting data out of OBIS\nSeveral ways in, depending on what you need:\n\nobis.org — browse, search, and cite datasets\nOBIS Mapper — visual exploration + quick downloads\nrobis — programmatic access from R\nParquet + robisdb (new) — fast, local access to the full dataset\n\n\nThis mirrors the options from Module 8, but we’re focusing on the four most relevant for this group. Full CSV exports and direct IPT downloads exist too, but the four above cover most real workflows. Good moment to ask the room what they’re trying to do (one species vs. a whole region vs. bulk analysis) since that determines which of these fits best — the next few slides map roughly to “small ad hoc pull” → “bulk/programmatic.”"
+  },
+  {
+    "objectID": "index-access.html#the-obis-portal-obis.org",
+    "href": "index-access.html#the-obis-portal-obis.org",
+    "title": "Accessing OBIS data",
+    "section": "The OBIS portal — obis.org",
+    "text": "The OBIS portal — obis.org\n\n\nYour starting point for finding and understanding data:\n\nSearch & browse by taxon, region, or dataset\nView dataset summary + citation info\nFind data provider’s contact details\n\n\n\n\n\nWorth contrasting with the Mapper (next slide): downloads from the homepage/dataset page come as separate table files, while Mapper/full-export downloads are flattened into one occurrence+event table, with eMoF/DNA extensions available only if you check the box for them. This distinction trips people up, so flag it explicitly."
+  },
+  {
+    "objectID": "index-access.html#obis-mapper-mapper.obis.org",
+    "href": "index-access.html#obis-mapper-mapper.obis.org",
+    "title": "Accessing OBIS data",
+    "section": "OBIS Mapper — mapper.obis.org",
+    "text": "OBIS Mapper — mapper.obis.org\n\n\nVisual, filter-driven exploration of OBIS data:\n\nFilter by taxon, geography, time, and extensions\nCombine multiple layers in one view\nDownload individual layers as CSV\n\nBetter for smaller datasets &lt;20,000,000 records\n\nIncldue eMoF and/or DNA-derived data extensions\n\n(check the box — not on by default)\n\n\n\n\n\n\nGreat tool for a quick visual gut-check before doing anything programmatic — “does this region actually have eDNA data in it?” The Maptool naming collision is a real source of confusion, worth stating explicitly since Maptool came up earlier in the sensitive-data context."
+  },
+  {
+    "objectID": "index-access.html#robis-programmatic-access-from-r",
+    "href": "index-access.html#robis-programmatic-access-from-r",
+    "title": "Accessing OBIS data",
+    "section": "robis — programmatic access from R",
+    "text": "robis — programmatic access from R\ninstall.packages(\"robis\")\nlibrary(robis)\n\nrecords &lt;- occurrence(scientificname = \"Megaptera novaeangliae\", fields=\"associatedSequences\")\ndna &lt;- dataset(scientificname = \"Megaptera novaeangliae\", fields=\"associatedSequences\")\n\nQuery by species, taxon group, geometry (WKT), depth, time, quality flags…\nBuilt-in checklist() for taxon lists in an area\ndataset() — query for datasets instead of biological records\n\ngithub.com/iobis/robis\n\nThis is the go-to for most “I need this species/region’s data in R” tasks — talks directly to the OBIS API under the hood, so no local storage needed. Good for small-to-medium pulls; for anything approaching “the whole OBIS dataset” or repeated heavy queries, the next slide’s Parquet approach is a better fit."
+  },
+  {
+    "objectID": "index-access.html#new-fast-access-via-parquet",
+    "href": "index-access.html#new-fast-access-via-parquet",
+    "title": "Accessing OBIS data",
+    "section": "New: fast access via Parquet",
+    "text": "New: fast access via Parquet\n\nOBIS publishes the full global dataset as Parquet fields\nBrand-new R package, robisdb\n\n(released this month — actively evolving)\n\n\npak::pak(\"iobis/robisdb\")\nlibrary(robisdb)\n\ncon &lt;- connect_opendata_local(\"~/data/obis-open-data\")\nocc &lt;- con |&gt; occurrence_db(scientificname = \"Minuca rapax\")\n\nMirrors robis functions where possible (occurrence_db(), checklist_db()…)\nRuns on DuckDB — fast, local queries without loading everything into memory\nBuilt for scale: full-dataset or repeated analyses that would be slow via the API\n\n\nThis is very new (this month), so treat it as “here’s where things are heading” rather than a fully mature, documented workflow — check github.com/iobis/robisdb for the latest since details may shift. Good to mention this exists specifically because loading the entire OBIS dataset via the API/robis isn’t feasible on most laptops — Parquet + DuckDB is OBIS’s answer to that scale problem. Related datasets (speciesgrids, obistherm) are also queryable the same way."
+  },
+  {
+    "objectID": "index-invemar.html#course-schedule",
+    "href": "index-invemar.html#course-schedule",
+    "title": "INVEMAR DNA Management Training",
+    "section": "Course Schedule",
+    "text": "Course Schedule\n\nClick to enlarge"
+  },
+  {
+    "objectID": "index-invemar.html#dna-data-management-slide-decks",
+    "href": "index-invemar.html#dna-data-management-slide-decks",
+    "title": "INVEMAR DNA Management Training",
+    "section": "DNA Data Management Slide Decks",
+    "text": "DNA Data Management Slide Decks\nPick a deck to open it as a full-screen presentation\n\nWhat is Environmental DNA?\n\nIntroduction to eDNA methods and what we can do with it\n\nWhat information is important at each step of an eDNA workflow?\n\nOverview of the information that should be captured when managing DNA datasets\n\nFAIR Data & Biodiversity Standards\n\nBackground information on what FAIR data is and a brief overview of Darwin Core and Essential Ocean Variables\n\nDarwin Core and DNA-Derived Data\n\nOverview of DNA data types and how DNA data fits into Darwin Core\n\neDNA Data Management History (YouTube recording)\nMapping molecular data to Darwin Core\n\nHow to record the important data and metadata in Darwin Core and the DNA-derived extension\n\nQuality Control\n\neDNA Quality Control\n\nOverview of quality control steps in an eDNA workflow\n\nTaxonomy Quality Control (tool demo) (YouTube recording)\nOBIS Quality Control\n\nOverview of quality control checks you should do with any OBIS dataset, DNA or otherwise\n\n\nApplications of eDNA for biodiversity monitoring\nOngoing data standardisation intitiatives (OBON) (YouTube recording)\nReference databases, taxonomic assignment and validation\nPublishing & IPT\n\nHow to publish data using the Integrated Publishing Toolkit (IPT) software\n\nAccessing OBIS (DNA) Data\n\nEn español\nHow to access data from OBIS, including DNA data"
+  },
+  {
+    "objectID": "index-invemar.html#interactive-sessions",
+    "href": "index-invemar.html#interactive-sessions",
+    "title": "INVEMAR DNA Management Training",
+    "section": "Interactive Sessions",
+    "text": "Interactive Sessions\n\nMatch methods to DwC\n\nEn español\nSolution\n\nFormat a DNA dataset with R"
+  },
+  {
+    "objectID": "index-qc.html#quality-control",
+    "href": "index-qc.html#quality-control",
+    "title": "OBIS Quality Control",
+    "section": "Quality control",
+    "text": "Quality control\nBefore publishing — check for:\n\n✅ Taxonomy matched to WoRMS (AphiaID required for marine taxa)\n\n✅ Coordinates in decimal degrees, in the ocean\n\n✅ Dates in ISO 8601 format (YYYY-MM-DD)\n\n✅ Unique, stable occurrenceID and eventID\n\n✅ Table linkages consistent (eventID, occurrenceID)\n\nTools:\n\n\n\nTool\nWhat it checks\n\n\n\n\nobistools (R package)\nTaxonomy, geography, required fields\n\n\nGBIF data validator\nDarwin Core Archive structure\n\n\nWoRMS taxon match\nScientific names → AphiaIDs\n\n\n\n\nobistools is an R package from OBIS. The GBIF validator is a web-based tool. WoRMS has a batch taxon match tool at marinespecies.org/aphia.php. For unidentified sequences, assign a high-level taxon if possible (e.g., kingdom Animalia) rather than leaving the field empty."
+  },
+  {
+    "objectID": "index-qc.html#worms-taxon-matching",
+    "href": "index-qc.html#worms-taxon-matching",
+    "title": "OBIS Quality Control",
+    "section": "WoRMS Taxon Matching",
+    "text": "WoRMS Taxon Matching\n\n\nOptions for taxon matching:\n\nWoRMS Taxon Match Tool\nProgrammatically:\n\nobistools::match_taxa\nworrms::wm_records_taxamatch\npyworms\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo WoRMS match?\n\n\nUse highest-rank taxon with a match (e.g. family or order). Keep the sequence — it can be re-identified later as reference databases improve.\n\n\n\n\n\n\n\nStill no match?\n\n\nUnknown sequences recorded as: scientificName = “Biota incertae sedis” scientificNameID = urn:lsid:marinespecies.org:taxname:12"
+  },
+  {
+    "objectID": "index-qc.html#obis-dna-data-management-platform",
+    "href": "index-qc.html#obis-dna-data-management-platform",
+    "title": "OBIS Quality Control",
+    "section": "OBIS DNA Data Management Platform",
+    "text": "OBIS DNA Data Management Platform\n🔧 OBIS is developing a data management platform for DNA data including:\n\n\n\nBioinformatics\nQC\nValidation\nPublication to OBIS pipeline\n\nTo be offered to OBIS nodes to support local eDNA projects!\n\n🚧"
+  },
+  {
+    "objectID": "index-dna-extension.html#five-dna-data-categories",
+    "href": "index-dna-extension.html#five-dna-data-categories",
+    "title": "Types of DNA-derived data",
+    "section": "Five DNA data categories",
+    "text": "Five DNA data categories\nWhich one fits your data?\n\n\n\n\n\n\n\n\n#\nCategory\nExample\n\n\n\n\n1\nDNA-derived occurrences\nMetabarcoding (ASVs/OTUs assigned to taxa)\n\n\n2\nEnriched occurrences\nVoucher specimen + barcoded\n\n\n3\nTargeted species detection\nqPCR / ddPCR assays\n\n\n4\nName references\nSequence in GenBank only\n\n\n5\nMetadata only\nDataset without sequences\n\n\n\n🔎 Use the GBIF decision tree to confirm your category\n\nWe won’t go into details on this slide - just reiterating that Categories 1 and 3 are by far the most common for eDNA researchers. Category 1 covers metabarcoding; Category 3 covers targeted detection methods like qPCR/ddPCR where no sequences are produced. Be aware that there are other possible types but they are outside the scope of this workshop."
+  },
+  {
+    "objectID": "index-dna-extension.html#edna-data-standards",
+    "href": "index-dna-extension.html#edna-data-standards",
+    "title": "Types of DNA-derived data",
+    "section": "eDNA data standards",
+    "text": "eDNA data standards\n\nTwo major eDNA data standards exist\n\n\n\nMiXS  (Minimum Information about any (x) Sequence) — for raw sequences in NCBI\n\n\n\nDarwin Core (DwC) Community vocabulary for biodiversity data — species, location, date, basis of record\n\n\n\n\nOBIS + GBIF + ALA accept genetic data linked to spatial coordinates and time\n\n 🔜Developing landscape\n\nRapidly changing field\nFor OBIS future directions include the DWC-DP and FAIReDNA terms\n\n\nRaw sequences deposited in NCBI lack coordinates and dates — they cannot answer where or when a species was detected. OBIS, GBIF, and ALA now accept DNA-derived occurrences linked to space and time. DNA data requires special care: it is derived, depends on reference databases, and often produces many unknown sequences. The Darwin Core DNA extension preserves methodological context for future re-analysis."
+  },
+  {
+    "objectID": "index-dna-extension.html#darwin-core-dna-derived-data-extension",
+    "href": "index-dna-extension.html#darwin-core-dna-derived-data-extension",
+    "title": "Types of DNA-derived data",
+    "section": "Darwin Core + DNA Derived Data Extension",
+    "text": "Darwin Core + DNA Derived Data Extension\n\nDarwin Core: shared vocabulary for biodiversity data\n\nDNA Extension: adds MIxS terms for sequences, primers, methods\n\nDeveloped jointly by GBIF, OBIS, and the genomics community\n\n\n\n\n\n\nmeta.xml ← links all tables\neml.xml ← metadata (who, what, where, when, how)\noccurrence.csv ← the occurrence records\ndna_derived.csv ← the DNA extension\n\n\n\nMIxS = Minimum Information about any (x) Sequence. The extension incorporates these community standards so the same fields used in INSDC/GenBank submissions can be reused here."
+  },
+  {
+    "objectID": "index-dna-extension.html#core-table-for-dna-data",
+    "href": "index-dna-extension.html#core-table-for-dna-data",
+    "title": "Types of DNA-derived data",
+    "section": "Core table for DNA data",
+    "text": "Core table for DNA data\nDNA data can be published with either core type:\n\nOccurrence core + DNA extension\nEvent core + Occurrence extension + DNA extension\n\n\n\n\nThis wasn’t always true\n\n\nPreviously guidance required Occurrence core only for DNA data. Event core support was added recently!\n\n\n\n\nBoth options link the DNA extension via occurrenceID. Event core additionally lets you record sample-level metadata (location, date, method) once per event instead of once per sequence — see the next slide for why that matters at scale. A caveat worth mentioning live: even with Event core, some duplication is unavoidable because of the star schema (DNA extension still needs occurrenceID, so each occurrence still carries a full sequence/sample link). A newer GBIF/OBIS data model in development aims to remove this constraint entirely, but it isn’t implemented yet (as of late 2025)."
+  },
+  {
+    "objectID": "index-dna-extension.html#key-dwc-fields-to-include-event",
+    "href": "index-dna-extension.html#key-dwc-fields-to-include-event",
+    "title": "Types of DNA-derived data",
+    "section": "Key DwC fields to include: Event",
+    "text": "Key DwC fields to include: Event\n\n\nEvent core (mandatory fields)\n\neventID — unique, stable ID\neventDate — YYYY-MM-DD\ndecimalLatitude, decimalLongitude\n\n\n\nEvent table (strongly recommended fields)\n\nminimumDepthInMeters, maximumDepthInMeters\nsampleSizeValue (volume of sample)\n\nsampleSizeUnit (units of volume sampled)\nsamplingProtocol - (link to your field sampling SOP)"
+  },
+  {
+    "objectID": "index-dna-extension.html#key-dwc-fields-to-include-occurrence",
+    "href": "index-dna-extension.html#key-dwc-fields-to-include-occurrence",
+    "title": "Types of DNA-derived data",
+    "section": "Key DwC fields to include: Occurrence",
+    "text": "Key DwC fields to include: Occurrence\n\n\nOccurrence (core) table (mandatory fields)\n\noccurrenceID — unique, stable ID\nscientificName — taxon name to lowest possible taxon rank\nbasisOfRecord = “MaterialSample”\n\noccurrenceStatus = “present”\n\nIf Occurrence core, also: eventDate, decimalLatitude, decimalLongitude\n\nOccurrence table (strongly recommended fields)\n\nscientificNameID (WoRMS AphiaID)\n\norganismQuantity (read count of sequence)\n\norganismQuantityType = “DNA sequence reads”\nsampleSizeValue (total read count in sample)\n\nsampleSizeUnit = “DNA sequence reads”\nsamplingProtocol - (link to your SOP)\nassociatedSequences (link to e.g. GenBank or ENA accession)"
+  },
+  {
+    "objectID": "index-dna-extension.html#key-fields-to-include-dna-extension",
+    "href": "index-dna-extension.html#key-fields-to-include-dna-extension",
+    "title": "Types of DNA-derived data",
+    "section": "Key fields to include: DNA Extension",
+    "text": "Key fields to include: DNA Extension\n\n\nDNA Extension (example key fields)\n\nDNA_sequence — ASV/OTU sequence\ntarget_gene — e.g. “COI”, “18S rRNA”\npcr_primer_name_forward — and reverse\nseq_meth — e.g. “Illumina MiSeq”\notu_class_appr — e.g. “DADA2 v1.18”\notu_db — reference database\nsop — link to your protocol\n\n\n\nmanual.obis.org/dna_data.html#quick-start-guide\n\n\nWoRMS = World Register of Marine Species. Every marine occurrence should have a WoRMS AphiaID as the taxonID. For freshwater / terrestrial taxa use the appropriate backbone (CoL, etc.). Unidentified sequences should still be included — they can be assigned taxon later."
+  },
+  {
+    "objectID": "index-dna-extension.html#from-raw-outputs-long-format",
+    "href": "index-dna-extension.html#from-raw-outputs-long-format",
+    "title": "Types of DNA-derived data",
+    "section": "From raw outputs → long format",
+    "text": "From raw outputs → long format\nDNA data is more complex than a lat/lon + species name\nYour typical metabarcoding outputs:\n\n\n\nFile\nContent\n\n\n\n\nOTU/ASV table\nSequences × Samples (read counts)\n\n\nTaxonomy table\nSequence [ID] → taxon assignment\n\n\nSample metadata\nLocation, date, method\n\n\nFASTA file\nActual DNA sequences\n\n\n\nThe transformation:\n\nOne row = one unique sequence in one sample = one occurrence record\n\n\nThe most common stumbling block is this “wide to long” transformation. The OBIS manual has a clear diagram. The Metabarcoding Data Toolkit (MDT) can automate this for common pipeline outputs."
+  },
+  {
+    "objectID": "index-dna-extension.html#example-transformation",
+    "href": "index-dna-extension.html#example-transformation",
+    "title": "Types of DNA-derived data",
+    "section": "Example transformation",
+    "text": "Example transformation"
+  },
+  {
+    "objectID": "index-dna-extension.html#table-structure-options",
+    "href": "index-dna-extension.html#table-structure-options",
+    "title": "Types of DNA-derived data",
+    "section": "Table structure options",
+    "text": "Table structure options\nOption A — Occurrence Core\noccurrence.csv \n  └── dna_derived.csv  (linked via occurrenceID)\n  └── emof.csv         (linked via occurrenceID)\n\nOption B — Event Core (recommended for eDNA)\nevent.csv\n  └── occurrence.csv        (linked via eventID)\n       └── dna_derived.csv  (linked via occurrenceID)\n  └── emof.csv              (linked via eventID or occurrenceID)\nWhy Event Core? Sample-level metadata (location, date, method) is recorded once per sampling event rather than repeated in every row.\n\nFor a survey with 500 samples × 2000 ASVs = 1M rows, repeating location and date for every row is wasteful and error-prone. The Event Core avoids this. A new GBIF/OBIS data model is under development that will be even more flexible but is not yet implemented (as of 2025)."
+  },
+  {
+    "objectID": "index-dna-extension.html#dataset-structure-three-linked-tables",
+    "href": "index-dna-extension.html#dataset-structure-three-linked-tables",
+    "title": "Types of DNA-derived data",
+    "section": "Dataset Structure: Three Linked Tables",
+    "text": "Dataset Structure: Three Linked Tables\n\n\n\nEvent Core\n\neventID\neventDate\ndecimalLatitude\ndecimalLongitude\nsamplingProtocol\n\n→ the 📍where, 🕒when & 🧪how of collection\n\n\n\nOccurrence Extension\n\noccurrenceID\neventID\nscientificName\ntaxonID (WoRMS)\nbasisOfRecord\noccurrenceStatus\n\n→ what organism was detected 🐠🪸🪼\n\n\n\nDNA Derived Data Ext.\n\noccurrenceID\nDNA_sequence\ntarget_gene\npcr_primer_forward\npcr_primer_reverse\nseq_meth\n\n→ 🧬the molecular context\n\n\n\n\nTables linked by eventID and occurrenceID\n\n\nOptional 4th table: eMoF for measurements and facts\n\n\nYour published dataset consists of up to three linked tables. The Event core captures sampling events — where, when, and how. The Occurrence extension records each taxon detection. The DNA Derived Data extension carries all molecular metadata. The tables are joined by eventID and occurrenceID. This avoids repeating sampling metadata for every sequence."
+  },
+  {
+    "objectID": "index-dna-extension.html#emof-extension-table",
+    "href": "index-dna-extension.html#emof-extension-table",
+    "title": "Types of DNA-derived data",
+    "section": "eMoF extension table",
+    "text": "eMoF extension table\n\nTable to record all types of measurements (abiotic, biotic, environmental, sampling…)\nMeasurements recorded in long format\n\nmeasurementType, measurementValue, measurementUnit\n\nLinking sampling info to eventIDs decreases duplication\nUse controlled vocabulary whenever possible!\n\n\n\n\n\n\n\n\n\n\n\n\neventID\noccurrenceID\nmeasurementType\nmeasurementValue\nmeasurementUnit\n\n\n\n\n\nYEARsite1samp1\n\ntemperature\n25\nC\n\n\n\n\n\n\n\n\n\n\n\n\nmeasurementTypeID\nmeasurementUnitID\n\n\n\n\n\nhttp://vocab.nerc.ac.uk/collection/P01/current/TEMPPR01/\nhttp://vocab.nerc.ac.uk/collection/P06/current/UPAA/\n\n\n\n\n\nAs some of us may already be familiar, eMoF is the extension table that holds ALL kinds of measurement or fact data including measurements on organisms, information about the sampling gear used, or environmental variables measured. A reminder that this data is organized in LONG format. All the measurements are organized in rows within the columns measurementType, measurementValue, and measurementUnit"
+  },
+  {
+    "objectID": "index-dna-extension.html#controlled-vocabulary",
+    "href": "index-dna-extension.html#controlled-vocabulary",
+    "title": "Types of DNA-derived data",
+    "section": "Controlled Vocabulary",
+    "text": "Controlled Vocabulary\n\n\nIdentifiers for each eMoF column\n\nmeasurementUnitID\nmeasurementValueID\n\nnon-numeric values\n\nmeasurementTypeID\n\n→ Facilitates data understanding\n→ Enables data aggregation\n→ Decreases misuse potential\n\nWhat should vocabulary terms capture?\n\n\nOBIS recommends using NERC vocabulary terms\n\n\n\nEmof lets you attach vocabulary identifiers to each of the emof columns. This makes our measurement data are more easily comparable and interoperable, more easily aggregated for analysis, and can decrease misuse potential!\nWhen selecting a vocab it’s important to think about what information needs to be included in the definition for the users to understand your measurement so you should consider the property/attribute (e.g. length, concentration), what’s the object/entity of interest (a organism, a chemical), whether enviro context is important, and whether a user needs to know the methods used to properly understand the measurement OBIS recommends the NERC vocabular collection and the OBIS manual has much more detail on controlled vocabulary"
+  },
+  {
+    "objectID": "index-dna-extension.html#dna-derived-data-extension-summary",
+    "href": "index-dna-extension.html#dna-derived-data-extension-summary",
+    "title": "Types of DNA-derived data",
+    "section": "DNA Derived Data Extension Summary",
+    "text": "DNA Derived Data Extension Summary\nManaging DNA data with Darwin Core uses:\n\nEvent core (sampling event info)\nOccurrence extension (taxon observation and identification)\nDNA derived data extension (DNA sequences, primers, methods)\neMoF extension (other measurement or fact information)"
   }
 ]
