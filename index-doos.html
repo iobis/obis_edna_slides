@@ -1211,65 +1211,6 @@ Steve Formel
 <section id="lauras-elegant-solution" class="slide level2 section-title center">
 <h2>Laura’s Elegant Solution</h2>
 </section>
-<section id="lauras-elegant-solution-mdt-to-ipt" class="slide level2 center">
-<h2>Laura’s Elegant Solution: MDT to IPT</h2>
-<div class="mdt-routes">
-<svg viewbox="0 0 1000 300" role="img" aria-labelledby="mdt-routes-title" style="width:100%; height:auto;">
-  <title id="mdt-routes-title">Two routes into the IPT: through the MDT, or straight there with tabular files</title>
-  <defs>
-    <marker id="mdtArrow" viewbox="0 0 10 10" refx="9" refy="5" markerwidth="7" markerheight="7" orient="auto-start-reverse">
-      <path d="M 0 0 L 10 5 L 0 10 z" fill="#6C757D"></path>
-    </marker>
-  </defs>
-  <!-- route one: through the MDT -->
-  <text x="10" y="88" font-size="15" font-weight="600" fill="#0E9E82" letter-spacing="0.06em">WITH MDT</text>
-  <rect x="170" y="50" width="220" height="64" rx="8" fill="#F8F9FA" stroke="#DEE2E6"></rect>
-  <text x="280" y="88" text-anchor="middle" font-size="18" fill="#156082">eDNA standard outputs</text>
-  <line x1="392" y1="82" x2="432" y2="82" stroke="#6C757D" stroke-width="2" marker-end="url(#mdtArrow)"></line>
-  <rect x="440" y="50" width="140" height="64" rx="8" fill="#E9FBF7" stroke="#0E9E82" stroke-width="2"></rect>
-  <text x="510" y="88" text-anchor="middle" font-size="20" font-weight="600" fill="#0E9E82">MDT</text>
-  <line x1="582" y1="82" x2="622" y2="82" stroke="#6C757D" stroke-width="2" marker-end="url(#mdtArrow)"></line>
-  <rect x="630" y="50" width="140" height="64" rx="8" fill="#F8F9FA" stroke="#DEE2E6"></rect>
-  <text x="700" y="88" text-anchor="middle" font-size="20" font-weight="600" fill="#156082">IPT</text>
-  <text x="510" y="140" text-anchor="middle" font-size="15" fill="#0E9E82">MDT does the Darwin Core mapping</text>
-  <!-- route two: straight to the IPT -->
-  <text x="10" y="228" font-size="15" font-weight="600" fill="#6C757D" letter-spacing="0.06em">STRAIGHT TO IPT</text>
-  <rect x="170" y="190" width="220" height="64" rx="8" fill="#F8F9FA" stroke="#DEE2E6"></rect>
-  <text x="280" y="228" text-anchor="middle" font-size="18" fill="#156082">Tabular files</text>
-  <line x1="392" y1="222" x2="622" y2="222" stroke="#6C757D" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#mdtArrow)"></line>
-  <rect x="630" y="190" width="140" height="64" rx="8" fill="#F8F9FA" stroke="#DEE2E6"></rect>
-  <text x="700" y="228" text-anchor="middle" font-size="20" font-weight="600" fill="#156082">IPT</text>
-  <text x="510" y="280" text-anchor="middle" font-size="15" fill="#6C757D">you do the Darwin Core mapping yourself</text>
-</svg>
-</div>
-<style>
-.reveal .mdt-routes {
-  margin-top: 10px;
-}
-/* The theme caps slide images, but this is inline SVG rather than an img, so it
-   is sized here instead. */
-.reveal .mdt-routes svg {
-  max-height: 420px;
-  display: block;
-  margin: 0 auto;
-}
-</style>
-<aside class="notes">
-<p>Two ways into the same place. Both end at the IPT, and both produce a Darwin Core Archive; the difference is who does the mapping.</p>
-<p>Laura’s route runs the standard outputs of an eDNA pipeline through the MDT, which reads the OTU table, the taxonomy and the sample sheet and writes Darwin Core for her. The other route is the one most people picture: build the tables yourself, in the right terms, and hand them to the IPT directly. That is drawn dashed because nothing helps you along the way.</p>
-<p>Neither is wrong. The point of the next few slides is what the MDT expects in return for doing that work.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
 <section id="lauras-data" class="slide level2 center">
 <h2>Laura’s Data</h2>
 <div class="columns mdt">
@@ -1302,12 +1243,12 @@ Steve Formel
 <li>Each sample == 120L</li>
 </ul>
 </div><div class="column" style="width:60%;">
-<p><strong>Each sheet is one MDT table</strong></p>
+<p><strong>Each sheet is one table</strong></p>
 <table class="caption-top">
 <thead>
 <tr class="header">
 <th>In the file</th>
-<th>MDT table</th>
+<th>Table</th>
 <th>Becomes</th>
 </tr>
 </thead>
@@ -1335,9 +1276,27 @@ Steve Formel
 </tbody>
 </table>
 </div></div>
-<div style="font-size:0.6em; background:#EAF2F6; border-left:4px solid #156082; padding:8px 14px; border-radius:4px;">
-<p>MDT guide: <em>“Mixed datasets (e.g., different primer sets used for the same set of samples) should be published separately.”</em> — which is why this is <strong>two</strong> workbooks, not one.</p>
+</section>
+<section id="lauras-elegant-solution-mdt-to-ipt" class="slide level2 center">
+<h2>Laura’s Elegant Solution: MDT to IPT</h2>
+<div class="mdt-routes">
+<p><a href="assets/mdt-routes.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-14"><img data-src="assets/mdt-routes.svg"></a></p>
 </div>
+<aside class="notes">
+<p>Two ways into the same place. Both end at the IPT, and both produce a Darwin Core Archive; the difference is who does the mapping.</p>
+<p>Laura’s route runs the standard outputs of an eDNA pipeline through the MDT, which reads the OTU table, the taxonomy and the sample sheet and writes Darwin Core for her. The other route is the one most people picture: build the tables yourself, in the right terms, and hand them to the IPT directly. That is drawn dashed because nothing helps you along the way.</p>
+<p>Neither is wrong. The point of the next few slides is what the MDT expects in return for doing that work.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 <aside class="notes">
 <p>This is the same idea as the Study table doing what defaultValues does: say a thing once instead of on every row. Nine terms here — env_medium, target_gene, both primers and their names, sop, seq_meth, otu_db — cover all 460 x 15 records.</p>
 <p>The two-workbook split is not an accident or an oversight. The guide is explicit: different primer sets on the same samples are separate datasets, because an OTU from Vert01 and an OTU from Tele01 are not comparable units. Note the OTU numbering runs continuously across both files, so they clearly came out of one pipeline and were split afterwards.</p>
@@ -1379,7 +1338,7 @@ Steve Formel
 </div><div class="column" style="width:40%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="assets/worms-teleost.png" class="lightbox" data-gallery="quarto-lightbox-gallery-14"><img data-src="assets/worms-teleost.png" class="quarto-figure quarto-figure-center"></a></p>
+<p><a href="assets/worms-teleost.png" class="lightbox" data-gallery="quarto-lightbox-gallery-15"><img data-src="assets/worms-teleost.png" class="quarto-figure quarto-figure-center"></a></p>
 </figure>
 </div>
 </div></div>
@@ -1419,7 +1378,7 @@ Steve Formel
 <div class="column" style="width:75%;">
 <div class="quarto-figure quarto-figure-right">
 <figure>
-<p><a href="assets/FAIRe_screenshot.png" class="lightbox" data-gallery="quarto-lightbox-gallery-15"><img data-src="assets/FAIRe_screenshot.png" class="quarto-figure quarto-figure-right" style="width:60.0%"></a></p>
+<p><a href="assets/FAIRe_screenshot.png" class="lightbox" data-gallery="quarto-lightbox-gallery-16"><img data-src="assets/FAIRe_screenshot.png" class="quarto-figure quarto-figure-right" style="width:60.0%"></a></p>
 </figure>
 </div>
 </div></div>
@@ -1434,13 +1393,13 @@ Steve Formel
 <div class="column" style="width:75%;">
 <div class="quarto-figure quarto-figure-right">
 <figure>
-<p><a href="assets/dna_publishing_guide.png" class="lightbox" data-gallery="quarto-lightbox-gallery-16"><img data-src="assets/dna_publishing_guide.png" class="quarto-figure quarto-figure-right" style="width:60.0%"></a></p>
+<p><a href="assets/dna_publishing_guide.png" class="lightbox" data-gallery="quarto-lightbox-gallery-17"><img data-src="assets/dna_publishing_guide.png" class="quarto-figure quarto-figure-right" style="width:60.0%"></a></p>
 </figure>
 </div>
 </div><div class="column" style="width:25%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="https://api.qrserver.com/v1/create-qr-code/?size=200x200&amp;data=https://doi.org/10.35035/DOC-VF1A-NR22.png" class="lightbox" data-gallery="quarto-lightbox-gallery-17"><img data-src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&amp;data=https://doi.org/10.35035/DOC-VF1A-NR22.png" class="quarto-figure quarto-figure-center" width="180"></a></p>
+<p><a href="https://api.qrserver.com/v1/create-qr-code/?size=200x200&amp;data=https://doi.org/10.35035/DOC-VF1A-NR22.png" class="lightbox" data-gallery="quarto-lightbox-gallery-18"><img data-src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&amp;data=https://doi.org/10.35035/DOC-VF1A-NR22.png" class="quarto-figure quarto-figure-center" width="180"></a></p>
 </figure>
 </div>
 </div></div>

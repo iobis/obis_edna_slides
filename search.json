@@ -854,18 +854,18 @@
     "text": "Laura’s Elegant Solution"
   },
   {
-    "objectID": "index-doos.html#lauras-elegant-solution-mdt-to-ipt",
-    "href": "index-doos.html#lauras-elegant-solution-mdt-to-ipt",
-    "title": "Mobilizing Deep Ocean Biodiversity Data",
-    "section": "Laura’s Elegant Solution: MDT to IPT",
-    "text": "Laura’s Elegant Solution: MDT to IPT\n\n\n  Two routes into the IPT: through the MDT, or straight there with tabular files\n  \n    \n      \n    \n  \n  \n  WITH MDT\n  \n  eDNA standard outputs\n  \n  \n  MDT\n  \n  \n  IPT\n  MDT does the Darwin Core mapping\n  \n  STRAIGHT TO IPT\n  \n  Tabular files\n  \n  \n  IPT\n  you do the Darwin Core mapping yourself\n\n\n\n\nTwo ways into the same place. Both end at the IPT, and both produce a Darwin Core Archive; the difference is who does the mapping.\nLaura’s route runs the standard outputs of an eDNA pipeline through the MDT, which reads the OTU table, the taxonomy and the sample sheet and writes Darwin Core for her. The other route is the one most people picture: build the tables yourself, in the right terms, and hand them to the IPT directly. That is drawn dashed because nothing helps you along the way.\nNeither is wrong. The point of the next few slides is what the MDT expects in return for doing that work."
-  },
-  {
     "objectID": "index-doos.html#lauras-data",
     "href": "index-doos.html#lauras-data",
     "title": "Mobilizing Deep Ocean Biodiversity Data",
     "section": "Laura’s Data",
-    "text": "Laura’s Data\n\n\nTwo workbooks — one per primer\n\n\n\nWorkbook\nOTUs\nSamples\n\n\n\n\nvert_… Vert01\n460\n15\n\n\nteleo_… Tele01\n113\n13\n\n\n\n\nOne station sampled over 5 dates\n2-3 locations sampled within the station on each date\nEach sample == 120L\n\n\nEach sheet is one MDT table\n\n\n\nIn the file\nMDT table\nBecomes\n\n\n\n\notu_table\nOTU_table\nreads → organismQuantity\n\n\ntaxon\nTaxonomy\nscientificName, DNA_sequence\n\n\nsample\nSamples\nsampleID → eventID\n\n\ndefaultValues\nStudy\nterms applied to every record\n\n\n\n\n\nMDT guide: “Mixed datasets (e.g., different primer sets used for the same set of samples) should be published separately.” — which is why this is two workbooks, not one.\n\n\nThis is the same idea as the Study table doing what defaultValues does: say a thing once instead of on every row. Nine terms here — env_medium, target_gene, both primers and their names, sop, seq_meth, otu_db — cover all 460 x 15 records.\nThe two-workbook split is not an accident or an oversight. The guide is explicit: different primer sets on the same samples are separate datasets, because an OTU from Vert01 and an OTU from Tele01 are not comparable units. Note the OTU numbering runs continuously across both files, so they clearly came out of one pipeline and were split afterwards.\nSample IDs become eventID. That is the hinge between this spreadsheet and everything we said about Event core."
+    "text": "Laura’s Data\n\n\nTwo workbooks — one per primer\n\n\n\nWorkbook\nOTUs\nSamples\n\n\n\n\nvert_… Vert01\n460\n15\n\n\nteleo_… Tele01\n113\n13\n\n\n\n\nOne station sampled over 5 dates\n2-3 locations sampled within the station on each date\nEach sample == 120L\n\n\nEach sheet is one table\n\n\n\nIn the file\nTable\nBecomes\n\n\n\n\notu_table\nOTU_table\nreads → organismQuantity\n\n\ntaxon\nTaxonomy\nscientificName, DNA_sequence\n\n\nsample\nSamples\nsampleID → eventID\n\n\ndefaultValues\nStudy\nterms applied to every record"
+  },
+  {
+    "objectID": "index-doos.html#lauras-elegant-solution-mdt-to-ipt",
+    "href": "index-doos.html#lauras-elegant-solution-mdt-to-ipt",
+    "title": "Mobilizing Deep Ocean Biodiversity Data",
+    "section": "Laura’s Elegant Solution: MDT to IPT",
+    "text": "Laura’s Elegant Solution: MDT to IPT\n\n\n\n\nTwo ways into the same place. Both end at the IPT, and both produce a Darwin Core Archive; the difference is who does the mapping.\nLaura’s route runs the standard outputs of an eDNA pipeline through the MDT, which reads the OTU table, the taxonomy and the sample sheet and writes Darwin Core for her. The other route is the one most people picture: build the tables yourself, in the right terms, and hand them to the IPT directly. That is drawn dashed because nothing helps you along the way.\nNeither is wrong. The point of the next few slides is what the MDT expects in return for doing that work.\n\n\nThis is the same idea as the Study table doing what defaultValues does: say a thing once instead of on every row. Nine terms here — env_medium, target_gene, both primers and their names, sop, seq_meth, otu_db — cover all 460 x 15 records.\nThe two-workbook split is not an accident or an oversight. The guide is explicit: different primer sets on the same samples are separate datasets, because an OTU from Vert01 and an OTU from Tele01 are not comparable units. Note the OTU numbering runs continuously across both files, so they clearly came out of one pipeline and were split afterwards.\nSample IDs become eventID. That is the hinge between this spreadsheet and everything we said about Event core."
   },
   {
     "objectID": "index-doos.html#mdt-demo",
