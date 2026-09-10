@@ -1,0 +1,43 @@
+## Key DwC fields: Occurrence core
+
+One flat table — every field sits on the occurrence row
+
+:::: {.columns .fields}
+
+::: {.column width="50%"}
+[Required]{.field-label}
+
+- `occurrenceID` — <span class="small-note">unique, stable ID</span>
+- `scientificName` — <span class="small-note">taxon name to lowest possible taxon rank</span>
+- `basisOfRecord` = <span class="small-note">"MaterialSample"</span>
+- `occurrenceStatus` = <span class="small-note">"present"</span>
+- `eventDate` — <span class="small-note">YYYY-MM-DD</span>
+- `decimalLatitude`, `decimalLongitude`
+:::
+
+::: {.column width="50%"}
+[Strongly recommended]{.field-label}
+
+- `scientificNameID` <span class="small-note">(WoRMS AphiaID)</span>
+- `organismQuantity` <span class="small-note">(read count of sequence)</span>
+- `organismQuantityType` = <span class="small-note">"DNA sequence reads"</span>
+- `sampleSizeValue` <span class="small-note">(total read count in sample)</span>
+- `sampleSizeUnit` = <span class="small-note">"DNA sequence reads"</span>
+- `samplingProtocol` <span class="small-note">(link to your SOP)</span>
+- `associatedSequences` <span class="small-note">(link to e.g. GenBank or ENA accession)</span>
+- `minimumDepthInMeters`, `maximumDepthInMeters`
+:::
+
+::::
+
+::: {.fields-note}
+Every row repeats the date, the coordinates and the depth, once per taxon detected.
+:::
+
+::: {.notes}
+This is the whole field list in one table. Nothing here is wrong, and for a small dataset it is the simplest thing to publish.
+
+Note what it costs: eventDate, the coordinates and the depths are identical for every taxon detected in a sample, so they are copied down the table once per row. And sampleSizeValue can only mean one thing on a given row — here it is the read count, so the volume of water filtered has no separate place to sit.
+
+Both of those are what the next slide fixes.
+:::

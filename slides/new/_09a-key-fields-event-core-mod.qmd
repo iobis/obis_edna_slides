@@ -1,0 +1,57 @@
+## Key DwC fields: Event core
+
+The same terms — split across an Event table and an Occurrence extension
+
+:::: {.columns .fields}
+
+::: {.column width="50%"}
+[Event table]{.table-name}
+
+[Required]{.field-label}
+
+- `eventID` — <span class="small-note">unique, stable ID</span>
+- `eventDate` — <span class="small-note">YYYY-MM-DD</span>
+- `decimalLatitude`, `decimalLongitude`
+
+[Strongly recommended]{.field-label}
+
+- `minimumDepthInMeters`, `maximumDepthInMeters`
+- `sampleSizeValue` <span class="small-note">(volume of sample)</span>
+- `sampleSizeUnit` <span class="small-note">(units of volume sampled)</span>
+- `samplingProtocol` <span class="small-note">(link to your field sampling SOP)</span>
+:::
+
+::: {.column width="50%"}
+[Occurrence extension]{.table-name}
+
+[Required]{.field-label}
+
+- `occurrenceID` — <span class="small-note">unique, stable ID</span>
+- `eventID` — <span class="small-note">links the row to its event</span>
+- `scientificName` — <span class="small-note">taxon name to lowest possible taxon rank</span>
+- `basisOfRecord` = <span class="small-note">"MaterialSample"</span>
+- `occurrenceStatus` = <span class="small-note">"present"</span>
+
+[Strongly recommended]{.field-label}
+
+- `scientificNameID` <span class="small-note">(WoRMS AphiaID)</span>
+- `organismQuantity` <span class="small-note">(read count of sequence)</span>
+- `organismQuantityType` = <span class="small-note">"DNA sequence reads"</span>
+- `sampleSizeValue` <span class="small-note">(total read count in sample)</span>
+- `sampleSizeUnit` = <span class="small-note">"DNA sequence reads"</span>
+- `associatedSequences` <span class="small-note">(link to e.g. GenBank or ENA accession)</span>
+:::
+
+::::
+
+::: {.fields-note}
+`sampleSizeValue` and `sampleSizeUnit` sit in both tables and mean different things — volume at the event, read counts at the occurrence.
+:::
+
+::: {.notes}
+Same vocabulary, different arrangement. Nothing has been added and nothing dropped; the fields have been sorted by what they describe.
+
+Anything true of the sampling goes in the Event table once: where, when, how deep, how much water, which protocol. Anything true of a single detection goes in the Occurrence extension: which taxon, how many reads, which sequence. eventID appears in both, and is what joins them.
+
+The payoff is that sampleSizeValue can now carry both meanings at once, one in each table, which it could not do on a single flat row.
+:::
