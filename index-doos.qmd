@@ -49,6 +49,8 @@ date: 2026-09-09
 
 {{< include slides/_22-edna_obis.qmd >}}
 
+{{< include slides/_29-supporting-tools.qmd >}}
+
 {{< include slides/_26-what_is_edna_metabarcoding.qmd >}}
 
 {{< include slides/_27-what-is-edna-data.qmd >}}
