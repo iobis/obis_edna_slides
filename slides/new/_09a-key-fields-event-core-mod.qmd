@@ -1,6 +1,6 @@
 ## Key DwC fields: Event core
 
-The same terms — split across an Event table and an Occurrence extension
+Largely the same terms — sorted by what each one describes
 
 :::: {.columns .fields}
 
@@ -18,7 +18,7 @@ The same terms — split across an Event table and an Occurrence extension
 - `minimumDepthInMeters`, `maximumDepthInMeters`
 - `sampleSizeValue` <span class="small-note">(volume of sample)</span>
 - `sampleSizeUnit` <span class="small-note">(units of volume sampled)</span>
-- `samplingProtocol` <span class="small-note">(link to your field sampling SOP)</span>
+- `samplingProtocol` <span class="small-note">(link to your SOP)</span>
 :::
 
 ::: {.column width="50%"}
@@ -49,7 +49,7 @@ The same terms — split across an Event table and an Occurrence extension
 :::
 
 ::: {.notes}
-Same vocabulary, different arrangement. Nothing has been added and nothing dropped; the fields have been sorted by what they describe.
+Largely the same vocabulary, arranged differently. The depth fields are the one addition here — they belong to the sampling, not to a detection, so they only appear once an Event table exists.
 
 Anything true of the sampling goes in the Event table once: where, when, how deep, how much water, which protocol. Anything true of a single detection goes in the Occurrence extension: which taxon, how many reads, which sequence. eventID appears in both, and is what joins them.
 

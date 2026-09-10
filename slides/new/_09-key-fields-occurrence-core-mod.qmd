@@ -25,19 +25,18 @@ One flat table — every field sits on the occurrence row
 - `sampleSizeUnit` = <span class="small-note">"DNA sequence reads"</span>
 - `samplingProtocol` <span class="small-note">(link to your SOP)</span>
 - `associatedSequences` <span class="small-note">(link to e.g. GenBank or ENA accession)</span>
-- `minimumDepthInMeters`, `maximumDepthInMeters`
 :::
 
 ::::
 
 ::: {.fields-note}
-Every row repeats the date, the coordinates and the depth, once per taxon detected.
+Every row repeats the date and the coordinates, once per taxon detected.
 :::
 
 ::: {.notes}
 This is the whole field list in one table. Nothing here is wrong, and for a small dataset it is the simplest thing to publish.
 
-Note what it costs: eventDate, the coordinates and the depths are identical for every taxon detected in a sample, so they are copied down the table once per row. And sampleSizeValue can only mean one thing on a given row — here it is the read count, so the volume of water filtered has no separate place to sit.
+Note what it costs: eventDate and the coordinates are identical for every taxon detected in a sample, so they are copied down the table once per row. And sampleSizeValue can only mean one thing on a given row — here it is the read count, so the volume of water filtered has no separate place to sit.
 
 Both of those are what the next slide fixes.
 :::
