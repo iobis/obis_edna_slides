@@ -25,4 +25,4 @@ Slide decks and resources compiled for individual training courses or workshops.
 
 - [July INVEMAR DNA data management](index-invemar.qmd)
 - [July OBIS Node Training on DNA data](https://iobis.github.io/obis_edna_slides_node_training/)
-
+- [September DOOS Accelerator: Mobilizing Deep Ocean Biodiversity Data](index-doos.qmd)

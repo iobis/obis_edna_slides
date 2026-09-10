@@ -5,3 +5,6 @@
 .Rhistory
 .RData
 .Ruserdata
+
+**/*.quarto_ipynb
+temp_data/

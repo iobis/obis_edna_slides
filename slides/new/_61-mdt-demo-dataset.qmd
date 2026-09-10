@@ -1,0 +1,163 @@
+## Live demo: two markers, four sheets each
+
+::: {style="font-size:0.62em; color:#5A8FA8; margin-top:-14px;"}
+INVEMAR · ADN Ambiental del DNMI Colinas y Lomas, Colombian Pacific · 26 Dec 2023
+:::
+
+<style>
+.reveal .mdt table { font-size: 14px !important; }
+.reveal .mdt table th, .reveal .mdt table td { padding: 4px 7px !important; }
+.reveal .mdt ul { font-size: 0.72em; }
+</style>
+
+:::: {.columns .mdt}
+
+::: {.column width="40%"}
+**Two workbooks — one per primer**
+
+| Workbook | OTUs | Samples |
+|---|---|---|
+| `vert_…` **Vert01** | 460 | 15 |
+| `teleo_…` **Tele01** | 113 | 13 |
+
+- Same stations, 0–80 m
+- Niskin rosette, 120 L per station
+- OTU IDs run straight through:<br>`OTU1–461` then `OTU462–574`
+:::
+
+::: {.column width="60%"}
+**Each sheet is one MDT table**
+
+| In the file | MDT table | Becomes |
+|---|---|---|
+| `otu_table` | **OTU_table** | reads → `organismQuantity` |
+| `taxon` | **Taxonomy** | `scientificName`, `DNA_sequence` |
+| `sample` | **Samples** | `sampleID` → **`eventID`** |
+| `defaultValues` | **Study** | terms applied to *every* record |
+:::
+
+::::
+
+::: {style="font-size:0.6em; background:#EAF2F6; border-left:4px solid #156082; padding:8px 14px; border-radius:4px;"}
+MDT guide: *"Mixed datasets (e.g., different primer sets used for the same set of samples) should be published separately."* — which is why this is **two** workbooks, not one.
+:::
+
+::: {.notes}
+This is the same idea as the Study table doing what defaultValues does: say a thing once instead of on every row. Nine terms here — env_medium, target_gene, both primers and their names, sop, seq_meth, otu_db — cover all 460 x 15 records.
+
+The two-workbook split is not an accident or an oversight. The guide is explicit: different primer sets on the same samples are separate datasets, because an OTU from Vert01 and an OTU from Tele01 are not comparable units. Note the OTU numbering runs continuously across both files, so they clearly came out of one pipeline and were split afterwards.
+
+Sample IDs become eventID. That is the hinge between this spreadsheet and everything we said about Event core.
+:::
+
+## What we will fix, live
+
+:::: {.columns .mdt}
+
+::: {.column width="50%"}
+**Structure** — MDT needs exact names
+
+- Sheets must be `OTU_table`, `Taxonomy`, `Samples`, `Study`<br>*(we have `otu_table`, `taxon`, `sample`, `defaultValues`)*
+- First column of Taxonomy & Samples must be `id`
+- OTU_table top-left cell must be **empty**<br>*(we have `otu_id` in one file, `OTUid` in the other)*
+- Zero reads must be `0` — we have **9,445 blank cells**
+:::
+
+::: {.column width="50%"}
+**Content** — needs a tidy
+
+- `target_gene` = `"12s_ rDNA  "` in teleo vs `"12s_rDNA"` in vert
+- Column header `"specificEpithet "` — trailing space
+- `sop` is empty
+- `SPY235558` & `SPY235568` are in vert only<br>*(Tele01 did not amplify)*
+:::
+
+::::
+
+::: {style="font-size:0.55em; background:#E9FBF7; border-left:4px solid #0E9E82; padding:7px 14px; border-radius:4px;"}
+**Spanish is the working language — and it is declared.** `language: es`, and free text *stays* Spanish. Only controlled vocabularies need English (`taxonRank`: `Género → genus`) — an extra mapping step for non-English publishers, not a mistake.
+:::
+
+::: {.notes}
+This is the same idea as the Study table doing what defaultValues does: say a thing once instead of on every row. Nine terms here — env_medium, target_gene, both primers and their names, sop, seq_meth, otu_db — cover all 460 x 15 records.
+
+The two-workbook split is not an accident or an oversight. The guide is explicit: different primer sets on the same samples are separate datasets, because an OTU from Vert01 and an OTU from Tele01 are not comparable units. Note the OTU numbering runs continuously across both files, so they clearly came out of one pipeline and were split afterwards.
+
+Sample IDs become eventID. That is the hinge between this spreadsheet and everything we said about Event core.
+:::
+
+## What we will fix, live
+
+:::: {.columns .mdt}
+
+::: {.column width="50%"}
+**Structure** — MDT needs exact names
+
+- Sheets must be `OTU_table`, `Taxonomy`, `Samples`, `Study`<br>*(we have `otu_table`, `taxon`, `sample`, `defaultValues`)*
+- First column of Taxonomy & Samples must be `id`
+- OTU_table top-left cell must be **empty**<br>*(we have `otu_id` in one file, `OTUid` in the other)*
+- Zero reads must be `0` — we have **9,445 blank cells**
+:::
+
+::: {.column width="50%"}
+**Content** — needs a tidy
+
+- `target_gene` = `"12s_ rDNA  "` in teleo vs `"12s_rDNA"` in vert
+- Column header `"specificEpithet "` — trailing space
+- `sop` is empty
+- `SPY235558` & `SPY235568` are in vert only<br>*(Tele01 did not amplify)*
+:::
+
+::::
+
+::: {style="font-size:0.55em; background:#E9FBF7; border-left:4px solid #0E9E82; padding:7px 14px; border-radius:4px;"}
+**Spanish is the working language — and it is declared.** `language: es`; free text *stays* Spanish.<br>
+Only controlled vocabularies need English: `Familia→family` · `Género→genus` · `Orden→order` · `Clase→class` · `Especie→species`<br>
+An extra mapping step for non-English publishers — not a mistake.
+:::
+
+::: {.notes}
+This is the same idea as the Study table doing what defaultValues does: say a thing once instead of on every row. Nine terms here — env_medium, target_gene, both primers and their names, sop, seq_meth, otu_db — cover all 460 x 15 records.
+
+The two-workbook split is not an accident or an oversight. The guide is explicit: different primer sets on the same samples are separate datasets, because an OTU from Vert01 and an OTU from Tele01 are not comparable units. Note the OTU numbering runs continuously across both files, so they clearly came out of one pipeline and were split afterwards.
+
+Sample IDs become eventID. That is the hinge between this spreadsheet and everything we said about Event core.
+:::
+
+## What we will fix, live
+
+:::: {.columns .mdt}
+
+::: {.column width="50%"}
+**Structure** — MDT needs exact names
+
+- Sheets must be `OTU_table`, `Taxonomy`, `Samples`, `Study`<br>*(we have `otu_table`, `taxon`, `sample`, `defaultValues`)*
+- First column of Taxonomy & Samples must be `id`
+- OTU_table top-left cell must be **empty**<br>*(we have `otu_id` in one file, `OTUid` in the other)*
+- Zero reads must be `0` — we have **9,445 blank cells**
+:::
+
+::: {.column width="50%"}
+**Content** — needs a tidy
+
+- `target_gene` = `"12s_ rDNA  "` in teleo vs `"12s_rDNA"` in vert
+- Column header `"specificEpithet "` — trailing space
+- `sop` is empty
+- `SPY235558` & `SPY235568` are in vert only<br>*(Tele01 did not amplify)*
+:::
+
+::::
+
+::: {style="font-size:0.58em; background:#E9FBF7; border-left:4px solid #0E9E82; padding:8px 14px; border-radius:4px;"}
+**The dataset works in Spanish — and says so.** `language` is correctly declared as `es`, and free text *stays* Spanish: `locality`, `datasetName`, `accessRights`. Only the **controlled vocabularies** have to be English — `taxonRank`: `Familia → family` · `Género → genus` · `Orden → order` · `Clase → class` · `Especie → species`. One extra mapping step, not a mistake.
+:::
+
+::: {.notes}
+None of this means the dataset is bad. It is a normal, well-made spreadsheet that was not built against the MDT template — exactly the situation everyone in this room is in.
+
+The left column is structural: MDT literally will not find the sheets. Mechanical, two minutes in Excel. The right column is small inconsistencies — and note the guide's warning that the Study table "cannot be manually mapped", so a stray space in target_gene propagates silently to every record.
+
+Be careful how you frame the Spanish. This is INVEMAR, a Colombian institution, working in its own language, and the file declares language = es exactly as it should. The locality names, the rights statement and the dataset title should stay in Spanish — that is correct Darwin Core, not a problem to fix. What has to change is only the small set of values that are controlled vocabularies, where DwC and GBIF define English terms. The full set here is Familia to family, Genero to genus, Orden to order, Clase to class, Especie to species. That is a real extra hurdle for non-English-speaking publishers and worth naming as such: an English-language standard imposes a translation step on everyone else, and it is a genuine barrier, not a failing of the data provider.
+
+The two missing samples are a judgment call, not an error. Worth saying out loud, because participants will hit this and assume they did something wrong.
+:::

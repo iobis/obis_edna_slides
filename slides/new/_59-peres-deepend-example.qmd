@@ -1,0 +1,97 @@
+## One cast, three nested levels
+
+::: {style="font-size:0.62em; color:#5A8FA8; margin-top:-14px;"}
+Peres & Bracken-Grissom 2025 · deep-sea fish eDNA, Gulf of Mexico
+:::
+
+<style>
+.reveal .peres table { font-size: 15px !important; }
+.reveal .peres table th, .reveal .peres table td { padding: 4px 8px !important; }
+.reveal .peres ul { font-size: 0.82em; }
+</style>
+
+:::: {.columns .peres}
+
+::: {.column width="42%"}
+**What they did**
+
+**One** CTD cast — 450 m, night
+
+- 3 water volumes: **1 L · 5 L · 10 L**
+- × 5 **biological replicates** → 15 filters
+- × 1–11 **PCR replicates** → 149 kept
+- PCR replicates **never pooled** — each is its own observation
+:::
+
+::: {.column width="58%"}
+**Event core nests with `parentEventID`**
+
+| eventID | parentEventID |
+|---|---|
+| `DP08-B287N-cast` | *(none)* |
+| `…-10L-rep3` | `DP08-B287N-cast` |
+| `…-10L-rep3-pcr7` | `…-10L-rep3` |
+
+- Cast holds lat/lon, date, depth — **written once**
+- Occurrences link to the **PCR replicate**
+- Volume, replicate number → **eMoF**
+:::
+
+::::
+
+::: {style="font-size:0.62em; background:#EAF2F6; border-left:4px solid #156082; padding:8px 14px; border-radius:4px;"}
+**661 ESVs × 149 sample columns**, and the header repeats — `10L3` appears 11 times. A PCR replicate exists only as *column position*.
+:::
+
+::: {.notes}
+The cleanest nesting example I know, because everything came from a single CTD cast — deliberately, so there is no spatial or temporal variation confounding the replicate comparison. One set of coordinates covers all 149 samples.
+
+parentEventID is the only new term here. It is just a pointer from a child event to its parent, the same idea as occurrenceID linking Occurrence to the DNA extension. Three levels: cast, filter, PCR reaction.
+
+Point at the unbalanced design: 1L1 yielded only ONE usable PCR replicate and 1L3 only seven, because the 1 L samples amplified poorly; the authors reallocated to 11 replicates elsewhere. A reuser has to know that. In the spreadsheet it is invisible — you would have to count columns. As explicit events it is self-documenting.
+
+The negative control is an event too, with no occurrences or occurrenceStatus absent. Note it is not even in the published ESV table.
+
+One more: reads were collapsed to presence/absence (1/0), so this is occurrenceStatus, not organismQuantity.
+
+If asked why not Occurrence core: it would still be valid Darwin Core, but you would repeat the same coordinates on every row and lose which filter and which reaction each detection came from — which is the entire point of the study.
+:::
+
+## Linking it to DEEPEND — in the metadata, not the data
+
+Not one occurrence row mentions DEEPEND. The link lives in the **EML**.
+
+:::: {.columns .peres}
+
+::: {.column width="55%"}
+**EML `<project>`** — the *Project* section of the IPT metadata editor
+
+| EML field | Value |
+|---|---|
+| Project title | DEEPEND\|RESTORE consortium |
+| Award | NOAA RESTORE NA19NOS4510193 |
+| Award | NSF HRD-1547798 · HRD-2111661 |
+| Award | ONR #98288/1184488/2 |
+| Citation | `doi.org/10.1002/edn3.70086` |
+:::
+
+::: {.column width="45%"}
+**Record in the data too**
+
+- Cruise/station `DP08-01Aug22-B287N`<br>→ `fieldNumber` on the cast event
+- `R/V Point Sur` → `samplingProtocol`
+
+**Why it matters**
+
+Someone can find *every* DEEPEND dataset, then join this eDNA with the trawl and acoustic data from the **same cruise**.
+:::
+
+::::
+
+::: {.notes}
+This is the part people skip. The occurrence records are about fish; nothing in them says DEEPEND. Project affiliation, funding awards and the paper DOI are dataset-level metadata, and the IPT has a dedicated Project section for exactly this — title, personnel, and structured award entries with funder name and award number.
+
+The cruise/station code is the practical join key. DP08-01Aug22-B287N identifies cruise DP08, August 2022, station B287N. Put it in fieldNumber on the cast event and anyone holding DEEPEND trawl or acoustic data from that station can line the two up.
+
+Worth saying out loud: this costs about five minutes in the IPT, and it is the difference between a dataset that is findable as part of a programme and one that is orphaned.
+:::
