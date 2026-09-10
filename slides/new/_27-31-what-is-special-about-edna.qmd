@@ -1,0 +1,83 @@
+## What is special about eDNA data?
+
+::::: {.columns .edna-special}
+
+:::: {.column width="33%"}
+::: {.special-card}
+[Enormous potential…]{.special-head}
+
+- Expands access to biodiversity data at scale
+- Captures environmental, specimen, and bulk-sample DNA
+- **Raw sequences already widely shared in NCBI**
+:::
+::::
+
+:::: {.column width="33%"}
+::: {.special-card .caution}
+[…but NCBI alone is not enough]{.special-head}
+
+- Raw sequences cannot be searched by species in time and space
+- No link to spatial coordinates or sampling date
+- Cannot support distribution maps, trend analyses, or MPA assessments
+:::
+::::
+
+:::: {.column width="34%"}
+::: {.special-card}
+[Special considerations]{.special-head}
+
+- ⚗️ Derived information — not a direct observation; extensive lab and bioinformatic processing
+- 📚 Relies on reference databases — results depend on database completeness
+- ❓ Large fraction of unknown sequences — no match in any database
+- 📋 The DwC DNA Extension records how work was done, enabling future re-analysis
+:::
+::::
+
+:::::
+
+<style>
+/* Quarto lays .column out as inline-block, so equal-height cards need the
+   container made flex rather than the columns themselves. */
+.reveal .edna-special {
+  display: flex;
+  align-items: stretch;
+  gap: 14px;
+}
+.reveal .edna-special .column {
+  display: flex;
+}
+.reveal .special-card {
+  flex: 1;
+  background: #F8F9FA;
+  border: 1px solid #DEE2E6;
+  border-radius: 8px;
+  padding: 12px 14px;
+}
+.reveal .special-head {
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  color: #156082;
+  margin-bottom: 6px;
+}
+.reveal .special-card li {
+  font-size: 16px;
+  line-height: 1.35;
+  margin: 0 0 4px 0;
+}
+/* The middle card is the turn in the argument, so it keeps the pink the
+   original slide used on that heading. */
+.reveal .special-card.caution {
+  background: #FDF2F7;
+  border-color: #D94F8A;
+}
+.reveal .special-card.caution .special-head {
+  color: #D94F8A;
+}
+</style>
+
+::: {.notes}
+Raw sequences deposited in NCBI lack coordinates and dates — they cannot answer where or when a species was detected. OBIS, GBIF, and ALA now accept DNA-derived occurrences linked to space and time. DNA data requires special care: it is derived, depends on reference databases, and often produces many unknown sequences. The Darwin Core DNA extension preserves methodological context for future re-analysis.
+
+Read left to right: what eDNA makes possible, why depositing sequences alone does not deliver it, and what to keep in mind about the data itself.
+:::
