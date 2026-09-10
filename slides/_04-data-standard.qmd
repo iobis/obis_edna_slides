@@ -8,7 +8,7 @@
 ::: {.column width="55%"}
 ![](assets/dwca.png)
 ::: 
-::: {.column width="45%" style="display: flex; align-items: center;"}
+::: {.column style="width: 45%; display: flex; align-items: center;"}
 ::: {.bordered-box}
 **meta.xml** ← links all tables  
 **eml.xml** ← metadata (who, what, where, when, how)  

@@ -50,6 +50,21 @@ $presentation-font: 'Noto Sans', sans-serif;
   color: #FFFFFF !important;
 }
 
+// Inline section dividers, written as `# Section name {.section-title}` in a
+// deck. Kept on the white background, centred and larger than a slide heading
+// so a divider reads as a break. Scoped to .section-title rather than to
+// .reveal h1, which is the deck's own title slide.
+// !important because a `#` heading with no body is a Quarto "title slide", and
+// .reveal .title-slide h1 would otherwise win. Same reason the rule below uses it.
+.reveal section.section-title h1 {
+  font-size: 90px !important;
+  text-align: center;
+  line-height: 1.15;
+  // Long titles wrap rather than running to the slide edge.
+  max-width: 85%;
+  margin: 0 auto;
+}
+
 // Section headings (h2)
 .reveal h2 {
   font-family: 'Poppins', sans-serif;

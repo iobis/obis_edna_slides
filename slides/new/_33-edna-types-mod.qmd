@@ -19,20 +19,6 @@
 :::
 ::::
 
-<hr>
-
-Most common eDNA data types you may encounter:
-
-:::: {.columns}
-
-::: {.column width="50%"}
-**Environmental DNA Metabarcoding**
-:::
-
-::: {.column width="50%"}
-**Quantitative PCR (PCR)**
-:::
-::::
 
 ::: notes
 Environmental DNA is any DNA collected from an environmental sample without first isolating target organisms (Taberlet 2012). The most common we'll likely encounter as OBIS nodes is metabarcoding and qPCR. For this workshop we'll focus more on metabarcoding

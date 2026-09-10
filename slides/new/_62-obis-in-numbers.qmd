@@ -1,0 +1,105 @@
+## OBIS in numbers
+
+::: {.obis-numbers}
+
+::: {.obis-stat}
+[{{< var obis.records_round >}}]{.obis-stat-value}
+[species observations]{.obis-stat-label}
+:::
+
+::: {.obis-stat}
+[{{< var obis.species_round >}}]{.obis-stat-value}
+[marine species]{.obis-stat-label}
+:::
+
+::: {.obis-stat}
+[{{< var obis.datasets_fmt >}}]{.obis-stat-value}
+[datasets]{.obis-stat-label}
+:::
+
+::: {.obis-stat}
+[{{< var obis.nodes_round >}}]{.obis-stat-value}
+[nodes worldwide]{.obis-stat-label}
+:::
+
+::: {.obis-stat}
+[{{< var obis.specieslevel_round >}}]{.obis-stat-value}
+[identified to species]{.obis-stat-label}
+:::
+
+::: {.obis-stat}
+[{{< var obis.taxa_round >}}]{.obis-stat-value}
+[taxa]{.obis-stat-label}
+:::
+
+::: {.obis-stat}
+[{{< var obis.scientists >}}]{.obis-stat-value}
+[scientists & data managers]{.obis-stat-label}
+:::
+
+::: {.obis-stat}
+[{{< var obis.countries >}}]{.obis-stat-value}
+[countries engaged]{.obis-stat-label}
+:::
+
+:::
+
+::: {.obis-numbers-source}
+Records span {{< var obis.year_min >}}–{{< var obis.year_max >}} · Retrieved from the OBIS API on {{< var obis.retrieved >}}
+:::
+
+<style>
+/* The theme sets .reveal p directly (obis_theme.scss:71), and a directly
+   matching declaration beats an inherited one, so these rules have to reach the
+   element itself rather than style the wrapper. Sizes are px to match the theme,
+   which works in px throughout; the blue is the theme's own body colour. */
+.reveal .obis-numbers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.1em 1.4em;
+  background: #C6D9E3;
+  padding: 0.9em 1.2em;
+  border-radius: 6px;
+}
+.reveal .obis-numbers p {
+  margin: 0;
+}
+.reveal .obis-stat-value {
+  display: block;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+}
+.reveal .obis-stat-label {
+  display: block;
+  font-size: 15px;
+  line-height: 1.2;
+  margin-top: 0.15em;
+}
+.reveal .obis-numbers-source p {
+  margin-top: 0.6em;
+  font-size: 14px;
+  color: #545556;
+}
+/* The numbers are the content here, so let them stack rather than shrink. */
+@media (max-width: 800px) {
+  .reveal .obis-numbers { grid-template-columns: repeat(2, 1fr); }
+}
+</style>
+
+::: {.notes}
+These figures are not typed into the slide. scripts/fetch-obis-stats.R pulls
+them from api.obis.org and writes _variables.yml, which the slide reads through
+the var shortcode. Rerun it before a workshop and the slide updates itself; the
+retrieval date underneath is there so the audience knows how current they are.
+
+Datasets is shown exactly rather than rounded, because 6,917 is a number people
+recognise and "7K" is not. The node count is 37: the endpoint returns 39, less
+the OBIS Secretariat, which coordinates rather than publishes, and OBIS Senegal.
+OBIS Panama is counted, being a real node that has simply not published yet.
+
+Scientists and countries are the two figures no endpoint exposes. They are kept
+by hand in the script and dated there, so they will go stale silently if nobody
+revisits them.
+:::

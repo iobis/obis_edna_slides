@@ -1,0 +1,17 @@
+## Two ways to structure the same dataset
+
+:::: {.columns}
+
+::: {.column width="40%"}
+**Option A — Occurrence core**
+
+![](assets/dna_occurrence_core_structure_simple.svg){.lightbox}
+:::
+
+::: {.column width="60%"}
+**Option B — Event core**
+
+![](assets/dna_event_core_structure_simple.svg){.lightbox}
+:::
+
+::::

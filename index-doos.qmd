@@ -1,0 +1,68 @@
+---
+title: "Mobilizing Deep Ocean Biodiversity Data"
+subtitle: "Publishing eDNA to OBIS"
+author: "Steve Formel"
+date: 2026-09-09
+---
+
+{{< include slides/new/_33-edna-types-mod.qmd >}}
+
+{{< include slides/new/_23-edna_workflow-mod.qmd >}}
+
+{{< include slides/new/_27-31-what-is-special-about-edna.qmd >}}
+
+{{< include slides/_03-why-publish-edna.qmd >}}
+
+{{< include slides/new/_16-52-resources.qmd >}}
+
+{{< include slides/_05-dna-publishing-guide.qmd >}}
+
+{{< include slides/new/_06-five-data-categories.qmd >}}
+
+{{< include slides/_24-key_fields_metabarcoding.qmd >}}
+
+# OBIS and eDNA {.section-title}
+
+{{< include slides/_22-edna_obis.qmd >}}
+
+{{< include slides/new/_21-dna-data-management-platform-mod.qmd >}}
+
+{{< include slides/new/_32-edna-data-landscape-mod.qmd >}}
+
+## Structuring your data {.section-title}
+
+{{< include slides/_04-data-standard.qmd >}}
+
+{{< include slides/new/_11-12-core-structure-options.qmd >}}
+
+{{< include slides/new/_09-key-fields-occurrence-core-mod.qmd >}}
+
+{{< include slides/new/_09a-key-fields-event-core-mod.qmd >}}
+
+{{< include slides/new/_10-key-fields-dna-extension-mod.qmd >}}
+
+{{< include slides/new/_59-peres-deepend-example.qmd >}}
+
+## Optimizing your workflow {.section-title}
+
+{{< include slides/new/_07-08-inputs-and-outputs.qmd >}}
+
+{{< include slides/_14-metabarcoding-data-toolkit.qmd >}}
+
+## Laura's Elegant Solution {.section-title}
+
+{{< include slides/new/_61-mdt-demo-dataset.qmd >}}
+
+{{< include slides/_54-unknown-sequences.qmd >}}
+
+{{< include slides/_55-sequence-without-worms.qmd >}}
+
+{{< include slides/_56-control-samples.qmd >}}
+
+{{< include slides/_57-metadata-no-vocab.qmd >}}
+
+## Don't forget...
+
+{{< include slides/_05-dna-publishing-guide.qmd >}}
+
+{{< include slides/new/_16-52-resources.qmd >}}
