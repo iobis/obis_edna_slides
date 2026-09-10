@@ -39,7 +39,9 @@ date: 2026-09-09
 
 {{< include slides/new/_61-mdt-demo-dataset.qmd >}}
 
-{{< include slides/new/_62-obis-in-numbers.qmd >}}
+<!-- Parked. Stats slide driven by _variables.yml; refresh with
+     Rscript scripts/fetch-obis-stats.R
+{{< include slides/new/_62-obis-in-numbers.qmd >}} -->
 
 {{< include slides/new/_16-52-resources.qmd >}}
 
