@@ -33,14 +33,14 @@
 Which one fits your data?
 
 | # | Category | Example |
-|---|---|---|
+|:--:|------------------------------|-------------------------------------------------|
 | **1** | [**DNA-derived occurrences**]{.fragment .box-highlight} | Metabarcoding (ASVs/OTUs assigned to taxa) |
 | 2 | Enriched occurrences | Voucher specimen + barcoded |
 | **3** | **Targeted species detection** | qPCR / ddPCR assays |
 | 4 | Name references | Sequence in GenBank only |
 | 5 | Metadata only | Dataset without sequences |
 
-![](assets/dna_publishing_guide.png){.tree-thumb .lightbox} Use the [DNA Guidance decision tree](https://docs.gbif.org/publishing-dna-derived-data/en/#categorization-of-your-data) to confirm your category
+![](assets/dna_publishing_guide.png){.tree-thumb .lightbox} Use the DNA Guidance [decision tree](https://docs.gbif.org/publishing-dna-derived-data/en/#categorization-of-your-data) to confirm your category
 
 ::: {.notes}
 We won't go into details on this slide - just reiterating that Categories 1 and 3 are by far the most common for eDNA researchers. Category 1 covers metabarcoding; Category 3 covers targeted detection methods like qPCR/ddPCR where no sequences are produced. Be aware that there are other possible types but they are outside the scope of this workshop.
