@@ -53,6 +53,8 @@ date: 2026-09-09
 
 {{< include slides/new/_61-mdt-demo-dataset.qmd >}}
 
+## MDT Demo {.section-title}
+
 {{< include slides/_54-unknown-sequences.qmd >}}
 
 {{< include slides/_55-sequence-without-worms.qmd >}}
