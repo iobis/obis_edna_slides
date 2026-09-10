@@ -55,6 +55,80 @@
   background-color: #f8f9fa;
 }
 
+/* Compact field lists on the "Key DwC fields" slides. Sizes are px because the
+   theme sets .reveal li directly at 24px, which leaves these lists too tall to
+   fit once required and recommended fields are on one slide. */
+.reveal .fields .field-label {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #6C757D;
+  margin: 0 0 2px 0;
+}
+.reveal .fields .table-name {
+  display: block;
+  font-size: 21px;
+  font-weight: 600;
+  color: #156082;
+  border-bottom: 2px solid #C9D6DE;
+  padding-bottom: 3px;
+  margin-bottom: 8px;
+}
+.reveal .fields ul {
+  margin: 0 0 12px 1em;
+}
+.reveal .fields li {
+  font-size: 17px;
+  line-height: 1.35;
+  margin: 0;
+}
+.reveal .fields-note p {
+  font-size: 16px;
+  color: #545556;
+  margin-top: 6px;
+}
+
+/* Citation / source line under a slide title. The rule reaches the paragraph
+   itself: the theme sets .reveal p directly, and a directly matching
+   declaration beats an inherited one, so styling the wrapper does nothing. */
+.reveal .cite p {
+  font-size: 14px;
+  line-height: 1.35;
+  color: #545556;
+  margin: -4px 0 12px 0;
+}
+.reveal .cite a {
+  color: #545556;
+  text-decoration: underline;
+}
+
+/* Denser variant for the slides that list the checklist out in full, before
+   they are pared back by hand. */
+.reveal .fields.dense li {
+  font-size: 14px;
+  line-height: 1.4;
+}
+.reveal .fields.dense ul {
+  margin-bottom: 8px;
+}
+.reveal .fields.dense .field-label {
+  font-size: 13px;
+}
+
+/* Pointer to the full OBIS term checklist. These slides show a working subset,
+   so every one of them says where the complete list lives. */
+.reveal .checklist-link p {
+  font-size: 16px;
+  color: #545556;
+  margin-top: 8px;
+}
+.reveal .checklist-link a {
+  color: #156082;
+  border-bottom: 1px solid #C9D6DE;
+}
+
 /* make code block text a bit bigger */
 .reveal pre{
   font-size: 1.5em;

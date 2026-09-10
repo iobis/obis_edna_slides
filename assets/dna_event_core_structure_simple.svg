@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 716" width="1320" height="716" font-family="Noto Sans, Helvetica, Arial, sans-serif">
+<defs>
+<marker id="aevent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#156082"/></marker>
+<marker id="aocc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0E9E82"/></marker>
+<marker id="adna" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#D98A1F"/></marker>
+<marker id="aemof" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C2497E"/></marker>
+</defs>
+<rect width="1320" height="716" fill="#FFFFFF"/>
+<path d="M330,150.0 L440,150.0" stroke="#156082" stroke-width="2.5" fill="none" marker-end="url(#aevent)"/>
+<text x="385.0" y="139.0" font-size="15" font-weight="600" fill="#156082" text-anchor="middle">eventID</text>
+<path d="M790,330 L905,330" stroke="#0E9E82" stroke-width="2.5" fill="none" marker-end="url(#aocc)"/>
+<text x="847.5" y="319" font-size="15" font-weight="600" fill="#0E9E82" text-anchor="middle">occurrenceID</text>
+<path d="M180.0,276 L180.0,350" stroke="#156082" stroke-width="2.5" fill="none" marker-end="url(#aevent)"/>
+<text x="191.0" y="318.0" font-size="15" font-weight="600" fill="#156082">eventID</text>
+<path d="M440,485 L330,485" stroke="#0E9E82" stroke-width="2.5" fill="none" marker-end="url(#aocc)"/>
+<text x="385.0" y="474" font-size="15" font-weight="600" fill="#0E9E82" text-anchor="middle">occurrenceID</text>
+<rect x="30" y="24" width="300" height="252" rx="10" fill="#EAF2F6" stroke="#156082" stroke-width="2"/>
+<path d="M30,34 a10,10 0 0 1 10,-10 h280 a10,10 0 0 1 10,10 v52 h-300 z" fill="#156082"/>
+<circle cx="56" cy="55" r="15" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="56" y="61" font-size="17" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+<text x="80" y="51" font-size="19" font-weight="700" fill="#FFFFFF">Event Core</text>
+<text x="80" y="71" font-size="13.5" fill="#FFFFFF" fill-opacity="0.92">Where &amp; when you sampled</text>
+<text x="46" y="104" font-size="12.5" fill="#7A8A92" font-style="italic">one row per sampling event</text>
+<line x1="42" y1="111" x2="318" y2="111" stroke="#156082" stroke-opacity="0.28" stroke-width="1"/>
+<rect x="42" y="118" width="276" height="26" rx="5" fill="#156082" fill-opacity="0.13"/>
+<circle cx="56" cy="129" r="4.5" fill="#156082"/>
+<text x="70" y="134" font-size="15.5" font-weight="700" fill="#156082" font-family="monospace">eventID</text>
+<text x="314" y="134" font-size="11.5" fill="#156082" text-anchor="end">link</text>
+<text x="70" y="164" font-size="15.5" fill="#343A40" font-family="monospace">eventDate</text>
+<text x="70" y="194" font-size="15.5" fill="#343A40" font-family="monospace">locality</text>
+<text x="70" y="224" font-size="15.5" fill="#343A40" font-family="monospace">decimalLatitude</text>
+<text x="70" y="254" font-size="15.5" fill="#343A40" font-family="monospace">decimalLongitude</text>
+<rect x="440" y="60" width="350" height="522" rx="10" fill="#E9FBF7" stroke="#0E9E82" stroke-width="2"/>
+<path d="M440,70 a10,10 0 0 1 10,-10 h330 a10,10 0 0 1 10,10 v52 h-350 z" fill="#0E9E82"/>
+<circle cx="466" cy="91" r="15" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="466" y="97" font-size="17" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+<text x="490" y="87" font-size="19" font-weight="700" fill="#FFFFFF">Occurrence Extension</text>
+<text x="490" y="107" font-size="13.5" fill="#FFFFFF" fill-opacity="0.92">What you detected</text>
+<text x="456" y="140" font-size="12.5" fill="#7A8A92" font-style="italic">one row per taxon, per sample</text>
+<line x1="452" y1="147" x2="778" y2="147" stroke="#0E9E82" stroke-opacity="0.28" stroke-width="1"/>
+<rect x="452" y="154" width="326" height="26" rx="5" fill="#0E9E82" fill-opacity="0.13"/>
+<circle cx="466" cy="165" r="4.5" fill="#0E9E82"/>
+<text x="480" y="170" font-size="15.5" font-weight="700" fill="#0E9E82" font-family="monospace">occurrenceID</text>
+<text x="774" y="170" font-size="11.5" fill="#0E9E82" text-anchor="end">link</text>
+<rect x="452" y="184" width="326" height="26" rx="5" fill="#0E9E82" fill-opacity="0.13"/>
+<circle cx="466" cy="195" r="4.5" fill="#0E9E82"/>
+<text x="480" y="200" font-size="15.5" font-weight="700" fill="#0E9E82" font-family="monospace">eventID</text>
+<text x="774" y="200" font-size="11.5" fill="#0E9E82" text-anchor="end">link</text>
+<text x="480" y="230" font-size="15.5" fill="#343A40" font-family="monospace">materialSampleID</text>
+<text x="480" y="260" font-size="15.5" fill="#343A40" font-family="monospace">occurrenceStatus</text>
+<text x="480" y="290" font-size="15.5" fill="#343A40" font-family="monospace">basisOfRecord</text>
+<text x="480" y="320" font-size="15.5" fill="#343A40" font-family="monospace">scientificName</text>
+<text x="480" y="350" font-size="15.5" fill="#343A40" font-family="monospace">scientificNameID</text>
+<text x="480" y="380" font-size="15.5" fill="#343A40" font-family="monospace">organismQuantity</text>
+<text x="480" y="410" font-size="15.5" fill="#343A40" font-family="monospace">organismQuantityType</text>
+<text x="480" y="440" font-size="15.5" fill="#343A40" font-family="monospace">sampleSizeValue</text>
+<text x="480" y="470" font-size="15.5" fill="#343A40" font-family="monospace">sampleSizeUnit</text>
+<text x="480" y="500" font-size="15.5" fill="#343A40" font-family="monospace">samplingProtocol</text>
+<text x="480" y="530" font-size="15.5" fill="#343A40" font-family="monospace">identificationRemarks</text>
+<text x="480" y="560" font-size="15.5" fill="#343A40" font-family="monospace">taxonConceptID</text>
+<rect x="905" y="170" width="350" height="312" rx="10" fill="#FDF4E6" stroke="#D98A1F" stroke-width="2"/>
+<path d="M905,180 a10,10 0 0 1 10,-10 h330 a10,10 0 0 1 10,10 v52 h-350 z" fill="#D98A1F"/>
+<circle cx="931" cy="201" r="15" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="931" y="207" font-size="17" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+<text x="955" y="197" font-size="19" font-weight="700" fill="#FFFFFF">DNA Derived Data Ext.</text>
+<text x="955" y="217" font-size="13.5" fill="#FFFFFF" fill-opacity="0.92">How you got it, in the lab</text>
+<text x="921" y="250" font-size="12.5" fill="#7A8A92" font-style="italic">one row per sequence</text>
+<line x1="917" y1="257" x2="1243" y2="257" stroke="#D98A1F" stroke-opacity="0.28" stroke-width="1"/>
+<rect x="917" y="264" width="326" height="26" rx="5" fill="#D98A1F" fill-opacity="0.13"/>
+<circle cx="931" cy="275" r="4.5" fill="#D98A1F"/>
+<text x="945" y="280" font-size="15.5" font-weight="700" fill="#D98A1F" font-family="monospace">occurrenceID</text>
+<text x="1239" y="280" font-size="11.5" fill="#D98A1F" text-anchor="end">link</text>
+<text x="945" y="310" font-size="15.5" fill="#343A40" font-family="monospace">DNA_sequence</text>
+<text x="945" y="340" font-size="15.5" fill="#343A40" font-family="monospace">target_gene</text>
+<text x="945" y="370" font-size="15.5" fill="#343A40" font-family="monospace">pcr_primer_forward</text>
+<text x="945" y="400" font-size="15.5" fill="#343A40" font-family="monospace">pcr_primer_reverse</text>
+<text x="945" y="430" font-size="15.5" fill="#343A40" font-family="monospace">lib_layout</text>
+<text x="945" y="460" font-size="15.5" fill="#343A40" font-family="monospace">seq_meth</text>
+<rect x="30" y="350" width="300" height="342" rx="10" fill="#FCEDF4" stroke="#C2497E" stroke-width="2"/>
+<path d="M30,360 a10,10 0 0 1 10,-10 h280 a10,10 0 0 1 10,10 v52 h-300 z" fill="#C2497E"/>
+<circle cx="56" cy="381" r="15" fill="#FFFFFF" fill-opacity="0.22"/>
+<text x="56" y="387" font-size="17" font-weight="700" fill="#FFFFFF" text-anchor="middle">4</text>
+<text x="80" y="377" font-size="19" font-weight="700" fill="#FFFFFF">eMoF Ext.</text>
+<text x="80" y="397" font-size="13.5" fill="#FFFFFF" fill-opacity="0.92">Anything else you measured</text>
+<text x="46" y="430" font-size="12.5" fill="#7A8A92" font-style="italic">one row per measurement</text>
+<line x1="42" y1="437" x2="318" y2="437" stroke="#C2497E" stroke-opacity="0.28" stroke-width="1"/>
+<rect x="42" y="444" width="276" height="26" rx="5" fill="#C2497E" fill-opacity="0.13"/>
+<circle cx="56" cy="455" r="4.5" fill="#C2497E"/>
+<text x="70" y="460" font-size="15.5" font-weight="700" fill="#C2497E" font-family="monospace">eventID</text>
+<text x="314" y="460" font-size="11.5" fill="#C2497E" text-anchor="end">link</text>
+<rect x="42" y="474" width="276" height="26" rx="5" fill="#C2497E" fill-opacity="0.13"/>
+<circle cx="56" cy="485" r="4.5" fill="#C2497E"/>
+<text x="70" y="490" font-size="15.5" font-weight="700" fill="#C2497E" font-family="monospace">occurrenceID</text>
+<text x="314" y="490" font-size="11.5" fill="#C2497E" text-anchor="end">link</text>
+<text x="70" y="520" font-size="15.5" fill="#343A40" font-family="monospace">measurementType</text>
+<text x="70" y="550" font-size="15.5" fill="#343A40" font-family="monospace">measurementTypeID</text>
+<text x="70" y="580" font-size="15.5" fill="#343A40" font-family="monospace">measurementUnit</text>
+<text x="70" y="610" font-size="15.5" fill="#343A40" font-family="monospace">measurementUnitID</text>
+<text x="70" y="640" font-size="15.5" fill="#343A40" font-family="monospace">measurementValue</text>
+<text x="70" y="670" font-size="15.5" fill="#343A40" font-family="monospace">measurementValueID</text>
+</svg>
