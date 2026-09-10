@@ -1,18 +1,9 @@
-## One cast, three nested levels
+## The Many Levels of Pedro Peres
 
-::: {style="font-size:0.62em; color:#5A8FA8; margin-top:-14px;"}
-Peres & Bracken-Grissom 2025 · deep-sea fish eDNA, Gulf of Mexico
+::: {.cite}
+Peres, P.A. and Bracken-Grissom, H. (2025), Water Volume, Biological and PCR Replicates Influence the Characterization of Deep-Sea Pelagic Fish Communities. Environmental DNA, 7: e70086. https://doi.org/10.1002/edn3.70086
 :::
 
-<style>
-.reveal .peres table { font-size: 15px !important; }
-.reveal .peres table th, .reveal .peres table td { padding: 4px 8px !important; }
-.reveal .peres ul { font-size: 0.82em; }
-</style>
-
-:::: {.columns .peres}
-
-::: {.column width="42%"}
 **What they did**
 
 **One** CTD cast — 450 m, night
@@ -21,27 +12,6 @@ Peres & Bracken-Grissom 2025 · deep-sea fish eDNA, Gulf of Mexico
 - × 5 **biological replicates** → 15 filters
 - × 1–11 **PCR replicates** → 149 kept
 - PCR replicates **never pooled** — each is its own observation
-:::
-
-::: {.column width="58%"}
-**Event core nests with `parentEventID`**
-
-| eventID | parentEventID |
-|---|---|
-| `DP08-B287N-cast` | *(none)* |
-| `…-10L-rep3` | `DP08-B287N-cast` |
-| `…-10L-rep3-pcr7` | `…-10L-rep3` |
-
-- Cast holds lat/lon, date, depth — **written once**
-- Occurrences link to the **PCR replicate**
-- Volume, replicate number → **eMoF**
-:::
-
-::::
-
-::: {style="font-size:0.62em; background:#EAF2F6; border-left:4px solid #156082; padding:8px 14px; border-radius:4px;"}
-**661 ESVs × 149 sample columns**, and the header repeats — `10L3` appears 11 times. A PCR replicate exists only as *column position*.
-:::
 
 ::: {.notes}
 The cleanest nesting example I know, because everything came from a single CTD cast — deliberately, so there is no spatial or temporal variation confounding the replicate comparison. One set of coordinates covers all 149 samples.
