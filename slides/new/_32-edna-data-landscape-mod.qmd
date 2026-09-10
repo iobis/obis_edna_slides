@@ -1,0 +1,69 @@
+## eDNA data standards
+
+**Two major eDNA data standards exist**
+
+::::: {.columns .standards}
+
+:::: {.column width="50%"}
+1. **MIxS**\
+(Minimum Information about any (x) Sequence) — for raw sequences in NCBI
+::::
+
+:::: {.column width="50%"}
+2. [**Darwin Core (DwC)**\
+Community vocabulary for biodiversity data — species, location, date, basis of record]{.fragment .highlight-dwc}
+::::
+
+:::::
+
+::: {.standards-note}
+OBIS + GBIF + ALA accept genetic data linked to spatial coordinates and time
+:::
+
+🔜 **Developing landscape**
+
+- Rapidly changing field
+- For OBIS future directions include the DWC-DP and FAIReDNA terms
+
+<style>
+.reveal .standards {
+  margin-bottom: 0.4em;
+}
+
+/* The original set color:white here with no background behind it, so the text
+   was only readable because the theme colours .reveal p directly and wins over
+   an inherited value. Dropped rather than given a background it never had. */
+.reveal .standards-note p {
+  text-align: center;
+  color: #065A82;
+  font-weight: bold;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+/* Reveal keeps a .fragment visible before activation only for the highlight
+   variants it ships, so mirror that rule here; without it the Darwin Core item
+   would be hidden until the first click rather than merely unhighlighted. */
+.reveal .slides section .fragment.highlight-dwc {
+  opacity: 1;
+  visibility: inherit;
+}
+
+/* strong is listed explicitly because the theme colours it directly, and a
+   directly matching declaration beats an inherited one. */
+.reveal .fragment.highlight-dwc.visible,
+.reveal .fragment.highlight-dwc.visible strong {
+  color: #0E9E82;
+}
+.reveal .fragment.highlight-dwc.visible {
+  background: #E9FBF7;
+  padding: 0.05em 0.3em;
+  border-radius: 4px;
+}
+</style>
+
+::: {.notes}
+Raw sequences deposited in NCBI lack coordinates and dates — they cannot answer where or when a species was detected. OBIS, GBIF, and ALA now accept DNA-derived occurrences linked to space and time. DNA data requires special care: it is derived, depends on reference databases, and often produces many unknown sequences. The Darwin Core DNA extension preserves methodological context for future re-analysis.
+
+One click highlights Darwin Core, which is what the rest of the session is about; the click after that moves on.
+:::
