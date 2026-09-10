@@ -4,6 +4,8 @@
 Peres, P.A. and Bracken-Grissom, H. (2025), Water Volume, Biological and PCR Replicates Influence the Characterization of Deep-Sea Pelagic Fish Communities. Environmental DNA, 7: e70086. https://doi.org/10.1002/edn3.70086
 :::
 
+<br>
+
 **What they did**
 
 **One** CTD cast — 450 m, night
@@ -27,9 +29,40 @@ One more: reads were collapsed to presence/absence (1/0), so this is occurrenceS
 If asked why not Occurrence core: it would still be valid Darwin Core, but you would repeat the same coordinates on every row and lose which filter and which reaction each detection came from — which is the entire point of the study.
 :::
 
-## Linking it to DEEPEND — in the metadata, not the data
+## Event Modeling
 
-Not one occurrence row mentions DEEPEND. The link lives in the **EML**.
+_Take 10 minutes, and in groups discuss/draw how Pedro should model his data in his event table + occurrence core._
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="60%"}
+**Example Data Publishing Schematic**
+
+![](assets/KH_data_visualization.png){.lightbox}
+:::
+
+::: {.column width="40%"}
+**Example Scientific Schematic**
+
+![](assets/KH_relationship_diagram.png){.lightbox}
+:::
+
+::::
+
+:::{.cite}
+[Hand-drawn data visualization of relationships](https://kylieh10.github.io/gomx_sediment_macrofauna/data_modeling_page.html), with light grey text indicating variable names provided by the data collectors, Image by Kylie Hollis, License [CC0](https://creativecommons.org/publicdomain/zero/1.0/)
+:::
+
+
+
+## Linking it to the project: DEEPEND. How?
+
+
+## EML 
+
+The link lives in the **EML** or (as of recently), the DwC
 
 :::: {.columns .peres}
 
@@ -50,6 +83,7 @@ Not one occurrence row mentions DEEPEND. The link lives in the **EML**.
 
 - Cruise/station `DP08-01Aug22-B287N`<br>→ `fieldNumber` on the cast event
 - `R/V Point Sur` → `samplingProtocol`
+- https://dwc.tdwg.org/terms/#provenance
 
 **Why it matters**
 

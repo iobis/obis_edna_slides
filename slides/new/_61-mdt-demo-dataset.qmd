@@ -53,7 +53,7 @@ Laura's route runs the standard outputs of an eDNA pipeline through the MDT, whi
 Neither is wrong. The point of the next few slides is what the MDT expects in return for doing that work.
 :::
 
-## Laura's Data Explained...
+## Laura's Data
 
 :::: {.columns .mdt}
 
@@ -65,9 +65,9 @@ Neither is wrong. The point of the next few slides is what the MDT expects in re
 | `vert_…` **Vert01** | 460 | 15 |
 | `teleo_…` **Tele01** | 113 | 13 |
 
-- Same stations, 0–80 m
-- Niskin rosette, 120 L per station
-- OTU IDs run straight through:<br>`OTU1–461` then `OTU462–574`
+- One station sampled over 5 dates
+- 2-3 locations sampled within the station on each date
+- Each sample == 120L
 :::
 
 ::: {.column width="60%"}

@@ -1,0 +1,23 @@
+## OBIS DNA Data Management Platform
+
+Through the eDNA Expeditions Project, OBIS is developing a data management platform for DNA data including:
+
+::: {.columns}
+::: {.column width="55%"}
+
+* Bioinformatics
+* QC
+* Validation
+* Publication to OBIS pipeline
+
+:::
+
+
+::: {.column width="45%"}
+
+![](assets/ednaexpeditions_screenshot.png)
+::: 
+
+::::
+
+To be offered to OBIS nodes to support local eDNA projects! Learn more at <https://ednaexpeditions.org/>

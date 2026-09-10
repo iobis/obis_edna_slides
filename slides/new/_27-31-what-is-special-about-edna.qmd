@@ -8,13 +8,13 @@
 
 - Expands access to biodiversity data at scale
 - Captures environmental, specimen, and bulk-sample DNA
-- **Raw sequences already widely shared in NCBI**
+- Raw sequences already widely shared in NCBI
 :::
 ::::
 
 :::: {.column width="33%"}
-::: {.special-card .caution}
-[…but NCBI alone is not enough]{.special-head}
+::: {.special-card}
+[Seqs vs ASVs]{.special-head}
 
 - Raw sequences cannot be searched by species in time and space
 - No link to spatial coordinates or sampling date
@@ -26,10 +26,10 @@
 ::: {.special-card}
 [Special considerations]{.special-head}
 
-- ⚗️ Derived information — not a direct observation; extensive lab and bioinformatic processing
-- 📚 Relies on reference databases — results depend on database completeness
-- ❓ Large fraction of unknown sequences — no match in any database
-- 📋 The DwC DNA Extension records how work was done, enabling future re-analysis
+- Derived information — not a direct observation; extensive lab and bioinformatic processing
+- Relies on reference databases — results depend on database completeness
+- Large fraction of unknown sequences — no match in any database
+- The DwC DNA Extension records how work was done, enabling future re-analysis
 :::
 ::::
 

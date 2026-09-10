@@ -5,79 +5,53 @@ author: "Steve Formel"
 date: 2026-09-09
 ---
 
-{{< include slides/_00-agenda.qmd >}}
+{{< include slides/new/_33-edna-types-mod.qmd >}}
 
-{{< include slides/_33-edna-types.qmd >}}
+{{< include slides/new/_23-edna_workflow-mod.qmd >}}
+
+{{< include slides/new/_27-31-what-is-special-about-edna.qmd >}}
 
 {{< include slides/_03-why-publish-edna.qmd >}}
 
-{{< include slides/_31-edna-data-considerations.qmd >}}
-
-{{< include slides/_32-edna-data-landscape.qmd >}}
-
-{{< include slides/_04-data-standard.qmd >}}
+{{< include slides/new/_16-52-resources.qmd >}}
 
 {{< include slides/_05-dna-publishing-guide.qmd >}}
 
 {{< include slides/new/_06-five-data-categories.qmd >}}
 
-{{< include slides/new/_07-08-inputs-and-outputs.qmd >}}
+{{< include slides/_24-key_fields_metabarcoding.qmd >}}
 
-{{< include slides/new/_11-12-core-structure-options.qmd >}}
-
-{{< include slides/new/_59-peres-deepend-example.qmd >}}
-
-<!-- {{< include slides/_09-key-fields-occurrence-core.qmd >}}
-
-{{< include slides/_09a-key-fields-event-core.qmd >}} -->
-
-{{< include slides/_10-key-fields-dna-extension.qmd >}}
-
-<!-- {{< include slides/_13-publishing-workflow.qmd >}} -->
-
-{{< include slides/_14-metabarcoding-data-toolkit.qmd >}}
-
-{{< include slides/new/_61-mdt-demo-dataset.qmd >}}
-
-<!-- Parked. Stats slide driven by _variables.yml; refresh with
-     Rscript scripts/fetch-obis-stats.R
-{{< include slides/new/_62-obis-in-numbers.qmd >}} -->
-
-{{< include slides/new/_16-52-resources.qmd >}}
-
-<!-- {{< include slides/_17-summary.qmd >}} -->
-
-{{< include slides/_21-dna-data-management-platform.qmd >}}
+# OBIS and eDNA {.section-title}
 
 {{< include slides/_22-edna_obis.qmd >}}
 
-{{< include slides/_29-supporting-tools.qmd >}}
+{{< include slides/new/_21-dna-data-management-platform-mod.qmd >}}
 
-{{< include slides/_26-what_is_edna_metabarcoding.qmd >}}
+{{< include slides/new/_32-edna-data-landscape-mod.qmd >}}
 
-{{< include slides/_27-what-is-edna-data.qmd >}}
+## Structuring your data {.section-title}
 
-{{< include slides/_23-edna_workflow.qmd >}}
+{{< include slides/_04-data-standard.qmd >}}
 
-{{< include slides/_24-key_fields_metabarcoding.qmd >}}
+{{< include slides/new/_11-12-core-structure-options.qmd >}}
 
-{{< include slides/_24a-key_fields_metabarcoding-field.qmd >}}
+{{< include slides/new/_09-key-fields-occurrence-core-mod.qmd >}}
 
-{{< include slides/_24b-key_fields_metabarcoding-dna.qmd >}}
+{{< include slides/new/_09a-key-fields-event-core-mod.qmd >}}
 
-{{< include slides/_24c-key_fields_metabarcoding-pcr.qmd >}}
+{{< include slides/new/_10-key-fields-dna-extension-mod.qmd >}}
 
-{{< include slides/_24d-key_fields_metabarcoding-sequencing.qmd >}}
+{{< include slides/new/_59-peres-deepend-example.qmd >}}
 
-{{< include slides/_24e-key_fields_metabarcoding-taxonomy.qmd >}}
+## Optimizing your workflow {.section-title}
 
-<!-- {{< include slides/_25-key_fields_qpcr.qmd >}}
+{{< include slides/new/_07-08-inputs-and-outputs.qmd >}}
 
-{{< include slides/_25a-key_fields_qpcr-summary.qmd >}} -->
+{{< include slides/_14-metabarcoding-data-toolkit.qmd >}}
 
-<!-- {{< include slides/_28-table-structure-examples.qmd >}} -->
+## Laura's Elegant Solution {.section-title}
 
-<!-- {{< include slides/_44e-automating-pipelines.qmd >}} -->
+{{< include slides/new/_61-mdt-demo-dataset.qmd >}}
 
 {{< include slides/_54-unknown-sequences.qmd >}}
 
@@ -87,4 +61,8 @@ date: 2026-09-09
 
 {{< include slides/_57-metadata-no-vocab.qmd >}}
 
-{{< include slides/_58-dna-ex-summary.qmd >}}
+## Don't forget...
+
+{{< include slides/_05-dna-publishing-guide.qmd >}}
+
+{{< include slides/new/_16-52-resources.qmd >}}

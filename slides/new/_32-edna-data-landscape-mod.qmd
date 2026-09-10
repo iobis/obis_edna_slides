@@ -28,11 +28,7 @@ Community vocabulary for biodiversity data — species, location, date, basis of
 
 :::::
 
-::: {.standards-note}
-OBIS + GBIF + ALA accept genetic data linked to spatial coordinates and time
-:::
-
-🔜 **Developing landscape**
+**Developing landscape**
 
 - Rapidly changing field
 - For OBIS future directions include the DWC-DP and FAIReDNA terms
