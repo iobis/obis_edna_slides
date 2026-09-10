@@ -11,6 +11,23 @@
   outline: 3px solid #E8A020;
   background: rgba(232, 160, 32, 0.18);
 }
+
+/* Thumbnail of the guide cover, sitting on the decision-tree line. Matched to
+   the depth of custom.css's `.reveal .slides section img` rule, which sets
+   height:auto and would otherwise outrank a plain .tree-thumb selector.
+   The .lightbox class is explicit: an inline image does not pick it up from the
+   project setting the way a figure does. */
+.reveal .slides section img.tree-thumb {
+  height: 64px;
+  max-height: 64px;
+  width: auto;
+  vertical-align: middle;
+  margin: 0 10px 2px 0;
+  border: 1px solid #DEE2E6;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+  cursor: zoom-in;
+}
 </style>
 
 Which one fits your data?
@@ -23,7 +40,7 @@ Which one fits your data?
 | 4 | Name references | Sequence in GenBank only |
 | 5 | Metadata only | Dataset without sequences |
 
-🔎 Use the [GBIF decision tree](https://docs.gbif.org/publishing-dna-derived-data/en/#categorization-of-your-data) to confirm your category
+![](assets/dna_publishing_guide.png){.tree-thumb .lightbox} Use the [DNA Guidance decision tree](https://docs.gbif.org/publishing-dna-derived-data/en/#categorization-of-your-data) to confirm your category
 
 ::: {.notes}
 We won't go into details on this slide - just reiterating that Categories 1 and 3 are by far the most common for eDNA researchers. Category 1 covers metabarcoding; Category 3 covers targeted detection methods like qPCR/ddPCR where no sequences are produced. Be aware that there are other possible types but they are outside the scope of this workshop.
