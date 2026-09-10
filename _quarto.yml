@@ -1,6 +1,9 @@
 project:
   type: website
   output-dir: _site
+  # No pre-render hook, deliberately. scripts/fetch-obis-stats.R refreshes the
+  # OBIS numbers in _variables.yml and is run by hand; adding it here would make
+  # every render hit the API and change the slides without anyone deciding to.
   resources:
     - assets/
     - obis_nodes_map.js
