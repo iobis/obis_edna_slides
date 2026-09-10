@@ -90,6 +90,18 @@
   margin-top: 6px;
 }
 
+/* Pointer to the full OBIS term checklist. These slides show a working subset,
+   so every one of them says where the complete list lives. */
+.reveal .checklist-link p {
+  font-size: 16px;
+  color: #545556;
+  margin-top: 8px;
+}
+.reveal .checklist-link a {
+  color: #156082;
+  border-bottom: 1px solid #C9D6DE;
+}
+
 /* make code block text a bit bigger */
 .reveal pre{
   font-size: 1.5em;

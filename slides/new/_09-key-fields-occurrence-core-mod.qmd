@@ -1,7 +1,5 @@
 ## Key DwC fields: Occurrence core
 
-One flat table — every field sits on the occurrence row
-
 :::: {.columns .fields}
 
 ::: {.column width="50%"}
@@ -29,8 +27,8 @@ One flat table — every field sits on the occurrence row
 
 ::::
 
-::: {.fields-note}
-Every row repeats the date and the coordinates, once per taxon detected.
+::: {.checklist-link}
+These are the fields you will use most — the full OBIS list of required and recommended terms is at [manual.obis.org/checklist.html](https://manual.obis.org/checklist.html)
 :::
 
 ::: {.notes}

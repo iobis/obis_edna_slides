@@ -1,7 +1,5 @@
 ## Key DwC fields: Event core
 
-Largely the same terms — sorted by what each one describes
-
 :::: {.columns .fields}
 
 ::: {.column width="50%"}
@@ -44,8 +42,8 @@ Largely the same terms — sorted by what each one describes
 
 ::::
 
-::: {.fields-note}
-`sampleSizeValue` and `sampleSizeUnit` sit in both tables and mean different things — volume at the event, read counts at the occurrence.
+::: {.checklist-link}
+These are the fields you will use most — the full OBIS list of required and recommended terms is at [manual.obis.org/checklist.html](https://manual.obis.org/checklist.html)
 :::
 
 ::: {.notes}
@@ -53,5 +51,4 @@ Largely the same vocabulary, arranged differently. The depth fields are the one 
 
 Anything true of the sampling goes in the Event table once: where, when, how deep, how much water, which protocol. Anything true of a single detection goes in the Occurrence extension: which taxon, how many reads, which sequence. eventID appears in both, and is what joins them.
 
-The payoff is that sampleSizeValue can now carry both meanings at once, one in each table, which it could not do on a single flat row.
 :::
