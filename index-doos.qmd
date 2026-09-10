@@ -39,6 +39,8 @@ date: 2026-09-09
 
 {{< include slides/new/_61-mdt-demo-dataset.qmd >}}
 
+{{< include slides/new/_62-obis-in-numbers.qmd >}}
+
 {{< include slides/new/_16-52-resources.qmd >}}
 
 <!-- {{< include slides/_17-summary.qmd >}} -->

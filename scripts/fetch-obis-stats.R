@@ -63,6 +63,15 @@ short <- function(x) {
   else               comma(x)
 }
 
+# The tile form used on the "OBIS in numbers" slide, matching how OBIS writes
+# these itself: 229,141,362 -> "229M", 168,352 -> "168K". Counts only; applying
+# this to a year would turn 1103 into "1K".
+rounded <- function(x) {
+  if (x >= 1e6)      paste0(round(x / 1e6), "M")
+  else if (x >= 1e3) paste0(round(x / 1e3), "K")
+  else               formatC(x, format = "d")
+}
+
 stats <- get_json(STATS_URL)
 nodes <- get_json(NODE_URL)
 
@@ -100,17 +109,23 @@ vals <- list(
   records              = records,
   records_fmt          = comma(records),
   records_short        = short(records),
+  records_round        = rounded(records),
   specieslevel         = specieslevel,
   specieslevel_fmt     = comma(specieslevel),
   specieslevel_short   = short(specieslevel),
+  specieslevel_round   = rounded(specieslevel),
   species              = species,
   species_fmt          = comma(species),
+  species_round        = rounded(species),
   taxa                 = taxa,
   taxa_fmt             = comma(taxa),
+  taxa_round           = rounded(taxa),
   datasets             = datasets,
   datasets_fmt         = comma(datasets),
+  datasets_round       = rounded(datasets),
   nodes                = node_count,
   nodes_fmt            = comma(node_count),
+  nodes_round          = rounded(node_count),
   year_min             = years[1],
   year_max             = years[2]
 )
