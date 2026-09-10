@@ -1,6 +1,6 @@
 ## Key DwC fields: Event core
 
-:::: {.columns .fields}
+:::: {.columns .fields .dense}
 
 ::: {.column width="50%"}
 [Event table]{.table-name}
@@ -10,13 +10,20 @@
 - `eventID` — <span class="small-note">unique, stable ID</span>
 - `eventDate` — <span class="small-note">YYYY-MM-DD</span>
 - `decimalLatitude`, `decimalLongitude`
+- `parentEventID` — <span class="small-note">required if one exists</span>
 
 [Strongly recommended]{.field-label}
 
+- `eventType`
 - `minimumDepthInMeters`, `maximumDepthInMeters`
-- `sampleSizeValue` <span class="small-note">(volume of sample)</span>
-- `sampleSizeUnit` <span class="small-note">(units of volume sampled)</span>
-- `samplingProtocol` <span class="small-note">(link to your SOP)</span>
+- `locationID`, `continent`
+- `coordinateUncertaintyInMeters`, `coordinatePrecision`
+- `year`, `month`
+- `license`, `type`
+
+[Also for eDNA]{.field-label}
+
+- `samplingProtocol` <span class="small-note">(field sampling)</span>
 :::
 
 ::: {.column width="50%"}
@@ -33,6 +40,11 @@
 [Strongly recommended]{.field-label}
 
 - `scientificNameID` <span class="small-note">(WoRMS AphiaID)</span>
+- `taxonRank`, `kingdom`, `order`, `genus`
+- `license`, `type`
+
+[Also for eDNA]{.field-label}
+
 - `organismQuantity` <span class="small-note">(read count of sequence)</span>
 - `organismQuantityType` = <span class="small-note">"DNA sequence reads"</span>
 - `sampleSizeValue` <span class="small-note">(total read count in sample)</span>
@@ -47,8 +59,7 @@ These are the fields you will use most — the full OBIS list of required and re
 :::
 
 ::: {.notes}
-Largely the same vocabulary, arranged differently. The depth fields are the one addition here — they belong to the sampling, not to a detection, so they only appear once an Event table exists.
+Largely the same vocabulary, arranged differently: what describes the sampling goes in the Event table once, what describes a single detection goes in the Occurrence extension, and eventID joins them.
 
-Anything true of the sampling goes in the Event table once: where, when, how deep, how much water, which protocol. Anything true of a single detection goes in the Occurrence extension: which taxon, how many reads, which sequence. eventID appears in both, and is what joins them.
-
+sampleSizeValue and sampleSizeUnit stay on the occurrence side and keep meaning read counts. The volume of water sampled is not recorded here at all — the DNA extension has samp_vol_we_dna_ext for that. samplingProtocol on the Event table is the field sampling protocol, and nothing more; the laboratory protocol is sop in the DNA extension.
 :::

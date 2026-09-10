@@ -90,6 +90,19 @@
   margin-top: 6px;
 }
 
+/* Denser variant for the slides that list the checklist out in full, before
+   they are pared back by hand. */
+.reveal .fields.dense li {
+  font-size: 14px;
+  line-height: 1.4;
+}
+.reveal .fields.dense ul {
+  margin-bottom: 8px;
+}
+.reveal .fields.dense .field-label {
+  font-size: 13px;
+}
+
 /* Pointer to the full OBIS term checklist. These slides show a working subset,
    so every one of them says where the complete list lives. */
 .reveal .checklist-link p {
