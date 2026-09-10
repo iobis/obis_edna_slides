@@ -47,6 +47,8 @@ date: 2026-09-09
 
 <!-- {{< include slides/_17-summary.qmd >}} -->
 
+{{< include slides/_21-dna-data-management-platform.qmd >}}
+
 {{< include slides/_22-edna_obis.qmd >}}
 
 {{< include slides/_29-supporting-tools.qmd >}}
