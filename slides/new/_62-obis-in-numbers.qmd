@@ -32,6 +32,16 @@
 [taxa]{.obis-stat-label}
 :::
 
+::: {.obis-stat}
+[{{< var obis.scientists >}}]{.obis-stat-value}
+[scientists & data managers]{.obis-stat-label}
+:::
+
+::: {.obis-stat}
+[{{< var obis.countries >}}]{.obis-stat-value}
+[countries engaged]{.obis-stat-label}
+:::
+
 :::
 
 ::: {.obis-numbers-source}
@@ -85,6 +95,11 @@ the var shortcode. Rerun it before a workshop and the slide updates itself; the
 retrieval date underneath is there so the audience knows how current they are.
 
 Datasets is shown exactly rather than rounded, because 6,917 is a number people
-recognise and "7K" is not. The node count excludes the OBIS Secretariat, which
-coordinates rather than publishes.
+recognise and "7K" is not. The node count is 37: the endpoint returns 39, less
+the OBIS Secretariat, which coordinates rather than publishes, and OBIS Senegal.
+OBIS Panama is counted, being a real node that has simply not published yet.
+
+Scientists and countries are the two figures no endpoint exposes. They are kept
+by hand in the script and dated there, so they will go stale silently if nobody
+revisits them.
 :::

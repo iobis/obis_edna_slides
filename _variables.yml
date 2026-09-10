@@ -3,7 +3,7 @@
 
 obis:
   retrieved: "2026-09-10"
-  retrieved_utc: "2026-09-10T13:31:47Z"
+  retrieved_utc: "2026-09-10T13:53:00Z"
   source_statistics: "https://api.obis.org/statistics"
   source_nodes: "https://api.obis.org/node"
   records: 229141362
@@ -23,9 +23,13 @@ obis:
   datasets: 6917
   datasets_fmt: "6,917"
   datasets_round: "7K"
-  nodes: 38
-  nodes_fmt: "38"
-  nodes_round: "38"
+  nodes: 37
+  nodes_fmt: "37"
+  nodes_round: "37"
   year_min: 1103
   year_max: 2026
+
+  # Not from the API. Maintained by hand in the script, as of 2026-09-10.
+  scientists: "6K"
+  countries: "99"
 
