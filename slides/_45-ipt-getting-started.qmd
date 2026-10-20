@@ -1,0 +1,27 @@
+## Getting started on the IPT
+
+::::{.columns}
+:::{.column width="40%"}
+**1. Contact node mananager to create IPT account** 
+
+**2. Log in to account** 
+
+**3. Manage resources** → *Create new* → (= your dataset)
+
+- Give it a short, unique **shortname** (no spaces/special characters — this can't be changed later!)
+- Choose a type: Occurrence or Sampling-Event
+:::
+
+:::{.column width="60%"}
+![](/assets/ipt-login.png)
+:::
+::::
+
+::: {.callout-tip}
+## Testing?
+Add `_test` to the end of your shortname, and let your node manager know before you delete it.
+:::
+
+::: {.notes}
+Shortnames become part of the resource's URL and folder structure, hence the "can't change it later" warning. Type selection here maps directly to what we covered this morning: Occurrence core vs. Event core. We'll create a real (test) resource together in the live demo.
+:::

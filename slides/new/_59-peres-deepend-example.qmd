@@ -1,0 +1,101 @@
+## The Many Levels of Pedro Peres
+
+::: {.cite}
+Peres, P.A. and Bracken-Grissom, H. (2025), Water Volume, Biological and PCR Replicates Influence the Characterization of Deep-Sea Pelagic Fish Communities. Environmental DNA, 7: e70086. https://doi.org/10.1002/edn3.70086
+:::
+
+<br>
+
+**What they did**
+
+**One** CTD cast — 450 m, night
+
+- 3 water volumes: **1 L · 5 L · 10 L**
+- × 5 **biological replicates** → 15 filters
+- × 1–11 **PCR replicates** → 149 kept
+- PCR replicates **never pooled** — each is its own observation
+
+::: {.notes}
+The cleanest nesting example I know, because everything came from a single CTD cast — deliberately, so there is no spatial or temporal variation confounding the replicate comparison. One set of coordinates covers all 149 samples.
+
+parentEventID is the only new term here. It is just a pointer from a child event to its parent, the same idea as occurrenceID linking Occurrence to the DNA extension. Three levels: cast, filter, PCR reaction.
+
+Point at the unbalanced design: 1L1 yielded only ONE usable PCR replicate and 1L3 only seven, because the 1 L samples amplified poorly; the authors reallocated to 11 replicates elsewhere. A reuser has to know that. In the spreadsheet it is invisible — you would have to count columns. As explicit events it is self-documenting.
+
+The negative control is an event too, with no occurrences or occurrenceStatus absent. Note it is not even in the published ESV table.
+
+One more: reads were collapsed to presence/absence (1/0), so this is occurrenceStatus, not organismQuantity.
+
+If asked why not Occurrence core: it would still be valid Darwin Core, but you would repeat the same coordinates on every row and lose which filter and which reaction each detection came from — which is the entire point of the study.
+:::
+
+## Event Modeling
+
+_Take 10 minutes, and in groups discuss/draw how Pedro should model his data in his event table + occurrence core._
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="60%"}
+**Example Data Publishing Schematic**
+
+![](assets/KH_data_visualization.png){.lightbox}
+:::
+
+::: {.column width="40%"}
+**Example Scientific Schematic**
+
+![](assets/KH_relationship_diagram.png){.lightbox}
+:::
+
+::::
+
+:::{.cite}
+[Hand-drawn data visualization of relationships](https://kylieh10.github.io/gomx_sediment_macrofauna/data_modeling_page.html), with light grey text indicating variable names provided by the data collectors, Image by Kylie Hollis, License [CC0](https://creativecommons.org/publicdomain/zero/1.0/)
+:::
+
+
+
+## Linking it to the project: DEEPEND. How?
+
+
+## EML 
+
+The link lives in the **EML** or (as of recently), the DwC
+
+:::: {.columns .peres}
+
+::: {.column width="55%"}
+**EML `<project>`** — the *Project* section of the IPT metadata editor
+
+| EML field | Value |
+|---|---|
+| Project title | DEEPEND\|RESTORE consortium |
+| Award | NOAA RESTORE NA19NOS4510193 |
+| Award | NSF HRD-1547798 · HRD-2111661 |
+| Award | ONR #98288/1184488/2 |
+| Citation | `doi.org/10.1002/edn3.70086` |
+:::
+
+::: {.column width="45%"}
+**Record in the data too**
+
+- Cruise/station `DP08-01Aug22-B287N`<br>→ `fieldNumber` on the cast event
+- `R/V Point Sur` → `samplingProtocol`
+- https://dwc.tdwg.org/terms/#provenance
+
+**Why it matters**
+
+Someone can find *every* DEEPEND dataset, then join this eDNA with the trawl and acoustic data from the **same cruise**.
+:::
+
+::::
+
+::: {.notes}
+This is the part people skip. The occurrence records are about fish; nothing in them says DEEPEND. Project affiliation, funding awards and the paper DOI are dataset-level metadata, and the IPT has a dedicated Project section for exactly this — title, personnel, and structured award entries with funder name and award number.
+
+The cruise/station code is the practical join key. DP08-01Aug22-B287N identifies cruise DP08, August 2022, station B287N. Put it in fieldNumber on the cast event and anyone holding DEEPEND trawl or acoustic data from that station can line the two up.
+
+Worth saying out loud: this costs about five minutes in the IPT, and it is the difference between a dataset that is findable as part of a programme and one that is orphaned.
+:::

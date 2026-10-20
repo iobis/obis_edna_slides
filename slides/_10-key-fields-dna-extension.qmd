@@ -18,7 +18,8 @@
 ::: {.column width="50%"}
 
 ![](assets/eDNA_quickguide.png)
-[https://manual.obis.org/dna_data.html#quick-start-guide]{style="font-size:15px;"}
+
+[manual.obis.org/dna_data.html#quick-start-guide](https://manual.obis.org/dna_data.html#quick-start-guide){style="font-size:15px;"}
 
 :::
 

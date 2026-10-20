@@ -1,0 +1,12 @@
+---
+title: "OBIS Quality Control"
+subtitle: "A very brief look at QC checks before publishing"
+author: "Elizabeth Lawrence"
+date: 2026-07-22
+---
+
+{{< include slides/_15-quality-control.qmd >}}
+
+{{< include slides/_20-worms.qmd >}}
+
+{{< include slides/_21-dna-data-management-platform.qmd >}}

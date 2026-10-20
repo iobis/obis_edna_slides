@@ -1,0 +1,9 @@
+## OBIS Sequence Search
+
+BLAST-search sequences already in OBIS (prototype)!
+
+[sequence.obis.org](https://sequence.obis.org/){style="color:#02C39A;"}
+
+::: {.notes}
+This tool is still being prototyped, don't think it's currently working..
+:::

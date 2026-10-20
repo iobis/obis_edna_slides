@@ -1,0 +1,12 @@
+## Getting data out of OBIS
+
+Several ways in, depending on what you need:
+
+- **obis.org** — browse, search, and cite datasets
+- **OBIS Mapper** — visual exploration + quick downloads
+- **robis** — programmatic access from R
+- **Parquet + robisdb** *(new)* — fast, local access to the full dataset
+
+::: {.notes}
+This mirrors the options from Module 8, but we're focusing on the four most relevant for this group. Full CSV exports and direct IPT downloads exist too, but the four above cover most real workflows. Good moment to ask the room what they're trying to do (one species vs. a whole region vs. bulk analysis) since that determines which of these fits best — the next few slides map roughly to "small ad hoc pull" → "bulk/programmatic."
+:::

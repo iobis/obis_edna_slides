@@ -1,0 +1,81 @@
+---
+title: "Game Answer Key"
+subtitle: "Match Metadata to Darwin Core — Facilitator Reference"
+format:
+  html:
+    theme: [obis_theme.scss]
+    css: [custom.css]
+---
+
+Fragments are drawn from a real eDNA study at the Sanctuary of Fauna and Flora, Malpelo Island (Colombia). Grouped by workflow step, matching [Game Time](index-DNA-game-instructions.qmd).
+
+Some fragments intentionally have **no home** in any DwC table — these are the distractors mentioned in the "Watch For" warning.
+
+## Step 1 ⛵ Field Sampling
+
+| Fragment | Table | Maps to |
+|---|---|---|
+| We sampled around the Sanctuary of Fauna and Flora in Malpelo, a remote oceanic island 490 km off the Colombia in the eastern tropical Pacific. | Event | `locality`, `higherGeography` |
+| We sampled for 4 days (25-28 March 2018) at 1 site (El Arrecife). | Event | `eventDate`, `locality` |
+| Malpelo is surrounded by deep water and fishing activities are prohibited in the surrounding 8757 km2. | Event | `eventRemarks` |
+| The reef ecosystem around the island is influenced by major oceanic currents and local upwelling, and the benthos is bare rock with low coral cover. | Event | `habitat` |
+| Malpelo Island is one of the most pristine and vulnerable reef ecosystems in the tropical eastern Pacific. | *(no match)* | — |
+| We sampled eDNA in round surface transects. We did 5 identical transects at different times, corresponding to 10 samples (i.e., eDNA filters) because we collected 2 samples/transect. | Event | `samplingProtocol` |
+| Transects sampled from a boat, | Event / eMoF | Event: `samplingProtocol`<br>eMoF: `samplingInstrument` |
+| we pumped 30 L of water/sample. | DNA / Event | DNA: `samp_size`<br>Event: `sampleSize` & `sampleSizeValue` |
+| We used an Athena peristaltic pump (Proactive Environmental Products, Bradenton, Florida) (nominal flow 1.0 L/min) on each side of the boat | Event / eMoF | Event: `samplingProtocol`<br>eMoF: `measurementType` + `measurementValue` |
+| to filter water through a VigiDNA 0.20 µm cross-flow filtration capsule (SPYGEN, le Bourget du Lac, France). | DNA | `size_frac` |
+| To avoid contamination, we used only disposable sterile tubing and gloves for each filtration capsule. | Event | `samplingProtocol` |
+| Immediately after filtration, the filter units were filled with CL1 Conservation buffer (SPYGEN) | Event | `samplingProtocol` |
+| and stored at room temperature (20-25 °C) for 5.5 months until DNA extraction. | Event | `samplingProtocol` |
+
+## Step 2 🧬 DNA Extraction
+
+| Fragment | Table | Maps to |
+|---|---|---|
+| The DNA extraction was performed in a dedicated laboratory for eDNA extraction equipped with positive air pressure, UV treatment, and frequent air renewal and decontamination procedures conducted before and after all manipulation. | *(no term)* | — |
+| For DNA extraction, we followed the protocol in Fernández et al. (2021). | DNA | `nucl_acid_ext` |
+
+## Step 3 🧪 DNA Amplification (PCR)
+
+| Fragment | Table | Maps to |
+|---|---|---|
+| For PCR amplification, we used 3 different primer pairs targeting distinct taxonomic groups: teleo, targeting teleost fishes and elasmobranchs (Valentini et al., 2016); Chon01, targeting elasmobranchs; and Vert01 (Taberlet et al., 2018), targeting vertebrates in general (primer sequences in Appendix S2). | DNA | `pcr_primers`, `pcr_primer_reference` |
+| The PCR mixture was denatured at 95 °C for 10 min, followed by 50 cycles of 30 s at 95 °C, 30 s at 55 °C for teleo and Vert01 and 58 °C for Chon01 and 1 min at 72 °C, and a final elongation step at 72 °C for 7 min. | DNA | `pcr_cond` |
+| Twelve replicates of PCRs were run per sample (i.e., 24/transect because we had 2 field duplicates/transect). | DNA | link to full protocol in `nucl_acid_amp` |
+| After amplification, samples were titrated using capillary electrophoresis (QIAxcel [Qiagen GmbH, Hilden, Germany]) and purified using a MinElute PCR purification kit (Qiagen GmbH, Hilden, Germany). | DNA | link to full protocol in `nucl_acid_amp` |
+
+## Step 4 💻 Sequencing
+
+| Fragment | Table | Maps to |
+|---|---|---|
+| The purified PCR products were pooled in equal volumes to achieve a theoretical sequencing depth of 1,000,000 reads/sample/marker. | DNA | `lib_size` |
+| Library preparation and sequencing were performed at Fasteris via a ligation protocol (Geneva). | *(no term)* | — |
+| Three libraries were prepared using the MetaFast protocol (Fasteris, Plan-les-Ouates, Switzerland). | *(no term)* | — |
+| For all libraries, a paired-end sequencing (2 x 125 bp) was carried out | DNA | `lib_layout` |
+| ..sequencing… was carried out with an Illumina HiSeq 2500 sequencer on 2 HiSeq Rapid Flow Cells (version 2) with the HiSeq Rapid SBS Kit (version 2) (Illumina, San Diego, CA, USA). | DNA | `seq_meth` |
+| Three negative extraction controls and 1 negative PCR control (ultrapure water, 12 replicates) were amplified per primer pair and sequenced in parallel with the samples to monitor possible contaminants. | *(no term)* | — |
+
+## Step 5 🐠 Taxonomy
+
+| Fragment | Table | Maps to |
+|---|---|---|
+| Following sequencing, reads were processed using clustering and postclustering cleaning to remove potential errors and estimate the number of species based on molecular operational taxonomic units (MOTUs). | DNA | `sop` |
+| Estimation of species diversity with MOTU richness was only performed using the teleo marker because other markers have not been tested extensively and their performance for estimating species richness remains unassessed. | *(no match)* | — |
+| For all markers, reads were assembled using Vsearch (Rognes et al., 2016) and then cut using Cutadapt (Martin, 2011). | DNA | `sop` |
+| We used Swarm (Mahé et al., 2015) for clustering; the minimum distance of 1 mismatch between clusters followed Marques et al. (2020). | DNA | `sop` |
+| We discarded all observations with fewer than 10 reads, corresponding to untargeted taxa or present in only 1 PCR in the dataset, to avoid spurious MOTUs originating from a PCR error because it is unlikely for the same error to be generated several times in distinct PCRs. | DNA | `sop` |
+| Chimeric sequences were discarded using UCHIME. | DNA | `sop` |
+| All sequences with a frequency of occurrence <0.0006/plate position in the same sequencing batch and <0.001/library were discarded to avoid index cross talk and tag jumps. | DNA | `sop` |
+| For the teleo marker only, we applied the postclustering algorithm LULU to further refine diversity estimations based on MOTUs proxy. | DNA | `sop` |
+| For all markers, taxonomic assignments of MOTUs sequences were carried out with the ecotag program from the OBITOOLS toolkit; | DNA / Occurrence | DNA: `sop`<br>Occurrence: `identificationRemarks` |
+| the European Nucleotide Archive was used as a reference database (release 141). | DNA / Occurrence | DNA: `otu_db`<br>Occurrence: `identificationReferences` |
+| Taxonomic assignments were corrected to avoid overconfidence in assignments: species assignments were validated only for a 100% sequence match, genus for a 90–99% match, and family for an 85–90% match. | DNA / Occurrence | DNA: `sop`<br>Occurrence: `identificationRemarks` |
+| Fish names were verified using the rfishbase R package. | Occurrence | `identificationRemarks` |
+| All taxa assigned to deep water or mesophotic species or lineages were flagged and not analyzed due to a lack of trait values for the functional analysis. | Occurrence | `identificationRemarks` |
+| The DNA sequence associated with asv1: `TCTATCAAGAAACGTGGCCCATGCAGGAGGGTCTGTAGACTTTGCAATTTTTTCTCTACACTTAGCAGGTGTTAGATCAATTTTAGGGGCTGTAAACTTTATTAGTACGTTAGGTAATCTACGGGTATTCGGAATACTTTTAGACCGTATCCCTTTATTTGCCTGGTCCG`<br>`TCTTGGTGACAGCTATTTTATTGTTATTGTCTTTACCTGTACTTGCCGGTGCCATTACGATATTATTAACTGACCGAAATTTAAATACTTCATTTTATGATGTTGGAGGGGGAGGAGACCCTATTCTCTACCAACACCTA` | DNA | `DNA_sequence` |
+| asv1 was assigned to *Acanthurus tractus* | Occurrence | `scientificName` |
+| The DNA sequence associated with asv2: `TCTATCAAGAAACGTGGCCCATGCAGGAGGGTCTGTAGACTTTGCAATTTTTTCTCTACACTTAGCAGGTGTTAGATCAATTTTAGGGGCTGTAAACTTTATTAGTACGTTAGGTAATCTACGGGTATTCGGAATACTTTTAGACCGTATCCCTTTATTTGCCTGGTCCGT`<br>`CTTGGTGACAGCTATTTTATTGTTATTGTCTTTACCTGTACTTGCCGGTGCCATTACGATATTATTAACTGACCGAAATTTAAATACTTCATTTTATGATGTTGGAGGGGGAGGAGACCCTATTCTCTACCAACACCTA` | DNA | `DNA_sequence` |
+| asv2 was assigned to *Platybelone argalus* | Occurrence | `scientificName` |
+| asv2 has 2447 DNA reads in sample 2 | Occurrence | `organismQuantity`, `organismQuantityType` |
+| asv1 had 40587 DNA reads in sample 1 | Occurrence | `organismQuantity`, `organismQuantityType` |

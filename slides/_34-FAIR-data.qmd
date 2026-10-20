@@ -1,0 +1,31 @@
+## What makes data FAIR?
+
+:::: {.columns}
+::: {.column width="30%"}
+
+![](assets/FAIR-graphic.png)
+:::
+
+
+::: {.column width="70%" style=padding-top:"6%;"}
+
+* **[Descriptive metadata]{style="color:#0F9ED5;"}** with stable links (e.g. DOI)
+* Clear **[instructions]{style="color:#0F9ED5;"}** on how to access
+    * Not just “available upon request”
+* Easily **[combined]{style="color:#0F9ED5;"}** with other datasets & **[machine readable]{style="color:#0F9ED5;"}**
+* Metadata enables **[replication]{style="color:#0F9ED5;"}**
+    * Data is contextualized
+:::
+::::
+
+::: {.notes}
+This is the "why" before we get into the "how" (Darwin Core, EOVs, sensitive data). 
+Starting with a quick overview on what actually makes data FAIR. To summarize each aspect –
+Findable means that there is descriptive metadata with stable links and identifiers e.g. DOI that enable finding our data
+Accessible means that there are clear instructions on how to access our data, going beyond ‘available upon request’ statements
+Interoperable means that our data can be easily combined with other datasets and that our data & metadata are machine readable. This often means adhering to data standards and using controlled vocabulary whenever possible
+Reusable means that the metadata is documented well enough to enable others to replicate what we’ve done and there is enough context so that users know what situations our data can be reused in (e.g looking back on data collected 20 yrs ago, code)
+
+
+
+:::

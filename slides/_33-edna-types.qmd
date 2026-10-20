@@ -2,8 +2,9 @@
 
 **Environmental DNA (eDNA)**
 
-> *"Any DNA collected from an environmental sample without first isolating targeted organisms"*  
-> — Taberlet 2012
+> *"Any DNA collected from an environmental sample without first isolating targeted organisms"* 
+> 
+>      — Taberlet 2012
 
 :::: {.columns}
 ::: {.column width="70%"}

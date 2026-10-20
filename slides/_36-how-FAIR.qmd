@@ -1,0 +1,17 @@
+## How to manage and make data FAIR? {background-image="assets/background-shapes.svg" background-size="cover" background-opacity="0.8"}
+
+
+:::: {.columns}
+::: {.column width="50%"}
+![](assets/OBIS_logo_blue.png){fig-align="center" width="50%"}
+:::
+
+::: {.column width="50%"}
+![](assets/DarwinCore-TDWG-logo.png){fig-align="center" width="70%"}
+:::
+::::
+
+
+::: {.notes}
+How do we make data FAIR - OBIS + DwC standard! 
+:::

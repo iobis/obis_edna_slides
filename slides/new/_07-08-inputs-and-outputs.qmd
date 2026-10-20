@@ -1,0 +1,17 @@
+---
+
+## From raw outputs → long format
+
+:::: {.columns}
+
+![](assets/DNA_4tables-to-one.jpg){fig-align="center" width="60%"}
+
+::::
+
+**The transformation:**
+
+> One row = one unique sequence **in** one sample = one occurrence record
+
+::: {.notes}
+The most common stumbling block is this "wide to long" transformation. The OBIS manual has a clear diagram. The Metabarcoding Data Toolkit (MDT) can automate this for common pipeline outputs.
+:::

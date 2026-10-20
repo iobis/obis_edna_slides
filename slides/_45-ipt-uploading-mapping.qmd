@@ -1,0 +1,29 @@
+## Uploading & mapping your data
+
+:::: {.columns}
+::: {.column width="60%"}
+**Upload:** Overview → Source Data → Choose File
+
+**Map:** for each source file, click **+ Add** and match columns to Darwin Core terms
+
+- Double check IPT's auto-matches
+- Unmapped fields sit at bottom — check if they need to be included or leave them (they just won't be published)
+- Repeat for each table: Event, Occurrence, DNA extension, eMoF...
+:::
+
+::: {.column width="25%"}
+![](assets/ipt-source-data.png)
+
+![](assets/ipt-mapping.png)
+
+:::
+::::
+
+::: {.callout-note icon=false}
+## Watch for "redundant terms"
+If a field like `eventDate` appears in both Occurrence and Event, the IPT will flag it - pick one table for it!
+:::
+
+::: {.notes}
+This is the step where all the field-mapping work from this morning (the key-fields slides) actually gets applied. Good moment to remind people: if they did the "map your columns to DwC terms in a documentation sheet" prep work already, this step is mostly mechanical.
+:::

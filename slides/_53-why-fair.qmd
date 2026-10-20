@@ -1,0 +1,14 @@
+## Why standardize data?
+
+* Enables data to be **[found, combined, and reused]{style="color:#0F9ED5;"}** across research groups, institutions, and countries
+* Avoids **[duplicated effort]{style="color:#0F9ED5;"}** — no need to re-collect or re-process data that already exists elsewhere
+* Supports large-scale **[synthesis]{style="color:#0F9ED5;"}** (e.g. global biodiversity assessments, ocean health indicators) that no single dataset could achieve alone
+* Keeps data **[accessible and usable long after]{style="color:#0F9ED5;"}** a project ends or funding runs out
+* Makes data **[machine-readable]{style="color:#0F9ED5;"}**, so pipelines and tools can integrate it automatically instead of manual reformatting
+* Provides **[context via metadata]{style="color:#0F9ED5;"}** so others can correctly interpret and trust the data
+* Maximizes the **[return on investment]{style="color:#0F9ED5;"}** of data collection, which is often costly (fieldwork, sequencing, expert time)
+
+::: {.notes}
+To summarzize... standardization isn't just for its own sake — it's what lets individual datasets add up to something bigger than the sum of their parts, and what protects the investment already made in collecting the data.
+:::
+

@@ -1,0 +1,13 @@
+## Choosing a data license
+
+| License | Meaning |
+|---|---|
+| **CC0** *(preferred)* | No restrictions, full public domain |
+| **CC-BY** | Free use, with attribution required |
+| **CC-BY-NC** | Free non-commercial use, with attribution |
+
+*Check with your institution if there are copyright concerns before choosing.*
+
+::: {.notes}
+OBIS lists these in order of preference — CC0 is preferred because it maximizes reuse/interoperability, but CC-BY is very common and totally fine. This is a quick, low-drama slide; most participants will already know which one their institution requires.
+:::

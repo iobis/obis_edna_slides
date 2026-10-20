@@ -1,0 +1,52 @@
+## Laura's Data
+
+:::: {.columns .mdt}
+
+::: {.column width="40%"}
+**Two workbooks — one per primer**
+
+| Workbook | OTUs | Samples |
+|---|---|---|
+| `vert_…` **Vert01** | 460 | 15 |
+| `teleo_…` **Tele01** | 113 | 13 |
+
+- One station sampled over 5 dates
+- 2-3 locations sampled within the station on each date
+- Each sample == 120L
+:::
+
+::: {.column width="60%"}
+**Each sheet is one table**
+
+| In the file | Table | Becomes |
+|---|---|---|
+| `otu_table` | **OTU_table** | reads → `organismQuantity` |
+| `taxon` | **Taxonomy** | `scientificName`, `DNA_sequence` |
+| `sample` | **Samples** | `sampleID` → **`eventID`** |
+| `defaultValues` | **Study** | terms applied to *every* record |
+:::
+
+::::
+
+## Laura's Elegant Solution: MDT to IPT
+
+::: {.mdt-routes}
+![](assets/mdt-routes.svg)
+:::
+
+::: {.notes}
+Two ways into the same place. Both end at the IPT, and both produce a Darwin Core Archive; the difference is who does the mapping.
+
+Laura's route runs the standard outputs of an eDNA pipeline through the MDT, which reads the OTU table, the taxonomy and the sample sheet and writes Darwin Core for her. The other route is the one most people picture: build the tables yourself, in the right terms, and hand them to the IPT directly. That is drawn dashed because nothing helps you along the way.
+
+Neither is wrong. The point of the next few slides is what the MDT expects in return for doing that work.
+:::
+
+
+::: {.notes}
+This is the same idea as the Study table doing what defaultValues does: say a thing once instead of on every row. Nine terms here — env_medium, target_gene, both primers and their names, sop, seq_meth, otu_db — cover all 460 x 15 records.
+
+The two-workbook split is not an accident or an oversight. The guide is explicit: different primer sets on the same samples are separate datasets, because an OTU from Vert01 and an OTU from Tele01 are not comparable units. Note the OTU numbering runs continuously across both files, so they clearly came out of one pipeline and were split afterwards.
+
+Sample IDs become eventID. That is the hinge between this spreadsheet and everything we said about Event core.
+:::

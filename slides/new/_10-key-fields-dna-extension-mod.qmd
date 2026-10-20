@@ -1,0 +1,65 @@
+## Key fields to include: DNA Extension
+
+:::: {.columns .fields .dense}
+
+::: {.column width="34%"}
+[Required]{.field-label}
+
+- `occurrenceID` — <span class="small-note">links to the occurrence row</span>
+
+[Strongly recommended]{.field-label}
+
+- `DNA_sequence` — <span class="small-note">ASV/OTU sequence</span>
+- `target_gene` — <span class="small-note">e.g. "COI", "18S rRNA"</span>
+- `target_subfragment` — <span class="small-note">e.g. "V4"</span>
+- `env_broad_scale` — <span class="small-note">biome</span>
+- `env_medium` — <span class="small-note">what was sampled</span>
+:::
+
+::: {.column width="34%"}
+[Strongly recommended, cont.]{.field-label}
+
+- `pcr_primer_name_forward` — <span class="small-note">and reverse</span>
+- `pcr_primer_name_reverse`
+- `pcr_primer_forward` — <span class="small-note">the sequence itself</span>
+- `pcr_primer_reverse`
+- `pcr_primer_reference` — <span class="small-note">where the primer pair is published</span>
+
+[Recommended]{.field-label}
+
+- `seq_meth` — <span class="small-note">e.g. "Illumina MiSeq"</span>
+- `otu_class_appr` — <span class="small-note">e.g. "DADA2 v1.18"</span>
+- `otu_db` — <span class="small-note">reference database</span>
+- `sop` — <span class="small-note">link to your protocol</span>
+- `samp_vol_we_dna_ext` — <span class="small-note">volume sampled</span>
+:::
+
+::: {.column width="32%" .dna-quickguide}
+![](assets/eDNA_quickguide.png)
+
+[manual.obis.org/dna_data.html](https://manual.obis.org/dna_data.html#quick-start-guide){style="font-size:14px;"}
+:::
+
+::::
+
+<style>
+/* The full term list leaves less room than before, and custom.css caps slide
+   images at 480px, which is still too tall here. */
+.reveal .slides section .dna-quickguide img {
+  max-height: 340px;
+}
+</style>
+
+::: {.checklist-link}
+These are the fields you will use most — the full OBIS list of required and recommended terms is at [manual.obis.org/checklist.html](https://manual.obis.org/checklist.html)
+:::
+
+::: {.notes}
+WoRMS = World Register of Marine Species. Every marine occurrence should have a WoRMS AphiaID as the taxonID. For freshwater / terrestrial taxa use the appropriate backbone (CoL, etc.). Unidentified sequences should still be included — they can be assigned taxon later.
+
+Everything OBIS marks required or strongly recommended for the DNA table is on this slide. env_broad_scale and env_medium are the two that tend to get missed; they are MIxS core and nothing elsewhere in the archive carries them.
+
+The five primer terms are one idea in five fields: the names of each primer, the sequences of each, and the citation for the pair.
+
+samp_vol_we_dna_ext is where the volume of water sampled goes, and sop is the laboratory protocol. Neither belongs in sampleSize or samplingProtocol on the occurrence side.
+:::

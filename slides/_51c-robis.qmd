@@ -1,0 +1,19 @@
+## robis — programmatic access from R
+
+```r
+install.packages("robis")
+library(robis)
+
+records <- occurrence(scientificname = "Megaptera novaeangliae", fields="associatedSequences")
+dna <- dataset(scientificname = "Megaptera novaeangliae", fields="associatedSequences")
+```
+
+- Query by species, taxon group, geometry (WKT), depth, time, quality flags...
+- Built-in `checklist()` for taxon lists in an area
+- `dataset()` — query for datasets instead of biological records
+
+[github.com/iobis/robis](https://github.com/iobis/robis)
+
+::: {.notes}
+This is the go-to for most "I need this species/region's data in R" tasks — talks directly to the OBIS API under the hood, so no local storage needed. Good for small-to-medium pulls; for anything approaching "the whole OBIS dataset" or repeated heavy queries, the next slide's Parquet approach is a better fit.
+:::

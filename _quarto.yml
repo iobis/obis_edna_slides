@@ -1,6 +1,9 @@
 project:
   type: website
   output-dir: _site
+  # No pre-render hook, deliberately. scripts/fetch-obis-stats.R refreshes the
+  # OBIS numbers in _variables.yml and is run by hand; adding it here would make
+  # every render hit the API and change the slides without anyone deciding to.
   resources:
     - assets/
     - obis_nodes_map.js
@@ -11,11 +14,21 @@ license:
   link: "https://creativecommons.org/licenses/by-nc/4.0/"
 
 website:
-  title: "Publishing eDNA data in OBIS"
+  title: "OBIS Training Slides"
   navbar:
-    left:
-      - text: "Presentation"
+    background: "#ffffff"
+    foreground: "#545556"
+    title: |
+      <a class="navbar-brand" href="index.html"><img src="assets/ioc_logo_black_2.svg" style="height: 40px; margin-right: .7rem !important;" class="me-2"><img src="assets/logo_simple.png" style="height: 30px;"></a>
+    right:
+      - text: "OBIS Manual"
+        href: https://manual.obis.org/
+      - text: "Slide Home"
         href: index.qmd
+      - text: "DwC Training"
+        href: index-dwc.qmd
+      - text: "DNA Training"
+        href: index-dna.qmd
 
 format:
   revealjs:
@@ -40,7 +53,7 @@ format:
     history: true
     center: true
     footer: |
-      <span style="font-size: 10px;">© 2026 <a href="https://obis.org/" target="_blank"><img src="assets/IOC+OBIS_color.svg" style="height:60px; vertical-align:middle;"></a> License: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></span>
+      <span style="font-size: 10px;"><a href="index.html">🏠 Return to Home</a> · © 2026 <a href="https://obis.org/" target="_blank"><img src="assets/IOC+OBIS_color.svg" style="height:60px; vertical-align:middle;"></a> License: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></span>
     include-in-header:
       text: |
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">

@@ -1,0 +1,132 @@
+## eDNA data standards
+
+**Two major eDNA data standards exist**
+
+::::: {.columns .standards}
+
+:::: {.column width="50%"}
+::: {.standard-card}
+[1. MIxS]{.standard-name}
+
+Minimum Information about any (x) Sequence — for raw sequences
+
+[Used by]{.repo-label}\
+[INSDC]{.repo .repo-group} [NCBI]{.repo} [ENA]{.repo} [DDBJ]{.repo}
+:::
+::::
+
+:::: {.column width="50%"}
+::: {.standard-card .fragment .highlight-dwc}
+[2. Darwin Core (DwC)]{.standard-name}
+
+Community vocabulary for biodiversity data — species, location, date, basis of record
+
+[Used by]{.repo-label}\
+[OBIS]{.repo} [GBIF]{.repo} [ALA]{.repo}
+:::
+::::
+
+:::::
+
+**Developing landscape**
+
+- Rapidly changing field
+- For OBIS future directions include the DWC-DP and FAIReDNA terms
+
+<style>
+/* Quarto lays these columns out as inline-block (div.column), not as flex
+   items, so equal-height cards need the container itself made flex. Setting
+   display:flex on .column instead would override that inline-block and stack
+   the two columns vertically. */
+.reveal .standards {
+  display: flex;
+  align-items: stretch;
+  gap: 16px;
+  margin-bottom: 0.2em;
+}
+.reveal .standards .column {
+  display: flex;
+  width: 50%;
+}
+.reveal .standard-card {
+  flex: 1;
+  background: #F8F9FA;
+  border: 1px solid #DEE2E6;
+  border-radius: 8px;
+  padding: 12px 14px;
+}
+.reveal .standard-card p {
+  font-size: 18px;
+  margin: 0 0 6px 0;
+}
+.reveal .standard-card p:last-child {
+  margin-bottom: 0;
+}
+.reveal .standard-name {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.reveal .repo-label {
+  font-size: 14px;
+  color: #6C757D;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.reveal .repo {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #156082;
+  background: #FFFFFF;
+  border: 1px solid #C9D6DE;
+  border-radius: 999px;
+  padding: 2px 12px;
+  margin: 4px 4px 0 0;
+}
+/* INSDC is the umbrella the other three sit under, not a fourth archive. */
+.reveal .repo-group {
+  background: #EDF3F7;
+  border-style: dashed;
+}
+
+/* Reveal keeps a .fragment visible before activation only for the highlight
+   variants it ships, so mirror that rule here; without it the card would be
+   hidden until the first click rather than merely unhighlighted. */
+.reveal .slides section .fragment.highlight-dwc {
+  opacity: 1;
+  visibility: inherit;
+}
+.reveal .fragment.highlight-dwc.visible {
+  background: #E9FBF7;
+  border-color: #0E9E82;
+}
+/* Listed explicitly because the theme colours p and strong directly, and a
+   directly matching declaration beats an inherited one. */
+.reveal .fragment.highlight-dwc.visible p,
+.reveal .fragment.highlight-dwc.visible strong,
+.reveal .fragment.highlight-dwc.visible .standard-name {
+  color: #0E9E82;
+}
+.reveal .fragment.highlight-dwc.visible .repo {
+  color: #0E9E82;
+  border-color: #0E9E82;
+}
+
+.reveal .standards-note p {
+  text-align: center;
+  color: #065A82;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 20px;
+  margin-top: 6px;
+}
+</style>
+
+::: {.notes}
+Raw sequences deposited in NCBI lack coordinates and dates — they cannot answer where or when a species was detected. OBIS, GBIF, and ALA now accept DNA-derived occurrences linked to space and time. DNA data requires special care: it is derived, depends on reference databases, and often produces many unknown sequences. The Darwin Core DNA extension preserves methodological context for future re-analysis.
+
+INSDC is shown dashed because it is the umbrella body — NCBI, ENA and DDBJ are its three member archives, mirroring each other's records, not four separate places to deposit.
+
+One click highlights the Darwin Core card, which is what the rest of the session is about; the click after that moves on.
+:::

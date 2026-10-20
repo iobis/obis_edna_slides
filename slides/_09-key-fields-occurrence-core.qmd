@@ -1,26 +1,26 @@
-## Key fields to include: Occurrence core
+## Key DwC fields to include: Occurrence
 
 :::: {.columns}
 
 ::: {.column width="50%"}
-**Occurrence core table (mandatory fields)**
+**Occurrence (core) table (mandatory fields)**
 
 - `occurrenceID` — <span class="small-note">unique, stable ID</span>
-- `scientificName` — <span class="small-note">WoRMS</span>
+- `scientificName` — <span class="small-note">taxon name to lowest possible taxon rank</span>
 - `basisOfRecord` =  <span class="small-note">"MaterialSample"</span>  
-- `eventDate`, `decimalLatitude`, `decimalLongitude`  
 - `occurrenceStatus` = <span class="small-note">"present"</span>
+
+*If Occurrence **core**, also: `eventDate`, `decimalLatitude`, `decimalLongitude`*
 ::: 
 ::: {.column width="50%"}
-**Occurrence core table (strongly recommended fields)**
+**Occurrence table (strongly recommended fields)**
 
 - `scientificNameID` <span class="small-note">(WoRMS AphiaID)</span>  
 - `organismQuantity` <span class="small-note">(read count of sequence)</span>  
-- `associatedSequences` <span class="small-note">(link to e.g. GenBank or ENA accession)</span> 
 - `organismQuantityType` = <span class="small-note">"DNA sequence reads"</span> 
- - `sampleSizeValue` <span class="small-note">(total read count in sample)</span>  
+- `sampleSizeValue` <span class="small-note">(total read count in sample)</span>  
 - `sampleSizeUnit` = <span class="small-note">"DNA sequence reads"</span> 
 - `samplingProtocol` - <span class="small-note">(link to your SOP)</span>
-
+- `associatedSequences` <span class="small-note">(link to e.g. GenBank or ENA accession)</span> 
 :::
 ::::

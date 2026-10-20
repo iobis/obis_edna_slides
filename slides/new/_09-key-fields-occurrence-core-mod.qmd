@@ -1,0 +1,51 @@
+## Key DwC fields: Occurrence core
+
+:::: {.columns .fields .dense}
+
+::: {.column width="30%"}
+[Required]{.field-label}
+
+- `occurrenceID` — <span class="small-note">unique, stable ID</span>
+- `scientificName` — <span class="small-note">taxon name to lowest possible taxon rank</span>
+- `basisOfRecord` = <span class="small-note">"MaterialSample"</span>
+- `occurrenceStatus` = <span class="small-note">"present"</span>
+- `eventDate` — <span class="small-note">YYYY-MM-DD</span>
+- `decimalLatitude`, `decimalLongitude`
+:::
+
+::: {.column width="36%"}
+[Strongly recommended]{.field-label}
+
+- `scientificNameID` <span class="small-note">(WoRMS AphiaID)</span>
+- `taxonRank`, `kingdom`, `order`, `genus`
+- `minimumDepthInMeters`, `maximumDepthInMeters`
+- `locationID`, `continent`
+- `coordinateUncertaintyInMeters`, `coordinatePrecision`
+- `year`, `month`
+- `license`, `type`
+:::
+
+::: {.column width="34%"}
+[Also for eDNA]{.field-label}
+
+- `organismQuantity` <span class="small-note">(read count of sequence)</span>
+- `organismQuantityType` = <span class="small-note">"DNA sequence reads"</span>
+- `sampleSizeValue` <span class="small-note">(total read count in sample)</span>
+- `sampleSizeUnit` = <span class="small-note">"DNA sequence reads"</span>
+- `samplingProtocol` <span class="small-note">(field sampling)</span>
+- `associatedSequences` <span class="small-note">(link to e.g. GenBank or ENA accession)</span>
+:::
+
+::::
+
+::: {.checklist-link}
+These are the fields you will use most — the full OBIS list of required and recommended terms is at [manual.obis.org/checklist.html](https://manual.obis.org/checklist.html)
+:::
+
+::: {.notes}
+This is the whole field list in one table. Nothing here is wrong, and for a small dataset it is the simplest thing to publish.
+
+Note what it costs: eventDate and the coordinates are identical for every taxon detected in a sample, so they are copied down the table once per row.
+
+The first two columns are what the OBIS checklist marks required and strongly recommended for an Occurrence core. The third holds the terms eDNA publishing adds on top, which the checklist files under the eMoF table but which the community records here.
+:::

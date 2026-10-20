@@ -1,0 +1,16 @@
+---
+title: "Acceso a los datos de OBIS"
+subtitle: "Cómo encontrar y acceder a los datos de OBIS"
+author: "Elizabeth Lawrence"
+date: 2026-07-24
+---
+
+{{< include slides/_51-accessing-obis-overview-es.qmd >}}
+
+{{< include slides/_51a-obis-portal-es.qmd >}}
+
+{{< include slides/_51b-obis-mapper-es.qmd >}}
+
+{{< include slides/_51c-robis-es.qmd >}}
+
+{{< include slides/_51d-robisdb-parquet-es.qmd >}}

@@ -10,10 +10,9 @@
 - `eventDate`
 - `decimalLatitude`
 - `decimalLongitude`
-- `env_medium`
 - `samplingProtocol`
 
-*→ the where, when & how of collection*
+*→ the 📍where, 🕒when & 🧪how of collection*
 :::
 :::
 
@@ -28,7 +27,8 @@
 - `basisOfRecord`
 - `occurrenceStatus`
 
-*→ what organism was detected*
+*→ what organism was detected* 🐠🪸🪼
+
 :::
 :::
 
@@ -43,7 +43,7 @@
 - `pcr_primer_reverse`
 - `seq_meth`
 
-*→ the molecular context*
+*→ 🧬the molecular context*
 :::
 :::
 
