@@ -48,6 +48,8 @@ date: 27 October 2026
 
 {{< include slides/_04-data-standard.qmd >}}
 
+{{< include slides/_43-dna-core-options.qmd >}} 
+
 {{< include slides/_06-five-data-categories.qmd >}}
 
 {{< include slides/_24-key_fields_metabarcoding.qmd >}}
@@ -61,13 +63,6 @@ date: 27 October 2026
 
 ## The OBIS manual
 
-{{< include slides/_43-dna-core-options.qmd >}} 
-{{< include slides/_09a-key-fields-event-core.qmd >}}        
-
-{{< include slides/_09-key-fields-occurrence-core.qmd >}}    
-
-{{< include slides/_10-key-fields-dna-extension.qmd >}}
-
 {{< include slides/_07-raw-outputs-long-format.qmd >}}
 
 {{< include slides/_08-example-transformation.qmd >}}
@@ -75,6 +70,12 @@ date: 27 October 2026
 {{< include slides/_11-table-structure-options.qmd >}}
 
 {{< include slides/_28-table-structure-examples.qmd >}}
+
+{{< include slides/_09a-key-fields-event-core.qmd >}}        
+
+{{< include slides/_09-key-fields-occurrence-core.qmd >}}    
+
+{{< include slides/_10-key-fields-dna-extension.qmd >}}
 
 {{< include slides/_18-emof.qmd >}}
 
