@@ -11,7 +11,8 @@ date: 27 October 2026
 - How to format an eDNA dataset for OBIS and GBIF
 - How publish DNA-derived data to OBIS
 
-**If we have enough time**
+*If we have enough time*
+
 - The OBIS eDNA QC tool
 - Mapping molecular data to Darwin Core
 
