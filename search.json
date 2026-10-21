@@ -840,8 +840,8 @@
     "text": "Datos de eDNA para monitoreo nacional\nUn programa nacional de monitoreo quiere que todos los datos de eDNA estén disponibles públicamente en el plazo de un año.\n\n\n¿Quién eres?\nCada uno de ustedes recibirá un rol, representando una de estas categorías de actores:\n🌳 Ecólogo/a de campo\n🧬 Científico/a de laboratorio molecular / Bioinformático/a\n💻 Gestor/a de datos\n🏛️ Curador/a de repositorio\n📜 Responsable de políticas\n🌐 Representante de base de datos de biodiversidad\n🗺️ Usuario/a final\n\n👥 ¿Qué necesitas?\nDentro de tu rol como actor, deberías discutir y explicar:\n- **¿Qué necesitas?**\n- **¿Qué te preocupa?**\n- **¿Qué datos puedes proporcionar?**\n- **¿Qué estándares requieres?**\n\nEscribe tus respuestas en notas adhesivas. ¡incluye tu función!"
   },
   {
-    "objectID": "index-OBON-20261027.html#what-is-obis",
-    "href": "index-OBON-20261027.html#what-is-obis",
+    "objectID": "index-OBON-20261027.html#what-is-obis-1",
+    "href": "index-OBON-20261027.html#what-is-obis-1",
     "title": "Publishing eDNA Data in OBIS",
     "section": "What is OBIS?",
     "text": "What is OBIS?\n\n\nOcean Biodiversity Information System\n\nGlobal open-access data system for marine life\n\nUNESCO Intergovernmental Oceanographic Commission\n\n&gt; 199 M occurrence records from &gt;7,000 datasets\n\nData flows to GBIF — easy to publish once, reach both\n\nFree to use. Free to contribute.\n\n\n🌐 obis.org\n📖 manual.obis.org\n\n\nOBIS is endorsed by UNESCO’s IOC. Data published there can flow to GBIF as well, giving you double visibility with a single submission. Emphasize that OBIS is not just a repository but actively feeds into global biodiversity assessments, climate analyses, and conservation planning."
@@ -859,6 +859,55 @@
     "title": "Publishing eDNA Data in OBIS",
     "section": "eDNA data in OBIS",
     "text": "eDNA data in OBIS\n\n\n\n\n\n\nOBIS currently holds 128 datasets with eDNA-derived occurrences, including 44,5 million records\nAbout 2 million distinct sequences\nThat is 2% of all datasets, but 25% of all occurrence records in OBIS\n\n\nOBIS is endorsed by UNESCO’s IOC. Data published there can flow to GBIF as well, giving you double visibility with a single submission. Emphasize that OBIS is not just a repository but actively feeds into global biodiversity assessments, climate analyses, and conservation planning."
+  },
+  {
+    "objectID": "index-OBON-20261027.html#obis-fair-data",
+    "href": "index-OBON-20261027.html#obis-fair-data",
+    "title": "Publishing eDNA Data in OBIS",
+    "section": "OBIS & FAIR Data",
+    "text": "OBIS & FAIR Data\n\n\n\n\n\n\n\n\n\nWhat OBIS gives you\n\n\n\n\nFindable\nYour dataset joins a global, searchable index - with a DOI\n\n\nAccessible\nStandard download/API access, no one-off email requests\n\n\nInteroperable\nDarwin Core structure - readable by people and machines\n\n\nReusable\nDocumented metadata + a clear reuse license (e.g. CC-BY)\n\n\n\n\n\n\n\n\n\n\nA real example\n\n\nA marine invasive species dataset from Venezuela, published July 2022, was included in 1,873 separate download requests within 3 months — with zero extra effort from the data provider!\n\n\n\n\n…it’s the reason people don’t have to keep emailing you for your spreadsheet."
+  },
+  {
+    "objectID": "index-OBON-20261027.html#why-publish-edna-data",
+    "href": "index-OBON-20261027.html#why-publish-edna-data",
+    "title": "Publishing eDNA Data in OBIS",
+    "section": "Why publish eDNA data?",
+    "text": "Why publish eDNA data?\n\n\n\neDNA captures what other methods miss\n\nCryptic and rare marine taxa\n\nNon-invasive, scalable sampling\n\nCommunity-level biodiversity signals\n\nShared eDNA data is powerful data\n\nData contributes to global analyses\nData has long-term value\nYour sequences become findable via OBIS sequence search tools\n\n\n\n\n\nBenefit\nWhy it matters\n\n\n\n\nOpen DOI\nCitable in publications\n\n\nLong-term archive\nFAIR data\n\n\nGlobal reach\nOBIS + GBIF\n\n\nSequence search\nReuse & reanalysis\n\n\n\n\n\nMention the OBIS sequence search prototype at sequence.obis.org — users can search for similar sequences across all OBIS datasets. This is only possible because sequences are published in standardized form."
+  },
+  {
+    "objectID": "index-OBON-20261027.html#what-is-special-about-edna-data",
+    "href": "index-OBON-20261027.html#what-is-special-about-edna-data",
+    "title": "Publishing eDNA Data in OBIS",
+    "section": "What is special about eDNA data?",
+    "text": "What is special about eDNA data?\nEnormous potential…\n\nExpands access to biodiversity data at scale\nCaptures environmental, specimen, and bulk-sample DNA\nRaw sequences already widely shared in NCBI"
+  },
+  {
+    "objectID": "index-OBON-20261027.html#what-is-special-about-edna-data-1",
+    "href": "index-OBON-20261027.html#what-is-special-about-edna-data-1",
+    "title": "Publishing eDNA Data in OBIS",
+    "section": "What is special about eDNA data?",
+    "text": "What is special about eDNA data?\n\nSpecial considerations\n⚗️ Derived information — not a direct observation; extensive lab and bioinformatic processing\n📚 Relies on reference databases — results depend on database completeness\n❓ Large fraction of unknown sequences — no match in any database\n📋 The DwC DNA Extension records how work was done, enabling future re-analysis\n\n\nRaw sequences deposited in NCBI lack coordinates and dates — they cannot answer where or when a species was detected. OBIS, GBIF, and ALA now accept DNA-derived occurrences linked to space and time. DNA data requires special care: it is derived, depends on reference databases, and often produces many unknown sequences. The Darwin Core DNA extension preserves methodological context for future re-analysis."
+  },
+  {
+    "objectID": "index-OBON-20261027.html#two-major-edna-data-standards-exist",
+    "href": "index-OBON-20261027.html#two-major-edna-data-standards-exist",
+    "title": "Publishing eDNA Data in OBIS",
+    "section": "Two major eDNA data standards exist",
+    "text": "Two major eDNA data standards exist\n\n\n\n\nMIxS  (Minimum Information about any (x) Sequence) — for raw sequences in NCBI\n\n\n\nDarwin Core (DwC) Community vocabulary for biodiversity data — species, location, date, basis of record\n\n\n\n\nOBIS + GBIF + ALA accept genetic data linked to spatial coordinates and time\n\n 🔜Developing landscape\n\nRapidly changing field\nFor OBIS future directions include the DwC-DP and FAIR eDNA (FAIRe) terms\n\n\nRaw sequences deposited in NCBI lack coordinates and dates — they cannot answer where or when a species was detected. OBIS, GBIF, and ALA now accept DNA-derived occurrences linked to space and time. DNA data requires special care: it is derived, depends on reference databases, and often produces many unknown sequences. The Darwin Core DNA extension preserves methodological context for future re-analysis."
+  },
+  {
+    "objectID": "index-OBON-20261027.html#what-is-darwin-core",
+    "href": "index-OBON-20261027.html#what-is-darwin-core",
+    "title": "Publishing eDNA Data in OBIS",
+    "section": "What is Darwin Core?",
+    "text": "What is Darwin Core?\n\n\n\nStable, shared vocabulary for biodiversity data\n\nStandardized field names, identifiers, & definitions\n\nMaintained by TDWG, used by OBIS, GBIF, and the wider biodiversity community\nNot a database itself - a set of agreed-upon terms (e.g. scientificName, eventDate, decimalLatitude)\n\n\n\n\n\n\n\n\n\nThink of it as everyone agreeing to call the same column the same thing - so your data and someone else’s can sit in the same table!\n\n🤝\n\n\n\nFor folks who’ve never touched DwC: it’s just a controlled list of column names and what they mean, nothing more mystical than that. For the DwC veterans in the room, this is review — we’re about to build on this with how those terms get organized into tables (next slide), which matters a lot once we get into DNA data this afternoon/tomorrow."
+  },
+  {
+    "objectID": "index-OBON-20261027.html#darwin-core-dna-derived-data-extension",
+    "href": "index-OBON-20261027.html#darwin-core-dna-derived-data-extension",
+    "title": "Publishing eDNA Data in OBIS",
+    "section": "Darwin Core + DNA Derived Data Extension",
+    "text": "Darwin Core + DNA Derived Data Extension\n\nDarwin Core: shared vocabulary for biodiversity data\n\nDNA Extension: adds MIxS terms for sequences, primers, methods\n\nDeveloped jointly by GBIF, OBIS, and the genomics community\n\n\n\n\n\n\nmeta.xml ← links all tables\neml.xml ← metadata (who, what, where, when, how)\noccurrence.csv ← the occurrence records\ndna_derived.csv ← the DNA extension\n\n\n\nMIxS = Minimum Information about any (x) Sequence. The extension incorporates these community standards so the same fields used in INSDC/GenBank submissions can be reused here."
   },
   {
     "objectID": "index-OBON-20261027.html#what-is-edna",
@@ -903,36 +952,36 @@
     "text": "Key Metadata: Quantitative PCR (qPCR)\nTargeted species detection — additional fields vs metabarcoding\n\n\n\n⛵ Field Sampling\n\nDate, Coordinates, Environmental measurements\n\n\n\n🧪 PCR Protocol\n\nPCR conditions\n\n\n\n\n🧬 DNA Extraction\n\nConcentration, Extraction method, Extracted amount\n\n\n\n🎯 Target & Quantity\n\nTarget gene region, primers\nCopy number, LOD, Cq, baseline\n\n\n\n\nCategory 3 — Targeted species detection · basisOfRecord = MaterialSample\n\n\nqPCR = Category 3 — targeted species detection. Adds qPCR-specific fields: probeReporter, probeQuencher, estimatedNumberOfCopies, thresholdQuantificationCycle, and baselineValue. Key difference from metabarcoding: you are detecting one specific taxon, so scientificName and scientificNameID are required from the start. Use basisOfRecord = MaterialSample."
   },
   {
-    "objectID": "index-OBON-20261027.html#why-publish-edna-data",
-    "href": "index-OBON-20261027.html#why-publish-edna-data",
+    "objectID": "index-OBON-20261027.html#why-publish-edna-data-1",
+    "href": "index-OBON-20261027.html#why-publish-edna-data-1",
     "title": "Publishing eDNA Data in OBIS",
     "section": "Why publish eDNA data?",
     "text": "Why publish eDNA data?\n\n\n\neDNA captures what other methods miss\n\nCryptic and rare marine taxa\n\nNon-invasive, scalable sampling\n\nCommunity-level biodiversity signals\n\nShared eDNA data is powerful data\n\nData contributes to global analyses\nData has long-term value\nYour sequences become findable via OBIS sequence search tools\n\n\n\n\n\nBenefit\nWhy it matters\n\n\n\n\nOpen DOI\nCitable in publications\n\n\nLong-term archive\nFAIR data\n\n\nGlobal reach\nOBIS + GBIF\n\n\nSequence search\nReuse & reanalysis\n\n\n\n\n\nMention the OBIS sequence search prototype at sequence.obis.org — users can search for similar sequences across all OBIS datasets. This is only possible because sequences are published in standardized form."
   },
   {
-    "objectID": "index-OBON-20261027.html#what-is-special-about-edna-data",
-    "href": "index-OBON-20261027.html#what-is-special-about-edna-data",
+    "objectID": "index-OBON-20261027.html#what-is-special-about-edna-data-2",
+    "href": "index-OBON-20261027.html#what-is-special-about-edna-data-2",
     "title": "Publishing eDNA Data in OBIS",
     "section": "What is special about eDNA data?",
     "text": "What is special about eDNA data?\nEnormous potential…\n\nExpands access to biodiversity data at scale\nCaptures environmental, specimen, and bulk-sample DNA\nRaw sequences already widely shared in NCBI"
   },
   {
-    "objectID": "index-OBON-20261027.html#what-is-special-about-edna-data-1",
-    "href": "index-OBON-20261027.html#what-is-special-about-edna-data-1",
+    "objectID": "index-OBON-20261027.html#what-is-special-about-edna-data-3",
+    "href": "index-OBON-20261027.html#what-is-special-about-edna-data-3",
     "title": "Publishing eDNA Data in OBIS",
     "section": "What is special about eDNA data?",
     "text": "What is special about eDNA data?\n\nSpecial considerations\n⚗️ Derived information — not a direct observation; extensive lab and bioinformatic processing\n📚 Relies on reference databases — results depend on database completeness\n❓ Large fraction of unknown sequences — no match in any database\n📋 The DwC DNA Extension records how work was done, enabling future re-analysis\n\n\nRaw sequences deposited in NCBI lack coordinates and dates — they cannot answer where or when a species was detected. OBIS, GBIF, and ALA now accept DNA-derived occurrences linked to space and time. DNA data requires special care: it is derived, depends on reference databases, and often produces many unknown sequences. The Darwin Core DNA extension preserves methodological context for future re-analysis."
   },
   {
-    "objectID": "index-OBON-20261027.html#two-major-edna-data-standards-exist",
-    "href": "index-OBON-20261027.html#two-major-edna-data-standards-exist",
+    "objectID": "index-OBON-20261027.html#two-major-edna-data-standards-exist-1",
+    "href": "index-OBON-20261027.html#two-major-edna-data-standards-exist-1",
     "title": "Publishing eDNA Data in OBIS",
     "section": "Two major eDNA data standards exist",
     "text": "Two major eDNA data standards exist\n\n\n\n\nMIxS  (Minimum Information about any (x) Sequence) — for raw sequences in NCBI\n\n\n\nDarwin Core (DwC) Community vocabulary for biodiversity data — species, location, date, basis of record\n\n\n\n\nOBIS + GBIF + ALA accept genetic data linked to spatial coordinates and time\n\n 🔜Developing landscape\n\nRapidly changing field\nFor OBIS future directions include the DwC-DP and FAIR eDNA (FAIRe) terms\n\n\nRaw sequences deposited in NCBI lack coordinates and dates — they cannot answer where or when a species was detected. OBIS, GBIF, and ALA now accept DNA-derived occurrences linked to space and time. DNA data requires special care: it is derived, depends on reference databases, and often produces many unknown sequences. The Darwin Core DNA extension preserves methodological context for future re-analysis."
   },
   {
-    "objectID": "index-OBON-20261027.html#darwin-core-dna-derived-data-extension",
-    "href": "index-OBON-20261027.html#darwin-core-dna-derived-data-extension",
+    "objectID": "index-OBON-20261027.html#darwin-core-dna-derived-data-extension-1",
+    "href": "index-OBON-20261027.html#darwin-core-dna-derived-data-extension-1",
     "title": "Publishing eDNA Data in OBIS",
     "section": "Darwin Core + DNA Derived Data Extension",
     "text": "Darwin Core + DNA Derived Data Extension\n\nDarwin Core: shared vocabulary for biodiversity data\n\nDNA Extension: adds MIxS terms for sequences, primers, methods\n\nDeveloped jointly by GBIF, OBIS, and the genomics community\n\n\n\n\n\n\nmeta.xml ← links all tables\neml.xml ← metadata (who, what, where, when, how)\noccurrence.csv ← the occurrence records\ndna_derived.csv ← the DNA extension\n\n\n\nMIxS = Minimum Information about any (x) Sequence. The extension incorporates these community standards so the same fields used in INSDC/GenBank submissions can be reused here."
