@@ -203,11 +203,11 @@
     "text": "What is special about eDNA data?\n\nSpecial considerations\n⚗️ Derived information — not a direct observation; extensive lab and bioinformatic processing\n📚 Relies on reference databases — results depend on database completeness\n❓ Large fraction of unknown sequences — no match in any database\n📋 The DwC DNA Extension records how work was done, enabling future re-analysis\n\n\nRaw sequences deposited in NCBI lack coordinates and dates — they cannot answer where or when a species was detected. OBIS, GBIF, and ALA now accept DNA-derived occurrences linked to space and time. DNA data requires special care: it is derived, depends on reference databases, and often produces many unknown sequences. The Darwin Core DNA extension preserves methodological context for future re-analysis."
   },
   {
-    "objectID": "index-edna-full.html#edna-data-standards",
-    "href": "index-edna-full.html#edna-data-standards",
+    "objectID": "index-edna-full.html#two-major-edna-data-standards-exist",
+    "href": "index-edna-full.html#two-major-edna-data-standards-exist",
     "title": "Publishing eDNA Data in OBIS",
-    "section": "eDNA data standards",
-    "text": "eDNA data standards\n\nTwo major eDNA data standards exist\n\n\n\nMiXS  (Minimum Information about any (x) Sequence) — for raw sequences in NCBI\n\n\n\nDarwin Core (DwC) Community vocabulary for biodiversity data — species, location, date, basis of record\n\n\n\n\nOBIS + GBIF + ALA accept genetic data linked to spatial coordinates and time\n\n 🔜Developing landscape\n\nRapidly changing field\nFor OBIS future directions include the DWC-DP and FAIReDNA terms\n\n\nRaw sequences deposited in NCBI lack coordinates and dates — they cannot answer where or when a species was detected. OBIS, GBIF, and ALA now accept DNA-derived occurrences linked to space and time. DNA data requires special care: it is derived, depends on reference databases, and often produces many unknown sequences. The Darwin Core DNA extension preserves methodological context for future re-analysis."
+    "section": "Two major eDNA data standards exist",
+    "text": "Two major eDNA data standards exist\n\n\n\n\nMIxS  (Minimum Information about any (x) Sequence) — for raw sequences in NCBI\n\n\n\nDarwin Core (DwC) Community vocabulary for biodiversity data — species, location, date, basis of record\n\n\n\n\nOBIS + GBIF + ALA accept genetic data linked to spatial coordinates and time\n\n 🔜Developing landscape\n\nRapidly changing field\nFor OBIS future directions include the DwC-DP and FAIR eDNA (FAIRe) terms\n\n\nRaw sequences deposited in NCBI lack coordinates and dates — they cannot answer where or when a species was detected. OBIS, GBIF, and ALA now accept DNA-derived occurrences linked to space and time. DNA data requires special care: it is derived, depends on reference databases, and often produces many unknown sequences. The Darwin Core DNA extension preserves methodological context for future re-analysis."
   },
   {
     "objectID": "index-edna-full.html#darwin-core-dna-derived-data-extension",
@@ -658,11 +658,11 @@
     "text": "Five DNA data categories\nWhich one fits your data?\n\n\n\n\n\n\n\n\n#\nCategory\nExample\n\n\n\n\n1\nDNA-derived occurrences\nMetabarcoding (ASVs/OTUs assigned to taxa)\n\n\n2\nEnriched occurrences\nVoucher specimen + barcoded\n\n\n3\nTargeted species detection\nqPCR / ddPCR assays\n\n\n4\nName references\nSequence in GenBank only\n\n\n5\nMetadata only\nDataset without sequences\n\n\n\n🔎 Use the GBIF decision tree to confirm your category\n\nWe won’t go into details on this slide - just reiterating that Categories 1 and 3 are by far the most common for eDNA researchers. Category 1 covers metabarcoding; Category 3 covers targeted detection methods like qPCR/ddPCR where no sequences are produced. Be aware that there are other possible types but they are outside the scope of this workshop."
   },
   {
-    "objectID": "index-dna-extension.html#edna-data-standards",
-    "href": "index-dna-extension.html#edna-data-standards",
+    "objectID": "index-dna-extension.html#two-major-edna-data-standards-exist",
+    "href": "index-dna-extension.html#two-major-edna-data-standards-exist",
     "title": "Types of DNA-derived data",
-    "section": "eDNA data standards",
-    "text": "eDNA data standards\n\nTwo major eDNA data standards exist\n\n\n\nMiXS  (Minimum Information about any (x) Sequence) — for raw sequences in NCBI\n\n\n\nDarwin Core (DwC) Community vocabulary for biodiversity data — species, location, date, basis of record\n\n\n\n\nOBIS + GBIF + ALA accept genetic data linked to spatial coordinates and time\n\n 🔜Developing landscape\n\nRapidly changing field\nFor OBIS future directions include the DWC-DP and FAIReDNA terms\n\n\nRaw sequences deposited in NCBI lack coordinates and dates — they cannot answer where or when a species was detected. OBIS, GBIF, and ALA now accept DNA-derived occurrences linked to space and time. DNA data requires special care: it is derived, depends on reference databases, and often produces many unknown sequences. The Darwin Core DNA extension preserves methodological context for future re-analysis."
+    "section": "Two major eDNA data standards exist",
+    "text": "Two major eDNA data standards exist\n\n\n\n\nMIxS  (Minimum Information about any (x) Sequence) — for raw sequences in NCBI\n\n\n\nDarwin Core (DwC) Community vocabulary for biodiversity data — species, location, date, basis of record\n\n\n\n\nOBIS + GBIF + ALA accept genetic data linked to spatial coordinates and time\n\n 🔜Developing landscape\n\nRapidly changing field\nFor OBIS future directions include the DwC-DP and FAIR eDNA (FAIRe) terms\n\n\nRaw sequences deposited in NCBI lack coordinates and dates — they cannot answer where or when a species was detected. OBIS, GBIF, and ALA now accept DNA-derived occurrences linked to space and time. DNA data requires special care: it is derived, depends on reference databases, and often produces many unknown sequences. The Darwin Core DNA extension preserves methodological context for future re-analysis."
   },
   {
     "objectID": "index-dna-extension.html#darwin-core-dna-derived-data-extension",
@@ -924,11 +924,11 @@
     "text": "What is special about eDNA data?\n\nSpecial considerations\n⚗️ Derived information — not a direct observation; extensive lab and bioinformatic processing\n📚 Relies on reference databases — results depend on database completeness\n❓ Large fraction of unknown sequences — no match in any database\n📋 The DwC DNA Extension records how work was done, enabling future re-analysis\n\n\nRaw sequences deposited in NCBI lack coordinates and dates — they cannot answer where or when a species was detected. OBIS, GBIF, and ALA now accept DNA-derived occurrences linked to space and time. DNA data requires special care: it is derived, depends on reference databases, and often produces many unknown sequences. The Darwin Core DNA extension preserves methodological context for future re-analysis."
   },
   {
-    "objectID": "index-OBON-20261027.html#edna-data-standards",
-    "href": "index-OBON-20261027.html#edna-data-standards",
+    "objectID": "index-OBON-20261027.html#two-major-edna-data-standards-exist",
+    "href": "index-OBON-20261027.html#two-major-edna-data-standards-exist",
     "title": "Publishing eDNA Data in OBIS",
-    "section": "eDNA data standards",
-    "text": "eDNA data standards\n\nTwo major eDNA data standards exist\n\n\n\nMiXS  (Minimum Information about any (x) Sequence) — for raw sequences in NCBI\n\n\n\nDarwin Core (DwC) Community vocabulary for biodiversity data — species, location, date, basis of record\n\n\n\n\nOBIS + GBIF + ALA accept genetic data linked to spatial coordinates and time\n\n 🔜Developing landscape\n\nRapidly changing field\nFor OBIS future directions include the DWC-DP and FAIReDNA terms\n\n\nRaw sequences deposited in NCBI lack coordinates and dates — they cannot answer where or when a species was detected. OBIS, GBIF, and ALA now accept DNA-derived occurrences linked to space and time. DNA data requires special care: it is derived, depends on reference databases, and often produces many unknown sequences. The Darwin Core DNA extension preserves methodological context for future re-analysis."
+    "section": "Two major eDNA data standards exist",
+    "text": "Two major eDNA data standards exist\n\n\n\n\nMIxS  (Minimum Information about any (x) Sequence) — for raw sequences in NCBI\n\n\n\nDarwin Core (DwC) Community vocabulary for biodiversity data — species, location, date, basis of record\n\n\n\n\nOBIS + GBIF + ALA accept genetic data linked to spatial coordinates and time\n\n 🔜Developing landscape\n\nRapidly changing field\nFor OBIS future directions include the DwC-DP and FAIR eDNA (FAIRe) terms\n\n\nRaw sequences deposited in NCBI lack coordinates and dates — they cannot answer where or when a species was detected. OBIS, GBIF, and ALA now accept DNA-derived occurrences linked to space and time. DNA data requires special care: it is derived, depends on reference databases, and often produces many unknown sequences. The Darwin Core DNA extension preserves methodological context for future re-analysis."
   },
   {
     "objectID": "index-OBON-20261027.html#darwin-core-dna-derived-data-extension",
