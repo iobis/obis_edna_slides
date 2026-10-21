@@ -1,13 +1,23 @@
 ---
 title: "Publishing eDNA Data in OBIS"
 subtitle: "From sequences to a global open biodiversity record"
-author: "Emili Boulanger, based on slides in collaboration with Saara Suominen, Steve Formel, Elizabeth Lawrence"
+author: "Emilie Boulanger"
 date: 27 October 2026
 ---
 
-{{< include slides/_00-agenda.qmd >}}
+# Agenda
+- What is OBIS
+- What is DwC-A
+- What is DNA-derived data
+- How to map and publish DNA-derived data to OBIS
+
+{{< include slides/_01-what-is-obis.qmd >}}
+
+{{< include slides/_02-mature-global-community.qmd >}}  
 
 {{< include slides/_22-edna_obis.qmd >}}
+
+
 
 {{< include slides/_33-edna-types.qmd >}}
 {{< include slides/_06-five-data-categories.qmd >}}
