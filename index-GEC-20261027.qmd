@@ -1,4 +1,3 @@
-
 ---
 title: "Publishing eDNA Data in OBIS"
 subtitle: "From sequences to a global open biodiversity record"
@@ -12,23 +11,25 @@ date: 27 October 2026
 - How to format an eDNA dataset for OBIS and GBIF
 - How publish DNA-derived data to OBIS
 
-** If we have enough time **
+**If we have enough time**
 - The OBIS eDNA QC tool
 - Mapping molecular data to Darwin Core
 
 
 {{< include slides/_01-what-is-obis.qmd >}}
+
 {{< include slides/_02-mature-global-community.qmd >}}  
-{{< include slides/_37-obis-fair.qmd >}}
 
 {{< include slides/_22-edna_obis.qmd >}}
+
 {{< include slides/_27-what-is-edna-data.qmd >}} 
-{{< include slides/_31-edna-data-considerations.qmd >}}
+
 {{< include slides/_03-why-publish-edna.qmd >}}
 
 # How do we make sure we understand data from different sources?
 
-{{< include slides/_32-edna-data-landscape.qmd >}}
+{{< include slides/new/_32-edna-data-landscape-mod.qmd >}}
+
 {{< include slides/_38-intro-darwin-core.qmd >}}
 
 ## Core & Extension tables
@@ -45,16 +46,19 @@ date: 27 October 2026
 # What about eDNA data?
 
 {{< include slides/_04-data-standard.qmd >}}
+
 {{< include slides/_06-five-data-categories.qmd >}}
+
 {{< include slides/_24-key_fields_metabarcoding.qmd >}}
+
 {{< include slides/_25-key_fields_qpcr.qmd >}}
 
 # How do we publish DNA-derived data ?
-## Your data needs to be in the right format + using the right vocabulary
+ Your data needs to be in the right [format]{.repo} + using the right [vocabulary]{.repo}
 
 {{< include slides/_05-dna-publishing-guide.qmd >}}
 
-### The OBIS manual
+## The OBIS manual
 
 {{< include slides/_43-dna-core-options.qmd >}} 
 {{< include slides/_09a-key-fields-event-core.qmd >}}        
@@ -73,14 +77,14 @@ date: 27 October 2026
 
 {{< include slides/_18-emof.qmd >}}
 
-{{< include slides/_19-vocab.qmd >}}
-
 # Publishing to OBIS
+
 {{< include slides/_15-quality-control.qmd >}}
-{{< include slides/_20-worms.qmd >}}
+
 {{< include slides/_13-publishing-workflow.qmd >}}
 
 ## Special cases
+
 {{< include slides/_54-unknown-sequences.qmd >}}
 
 {{< include slides/_55-sequence-without-worms.qmd >}}
@@ -89,29 +93,26 @@ date: 27 October 2026
 
 {{< include slides/_57-metadata-no-vocab.qmd >}}
 
-{{< include slides/_52-dna-term-resources.qmd >}}  
-
 {{< include slides/_41-sensitive-data.qmd >}}   
 
 # Resources
+
 {{< include slides/_29-supporting-tools.qmd >}}
 
-{{< include slides/_14-metabarcoding-data-toolkit.qmd >}}
+# OBIS tutorial for formatting in R
 
 {{< include slides/_21-dna-data-management-platform.qmd >}}
-
-{{< include slides/_30-edna-data-in-obis.qmd >}}
 
 {{< include slides/_16-resources-community.qmd >}}
 
 {{< include slides/_17-summary.qmd >}}
 
 # What can FAIR data do?
-## OBIS QC tool for verifying taxonomic assignments
+ OBIS QC tool for verifying taxonomic assignments
 
 
 # Mapping molecular data to Darwin Core
-## Which information is entered where? A short exercise
+ Which information is entered where? A short exercise
 
 {{< include slides/_52-dna-term-resources.qmd >}}  
 
@@ -126,4 +127,3 @@ date: 27 October 2026
 {{< include slides/_24e-key_fields_metabarcoding-taxonomy.qmd >}}
 
 {{< include slides/_25a-key_fields_qpcr-summary.qmd >}}      
-
