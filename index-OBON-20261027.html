@@ -12,7 +12,7 @@
 <link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.10.19">
 
-  <meta name="author" content="Emili Boulanger, based on slides in collaboration with Saara Suominen, Steve Formel, Elizabeth Lawrence">
+  <meta name="author" content="Emilie Boulanger">
   <meta name="dcterms.date" content="2026-10-27">
   <title>OBIS Training Slides – Publishing eDNA Data in OBIS</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -213,7 +213,7 @@
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Emili Boulanger, based on slides in collaboration with Saara Suominen, Steve Formel, Elizabeth Lawrence
+Emilie Boulanger
 </div>
 </div>
 </div>
@@ -223,54 +223,72 @@ Emili Boulanger, based on slides in collaboration with Saara Suominen, Steve For
 <section>
 <section id="agenda" class="title-slide slide level1 center">
 <h1>Agenda</h1>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Time (min)</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>00:00</td>
-<td>Welcome and housekeeping</td>
-</tr>
-<tr class="even">
-<td>00:10</td>
-<td>Introduction to DNA-derived data</td>
-</tr>
-<tr class="odd">
-<td>00:40</td>
-<td>Dataset exercise introduction</td>
-</tr>
-<tr class="even">
-<td>00:45</td>
-<td>Exercise: samples.xlsx (Event &amp; eMoF table)</td>
-</tr>
-<tr class="odd">
-<td>00:55</td>
-<td>Exercise: seqtab.txt (Occurrence)</td>
-</tr>
-<tr class="even">
-<td>01:05</td>
-<td>Exercise: taxonomy.txt (Occurrence)</td>
-</tr>
-<tr class="odd">
-<td>01:10</td>
-<td>Exercise: sequences (DNA-derived data)</td>
-</tr>
-<tr class="even">
-<td>01:15</td>
-<td>Exercise: methods (DNA-derived data)</td>
-</tr>
-<tr class="odd">
-<td>01:30</td>
-<td>Q &amp; A</td>
-</tr>
-</tbody>
-</table>
+<ul>
+<li>What is OBIS</li>
+<li>What is DwC-A</li>
+<li>What is DNA-derived data</li>
+<li>How to map and publish DNA-derived data to OBIS</li>
+</ul>
+</section>
+<section id="what-is-obis" class="slide level2 center">
+<h2>What is OBIS?</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p><strong>Ocean Biodiversity Information System</strong></p>
+<ul>
+<li>Global open-access data system for marine life<br>
+</li>
+<li>UNESCO Intergovernmental Oceanographic Commission<br>
+</li>
+<li>&gt; 199 M occurrence records from &gt;7,000 datasets<br>
+</li>
+<li>Data flows to GBIF — easy to publish once, reach both</li>
+</ul>
+<p><em>Free to use. Free to contribute.</em></p>
+</div><div class="column" style="width:40%;">
+<p><a href="https://manual.obis.org/images/logo_simple.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img data-src="https://manual.obis.org/images/logo_simple.png"></a></p>
+<p>🌐 <a href="https://obis.org">obis.org</a><br>
+📖 <a href="https://manual.obis.org">manual.obis.org</a></p>
+</div></div>
 <aside class="notes">
-<p>Update this with your own agenda!</p>
+<p>OBIS is endorsed by UNESCO’s IOC. Data published there can flow to GBIF as well, giving you double visibility with a single submission. Emphasize that OBIS is not just a repository but actively feeds into global biodiversity assessments, climate analyses, and conservation planning.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="a-mature-global-community" class="slide level2 center">
+<h2>A Mature Global Community</h2>
+<link href="https://unpkg.com/maplibre-gl@3.1.0/dist/maplibre-gl.css" rel="stylesheet">
+<script src="https://unpkg.com/maplibre-gl@3.1.0/dist/maplibre-gl.js"></script>
+<script src="obis_nodes_map.js"></script>
+<div id="nodesmap" style="position: absolute; top: 100px; left: 0; width: 100%; height: 80%; opacity: 0.25; z-index: 1;">
+
+</div>
+<div style="position: relative; z-index: 10;">
+<p>OBIS is the world’s largest <strong>open-access repository</strong><br>for marine biodiversity data.</p>
+<p><br> <br></p>
+<div style="text-align: right;">
+<p><strong>36 nodes</strong> <br> across <strong>99 countries</strong> <br> representing <strong>1,000+ institutions</strong> <br> and <strong>6,000+ scientists</strong>.</p>
+</div>
+</div>
+<script>
+setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
+</script>
+<aside class="notes">
+<p>OBIS sits within UNESCO’s IOC (IODE, est. 1961), working alongside ODIS for interoperability and OTGA for training. Strong partnerships include GBIF, TDWG, EMODnet, GOOS, and DataONE.</p>
+<p>Current stats: 136M species observations, 12M records from ABNJ, 28M DNA sequences (Jan 2026).</p>
+<p>This data supports multiple agreements: Paris Agreement, 30x30, GBF (Targets 3, 6, 8, 20, 21), SDG14, and now BBNJ.</p>
+<p>Recognition: CBD COP16 recognized OBIS, GOOS, and ODIS as ocean components of the Global Biodiversity Observing System.</p>
+<p>OBIS is listed in KMGBF Targets 20 and 21.</p>
+<p>OBIS data supports: IPBES Global Assessment, UN World Ocean Assessments, UNESCO IOC Global HAB reports, State of the Ocean reports, TWAP Open Ocean component (UNEP), and CBD EBSA.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -287,7 +305,7 @@ Emili Boulanger, based on slides in collaboration with Saara Suominen, Steve For
 <h2>eDNA data in OBIS</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="assets/OBISnumbers202606.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img data-src="assets/OBISnumbers202606.png" class="quarto-figure quarto-figure-center" style="width:80.0%"></a></p>
+<p><a href="assets/OBISnumbers202606.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img data-src="assets/OBISnumbers202606.png" class="quarto-figure quarto-figure-center" style="width:80.0%"></a></p>
 </figure>
 </div>
 <ul>
@@ -456,7 +474,7 @@ Emili Boulanger, based on slides in collaboration with Saara Suominen, Steve For
 <h2>The eDNA Metabarcoding Workflow</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="assets/ednaworkflow.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img data-src="assets/ednaworkflow.png" class="quarto-figure quarto-figure-center" style="width:80.0%"></a></p>
+<p><a href="assets/ednaworkflow.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img data-src="assets/ednaworkflow.png" class="quarto-figure quarto-figure-center" style="width:80.0%"></a></p>
 </figure>
 </div>
 <div style="font-size:0.6em; color:#5A8FA8; text-align:center; margin-top:8px;">
@@ -746,7 +764,7 @@ Emili Boulanger, based on slides in collaboration with Saara Suominen, Steve For
 </ul>
 <div class="columns" style="display: flex; height: 90%;">
 <div class="column" style="width:55%;">
-<p><a href="assets/dwca.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img data-src="assets/dwca.png"></a></p>
+<p><a href="assets/dwca.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img data-src="assets/dwca.png"></a></p>
 </div><div class="column" style="width: 45%; display: flex; align-items: center;">
 <div class="bordered-box">
 <p><strong>meta.xml</strong> ← links all tables<br>
@@ -776,13 +794,13 @@ Emili Boulanger, based on slides in collaboration with Saara Suominen, Steve For
 <div class="column" style="width:75%;">
 <div class="quarto-figure quarto-figure-right">
 <figure>
-<p><a href="assets/dna_publishing_guide.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img data-src="assets/dna_publishing_guide.png" class="quarto-figure quarto-figure-right" style="width:60.0%"></a></p>
+<p><a href="assets/dna_publishing_guide.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img data-src="assets/dna_publishing_guide.png" class="quarto-figure quarto-figure-right" style="width:60.0%"></a></p>
 </figure>
 </div>
 </div><div class="column" style="width:25%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="https://api.qrserver.com/v1/create-qr-code/?size=200x200&amp;data=https://doi.org/10.35035/DOC-VF1A-NR22.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img data-src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&amp;data=https://doi.org/10.35035/DOC-VF1A-NR22.png" class="quarto-figure quarto-figure-center" width="180"></a></p>
+<p><a href="https://api.qrserver.com/v1/create-qr-code/?size=200x200&amp;data=https://doi.org/10.35035/DOC-VF1A-NR22.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img data-src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&amp;data=https://doi.org/10.35035/DOC-VF1A-NR22.png" class="quarto-figure quarto-figure-center" width="180"></a></p>
 </figure>
 </div>
 </div></div>
@@ -840,7 +858,7 @@ Emili Boulanger, based on slides in collaboration with Saara Suominen, Steve For
 <div class="columns">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="assets/DNA_4tables-to-one.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img data-src="assets/DNA_4tables-to-one.jpg" class="quarto-figure quarto-figure-center" style="width:90.0%"></a></p>
+<p><a href="assets/DNA_4tables-to-one.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img data-src="assets/DNA_4tables-to-one.jpg" class="quarto-figure quarto-figure-center" style="width:90.0%"></a></p>
 </figure>
 </div>
 </div>
@@ -889,7 +907,7 @@ Emili Boulanger, based on slides in collaboration with Saara Suominen, Steve For
 </ul></li>
 </ul>
 </div><div class="column" style="width:55%;">
-<p><a href="./assets/worms-dropdown.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img data-src="./assets/worms-dropdown.png"></a></p>
+<p><a href="./assets/worms-dropdown.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img data-src="./assets/worms-dropdown.png"></a></p>
 </div></div>
 <div class="columns">
 <div class="column" style="width:40%;">
@@ -934,7 +952,7 @@ Emili Boulanger, based on slides in collaboration with Saara Suominen, Steve For
 <li><code>sop</code> — <span class="small-note">link to your protocol</span></li>
 </ul>
 </div><div class="column" style="width:50%;">
-<p><a href="assets/eDNA_quickguide.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img data-src="assets/eDNA_quickguide.png"></a></p>
+<p><a href="assets/eDNA_quickguide.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img data-src="assets/eDNA_quickguide.png"></a></p>
 <p><a href="https://manual.obis.org/dna_data.html#quick-start-guide" style="font-size:15px;">manual.obis.org/dna_data.html#quick-start-guide</a></p>
 </div></div>
 <aside class="notes">
@@ -1051,7 +1069,7 @@ Emili Boulanger, based on slides in collaboration with Saara Suominen, Steve For
 </div><div class="column" style="width:70%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="assets/dna_data_event_core_structure.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img data-src="assets/dna_data_event_core_structure.png" class="quarto-figure quarto-figure-center" style="width:50.0%"></a></p>
+<p><a href="assets/dna_data_event_core_structure.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10"><img data-src="assets/dna_data_event_core_structure.png" class="quarto-figure quarto-figure-center" style="width:50.0%"></a></p>
 </figure>
 </div>
 </div></div>
@@ -1150,7 +1168,7 @@ Emili Boulanger, based on slides in collaboration with Saara Suominen, Steve For
 <p>→ Decreases <strong>misuse potential</strong></p>
 </div><div class="column" style="width:60%;">
 <p><strong>What should vocabulary terms capture?</strong></p>
-<p><a href="./assets/vocab-components.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10"><img data-src="./assets/vocab-components.png"></a></p>
+<p><a href="./assets/vocab-components.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11"><img data-src="./assets/vocab-components.png"></a></p>
 <div class="bordered-box">
 <p><em>OBIS recommends using NERC vocabulary terms</em></p>
 </div>

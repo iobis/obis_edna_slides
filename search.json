@@ -840,6 +840,20 @@
     "text": "Datos de eDNA para monitoreo nacional\nUn programa nacional de monitoreo quiere que todos los datos de eDNA estén disponibles públicamente en el plazo de un año.\n\n\n¿Quién eres?\nCada uno de ustedes recibirá un rol, representando una de estas categorías de actores:\n🌳 Ecólogo/a de campo\n🧬 Científico/a de laboratorio molecular / Bioinformático/a\n💻 Gestor/a de datos\n🏛️ Curador/a de repositorio\n📜 Responsable de políticas\n🌐 Representante de base de datos de biodiversidad\n🗺️ Usuario/a final\n\n👥 ¿Qué necesitas?\nDentro de tu rol como actor, deberías discutir y explicar:\n- **¿Qué necesitas?**\n- **¿Qué te preocupa?**\n- **¿Qué datos puedes proporcionar?**\n- **¿Qué estándares requieres?**\n\nEscribe tus respuestas en notas adhesivas. ¡incluye tu función!"
   },
   {
+    "objectID": "index-OBON-20261027.html#what-is-obis",
+    "href": "index-OBON-20261027.html#what-is-obis",
+    "title": "Publishing eDNA Data in OBIS",
+    "section": "What is OBIS?",
+    "text": "What is OBIS?\n\n\nOcean Biodiversity Information System\n\nGlobal open-access data system for marine life\n\nUNESCO Intergovernmental Oceanographic Commission\n\n&gt; 199 M occurrence records from &gt;7,000 datasets\n\nData flows to GBIF — easy to publish once, reach both\n\nFree to use. Free to contribute.\n\n\n🌐 obis.org\n📖 manual.obis.org\n\n\nOBIS is endorsed by UNESCO’s IOC. Data published there can flow to GBIF as well, giving you double visibility with a single submission. Emphasize that OBIS is not just a repository but actively feeds into global biodiversity assessments, climate analyses, and conservation planning."
+  },
+  {
+    "objectID": "index-OBON-20261027.html#a-mature-global-community",
+    "href": "index-OBON-20261027.html#a-mature-global-community",
+    "title": "Publishing eDNA Data in OBIS",
+    "section": "A Mature Global Community",
+    "text": "A Mature Global Community\n\n\n\n\n\n\n\nOBIS is the world’s largest open-access repositoryfor marine biodiversity data.\n \n\n36 nodes  across 99 countries  representing 1,000+ institutions  and 6,000+ scientists.\n\n\n\n\nOBIS sits within UNESCO’s IOC (IODE, est. 1961), working alongside ODIS for interoperability and OTGA for training. Strong partnerships include GBIF, TDWG, EMODnet, GOOS, and DataONE.\nCurrent stats: 136M species observations, 12M records from ABNJ, 28M DNA sequences (Jan 2026).\nThis data supports multiple agreements: Paris Agreement, 30x30, GBF (Targets 3, 6, 8, 20, 21), SDG14, and now BBNJ.\nRecognition: CBD COP16 recognized OBIS, GOOS, and ODIS as ocean components of the Global Biodiversity Observing System.\nOBIS is listed in KMGBF Targets 20 and 21.\nOBIS data supports: IPBES Global Assessment, UN World Ocean Assessments, UNESCO IOC Global HAB reports, State of the Ocean reports, TWAP Open Ocean component (UNEP), and CBD EBSA."
+  },
+  {
     "objectID": "index-OBON-20261027.html#edna-data-in-obis",
     "href": "index-OBON-20261027.html#edna-data-in-obis",
     "title": "Publishing eDNA Data in OBIS",
