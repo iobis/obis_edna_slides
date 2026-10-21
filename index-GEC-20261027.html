@@ -595,6 +595,37 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
           display:block!important;
       }</style></aside>
 </section>
+<section id="core-table-for-dna-data" class="slide level2 center">
+<h2>Core table for DNA data</h2>
+<p>DNA data can be published with <strong>either</strong> core type:</p>
+<ul>
+<li><strong>Occurrence core</strong> + DNA extension</li>
+<li><strong>Event core</strong> + Occurrence extension + DNA extension</li>
+</ul>
+<div class="callout callout-note no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>This wasn’t always true</strong></p>
+</div>
+<div class="callout-content">
+<p>Previously guidance required <strong>Occurrence core only</strong> for DNA data. Event core support was added recently!</p>
+</div>
+</div>
+</div>
+<aside class="notes">
+<p>Both options link the DNA extension via occurrenceID. Event core additionally lets you record sample-level metadata (location, date, method) once per event instead of once per sequence — see the next slide for why that matters at scale. A caveat worth mentioning live: even with Event core, some duplication is unavoidable because of the star schema (DNA extension still needs occurrenceID, so each occurrence still carries a full sequence/sample link). A newer GBIF/OBIS data model in development aims to remove this constraint entirely, but it isn’t implemented yet (as of late 2025).</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
 <section id="five-dna-data-categories" class="slide level2 center">
 <h2>Five DNA data categories</h2>
 <p>Which one fits your data?</p>
@@ -778,120 +809,6 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
 <section id="the-obis-manual" class="slide level2 center">
 <h2>The OBIS manual</h2>
 </section>
-<section id="core-table-for-dna-data" class="slide level2 center">
-<h2>Core table for DNA data</h2>
-<p>DNA data can be published with <strong>either</strong> core type:</p>
-<ul>
-<li><strong>Occurrence core</strong> + DNA extension</li>
-<li><strong>Event core</strong> + Occurrence extension + DNA extension</li>
-</ul>
-<div class="callout callout-note no-icon callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<p><strong>This wasn’t always true</strong></p>
-</div>
-<div class="callout-content">
-<p>Previously guidance required <strong>Occurrence core only</strong> for DNA data. Event core support was added recently!</p>
-</div>
-</div>
-</div>
-<aside class="notes">
-<p>Both options link the DNA extension via occurrenceID. Event core additionally lets you record sample-level metadata (location, date, method) once per event instead of once per sequence — see the next slide for why that matters at scale. A caveat worth mentioning live: even with Event core, some duplication is unavoidable because of the star schema (DNA extension still needs occurrenceID, so each occurrence still carries a full sequence/sample link). A newer GBIF/OBIS data model in development aims to remove this constraint entirely, but it isn’t implemented yet (as of late 2025).</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="key-dwc-fields-to-include-event" class="slide level2 center">
-<h2>Key DwC fields to include: Event</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Event core (mandatory fields)</strong></p>
-<ul>
-<li><code>eventID</code> — <span class="small-note">unique, stable ID</span></li>
-<li><code>eventDate</code> — <span class="small-note">YYYY-MM-DD</span></li>
-<li><code>decimalLatitude</code>, <code>decimalLongitude</code><br>
-</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><strong>Event table (strongly recommended fields)</strong></p>
-<ul>
-<li><code>minimumDepthInMeters</code>, <code>maximumDepthInMeters</code></li>
-<li><code>sampleSizeValue</code> <span class="small-note">(volume of sample)</span><br>
-</li>
-<li><code>sampleSizeUnit</code> <span class="small-note">(units of volume sampled)</span></li>
-<li><code>samplingProtocol</code> - <span class="small-note">(link to your field sampling SOP)</span></li>
-</ul>
-</div></div>
-</section>
-<section id="key-dwc-fields-to-include-occurrence" class="slide level2 center">
-<h2>Key DwC fields to include: Occurrence</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Occurrence (core) table (mandatory fields)</strong></p>
-<ul>
-<li><code>occurrenceID</code> — <span class="small-note">unique, stable ID</span></li>
-<li><code>scientificName</code> — <span class="small-note">taxon name to lowest possible taxon rank</span></li>
-<li><code>basisOfRecord</code> = <span class="small-note">“MaterialSample”</span><br>
-</li>
-<li><code>occurrenceStatus</code> = <span class="small-note">“present”</span></li>
-</ul>
-<p><em>If Occurrence <strong>core</strong>, also: <code>eventDate</code>, <code>decimalLatitude</code>, <code>decimalLongitude</code></em></p>
-</div><div class="column" style="width:50%;">
-<p><strong>Occurrence table (strongly recommended fields)</strong></p>
-<ul>
-<li><code>scientificNameID</code> <span class="small-note">(WoRMS AphiaID)</span><br>
-</li>
-<li><code>organismQuantity</code> <span class="small-note">(read count of sequence)</span><br>
-</li>
-<li><code>organismQuantityType</code> = <span class="small-note">“DNA sequence reads”</span></li>
-<li><code>sampleSizeValue</code> <span class="small-note">(total read count in sample)</span><br>
-</li>
-<li><code>sampleSizeUnit</code> = <span class="small-note">“DNA sequence reads”</span></li>
-<li><code>samplingProtocol</code> - <span class="small-note">(link to your SOP)</span></li>
-<li><code>associatedSequences</code> <span class="small-note">(link to e.g.&nbsp;GenBank or ENA accession)</span></li>
-</ul>
-</div></div>
-</section>
-<section id="key-fields-to-include-dna-extension" class="slide level2 center">
-<h2>Key fields to include: DNA Extension</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>DNA Extension (example key fields)</strong></p>
-<ul>
-<li><code>DNA_sequence</code> — <span class="small-note">ASV/OTU sequence</span></li>
-<li><code>target_gene</code> — <span class="small-note">e.g.&nbsp;“COI”, “18S rRNA”</span></li>
-<li><code>pcr_primer_name_forward</code> — <span class="small-note">and reverse</span></li>
-<li><code>seq_meth</code> — <span class="small-note">e.g.&nbsp;“Illumina MiSeq”</span></li>
-<li><code>otu_class_appr</code> — <span class="small-note">e.g.&nbsp;“DADA2 v1.18”</span></li>
-<li><code>otu_db</code> — <span class="small-note">reference database</span></li>
-<li><code>sop</code> — <span class="small-note">link to your protocol</span></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><a href="assets/eDNA_quickguide.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img data-src="assets/eDNA_quickguide.png"></a></p>
-<p><a href="https://manual.obis.org/dna_data.html#quick-start-guide" style="font-size:15px;">manual.obis.org/dna_data.html#quick-start-guide</a></p>
-</div></div>
-<aside class="notes">
-<p>WoRMS = World Register of Marine Species. Every marine occurrence should have a WoRMS AphiaID as the taxonID. For freshwater / terrestrial taxa use the appropriate backbone (CoL, etc.). Unidentified sequences should still be included — they can be assigned taxon later.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
 <section id="from-raw-outputs-long-format" class="slide level2 center">
 <h2>From raw outputs → long format</h2>
 <p><strong>DNA data is more complex than a lat/lon + species name</strong></p>
@@ -945,7 +862,7 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
 <div class="columns">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="assets/DNA_4tables-to-one.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img data-src="assets/DNA_4tables-to-one.jpg" class="quarto-figure quarto-figure-center" style="width:90.0%"></a></p>
+<p><a href="assets/DNA_4tables-to-one.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img data-src="assets/DNA_4tables-to-one.jpg" class="quarto-figure quarto-figure-center" style="width:90.0%"></a></p>
 </figure>
 </div>
 </div>
@@ -1028,6 +945,89 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
 </div>
 <aside class="notes">
 <p>Your published dataset consists of up to three linked tables. The Event core captures sampling events — where, when, and how. The Occurrence extension records each taxon detection. The DNA Derived Data extension carries all molecular metadata. The tables are joined by eventID and occurrenceID. This avoids repeating sampling metadata for every sequence.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="key-dwc-fields-to-include-event" class="slide level2 center">
+<h2>Key DwC fields to include: Event</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Event core (mandatory fields)</strong></p>
+<ul>
+<li><code>eventID</code> — <span class="small-note">unique, stable ID</span></li>
+<li><code>eventDate</code> — <span class="small-note">YYYY-MM-DD</span></li>
+<li><code>decimalLatitude</code>, <code>decimalLongitude</code><br>
+</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><strong>Event table (strongly recommended fields)</strong></p>
+<ul>
+<li><code>minimumDepthInMeters</code>, <code>maximumDepthInMeters</code></li>
+<li><code>sampleSizeValue</code> <span class="small-note">(volume of sample)</span><br>
+</li>
+<li><code>sampleSizeUnit</code> <span class="small-note">(units of volume sampled)</span></li>
+<li><code>samplingProtocol</code> - <span class="small-note">(link to your field sampling SOP)</span></li>
+</ul>
+</div></div>
+</section>
+<section id="key-dwc-fields-to-include-occurrence" class="slide level2 center">
+<h2>Key DwC fields to include: Occurrence</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Occurrence (core) table (mandatory fields)</strong></p>
+<ul>
+<li><code>occurrenceID</code> — <span class="small-note">unique, stable ID</span></li>
+<li><code>scientificName</code> — <span class="small-note">taxon name to lowest possible taxon rank</span></li>
+<li><code>basisOfRecord</code> = <span class="small-note">“MaterialSample”</span><br>
+</li>
+<li><code>occurrenceStatus</code> = <span class="small-note">“present”</span></li>
+</ul>
+<p><em>If Occurrence <strong>core</strong>, also: <code>eventDate</code>, <code>decimalLatitude</code>, <code>decimalLongitude</code></em></p>
+</div><div class="column" style="width:50%;">
+<p><strong>Occurrence table (strongly recommended fields)</strong></p>
+<ul>
+<li><code>scientificNameID</code> <span class="small-note">(WoRMS AphiaID)</span><br>
+</li>
+<li><code>organismQuantity</code> <span class="small-note">(read count of sequence)</span><br>
+</li>
+<li><code>organismQuantityType</code> = <span class="small-note">“DNA sequence reads”</span></li>
+<li><code>sampleSizeValue</code> <span class="small-note">(total read count in sample)</span><br>
+</li>
+<li><code>sampleSizeUnit</code> = <span class="small-note">“DNA sequence reads”</span></li>
+<li><code>samplingProtocol</code> - <span class="small-note">(link to your SOP)</span></li>
+<li><code>associatedSequences</code> <span class="small-note">(link to e.g.&nbsp;GenBank or ENA accession)</span></li>
+</ul>
+</div></div>
+</section>
+<section id="key-fields-to-include-dna-extension" class="slide level2 center">
+<h2>Key fields to include: DNA Extension</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>DNA Extension (example key fields)</strong></p>
+<ul>
+<li><code>DNA_sequence</code> — <span class="small-note">ASV/OTU sequence</span></li>
+<li><code>target_gene</code> — <span class="small-note">e.g.&nbsp;“COI”, “18S rRNA”</span></li>
+<li><code>pcr_primer_name_forward</code> — <span class="small-note">and reverse</span></li>
+<li><code>seq_meth</code> — <span class="small-note">e.g.&nbsp;“Illumina MiSeq”</span></li>
+<li><code>otu_class_appr</code> — <span class="small-note">e.g.&nbsp;“DADA2 v1.18”</span></li>
+<li><code>otu_db</code> — <span class="small-note">reference database</span></li>
+<li><code>sop</code> — <span class="small-note">link to your protocol</span></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><a href="assets/eDNA_quickguide.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img data-src="assets/eDNA_quickguide.png"></a></p>
+<p><a href="https://manual.obis.org/dna_data.html#quick-start-guide" style="font-size:15px;">manual.obis.org/dna_data.html#quick-start-guide</a></p>
+</div></div>
+<aside class="notes">
+<p>WoRMS = World Register of Marine Species. Every marine occurrence should have a WoRMS AphiaID as the taxonID. For freshwater / terrestrial taxa use the appropriate backbone (CoL, etc.). Unidentified sequences should still be included — they can be assigned taxon later.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
