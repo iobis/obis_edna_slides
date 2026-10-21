@@ -17,7 +17,9 @@ date: 2026-07-22
 
 {{< include slides/_24e-key_fields_metabarcoding-taxonomy.qmd >}}
 
-{{< include slides/_25a-key_fields_qpcr-summary.qmd >}}        
+{{< include slides/_25a-key_fields_qpcr-summary.qmd >}}    
+
+## Special cases
 
 {{< include slides/_54-unknown-sequences.qmd >}}
 
