@@ -1,0 +1,15 @@
+## Structure an eDNA Dataset in R
+[OBIS R tutorial](https://iobis.github.io/edna-training-beginner-track/episodes/04-structuring-datasets.html): Transform raw DNA data into a Darwin Core-compliant dataset
+time: ~90 min
+
+🎯 By the end of this tutorial, you will be able to:
+
+- Read a raw ASV table, taxonomy file, and sample metadata sheet into R.
+- Combine these tables into a Darwin Core Occurrence table, mapping raw fields to Darwin Core terms.
+- Use the `obistools` package to match taxon names against WoRMS, and check coordinates, dates, and required fields.
+- Build the ExtendedMeasurementOrFact and DNADerivedData extension tables.
+- Write out a complete Darwin Core Archive.
+
+::: notes
+...
+:::
