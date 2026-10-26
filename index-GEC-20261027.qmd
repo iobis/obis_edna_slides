@@ -109,8 +109,7 @@ date: 27 October 2026
 
 {{< include slides/_17-summary.qmd >}}
 
-# What can FAIR data do?
- OBIS QC tool for verifying taxonomic assignments
+{{< include slides/_59-obis-qc-tool.qmd >}}
 
 
 # Mapping molecular data to Darwin Core
