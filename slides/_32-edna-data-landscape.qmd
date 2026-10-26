@@ -1,12 +1,11 @@
-## eDNA data standards
+## Two major eDNA data standards exist
 
 
 ::: {style="color:white; padding:15px; border-radius:8px;"}
- **Two major eDNA data standards exist**
 
 :::: {.columns}
 ::: {.column width="50%"}
-1. **MiXS** <br>
+1. **MIxS** <br>
 (Minimum Information about any (x) Sequence) — for raw sequences in NCBI
 :::
 
@@ -25,7 +24,7 @@ OBIS + GBIF + ALA accept genetic data linked to spatial coordinates and time
 🔜**Developing landscape** 
 
 - Rapidly changing field
-- For OBIS future directions include the DWC-DP and FAIReDNA terms
+- For OBIS future directions include the DwC-DP and FAIR eDNA (FAIRe) terms
 
 ::: notes
 Raw sequences deposited in NCBI lack coordinates and dates — they cannot answer where or when a species was detected. OBIS, GBIF, and ALA now accept DNA-derived occurrences linked to space and time. DNA data requires special care: it is derived, depends on reference databases, and often produces many unknown sequences. The Darwin Core DNA extension preserves methodological context for future re-analysis.

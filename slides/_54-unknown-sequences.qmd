@@ -1,5 +1,3 @@
-## Special cases
-
 # Unknown sequences
 
 * Many sequences in any given study will remain uncharacterized
