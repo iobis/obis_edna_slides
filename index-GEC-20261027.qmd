@@ -1,7 +1,7 @@
 ---
 title: "Publishing eDNA Data in OBIS"
 subtitle: "From sequences to a global open biodiversity record"
-author: "Emilie Boulanger"
+author: "Emilie Boulanger, Elizabeth Lawrence, Stephen Formel, Saara Suominen"
 date: 27 October 2026
 ---
 
