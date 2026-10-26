@@ -1,0 +1,27 @@
+## What can FAIR data do?
+Geographic outlier detection - OBIS eDNA taxonomy [QC tool](https://ednaqc.obis.org/)
+
+![](assets/figure_QCtool_top.png)
+
+:::: {.columns}
+::: {.column width="30%"}
+dataset quality profile: 
+alignment of species detections to known distribution and thermal ranges
+:::
+
+
+::: {.column width="70%"}
+![](assets/figure_QCtool_example.png)
+:::
+::::
+
+::: {.notes}
+The automated tool assesses all the identified records using the species’ distribution — 
+the areas where a given species is known to live based on information from OBIS and GBIF (excluding eDNA occurrences) — 
+and the species’ thermal range — the range of temperatures in which a species is known to live. 
+All species identifications receive a score based on these categories. 
+If a species was identified from a sample outside its known living areas or if the 
+temperature at the sampling site is outside the suitable range for that species, 
+the identification receives an overall low score and is highlighted on the list.
+
+:::
