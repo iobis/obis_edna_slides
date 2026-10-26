@@ -117,6 +117,8 @@ date: 27 October 2026
 
 {{< include slides/_52-dna-term-resources.qmd >}}  
 
+{{< include slides/new/_24a-O-key_fields_metabarcoding-field.qmd >}}     
+
 {{< include slides/_24a-key_fields_metabarcoding-field.qmd >}}         
 
 {{< include slides/_24b-key_fields_metabarcoding-dna.qmd >}}
