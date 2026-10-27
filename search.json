@@ -441,13 +441,6 @@
     "text": "The DNA publishing guide\nPublishing DNA-derived data through biodiversity data platforms"
   },
   {
-    "objectID": "index-GEC-20261027.html#resources-for-dna-terms",
-    "href": "index-GEC-20261027.html#resources-for-dna-terms",
-    "title": "Publishing eDNA Data in OBIS",
-    "section": "Resources for DNA terms",
-    "text": "Resources for DNA terms\n\n\n\nResource\nLink\n\n\n\n\nDNA Extension term definitions\nrs.gbif.org/extension/gbif/1.0/dna_derived_data_2024-07-11.xml\n\n\nDwC Term Quick Reference Guide\ndwc.tdwg.org/terms/\n\n\nOBIS Manual (DNA chapter)\nmanual.obis.org/dna_data.html\n\n\nGBIF DNA publishing guide\ndoi.org/10.35035/DOC-VF1A-NR22"
-  },
-  {
     "objectID": "index-GEC-20261027.html#from-raw-outputs-long-format",
     "href": "index-GEC-20261027.html#from-raw-outputs-long-format",
     "title": "Publishing eDNA Data in OBIS",
@@ -495,6 +488,13 @@
     "title": "Publishing eDNA Data in OBIS",
     "section": "eMoF extension table",
     "text": "eMoF extension table\n\nTable to record all types of measurements (abiotic, biotic, environmental, sampling…)\nMeasurements recorded in long format\n\nmeasurementType, measurementValue, measurementUnit\n\nLinking sampling info to eventIDs decreases duplication\nUse controlled vocabulary whenever possible!\n\n\n\n\n\n\n\n\n\n\n\n\neventID\noccurrenceID\nmeasurementType\nmeasurementValue\nmeasurementUnit\n\n\n\n\n\nYEARsite1samp1\n\ntemperature\n25\nC\n\n\n\n\n\n\n\n\n\n\n\n\nmeasurementTypeID\nmeasurementUnitID\n\n\n\n\n\nhttp://vocab.nerc.ac.uk/collection/P01/current/TEMPPR01/\nhttp://vocab.nerc.ac.uk/collection/P06/current/UPAA/\n\n\n\n\n\nAs some of us may already be familiar, eMoF is the extension table that holds ALL kinds of measurement or fact data including measurements on organisms, information about the sampling gear used, or environmental variables measured. A reminder that this data is organized in LONG format. All the measurements are organized in rows within the columns measurementType, measurementValue, and measurementUnit"
+  },
+  {
+    "objectID": "index-GEC-20261027.html#resources-for-dna-terms",
+    "href": "index-GEC-20261027.html#resources-for-dna-terms",
+    "title": "Publishing eDNA Data in OBIS",
+    "section": "Resources for DNA terms",
+    "text": "Resources for DNA terms\n\n\n\nResource\nLink\n\n\n\n\nDNA Extension term definitions\nrs.gbif.org/extension/gbif/1.0/dna_derived_data_2024-07-11.xml\n\n\nDwC Term Quick Reference Guide\ndwc.tdwg.org/terms/\n\n\nOBIS Manual (DNA chapter)\nmanual.obis.org/dna_data.html\n\n\nGBIF DNA publishing guide\ndoi.org/10.35035/DOC-VF1A-NR22"
   },
   {
     "objectID": "index-GEC-20261027.html#quality-control",
