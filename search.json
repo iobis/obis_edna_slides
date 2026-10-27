@@ -385,13 +385,6 @@
     "text": "What is special about DNA-derived data?\nEnormous potential…\n\nExpands access to biodiversity data at scale\nCaptures environmental, specimen, and bulk-sample DNA\nRaw sequences already widely shared in NCBI"
   },
   {
-    "objectID": "index-GEC-20261027.html#why-publish-edna-data",
-    "href": "index-GEC-20261027.html#why-publish-edna-data",
-    "title": "Publishing eDNA Data in OBIS",
-    "section": "Why publish eDNA data?",
-    "text": "Why publish eDNA data?\n\n\n\neDNA captures what other methods miss\n\nCryptic and rare marine taxa\n\nNon-invasive, scalable sampling\n\nCommunity-level biodiversity signals\n\nShared eDNA data is powerful data\n\nData contributes to global analyses\nData has long-term value\nYour sequences become findable via OBIS sequence search tools\n\n\n\n\n\nBenefit\nWhy it matters\n\n\n\n\nOpen DOI\nCitable in publications\n\n\nLong-term archive\nFAIR data\n\n\nGlobal reach\nOBIS + GBIF\n\n\nSequence search\nReuse & reanalysis\n\n\n\n\n\nMention the OBIS sequence search prototype at sequence.obis.org — users can search for similar sequences across all OBIS datasets. This is only possible because sequences are published in standardized form."
-  },
-  {
     "objectID": "index-GEC-20261027.html#edna-data-standards",
     "href": "index-GEC-20261027.html#edna-data-standards",
     "title": "Publishing eDNA Data in OBIS",
@@ -474,13 +467,6 @@
     "title": "Publishing eDNA Data in OBIS",
     "section": "Table structure options",
     "text": "Table structure options\nOption A — Occurrence Core\noccurrence.csv \n  └── dna_derived.csv  (linked via occurrenceID)\n  └── emof.csv         (linked via occurrenceID)\n\nOption B — Event Core (recommended for eDNA)\nevent.csv\n  └── occurrence.csv        (linked via eventID)\n       └── dna_derived.csv  (linked via occurrenceID)\n  └── emof.csv              (linked via eventID or occurrenceID)\nWhy Event Core? Sample-level metadata (location, date, method) is recorded once per sampling event rather than repeated in every row.\n\nFor a survey with 500 samples × 2000 ASVs = 1M rows, repeating location and date for every row is wasteful and error-prone. The Event Core avoids this. A new GBIF/OBIS data model is under development that will be even more flexible but is not yet implemented (as of 2025)."
-  },
-  {
-    "objectID": "index-GEC-20261027.html#dataset-structure-three-linked-tables",
-    "href": "index-GEC-20261027.html#dataset-structure-three-linked-tables",
-    "title": "Publishing eDNA Data in OBIS",
-    "section": "Dataset Structure: Three Linked Tables",
-    "text": "Dataset Structure: Three Linked Tables\n\n\n\nEvent Core\n\neventID\neventDate\ndecimalLatitude\ndecimalLongitude\nsamplingProtocol\n\n→ the 📍where, 🕒when & 🧪how of collection\n\n\n\nOccurrence Extension\n\noccurrenceID\neventID\nscientificName\ntaxonID (WoRMS)\nbasisOfRecord\noccurrenceStatus\n\n→ what organism was detected 🐠🪸🪼\n\n\n\nDNA Derived Data Ext.\n\noccurrenceID\nDNA_sequence\ntarget_gene\npcr_primer_forward\npcr_primer_reverse\nseq_meth\n\n→ 🧬the molecular context\n\n\n\n\nTables linked by eventID and occurrenceID\n\n\nOptional 4th table: eMoF for measurements and facts\n\n\nYour published dataset consists of up to three linked tables. The Event core captures sampling events — where, when, and how. The Occurrence extension records each taxon detection. The DNA Derived Data extension carries all molecular metadata. The tables are joined by eventID and occurrenceID. This avoids repeating sampling metadata for every sequence."
   },
   {
     "objectID": "index-GEC-20261027.html#key-dwc-fields-to-include-event",
