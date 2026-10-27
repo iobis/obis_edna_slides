@@ -536,7 +536,7 @@
     "href": "index-GEC-20261027.html#structure-an-edna-dataset-in-r",
     "title": "Publishing eDNA Data in OBIS",
     "section": "Structure an eDNA Dataset in R",
-    "text": "Structure an eDNA Dataset in R\nOBIS R tutorial: Transform raw DNA data into a Darwin Core-compliant dataset time: ~90 min\n🎯 By the end of this tutorial, you will be able to:\n\nRead a raw ASV table, taxonomy file, and sample metadata sheet into R.\nCombine these tables into a Darwin Core Occurrence table, mapping raw fields to Darwin Core terms.\nUse the obistools package to match taxon names against WoRMS, and check coordinates, dates, and required fields.\nBuild the ExtendedMeasurementOrFact and DNADerivedData extension tables.\nWrite out a complete Darwin Core Archive.\n\n\n…"
+    "text": "Structure an eDNA Dataset in R\nOBIS R tutorial: Transform raw DNA data into a Darwin Core-compliant dataset\ntime: ~90 min\n🎯 By the end of this tutorial, you will be able to:\n\nRead a raw ASV table, taxonomy file, and sample metadata sheet into R.\nCombine these tables into a Darwin Core Occurrence table, mapping raw fields to Darwin Core terms.\nUse the obistools package to match taxon names against WoRMS, and check coordinates, dates, and required fields.\nBuild the ExtendedMeasurementOrFact and DNADerivedData extension tables.\nWrite out a complete Darwin Core Archive.\n\n\n…"
   },
   {
     "objectID": "index-GEC-20261027.html#what-can-fair-data-do",
