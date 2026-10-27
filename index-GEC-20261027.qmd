@@ -35,8 +35,6 @@ format:
 
 {{< include slides/_27-what-is-edna-data.qmd >}} 
 
-{{< include slides/_03-why-publish-edna.qmd >}}
-
 # How do we make sure we understand data from different sources?
 
 {{< include slides/new/_32-edna-data-landscape-mod.qmd >}}
@@ -76,8 +74,6 @@ format:
 {{< include slides/_08-example-transformation.qmd >}}
 
 {{< include slides/_11-table-structure-options.qmd >}}
-
-{{< include slides/_28-table-structure-examples.qmd >}}
 
 {{< include slides/_09a-key-fields-event-core.qmd >}}        
 
