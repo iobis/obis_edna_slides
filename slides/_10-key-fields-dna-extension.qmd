@@ -15,7 +15,9 @@
 
 *→ 🧬the molecular context*
 
+<div style="margin-top: 20px;">
 All tables linked by `eventID` and `occurrenceID`
+</div>
 
 
 :::
