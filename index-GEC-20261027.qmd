@@ -48,8 +48,6 @@ date: 27 October 2026
 
 {{< include slides/_04-data-standard.qmd >}}
 
-{{< include slides/_43-dna-core-options.qmd >}} 
-
 {{< include slides/_06-five-data-categories.qmd >}}
 
 {{< include slides/_24-key_fields_metabarcoding.qmd >}}
@@ -61,7 +59,7 @@ date: 27 October 2026
 
 {{< include slides/_05-dna-publishing-guide.qmd >}}
 
-## The OBIS manual
+{{< include slides/_52-dna-term-resources.qmd >}}  
 
 {{< include slides/_07-raw-outputs-long-format.qmd >}}
 
@@ -99,11 +97,9 @@ date: 27 October 2026
 
 # Resources
 
-{{< include slides/_29-supporting-tools.qmd >}}
+{{< include slides/new/_29-new-supporting-tools.qmd >}}
 
-# OBIS tutorial for formatting in R
-
-{{< include slides/_21-dna-data-management-platform.qmd >}}
+{{< include slides/_29b-r-tutorial.qmd >}}
 
 {{< include slides/_16-resources-community.qmd >}}
 
@@ -114,8 +110,6 @@ date: 27 October 2026
 
 # Mapping molecular data to Darwin Core
  Which information is entered where? A short exercise
-
-{{< include slides/_52-dna-term-resources.qmd >}}  
 
 {{< include slides/new/_24a-O-key_fields_metabarcoding-field.qmd >}}     
 
