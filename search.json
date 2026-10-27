@@ -378,11 +378,11 @@
     "text": "eDNA data in OBIS\n\n\n\n\n\n\nOBIS currently holds 128 datasets with eDNA-derived occurrences, including 44,5 million records\nAbout 2 million distinct sequences\nThat is 2% of all datasets, but 25% of all occurrence records in OBIS\n\n\nOBIS is endorsed by UNESCO’s IOC. Data published there can flow to GBIF as well, giving you double visibility with a single submission. Emphasize that OBIS is not just a repository but actively feeds into global biodiversity assessments, climate analyses, and conservation planning."
   },
   {
-    "objectID": "index-GEC-20261027.html#what-is-special-about-edna-data",
-    "href": "index-GEC-20261027.html#what-is-special-about-edna-data",
+    "objectID": "index-GEC-20261027.html#what-is-special-about-dna-derived-data",
+    "href": "index-GEC-20261027.html#what-is-special-about-dna-derived-data",
     "title": "Publishing eDNA Data in OBIS",
-    "section": "What is special about eDNA data?",
-    "text": "What is special about eDNA data?\nEnormous potential…\n\nExpands access to biodiversity data at scale\nCaptures environmental, specimen, and bulk-sample DNA\nRaw sequences already widely shared in NCBI"
+    "section": "What is special about DNA-derived data?",
+    "text": "What is special about DNA-derived data?\nEnormous potential…\n\nExpands access to biodiversity data at scale\nCaptures environmental, specimen, and bulk-sample DNA\nRaw sequences already widely shared in NCBI"
   },
   {
     "objectID": "index-GEC-20261027.html#why-publish-edna-data",
@@ -742,15 +742,15 @@
     "text": "Why publish eDNA data?\n\n\n\neDNA captures what other methods miss\n\nCryptic and rare marine taxa\n\nNon-invasive, scalable sampling\n\nCommunity-level biodiversity signals\n\nShared eDNA data is powerful data\n\nData contributes to global analyses\nData has long-term value\nYour sequences become findable via OBIS sequence search tools\n\n\n\n\n\nBenefit\nWhy it matters\n\n\n\n\nOpen DOI\nCitable in publications\n\n\nLong-term archive\nFAIR data\n\n\nGlobal reach\nOBIS + GBIF\n\n\nSequence search\nReuse & reanalysis\n\n\n\n\n\nMention the OBIS sequence search prototype at sequence.obis.org — users can search for similar sequences across all OBIS datasets. This is only possible because sequences are published in standardized form."
   },
   {
-    "objectID": "index-edna-full.html#what-is-special-about-edna-data",
-    "href": "index-edna-full.html#what-is-special-about-edna-data",
+    "objectID": "index-edna-full.html#what-is-special-about-dna-derived-data",
+    "href": "index-edna-full.html#what-is-special-about-dna-derived-data",
     "title": "Publishing eDNA Data in OBIS",
-    "section": "What is special about eDNA data?",
-    "text": "What is special about eDNA data?\nEnormous potential…\n\nExpands access to biodiversity data at scale\nCaptures environmental, specimen, and bulk-sample DNA\nRaw sequences already widely shared in NCBI"
+    "section": "What is special about DNA-derived data?",
+    "text": "What is special about DNA-derived data?\nEnormous potential…\n\nExpands access to biodiversity data at scale\nCaptures environmental, specimen, and bulk-sample DNA\nRaw sequences already widely shared in NCBI"
   },
   {
-    "objectID": "index-edna-full.html#what-is-special-about-edna-data-1",
-    "href": "index-edna-full.html#what-is-special-about-edna-data-1",
+    "objectID": "index-edna-full.html#what-is-special-about-edna-data",
+    "href": "index-edna-full.html#what-is-special-about-edna-data",
     "title": "Publishing eDNA Data in OBIS",
     "section": "What is special about eDNA data?",
     "text": "What is special about eDNA data?\n\nSpecial considerations\n⚗️ Derived information — not a direct observation; extensive lab and bioinformatic processing\n📚 Relies on reference databases — results depend on database completeness\n❓ Large fraction of unknown sequences — no match in any database\n📋 The DwC DNA Extension records how work was done, enabling future re-analysis\n\n\nRaw sequences deposited in NCBI lack coordinates and dates — they cannot answer where or when a species was detected. OBIS, GBIF, and ALA now accept DNA-derived occurrences linked to space and time. DNA data requires special care: it is derived, depends on reference databases, and often produces many unknown sequences. The Darwin Core DNA extension preserves methodological context for future re-analysis."
