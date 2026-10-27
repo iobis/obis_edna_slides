@@ -111,7 +111,7 @@ date: 27 October 2026
 # Mapping molecular data to Darwin Core
  Which information is entered where? A short exercise
 
-{{< include slides/new/_24a-O-key_fields_metabarcoding-field.qmd >}}     
+{{< include slides/new/_24a-0-key_fields_metabarcoding-field.qmd >}}   
 
 {{< include slides/_24a-key_fields_metabarcoding-field.qmd >}}         
 
