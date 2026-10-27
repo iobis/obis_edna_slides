@@ -14,9 +14,9 @@
 
 | Tool | What it checks |
 |---|---|
-| `obistools` (R package) | Taxonomy, geography, required fields |
-| GBIF data validator | Darwin Core Archive structure |
-| WoRMS taxon match | Scientific names → AphiaIDs |
+| [`obistools` (R package)](https://iobis.github.io/obistools/) | Taxonomy, geography, required fields |
+| [GBIF data validator](https://www.gbif.org/tool/81281/gbif-data-validator) | Darwin Core Archive structure |
+| [WoRMS Taxon Match Tool](https://www.marinespecies.org/aphia.php?p=match) | Scientific names → AphiaIDs |
 
 ::: {.notes}
 obistools is an R package from OBIS. The GBIF validator is a web-based tool. WoRMS has a batch taxon match tool at marinespecies.org/aphia.php. For unidentified sequences, assign a high-level taxon if possible (e.g., kingdom Animalia) rather than leaving the field empty.
