@@ -546,11 +546,11 @@
     "text": "What can FAIR data do?\nGeographic outlier detection - OBIS eDNA taxonomy QC tool\n\n\n\ndataset quality profile: alignment of species detections to known distribution and thermal ranges\n\n\n\n\nThe automated tool assesses all the identified records using the species’ distribution — the areas where a given species is known to live based on information from OBIS and GBIF (excluding eDNA occurrences) — and the species’ thermal range — the range of temperatures in which a species is known to live. All species identifications receive a score based on these categories. If a species was identified from a sample outside its known living areas or if the temperature at the sampling site is outside the suitable range for that species, the identification receives an overall low score and is highlighted on the list."
   },
   {
-    "objectID": "index-GEC-20261027.html#resources-and-community",
-    "href": "index-GEC-20261027.html#resources-and-community",
+    "objectID": "index-GEC-20261027.html#what-can-fair-data-do-1",
+    "href": "index-GEC-20261027.html#what-can-fair-data-do-1",
     "title": "Publishing eDNA Data in OBIS",
-    "section": "Resources and community",
-    "text": "Resources and community\n\n\n\nResource\nLink\n\n\n\n\nOBIS Manual (DNA chapter)\nmanual.obis.org/dna_data.html\n\n\nOBIS DNA training slides (incl. this presentation!)\ngithub.com/iobis/obis_edna_slides\n\n\nOBIS eDNA data management course 🚧 under construction\niobis.github.io/edna-training-beginner-track/\n\n\nGBIF DNA publishing guide\ndoi.org/10.35035/DOC-VF1A-NR22\n\n\nIOOS Bio Mobilization Workshop\nioos.github.io/bio_mobilization_workshop\n\n\nGBIF-NA DNA Publishing Workshop\nsunray1.github.io/2025-05-09-GBIF-NA-DNAPublishing\n\n\nOBIS helpdesk\nhelpdesk@obis.org\n\n\n\n\nThe community is genuinely welcoming to beginners. The OBIS helpdesk responds quickly. The workshops listed here offer hands-on help with your own data — participants bring actual datasets and work through formatting with instructors."
+    "section": "What can FAIR data do?",
+    "text": "What can FAIR data do?\nGeographic outlier detection - OBIS eDNA taxonomy QC tool"
   },
   {
     "objectID": "index-GEC-20261027.html#edna-metabarcoding-key-information",
