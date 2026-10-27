@@ -8,7 +8,7 @@
 
 Automates DwC mapping from bioinformatic outputs
 
-[gbif.org/tools/mdt]{style="color:#02C39A;"}
+[mdt.gbif.org](https://mdt.gbif.org){style="color:#02C39A;"}
 :::
 
 ::: {style="color:white; padding:14px; border-radius:8px;"}
@@ -16,7 +16,7 @@ Automates DwC mapping from bioinformatic outputs
 
 Query OBIS; retrieve DNA records with `unnest_extension()`
 
-[github.com/iobis/robis]{style="color:#02C39A;"}
+[github.com/iobis/robis](https://github.com/iobis/robis){style="color:#02C39A;"}
 :::
 :::
 
@@ -26,7 +26,7 @@ Query OBIS; retrieve DNA records with `unnest_extension()`
 
 Validation, QC, WoRMS matching, archive structure checks
 
-[github.com/iobis/obistools]{style="color:#02C39A;"}
+[github.com/iobis/obistools](https://github.com/iobis/obistools){style="color:#02C39A;"}
 :::
 
 ::: {style="color:white; padding:14px; border-radius:8px;"}
@@ -34,7 +34,7 @@ Validation, QC, WoRMS matching, archive structure checks
 
 Transform raw DNA data into a Darwin Core-compliant dataset
 
-[https://iobis.github.io/edna-training-beginner-track](https://iobis.github.io/edna-training-beginner-track/episodes/04-structuring-datasets.html){style="color:#02C39A;"}
+[iobis.github.io/edna-training-beginner-track](https://iobis.github.io/edna-training-beginner-track/episodes/04-structuring-datasets.html){style="color:#02C39A;"}
 :::
 :::
 
