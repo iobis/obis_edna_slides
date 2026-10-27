@@ -67,8 +67,6 @@ format:
 
 {{< include slides/_05-dna-publishing-guide.qmd >}}
 
-{{< include slides/_52-dna-term-resources.qmd >}}  
-
 {{< include slides/_07-raw-outputs-long-format.qmd >}}
 
 {{< include slides/_08-example-transformation.qmd >}}
@@ -82,6 +80,8 @@ format:
 {{< include slides/_10-key-fields-dna-extension.qmd >}}
 
 {{< include slides/_18-emof.qmd >}}
+
+{{< include slides/_52-dna-term-resources.qmd >}}  
 
 # Publishing to OBIS
 
