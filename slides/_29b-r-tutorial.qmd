@@ -1,5 +1,6 @@
 ## Structure an eDNA Dataset in R
-[OBIS R tutorial](https://iobis.github.io/edna-training-beginner-track/episodes/04-structuring-datasets.html): Transform raw DNA data into a Darwin Core-compliant dataset
+### [OBIS R tutorial](https://iobis.github.io/edna-training-beginner-track/episodes/04-structuring-datasets.html): Transform raw DNA data into a Darwin Core-compliant dataset
+
 time: ~90 min
 
 🎯 By the end of this tutorial, you will be able to:
