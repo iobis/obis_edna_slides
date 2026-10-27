@@ -487,7 +487,7 @@
     "href": "index-GEC-20261027.html#key-fields-to-include-dna-extension",
     "title": "Publishing eDNA Data in OBIS",
     "section": "Key fields to include: DNA Extension",
-    "text": "Key fields to include: DNA Extension\n\n\nDNA Extension (example key fields)\n\nDNA_sequence — ASV/OTU sequence\ntarget_gene — e.g. “COI”, “18S rRNA”\npcr_primer_name_forward — and reverse\nseq_meth — e.g. “Illumina MiSeq”\notu_class_appr — e.g. “DADA2 v1.18”\notu_db — reference database\nsop — link to your protocol\n\n→ 🧬the molecular context\nAll tables linked by eventID and occurrenceID\n\n\nmanual.obis.org/dna_data.html#quick-start-guide\n\n\nWoRMS = World Register of Marine Species. Every marine occurrence should have a WoRMS AphiaID as the taxonID. For freshwater / terrestrial taxa use the appropriate backbone (CoL, etc.). Unidentified sequences should still be included — they can be assigned taxon later."
+    "text": "Key fields to include: DNA Extension\n\n\nDNA Extension (example key fields)\n\nDNA_sequence — ASV/OTU sequence\ntarget_gene — e.g. “COI”, “18S rRNA”\npcr_primer_name_forward — and reverse\nseq_meth — e.g. “Illumina MiSeq”\notu_class_appr — e.g. “DADA2 v1.18”\notu_db — reference database\nsop — link to your protocol\n\n→ 🧬the molecular context\n\nAll tables linked by eventID and occurrenceID\n\n\n\nmanual.obis.org/dna_data.html#quick-start-guide\n\n\nWoRMS = World Register of Marine Species. Every marine occurrence should have a WoRMS AphiaID as the taxonID. For freshwater / terrestrial taxa use the appropriate backbone (CoL, etc.). Unidentified sequences should still be included — they can be assigned taxon later."
   },
   {
     "objectID": "index-GEC-20261027.html#emof-extension-table",
@@ -802,7 +802,7 @@
     "href": "index-edna-full.html#key-fields-to-include-dna-extension",
     "title": "Publishing eDNA Data in OBIS",
     "section": "Key fields to include: DNA Extension",
-    "text": "Key fields to include: DNA Extension\n\n\nDNA Extension (example key fields)\n\nDNA_sequence — ASV/OTU sequence\ntarget_gene — e.g. “COI”, “18S rRNA”\npcr_primer_name_forward — and reverse\nseq_meth — e.g. “Illumina MiSeq”\notu_class_appr — e.g. “DADA2 v1.18”\notu_db — reference database\nsop — link to your protocol\n\n→ 🧬the molecular context\nAll tables linked by eventID and occurrenceID\n\n\nmanual.obis.org/dna_data.html#quick-start-guide\n\n\nWoRMS = World Register of Marine Species. Every marine occurrence should have a WoRMS AphiaID as the taxonID. For freshwater / terrestrial taxa use the appropriate backbone (CoL, etc.). Unidentified sequences should still be included — they can be assigned taxon later."
+    "text": "Key fields to include: DNA Extension\n\n\nDNA Extension (example key fields)\n\nDNA_sequence — ASV/OTU sequence\ntarget_gene — e.g. “COI”, “18S rRNA”\npcr_primer_name_forward — and reverse\nseq_meth — e.g. “Illumina MiSeq”\notu_class_appr — e.g. “DADA2 v1.18”\notu_db — reference database\nsop — link to your protocol\n\n→ 🧬the molecular context\n\nAll tables linked by eventID and occurrenceID\n\n\n\nmanual.obis.org/dna_data.html#quick-start-guide\n\n\nWoRMS = World Register of Marine Species. Every marine occurrence should have a WoRMS AphiaID as the taxonID. For freshwater / terrestrial taxa use the appropriate backbone (CoL, etc.). Unidentified sequences should still be included — they can be assigned taxon later."
   },
   {
     "objectID": "index-edna-full.html#table-structure-options",
@@ -1152,7 +1152,7 @@
     "href": "index-dna-extension.html#key-fields-to-include-dna-extension",
     "title": "Types of DNA-derived data",
     "section": "Key fields to include: DNA Extension",
-    "text": "Key fields to include: DNA Extension\n\n\nDNA Extension (example key fields)\n\nDNA_sequence — ASV/OTU sequence\ntarget_gene — e.g. “COI”, “18S rRNA”\npcr_primer_name_forward — and reverse\nseq_meth — e.g. “Illumina MiSeq”\notu_class_appr — e.g. “DADA2 v1.18”\notu_db — reference database\nsop — link to your protocol\n\n→ 🧬the molecular context\nAll tables linked by eventID and occurrenceID\n\n\nmanual.obis.org/dna_data.html#quick-start-guide\n\n\nWoRMS = World Register of Marine Species. Every marine occurrence should have a WoRMS AphiaID as the taxonID. For freshwater / terrestrial taxa use the appropriate backbone (CoL, etc.). Unidentified sequences should still be included — they can be assigned taxon later."
+    "text": "Key fields to include: DNA Extension\n\n\nDNA Extension (example key fields)\n\nDNA_sequence — ASV/OTU sequence\ntarget_gene — e.g. “COI”, “18S rRNA”\npcr_primer_name_forward — and reverse\nseq_meth — e.g. “Illumina MiSeq”\notu_class_appr — e.g. “DADA2 v1.18”\notu_db — reference database\nsop — link to your protocol\n\n→ 🧬the molecular context\n\nAll tables linked by eventID and occurrenceID\n\n\n\nmanual.obis.org/dna_data.html#quick-start-guide\n\n\nWoRMS = World Register of Marine Species. Every marine occurrence should have a WoRMS AphiaID as the taxonID. For freshwater / terrestrial taxa use the appropriate backbone (CoL, etc.). Unidentified sequences should still be included — they can be assigned taxon later."
   },
   {
     "objectID": "index-dna-extension.html#from-raw-outputs-long-format",
