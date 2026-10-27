@@ -24,3 +24,4 @@
 - `associatedSequences` <span class="small-note">(link to e.g. GenBank or ENA accession)</span> 
 :::
 ::::
+*→ what organism was detected* 🐠🪸🪼
