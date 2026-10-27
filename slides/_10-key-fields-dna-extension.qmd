@@ -13,6 +13,8 @@
 - `otu_db` — <span class="small-note">reference database</span>
 - `sop` — <span class="small-note">link to your protocol</span>
 
+*→ 🧬the molecular context*
+
 :::
 
 ::: {.column width="50%"}
@@ -24,6 +26,7 @@
 :::
 
 ::::
+
 
 ::: {.notes}
 WoRMS = World Register of Marine Species. Every marine occurrence should have a WoRMS AphiaID as the taxonID. For freshwater / terrestrial taxa use the appropriate backbone (CoL, etc.). Unidentified sequences should still be included — they can be assigned taxon later.
