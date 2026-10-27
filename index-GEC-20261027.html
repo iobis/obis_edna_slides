@@ -595,37 +595,6 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
           display:block!important;
       }</style></aside>
 </section>
-<section id="core-table-for-dna-data" class="slide level2 center">
-<h2>Core table for DNA data</h2>
-<p>DNA data can be published with <strong>either</strong> core type:</p>
-<ul>
-<li><strong>Occurrence core</strong> + DNA extension</li>
-<li><strong>Event core</strong> + Occurrence extension + DNA extension</li>
-</ul>
-<div class="callout callout-note no-icon callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<p><strong>This wasn’t always true</strong></p>
-</div>
-<div class="callout-content">
-<p>Previously guidance required <strong>Occurrence core only</strong> for DNA data. Event core support was added recently!</p>
-</div>
-</div>
-</div>
-<aside class="notes">
-<p>Both options link the DNA extension via occurrenceID. Event core additionally lets you record sample-level metadata (location, date, method) once per event instead of once per sequence — see the next slide for why that matters at scale. A caveat worth mentioning live: even with Event core, some duplication is unavoidable because of the star schema (DNA extension still needs occurrenceID, so each occurrence still carries a full sequence/sample link). A newer GBIF/OBIS data model in development aims to remove this constraint entirely, but it isn’t implemented yet (as of late 2025).</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
 <section id="five-dna-data-categories" class="slide level2 center">
 <h2>Five DNA data categories</h2>
 <p>Which one fits your data?</p>
@@ -806,8 +775,34 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
 </div>
 </div></div>
 </section>
-<section id="the-obis-manual" class="slide level2 center">
-<h2>The OBIS manual</h2>
+<section id="resources-for-dna-terms" class="slide level2 center">
+<h2>Resources for DNA terms</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Resource</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>DNA Extension term definitions</strong></td>
+<td><a href="https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2024-07-11.xml">rs.gbif.org/extension/gbif/1.0/dna_derived_data_2024-07-11.xml</a></td>
+</tr>
+<tr class="even">
+<td><strong>DwC Term Quick Reference Guide</strong></td>
+<td><a href="https://dwc.tdwg.org/terms/">dwc.tdwg.org/terms/</a></td>
+</tr>
+<tr class="odd">
+<td>OBIS Manual (DNA chapter)</td>
+<td><a href="https://manual.obis.org/dna_data.html">manual.obis.org/dna_data.html</a></td>
+</tr>
+<tr class="even">
+<td>GBIF DNA publishing guide</td>
+<td><a href="https://doi.org/10.35035/DOC-VF1A-NR22">doi.org/10.35035/DOC-VF1A-NR22</a></td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="from-raw-outputs-long-format" class="slide level2 center">
 <h2>From raw outputs → long format</h2>
@@ -978,6 +973,7 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
 <li><code>samplingProtocol</code> - <span class="small-note">(link to your field sampling SOP)</span></li>
 </ul>
 </div></div>
+<p><em>→ the 📍where, 🕒when &amp; 🧪how of collection</em></p>
 </section>
 <section id="key-dwc-fields-to-include-occurrence" class="slide level2 center">
 <h2>Key DwC fields to include: Occurrence</h2>
@@ -1007,6 +1003,7 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
 <li><code>associatedSequences</code> <span class="small-note">(link to e.g.&nbsp;GenBank or ENA accession)</span></li>
 </ul>
 </div></div>
+<p><em>→ what organism was detected</em> 🐠🪸🪼</p>
 </section>
 <section id="key-fields-to-include-dna-extension" class="slide level2 center">
 <h2>Key fields to include: DNA Extension</h2>
@@ -1022,6 +1019,7 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
 <li><code>otu_db</code> — <span class="small-note">reference database</span></li>
 <li><code>sop</code> — <span class="small-note">link to your protocol</span></li>
 </ul>
+<p><em>→ 🧬the molecular context</em></p>
 </div><div class="column" style="width:50%;">
 <p><a href="assets/eDNA_quickguide.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img data-src="assets/eDNA_quickguide.png"></a></p>
 <p><a href="https://manual.obis.org/dna_data.html#quick-start-guide" style="font-size:15px;">manual.obis.org/dna_data.html#quick-start-guide</a></p>
@@ -1318,9 +1316,9 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
 <p><span style="color:#02C39A;">github.com/iobis/obistools</span></p>
 </div>
 <div style="color:white; padding:14px; border-radius:8px;">
-<p><strong>OBIS Sequence Search</strong></p>
-<p>BLAST-search sequences already in OBIS (prototype)</p>
-<p><span style="color:#02C39A;">sequence.obis.org</span></p>
+<p><strong>OBIS R tutorial</strong></p>
+<p>Transform raw DNA data into a Darwin Core-compliant dataset</p>
+<p><a href="https://iobis.github.io/edna-training-beginner-track/episodes/04-structuring-datasets.html" style="color:#02C39A;">https://iobis.github.io/edna-training-beginner-track</a></p>
 </div>
 </div></div>
 <aside class="notes">
@@ -1336,27 +1334,31 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-</section></section>
-<section>
-<section id="obis-tutorial-for-formatting-in-r" class="title-slide slide level1 center">
-<h1>OBIS tutorial for formatting in R</h1>
-
 </section>
-<section id="obis-dna-data-management-platform" class="slide level2 center">
-<h2>OBIS DNA Data Management Platform</h2>
-<p>🔧 OBIS is developing a data management platform for DNA data including:</p>
-<div class="columns">
-<div class="column" style="width:70%;">
+<section id="structure-an-edna-dataset-in-r" class="slide level2 center">
+<h2>Structure an eDNA Dataset in R</h2>
+<p><a href="https://iobis.github.io/edna-training-beginner-track/episodes/04-structuring-datasets.html">OBIS R tutorial</a>: Transform raw DNA data into a Darwin Core-compliant dataset time: ~90 min</p>
+<p>🎯 By the end of this tutorial, you will be able to:</p>
 <ul>
-<li>Bioinformatics</li>
-<li>QC</li>
-<li>Validation</li>
-<li>Publication to OBIS pipeline</li>
+<li>Read a raw ASV table, taxonomy file, and sample metadata sheet into R.</li>
+<li>Combine these tables into a Darwin Core Occurrence table, mapping raw fields to Darwin Core terms.</li>
+<li>Use the <code>obistools</code> package to match taxon names against WoRMS, and check coordinates, dates, and required fields.</li>
+<li>Build the ExtendedMeasurementOrFact and DNADerivedData extension tables.</li>
+<li>Write out a complete Darwin Core Archive.</li>
 </ul>
-<p>To be offered to OBIS nodes to support local eDNA projects!</p>
-</div><div class="column" style="width:30%;">
-<p><span style="font-size: 5em; cen">🚧</span></p>
-</div></div>
+<aside class="notes">
+<p>…</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="resources-and-community" class="slide level2 center">
 <h2>Resources and community</h2>
@@ -1373,16 +1375,16 @@ setTimeout(() => initOBISMap('nodesmap', '#156082'), 300);
 <td><a href="https://manual.obis.org/dna_data.html">manual.obis.org/dna_data.html</a></td>
 </tr>
 <tr class="even">
-<td>OBIS DNA training slides (this presentation!)</td>
+<td>OBIS DNA training slides (incl.&nbsp;this presentation!)</td>
 <td><a href="https://github.com/iobis/obis_edna_slides">github.com/iobis/obis_edna_slides</a></td>
 </tr>
 <tr class="odd">
-<td>GBIF DNA publishing guide</td>
-<td><a href="https://doi.org/10.35035/DOC-VF1A-NR22">doi.org/10.35035/DOC-VF1A-NR22</a></td>
+<td>OBIS eDNA data management course 🚧 <em>under construction</em></td>
+<td><a href="https://iobis.github.io/edna-training-beginner-track/">iobis.github.io/edna-training-beginner-track/</a></td>
 </tr>
 <tr class="even">
-<td>OBON 2024 DNA training</td>
-<td><a href="https://github.com/iobis/obon-2024-dna-training">github.com/iobis/obon-2024-dna-training</a></td>
+<td>GBIF DNA publishing guide</td>
+<td><a href="https://doi.org/10.35035/DOC-VF1A-NR22">doi.org/10.35035/DOC-VF1A-NR22</a></td>
 </tr>
 <tr class="odd">
 <td>IOOS Bio Mobilization Workshop</td>
@@ -1478,36 +1480,62 @@ Publishing it in OBIS makes it<br>
 <h1>Mapping molecular data to Darwin Core</h1>
 <p>Which information is entered where? A short exercise</p>
 </section>
-<section id="resources-for-dna-terms" class="slide level2 center">
-<h2>Resources for DNA terms</h2>
+<section id="edna-metabarcoding-key-information" class="slide level2 center">
+<h2>eDNA Metabarcoding: Key Information</h2>
+<div class="line-block"><strong>DNA Extension term definitions</strong> | <a href="https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2024-07-11.xml">rs.gbif.org/extension/gbif/1.0/dna_derived_data_2024-07-11.xml</a> |<br>
+<strong>DwC Term Quick Reference Guide</strong> | <a href="https://dwc.tdwg.org/terms/">dwc.tdwg.org/terms/</a> |</div>
+<p><em>Category 1 — DNA-derived occurrences — <code>basisOfRecord = MaterialSample</code></em></p>
+<p><span style="color:#E8A020; font-style:italic;">From field collection to taxonomy — what to capture at each step</span></p>
+<p>Step 1:⛵ <strong>Field Sampling</strong></p>
 <table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
 <thead>
 <tr class="header">
-<th>Resource</th>
-<th>Link</th>
+<th>Field Sampling</th>
+<th>Maps to</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>DNA Extension term definitions</strong></td>
-<td><a href="https://rs.gbif.org/extension/gbif/1.0/dna_derived_data_2024-07-11.xml">rs.gbif.org/extension/gbif/1.0/dna_derived_data_2024-07-11.xml</a></td>
+<td>Coordinates, location names</td>
+<td>Event table: <code>...</code>, <code>...</code>, <code>...</code></td>
 </tr>
 <tr class="even">
-<td><strong>DwC Term Quick Reference Guide</strong></td>
-<td><a href="https://dwc.tdwg.org/terms/">dwc.tdwg.org/terms/</a></td>
+<td>Date, time</td>
+<td>Event table: <code>...</code>, <code>...</code></td>
 </tr>
 <tr class="odd">
-<td>OBIS Manual (DNA chapter)</td>
-<td><a href="https://manual.obis.org/dna_data.html">manual.obis.org/dna_data.html</a></td>
+<td>Environmental measurements (temperature, salinity, depth…)</td>
+<td>eMoF table: <code>...</code>, <code>...</code>, <code>...</code></td>
 </tr>
 <tr class="even">
-<td>GBIF DNA publishing guide</td>
-<td><a href="https://doi.org/10.35035/DOC-VF1A-NR22">doi.org/10.35035/DOC-VF1A-NR22</a></td>
+<td>Sampling method / gear</td>
+<td>Event table: <code>...</code> and/or eMoF table</td>
+</tr>
+<tr class="odd">
+<td>Sample volume, filter size</td>
+<td>DNA table: <code>...</code> , <code>...</code></td>
 </tr>
 </tbody>
 </table>
+<aside class="notes">
+<p>This is where the Event core table gets populated. Environmental measurements that aren’t DNA-specific (e.g.&nbsp;temperature, salinity) go in eMoF rather than the DNA extension — worth a quick reminder here since people sometimes want to cram everything into one table.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="edna-metabarcoding-key-information" class="slide level2 center">
+<section id="edna-metabarcoding-key-information-1" class="slide level2 center">
 <h2>eDNA Metabarcoding: Key Information</h2>
 <p><em>Category 1 — DNA-derived occurrences — <code>basisOfRecord = MaterialSample</code></em></p>
 <p><span style="color:#E8A020; font-style:italic;">From field collection to taxonomy — what to capture at each step</span></p>
@@ -1560,7 +1588,7 @@ Publishing it in OBIS makes it<br>
           display:block!important;
       }</style></aside>
 </section>
-<section id="edna-metabarcoding-key-information-1" class="slide level2 center">
+<section id="edna-metabarcoding-key-information-2" class="slide level2 center">
 <h2>eDNA Metabarcoding: Key Information</h2>
 <p><em>Category 1 — DNA-derived occurrences — <code>basisOfRecord = MaterialSample</code></em></p>
 <p><span style="color:#E8A020; font-style:italic;">From field collection to taxonomy — what to capture at each step</span></p>
@@ -1609,7 +1637,7 @@ Publishing it in OBIS makes it<br>
           display:block!important;
       }</style></aside>
 </section>
-<section id="edna-metabarcoding-key-information-2" class="slide level2 center">
+<section id="edna-metabarcoding-key-information-3" class="slide level2 center">
 <h2>eDNA Metabarcoding: Key Information</h2>
 <p><em>Category 1 — DNA-derived occurrences — <code>basisOfRecord = MaterialSample</code></em></p>
 <p><span style="color:#E8A020; font-style:italic;">From field collection to taxonomy — what to capture at each step</span></p>
@@ -1658,7 +1686,7 @@ Publishing it in OBIS makes it<br>
           display:block!important;
       }</style></aside>
 </section>
-<section id="edna-metabarcoding-key-information-3" class="slide level2 center">
+<section id="edna-metabarcoding-key-information-4" class="slide level2 center">
 <h2>eDNA Metabarcoding: Key Information</h2>
 <p><em>Category 1 — DNA-derived occurrences — <code>basisOfRecord = MaterialSample</code></em></p>
 <p><span style="color:#E8A020; font-style:italic;">From field collection to taxonomy — what to capture at each step</span></p>
@@ -1703,7 +1731,7 @@ Publishing it in OBIS makes it<br>
           display:block!important;
       }</style></aside>
 </section>
-<section id="edna-metabarcoding-key-information-4" class="slide level2 center">
+<section id="edna-metabarcoding-key-information-5" class="slide level2 center">
 <h2>eDNA Metabarcoding: Key Information</h2>
 <p><em>Category 1 — DNA-derived occurrences — <code>basisOfRecord = MaterialSample</code></em></p>
 <p><span style="color:#E8A020; font-style:italic;">From field collection to taxonomy — what to capture at each step</span></p>
