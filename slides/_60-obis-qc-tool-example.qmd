@@ -1,0 +1,11 @@
+## What can FAIR data do?
+Geographic outlier detection - OBIS eDNA taxonomy [QC tool](https://ednaqc.obis.org/)
+
+![](assets/figure_QCtool_example2.png)
+
+
+
+::: {.notes}
+
+
+:::

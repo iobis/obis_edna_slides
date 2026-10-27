@@ -109,7 +109,7 @@ format:
 
 {{< include slides/_59-obis-qc-tool.qmd >}}
 
-{{< include slides/_16-resources-community.qmd >}}
+{{< include slides/_60-obis-qc-tool-example.qmd >}}
 
 
 # Mapping molecular data to Darwin Core
