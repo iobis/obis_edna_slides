@@ -15,6 +15,9 @@
 
 *→ 🧬the molecular context*
 
+All tables linked by `eventID` and `occurrenceID`
+
+
 :::
 
 ::: {.column width="50%"}
