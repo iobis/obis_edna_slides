@@ -107,6 +107,8 @@ date: 27 October 2026
 
 {{< include slides/_59-obis-qc-tool.qmd >}}
 
+{{< include slides/_60-obis-qc-tool-example.qmd >}}
+
 
 # Mapping molecular data to Darwin Core
  Which information is entered where? A short exercise
